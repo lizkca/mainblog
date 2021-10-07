@@ -95,7 +95,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Read the Docs Blog'
+project = u'lizkca blog (fork from Read the Docs Blog)'
 copyright = u'2021, Read the Docs, Inc'
 
 # The version info for the project you're documenting, acts as replacement for
