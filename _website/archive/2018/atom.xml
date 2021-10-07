@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2018</title>
+  <id>https://blog.readthedocs.com/archive/2018/atom.xml</id>
+  <updated>2018-10-30T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2018/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Tips to Hire Developers with Read the Docs</title>
+    <id>https://blog.readthedocs.com/hiring-developers-with-readthedocs/</id>
+    <updated>2018-10-30T00:00:00Z</updated>
+    <published>2018-10-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/hiring-developers-with-readthedocs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-to-hire-developers-with-read-the-docs&quot;&gt;
+
+&lt;p&gt;Read the Docs is probably not the first place you think of if you are recruiting.
+However, over &lt;strong&gt;7 million unique developers use Read the Docs each month&lt;/strong&gt; from all over the world.
+We didn’t set out to build a better job board,
+but after a number of advertisers used our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html&quot;&gt;ethical ads&lt;/a&gt; for recruiting,
+we discovered that Read the Docs was a great place to find developer talent.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;hiring-with-read-the-docs-works&quot;&gt;
+&lt;h2&gt;Hiring with Read the Docs works&lt;/h2&gt;
+&lt;p&gt;Developers are not always actively job seeking
+by browsing job boards or company careers pages.
+However, they are on Read the Docs reading about the libraries and frameworks they use.
+Even when people aren’t actively looking for a new job,
+many are open to exploring new opportunities.&lt;/p&gt;
+&lt;p&gt;On Read the Docs, we found that developers engage with hiring ads
+at a higher rate than any other kind of advertising.
+With hiring ads, developers get ads that are relevant and interesting
+and companies reach the folks actively using the tech they are recruiting for.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Click-through rate by ad type Q3 2018&quot; src=&quot;img/2018-ctr-adtype.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;be-specific-and-find-the-right-developers&quot;&gt;
+&lt;h2&gt;Be specific and find the right developers&lt;/h2&gt;
+&lt;p&gt;If you are looking for Python developers,
+you can configure your hiring ad to only show on Python related documentation.
+You can further refine your audience to Read the Docs visitors in specific regions.
+Whether you are looking for a remote Python data scientist or a blockchain developer in Switzerland,
+be as specific as possible.
+This ensures you don’t get unqualified candidates
+as well as making sure you catch the eyes of the people you are interested in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;set-the-right-expectations&quot;&gt;
+&lt;h2&gt;Set the right expectations&lt;/h2&gt;
+&lt;p&gt;In any type of advertising, setting appropriate expectations can make the difference
+between a lackluster and successful campaign. In hiring, it is even more critical.
+This means making sure that your hiring ad for a front-end JavaScript developer
+links directly to your JavaScript developer job listing page where people can click “apply”.
+Don’t link to a listing of all of your open positions unless your hiring ad sets that expectation.
+Nothing is worse for the developer than clicking on a hiring ad
+and not knowing what to do next.&lt;/p&gt;
+&lt;p&gt;Likewise, some things can set the wrong kind of expectation.
+Most developers have seen enough hiring posts for “rockstars” and “ninjas” to know what to expect.
+Be honest and upfront and you will attract the right folks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;stand-out&quot;&gt;
+&lt;h2&gt;Stand out&lt;/h2&gt;
+&lt;p&gt;Developers get contacted all the time by recruiters
+and it can be difficult to show prospective employees why they should check out your company.
+People look for all sorts of different things when seeking a new job
+from working with a high-caliber team to working for a company whose goals they agree with.
+You should highlight your best selling points right on your hiring ad as early as possible.
+If your company affords a fantastic work/life balance, mention that.
+A company in a great location, with a beautiful office, and top of the line hardware
+should definitely feature that.
+Focusing on your best attributes shows you care about your developers
+and helps you appeal to people who care about your products and mission.&lt;/p&gt;
+&lt;div class=&quot;admonition-are-you-hiring admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Are you hiring?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=hire-developers&quot;&gt;Find qualified candidates&lt;/a&gt; already using your tech by promoting your job openings with Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Community Advertising</title>
+    <id>https://blog.readthedocs.com/community-ads-2018/</id>
+    <updated>2018-09-06T00:00:00Z</updated>
+    <published>2018-09-06T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/community-ads-2018/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;community-advertising&quot;&gt;
+
+&lt;p&gt;As part of our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html&quot;&gt;ethical advertising&lt;/a&gt; model,
+Read the Docs &lt;strong&gt;gives away&lt;/strong&gt; 10% of our ad inventory
+to projects, conferences, and other initiatives in the open source community.
+Many of these projects operate as Read the Docs did in the past with little to no income.
+These are not groups that traditionally have the resources to use paid advertising.&lt;/p&gt;
+&lt;p&gt;We have run ads for:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Various Python conferences from &lt;a class=&quot;reference external&quot; href=&quot;https://us.pycon.org/&quot;&gt;PyCon&lt;/a&gt; to smaller regional conferences&lt;/li&gt;
+&lt;li&gt;Many topic or framework specific conferences such as &lt;a class=&quot;reference external&quot; href=&quot;https://djangocon.us/&quot;&gt;Djangocon US&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://sustainoss.org/&quot;&gt;Sustain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.mozilla.org/&quot;&gt;Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pybee.org/&quot;&gt;Beeware&lt;/a&gt; - tools and libraries for building native apps in Python&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.patreon.com/godotengine&quot;&gt;Godot&lt;/a&gt; - an open source game engine&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://kiwitcms.org/&quot;&gt;Kiwi TCMS&lt;/a&gt; - an open source test case management system&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://worldpossible.org/&quot;&gt;World Possible&lt;/a&gt; - an education non-profit&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/&quot;&gt;Write the Docs&lt;/a&gt; - a series of events for documentatarians&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-in-touch-we-can-help&quot;&gt;
+&lt;h2&gt;Get in touch. We can help!&lt;/h2&gt;
+&lt;p&gt;If you run a conference, non-profit, or a funding strapped open source project,
+we would love to help you get the word out.
+Make sure you qualify for our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html#community-ads&quot;&gt;community ads&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;send us an email&lt;/a&gt;
+to be considered for the program.&lt;/p&gt;
+&lt;p&gt;If you have any feedback about our community advertising program,
+we’d love to hear from you too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">HTTPS for Custom Domains</title>
+    <id>https://blog.readthedocs.com/https-for-custom-domains/</id>
+    <updated>2018-08-13T00:00:00Z</updated>
+    <published>2018-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/https-for-custom-domains/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;https-for-custom-domains&quot;&gt;
+
+&lt;p&gt;Read the Docs hosts documentation for over 80,000 open source projects
+and over 2,500 of those projects are hosted on their own individual domains.
+Documentation hosted on &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;*.readthedocs.io&lt;/span&gt;&lt;/code&gt; has supported HTTPS for a number of years,
+but one of our most requested features was to make HTTPS on other domains easy.
+Today we are happy to announce that &lt;strong&gt;Read the Docs supports HTTPS on custom domains&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Earlier this year, Cloudflare contacted us to support HTTPS
+for the thousands of open source documentation projects on their own domains.
+They generously provided us with their &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/ssl-for-saas-providers/&quot;&gt;SSL for SaaS&lt;/a&gt; package
+to ease the integration on our side.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-https-is-important&quot;&gt;
+&lt;h2&gt;Why HTTPS is important&lt;/h2&gt;
+&lt;p&gt;HTTPS encrypts traffic between your computer and Read the Docs’ servers
+and allows your browser to verify that the website you are talking to
+is the one that you requested.
+HTTPS ensures there is no man-in-the-middle snooping on your connection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;configuring-your-domain&quot;&gt;
+&lt;h2&gt;Configuring your domain&lt;/h2&gt;
+&lt;p&gt;If you followed our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/alternate_domains.html&quot;&gt;documentation for custom domains&lt;/a&gt;
+and you are using a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to Read the Docs,
+no action is required on your part.&lt;/p&gt;
+&lt;p&gt;If you have had your Read the Docs setup for many years you may have followed some old directions
+that suggested creating a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;slug&amp;gt;.readthedocs.org&lt;/span&gt;&lt;/code&gt;.
+Depending on your setup, we may not have been able to issue a certificate for your domain.
+In that case, update your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-did-it-take-so-long&quot;&gt;
+&lt;h2&gt;Why did it take so long?&lt;/h2&gt;
+&lt;p&gt;It’s 2018! HTTPS is supposed to be easy, right?
+For a few domains, getting a certificate isn’t too hard.
+For 2,500+ domains, things get a bit more complicated.&lt;/p&gt;
+&lt;p&gt;We identified a number of challenges including:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Retrying failed requests to issue certificates&lt;/li&gt;
+&lt;li&gt;Handling when users remove DNS records that would allow us to issue certificates&lt;/li&gt;
+&lt;li&gt;Getting our web servers and load balancers to handle dynamically adding and updating certificates on the fly&lt;/li&gt;
+&lt;li&gt;Handling recurring tasks to re-issue updated certificates before they expire&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cloudflare reduced most of this complexity to a few API calls made when a new domain is configured or removed.
+Without their support, we would still be working on this feature.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;next-steps&quot;&gt;
+&lt;h2&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;There are a few more things left on our road map for this feature.
+In the next few weeks we will begin to generate HTTPS links for custom domains where we have a certificate.
+After that change has been deployed for a few weeks, we will begin to redirect custom domain traffic to HTTPS.&lt;/p&gt;
+&lt;p&gt;As always, if you’re having any trouble with a particular domain,
+don’t hesitate to let us know in our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Planned Move to Azure</title>
+    <id>https://blog.readthedocs.com/azure-migration/</id>
+    <updated>2018-08-09T00:00:00Z</updated>
+    <published>2018-08-09T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/azure-migration/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;planned-move-to-azure&quot;&gt;
+
+&lt;p&gt;We wanted to make you aware that on Saturday August 18 at 10:00am PDT (1:00pm EDT, 17:00 UTC),
+Read the Docs will be having a &lt;strong&gt;scheduled downtime of approximately 4 hours&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To ensure the stability and performance of our system,
+we are performing this upgrade during the weekend
+which is our period of lowest usage.&lt;/p&gt;
+&lt;p&gt;During this maintenance window, documentation will still be serving
+but new documentation builds will not trigger and the Read the Docs dashboard will not be available.
+New builds and webhooks will begin processing once the maintenance is over.&lt;/p&gt;
+&lt;p&gt;We are moving our service to our new home on Microsoft Azure
+who have generously provided us with credits to support open source software.
+Some of the features we are most excited to take advantage of with this move are
+managed services for Postgres and Redis as well as improvements to file storage.
+This should simplify our operations considerably.&lt;/p&gt;
+&lt;p&gt;We’d like to thank Rackspace for sponsoring our hosting for over 4 years.
+They were a large supporter of open source,
+and Read the Docs wouldn’t be what it is today without them.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone for your support and understanding!&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Read the Docs Public API</title>
+    <id>https://blog.readthedocs.com/api-v2/</id>
+    <updated>2018-08-02T00:00:00Z</updated>
+    <published>2018-08-02T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v2/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-public-api&quot;&gt;
+
+&lt;p&gt;Recently, we revamped Read the Docs’ public API.
+Previously, our latest API (v2) was used by our build processes
+but not heavily used by outside users.&lt;/p&gt;
+&lt;p&gt;As part of this process, we put effort into making sure the API is easy to use
+to access Read the Docs &lt;em&gt;projects&lt;/em&gt;, &lt;em&gt;builds&lt;/em&gt;, and &lt;em&gt;versions&lt;/em&gt;,
+easier to filter builds and versions by a particular project,
+and that the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/api/v2.html&quot;&gt;documentation&lt;/a&gt; is up-to-date.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;deprecation-of-api-v1-and-connecting-over-insecure-http&quot;&gt;
+&lt;h2&gt;Deprecation of API v1 and connecting over insecure HTTP&lt;/h2&gt;
+&lt;p&gt;As part of this process, we are formally deprecating support for our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/api/v1.html&quot;&gt;API v1&lt;/a&gt;.
+It will be &lt;strong&gt;supported through at least January 1, 2019&lt;/strong&gt;
+but we strongly encourage all users to migrate to API v2 at their earliest convenience.&lt;/p&gt;
+&lt;p&gt;In addition, both API v1 and API v2 allowed connecting over insecure HTTP
+as opposed to HTTPS. &lt;strong&gt;Beginning in January 2019, we will be redirecting requests over HTTP to HTTPS.&lt;/strong&gt;
+This will improve security and allow us to add more security related features to the API going forward.
+For most users, this should be a one line change to connect to the HTTPS version of the API.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-in-touch&quot;&gt;
+&lt;h2&gt;Get in touch&lt;/h2&gt;
+&lt;p&gt;We are always interested in the amazing things people create when data is openly shared.
+In addition, we are always looking in improve our API to enable more projects and mashups.
+If you use Read the Docs’ public API for your project
+or there are additional features you’d like to see in it,
+we would love to &lt;a class=&quot;reference external&quot; href=&quot;mailto:team&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;hear from you&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Do Not Track at Read the Docs</title>
+    <id>https://blog.readthedocs.com/do-not-track/</id>
+    <updated>2018-06-08T00:00:00Z</updated>
+    <published>2018-06-08T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/do-not-track/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;do-not-track-at-read-the-docs&quot;&gt;
+
+&lt;p&gt;Today, we are pleased to announce that Read the Docs honors &lt;a class=&quot;reference external&quot; href=&quot;https://allaboutdnt.com/&quot;&gt;Do Not Track&lt;/a&gt; (DNT).
+DNT is a browser preference that requests that a user not be tracked
+across the internet while browsing the web.&lt;/p&gt;
+&lt;p&gt;While there isn’t a consensus on precisely what DNT should mean,
+we are following the Electronic Frontier Foundation’s (EFF) &lt;a class=&quot;reference external&quot; href=&quot;https://www.eff.org/issues/do-not-track&quot;&gt;guidelines&lt;/a&gt;
+for Do Not Track as we believe that gives a good balance
+between the privacy expectations of users and the reality of running a business
+and keeping Read the Docs sustainable.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-we-implemented&quot;&gt;
+&lt;h2&gt;What we implemented&lt;/h2&gt;
+&lt;p&gt;Not much needed to change to make Read the Docs support DNT
+and many of these changes were already necessary
+for the EU’s new &lt;a class=&quot;reference internal&quot; href=&quot;../../gdpr-what-it-means-for-readthedocs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;privacy regulation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s a brief list of what we did for Do Not Track:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our logs that store any personal data are deleted after no more than ten days.
+We do this for all users even those who don’t have DNT enabled.&lt;/li&gt;
+&lt;li&gt;When a user has DNT enabled, we do not send data to our analytics.
+Based on our initial data, this looks like about a 6% reduction.&lt;/li&gt;
+&lt;li&gt;While this didn’t change, we reiterated that we &lt;strong&gt;do not&lt;/strong&gt;
+do behavioral ad targeting regardless of DNT preference.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details on Do Not Track at Read the Docs can be found in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/privacy-policy.html#do-not-track&quot;&gt;privacy policy&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-dnt-means-for-our-advertising&quot;&gt;
+&lt;h2&gt;What DNT means for our advertising&lt;/h2&gt;
+&lt;p&gt;Advertising at Read the Docs was already built with privacy in mind.
+With our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/advertising/ethical-advertising.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Ethical Ads&lt;/span&gt;&lt;/a&gt;, we previously committed to not tracking users,
+not selling user data, and hosting ads ourselves
+which all align perfectly with Do Not Track.&lt;/p&gt;
+&lt;p&gt;Our support for DNT formalizes our commitment to the high standards
+for privacy produced by the EFF.
+It also make us one of very few ad networks that honor Do Not Track.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-ethical-ad-network&quot;&gt;
+&lt;h2&gt;The Ethical Ad Network&lt;/h2&gt;
+&lt;p&gt;In a &lt;a class=&quot;reference internal&quot; href=&quot;../../ethical-advertising-works/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous post&lt;/span&gt;&lt;/a&gt;,
+we mentioned that we are taking the same developer-centric, privacy-focused
+advertising we have on Read the Docs and expanding this to a larger ad network
+for open source infrastructure.&lt;/p&gt;
+&lt;p&gt;Supporting Do Not Track is an important milestone along the way
+as it confirms our commitment to privacy in advertising.
+We believe that ads don’t have to track people to be effective.&lt;/p&gt;
+&lt;p&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;Ethical Ad network&lt;/a&gt; is still in its early stages,
+but if you want to know more or you know a project that could use it,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">GDPR: What it means for Read the Docs</title>
+    <id>https://blog.readthedocs.com/gdpr-what-it-means-for-readthedocs/</id>
+    <updated>2018-05-25T00:00:00Z</updated>
+    <published>2018-05-25T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/gdpr-what-it-means-for-readthedocs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gdpr-what-it-means-for-read-the-docs&quot;&gt;
+
+&lt;p&gt;Your email inbox has probably been bombarded
+over the last few days and weeks with “Updates to our Privacy Policy”.
+These emails pertain to an EU law called the General Data Protection Regulation (GDPR)
+which comes into effect today.&lt;/p&gt;
+&lt;p&gt;The goal of the GDPR is to put users back in control of their data.
+It is an important step toward respecting users’ privacy.
+The days of collecting as much data on as many people as possible
+without consent and sharing it with anyone willing to pay for it are over.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-changed-at-read-the-docs&quot;&gt;
+&lt;h2&gt;What changed at Read the Docs&lt;/h2&gt;
+&lt;p&gt;Read the Docs takes privacy seriously (would any company publicly say otherwise) and
+relatively little changed for us as a result of the GDPR.
+We intentionally don’t collect much personal information and we only do it with consent.&lt;/p&gt;
+&lt;p&gt;Still, we did use the GDPR as an excuse to get our data house in order so to speak.
+Here are a few key points:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;A brand new privacy policy&lt;/dt&gt;&lt;dd&gt;Read the Docs added a new &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/privacy-policy.html&quot;&gt;privacy policy&lt;/a&gt;
+that explains the data we collect, from which users we collect it, and why.
+It enumerates third parties we use for various services and what data we share.
+The policy also details the data we keep and when it is deleted.
+Our goal was to make it easy to understand so please give it a read!&lt;/dd&gt;
+&lt;dt&gt;Privacy by default&lt;/dt&gt;&lt;dd&gt;The GDPR mandates “data protection by design and by default”.
+For us, this meant reducing the scope and duration of the logs and other data we keep.
+We attempt to collect as little as possible from users merely browsing Read the Docs.
+When we do collect data, such as when a user creates an account, we protect it.&lt;/dd&gt;
+&lt;dt&gt;No difference for EU residents vs. everyone else&lt;/dt&gt;&lt;dd&gt;Read the Docs applied the stricter protections mandated by the GDPR to all our users.
+We believe that is the right thing to do. Creating two classes of users
+and only protecting them when required by law just doesn’t seem right.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;While Read the Docs is committed to making sure we comply with the GDPR,
+we aren’t just doing the minimum needed.
+We are taking some additional steps to protect users which we will cover in a future post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;ethical-ads&quot;&gt;
+&lt;h2&gt;Ethical Ads&lt;/h2&gt;
+&lt;p&gt;Arguably the GDPR is a response to pernicious &lt;a class=&quot;reference external&quot; href=&quot;http://blogs.harvard.edu/doc/2018/05/12/gdpr/&quot;&gt;privacy violations by advertising firms&lt;/a&gt;
+so it makes sense to discuss the advertising we show on Read the Docs.&lt;/p&gt;
+&lt;p&gt;While Read the Docs is an ad-supported website,
+we didn’t need to make any changes to our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/ethical-advertising.html&quot;&gt;Ethical Ads&lt;/a&gt; to comply with the GDPR.
+That’s because:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our advertising is &lt;strong&gt;well-targeted without being personal&lt;/strong&gt;.
+We ensure our ads are relevant by keeping them developer focused.&lt;/li&gt;
+&lt;li&gt;Ethical Ads are &lt;strong&gt;hosted by Read the Docs&lt;/strong&gt;, not advertisers or a third party network.&lt;/li&gt;
+&lt;li&gt;We &lt;strong&gt;don’t share personal data&lt;/strong&gt; with advertisers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By enforcing privacy by default, the GDPR shifts the discussion on advertising.
+We want to create an advertising model that is a win for all parties especially users.
+We know from our experience that &lt;a class=&quot;reference internal&quot; href=&quot;../../ethical-advertising-works/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ethical advertising works&lt;/span&gt;&lt;/a&gt;.
+It is possible to make money without giving away your users data.&lt;/p&gt;
+&lt;p&gt;If you want to learn more about Ethical Ads at Read the Docs, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;get in touch&lt;/a&gt;!&lt;/p&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/gdpr-what-it-means-for-readthedocs.rst&lt;/tt&gt;, line 78); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate implicit target name: “ethical ads”.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Update on Ad Blocking and Acceptable Ads</title>
+    <id>https://blog.readthedocs.com/ad-blocker-update/</id>
+    <updated>2018-05-21T00:00:00Z</updated>
+    <published>2018-05-21T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ad-blocker-update/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;update-on-ad-blocking-and-acceptable-ads&quot;&gt;
+
+&lt;p&gt;A few weeks ago, we shared about the
+&lt;a class=&quot;reference internal&quot; href=&quot;../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;challenge ad blocking presented to our sustainability&lt;/span&gt;&lt;/a&gt;
+and what we were doing about it.
+On May 4th, Read the Docs was added to the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/&quot;&gt;Acceptable Ads list&lt;/a&gt;
+meaning that our visitors running ad blockers who choose to allow unintrusive advertising
+will see our ads again.
+The &lt;strong&gt;impact to our ad views, clicks, and revenue was immediate&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;data-on-our-inclusion-in-the-acceptable-ads-list&quot;&gt;
+&lt;h2&gt;Data on our inclusion in the Acceptable Ads list&lt;/h2&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Impact of ad blocking and acceptable ads at Read the Docs&quot; src=&quot;img/2018-readthedocs-adblocker-update.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;32% of Read the Docs visitors run an ad blocker&lt;/dt&gt;&lt;dd&gt;Estimates around the web vary regarding what percentage of people
+run ad blockers and it varies heavily by industry.
+We discussed this figure a bit in our &lt;a class=&quot;reference internal&quot; href=&quot;../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous post&lt;/span&gt;&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;It took a month from application to inclusion in the list&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We discovered about our inclusion in the &lt;a class=&quot;reference external&quot; href=&quot;https://easylist.to/&quot;&gt;EasyList&lt;/a&gt; ad blocker list
+within a couple days and immediately applied to the Acceptable Ads program.
+No changes were required of us to meet the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/en/about/criteria&quot;&gt;Acceptable Ads criteria&lt;/a&gt;
+and we also qualified for &lt;a class=&quot;reference external&quot; href=&quot;https://adblockplus.org/en/acceptable-ads#privacy-friendly-acceptable-ads&quot;&gt;Acceptable Ads without third-party tracking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While Eyeo, the company behind AdBlock Plus,
+derives &lt;a class=&quot;reference external&quot; href=&quot;https://adblockplus.org/about#monetization&quot;&gt;most of their revenue&lt;/a&gt; from the Acceptable Ads initiative
+by charging large entities,
+Read the Docs &lt;strong&gt;did not&lt;/strong&gt; pay for inclusion on the list.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Over half of those running an ad blocker allow acceptable ads&lt;/dt&gt;&lt;dd&gt;Given our more tech-savvy and privacy-focused audience,
+we didn’t know what to expect.
+Not every ad blocker allows acceptable ads by default
+and even then users can choose to turn them off.&lt;/dd&gt;
+&lt;dt&gt;People running ad blockers DO click on ads&lt;/dt&gt;&lt;dd&gt;We can definitively say this is true of our audience.
+Our click-through rate did not change based on ad blocking or
+our inclusion in the acceptable ads list at all.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Of the ad views and clicks blocked by ad blockers,
+inclusion in the Acceptable Ads list meant that 55-60%
+of our ad-blocking visitors choose to allow our ads.
+This directly translated into revenue toward our sustainability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;building-our-ethical-ads&quot;&gt;
+&lt;h2&gt;Building our Ethical Ads&lt;/h2&gt;
+&lt;p&gt;The Acceptable Ads list is definitely a step in the right direction for us.
+We share the goal of unintrusive advertising that respects our audience.&lt;/p&gt;
+&lt;p&gt;People understand that advertising funds much of the web.
+As ads got larger, more annoying,
+and ad networks stored more information on millions of people, however,
+many people finally decided to install ad blockers.
+This is the &lt;a class=&quot;reference external&quot; href=&quot;https://medium.com/the-graph/how-to-reverse-publisher-revenue-drain-c33e41bf0665&quot;&gt;largest boycott in human history&lt;/a&gt; and blaming users isn’t the answer.&lt;/p&gt;
+&lt;p&gt;Based on our experience with ad blocking and the Acceptable Ads list,
+it is clear that visitors will allow advertising that doesn’t disrupt user experience
+and doesn’t track people.&lt;/p&gt;
+&lt;p&gt;We are glad to have made progress toward regaining our sustaining revenue.
+Read the Docs is continuing on our experiment to fund open source infrastructure
+in a way that is a win/win for all parties,
+and we are glad you’re following along with us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Social Version Control Log in</title>
+    <id>https://blog.readthedocs.com/version-control-login/</id>
+    <updated>2018-05-17T00:00:00Z</updated>
+    <published>2018-05-17T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/version-control-login/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;social-version-control-log-in&quot;&gt;
+
+&lt;p&gt;Today we are announcing the ability to log in or sign up to Read the Docs
+with your favorite version control hosting services like GitHub, BitBucket, or GitLab.
+This was one of our most requested features and
+it has been something we’ve been meaning to launch for a long time.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;for-new-read-the-docs-users&quot;&gt;
+&lt;h2&gt;For new Read the Docs users&lt;/h2&gt;
+&lt;p&gt;For new users, the sign up process is significantly streamlined.
+There’s no new password to remember and when you’re ready to start building your docs,
+Read the Docs will be ready with a list of your repositories to get started.&lt;/p&gt;
+&lt;p&gt;Click the “Sign Up” button on the Read the Docs home page and then click
+the button for your favorite version control hosting service.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;for-existing-read-the-docs-users&quot;&gt;
+&lt;h2&gt;For existing Read the Docs users&lt;/h2&gt;
+&lt;p&gt;If you’ve already connected your GitHub, BitBucket or GitLab account,
+you can use it to log in with Read the Docs instead of your password.
+If you haven’t connected your account previously,
+you will have to log in normally and connect your account to use it to log in.&lt;/p&gt;
+&lt;p&gt;You can always see and manage which accounts you have connected
+&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/accounts/social/connections/&quot;&gt;in your profile&lt;/a&gt; (log in required).&lt;/p&gt;
+&lt;p&gt;As always, if you notice anything strange with your build,
+feel free to raise an issue on our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2018/atom.xml">
+    <title type="text">Ads and Ad blockers</title>
+    <id>https://blog.readthedocs.com/ads-and-adblocking/</id>
+    <updated>2018-05-02T00:00:00Z</updated>
+    <published>2018-05-02T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-and-adblocking/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ads-and-ad-blockers&quot;&gt;
+
+&lt;p&gt;Last time, we shared how &lt;a class=&quot;reference internal&quot; href=&quot;../../ethical-advertising-works/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ethical advertising works&lt;/span&gt;&lt;/a&gt;
+to keep Read the Docs sustainable without creepy ad targeting.
+This time, we will share about one of our biggest challenges with advertising.
+At the beginning of April, Read the Docs was added to one of the most popular
+ad block lists: the &lt;a class=&quot;reference external&quot; href=&quot;https://easylist.to/&quot;&gt;Easylist&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;ad-blocker-fallout&quot;&gt;
+&lt;h2&gt;Ad blocker fallout&lt;/h2&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Effect of ad blocking on Read the Docs ad views&quot; src=&quot;img/2018-readthedocs-adblocker-fallout.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Getting added to the EasyList had a significant and immediate impact
+on the bottom line at Read the Docs.
+Right around April 1, &lt;strong&gt;32% of our ad views simply vanished&lt;/strong&gt;.
+At first, we thought we had done something horribly wrong
+but then we discovered that this was due entirely to ad blocking.
+Our actual traffic wasn’t down at all.&lt;/p&gt;
+&lt;p&gt;Users’ browsers were simply downloading the updated EasyList
+which blocked ads on Read the Docs.
+In terms of ad viewership, weekdays
+– our busiest days and the peaks in the graph –
+became more like weekends and weekends fell off a cliff.
+We had always guessed what percentage of our user base ran ad blockers.
+Now we know. We knew this day would come as we became more successful
+but we had hoped it was a ways off considering we weren’t part of a large ad network.&lt;/p&gt;
+&lt;p&gt;This directly affected our operations and staff.
+Our operating costs didn’t go down in any significant way, but revenue sure did.
+Advertising is by far the largest source of revenue at Read the Docs
+and it just dropped by about a third.
+This meant that we had to cut some costs where we could and slow down some hiring plans.
+While Read the Docs is not a non-profit company,
+all the revenue is reinvested into the project itself, paying maintainers,
+and other places in the open source ecosystem.
+The situation is not dire by any means,
+but it was certainly disappointing that we ended up on the same list
+with popup advertisers who couldn’t care less about privacy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;all-about-ad-blockers&quot;&gt;
+&lt;h2&gt;All about ad blockers&lt;/h2&gt;
+&lt;p&gt;Ad blockers fulfill a legitimate need to mitigate the
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/ethical-advertising.html#ethical-info&quot;&gt;significant downsides of advertising&lt;/a&gt; from tracking across the internet,
+security implications of third-party code,
+and impacting the UX and performance of sites.&lt;/p&gt;
+&lt;p&gt;At Read the Docs, we specifically didn’t want those things.
+That’s why we built the ad network we wanted to exist with
+only relevant ads and no creepy behavioral targeting.&lt;/p&gt;
+&lt;p&gt;According to a &lt;a class=&quot;reference external&quot; href=&quot;https://pagefair.com/downloads/2017/01/PageFair-2017-Adblock-Report.pdf&quot;&gt;2017 report from PageFair&lt;/a&gt; (pdf),
+a company that specializes in quantifying ad blocking,
+11% of global web users run an ad blocker.
+Considering that Read the Docs’ core audience is tech-savvy,
+privacy-conscious developers,
+it should be no surprise that our number is higher.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-are-we-doing-about-it&quot;&gt;
+&lt;h2&gt;What are we doing about it&lt;/h2&gt;
+&lt;p&gt;It will be an uphill battle to get back to where we were in terms of revenue
+and sustaining Read the Docs, here are a few things we are working on:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We applied to the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/&quot;&gt;acceptable ads&lt;/a&gt; list,
+an ad block list enabled on many ad blockers by default
+that enables some unobtrusive advertising.
+We are very hopeful here but it does take quite a bit longer
+to get on this list than it does to get blocked.&lt;/li&gt;
+&lt;li&gt;Nagging users into allowing ads on Read the Docs.
+We are envisioning more of a polite nag in a similar vein to &lt;a class=&quot;reference external&quot; href=&quot;https://jsfiddle.net/&quot;&gt;jsfiddle&lt;/a&gt;
+rather than an “adblock wall” which prevents usage of Read the Docs
+until it’s allowed.&lt;/li&gt;
+&lt;li&gt;Blogging and raising awareness of how ad blocking affects us and other
+open source projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While we could simply change our CSS and ad API to avoid blocking
+since we host our ads ourselves,  we decided not to engage in a cat and mouse game
+since this work would not benefit users.&lt;/p&gt;
+&lt;p&gt;Advertising funds much of the web and many people recognize
+that while there are plenty of bad actors in the ad industry
+– think pop-under ad networks or ads that navigate your browser for you –
+some advertising is necessary to power the web we know and love
+especially when it comes to open source software which has
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/&quot;&gt;unique funding challenges&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: On May 4th, Read the Docs was added to the acceptable ads list!
+We will collect data over the next couple weeks and have a follow-up post
+on what effects this had on advertising.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;open-source-advertising-list&quot;&gt;
+&lt;h2&gt;Open source advertising list&lt;/h2&gt;
+&lt;p&gt;At Read the Docs, we also discovered that we are not the only open source project
+that got our advertising blocked by ad blockers.
+Many open source projects that fund themselves
+through advertising get blocked
+and some of them don’t have the resources to navigate the acceptable ads program
+or understand the inner workings of ad blockers.&lt;/p&gt;
+&lt;p&gt;Likewise, some web users may not want to allow all acceptable ads
+which includes many ads from the big networks but we are hoping they would be
+willing to accept ads that benefit their community of software developers.&lt;/p&gt;
+&lt;p&gt;We are launching a &lt;strong&gt;new initiative&lt;/strong&gt; to
+&lt;a class=&quot;reference external&quot; href=&quot;https://ads-for-open-source.readthedocs.io&quot;&gt;allow advertising that benefits open source software&lt;/a&gt;. We encourage
+you to subscribe to the this list and support open source.
+If you run an open source project affected by ad blockers, we would love to help you too.&lt;/p&gt;
+&lt;div class=&quot;admonition-advertisers admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Advertisers&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;If you are an advertiser interested in reaching a 100% developer
+audience who cares deeply about privacy,
+we would love to &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/&quot;&gt;hear from you&lt;/a&gt; too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

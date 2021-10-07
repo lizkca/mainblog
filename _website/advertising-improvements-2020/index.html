@@ -1,0 +1,371 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:title" content="Advertising update and open sourcing our ad server" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="advertising-improvements-2020.html" />
+  <meta property="og:site_name" content="Read the Docs Blog" />
+  <meta property="og:description" content="It’s been a while since our last advertising update and it felt like a good time to talk about what’s working with our advertising model and how things are getting better. How advertising is workin..." />
+  <meta property="og:image" content="https://blog.readthedocs.com/_static/logo-opengraph.png" />
+  <meta property="og:image:alt" content="Read the Docs Blog" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <title>Advertising update and open sourcing our ad server &#8212; Read the Docs Blog</title>
+    <link rel="stylesheet" href="../_static/main.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+  
+  <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Puritan:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../_static/local.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer data-domain="blog.readthedocs.com" src="https://plausible.io/js/plausible.js"></script>
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../archive/atom.xml" title="Read the Docs Blog">
+  
+  
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head><body>
+  <!-- BEGIN header -->
+  <div id="header">
+    <div class="row">
+      <div class="logo">
+        <h1><a href="../">
+            <img src="../_static/logo.png" height="48" />
+            Read the Docs Blog
+        </a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="https://readthedocs.com">Back to site</a></li>
+          <li><a href="mailto:hello@readthedocs.com">Contact&nbsp;Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END header -->
+
+  <div id="content">
+    <div class="wrapper">
+
+      <div class="col-major content">
+          
+  <div class="section" id="advertising-update-and-open-sourcing-our-ad-server">
+<h1>Advertising update and open sourcing our ad server<a class="headerlink" href="#advertising-update-and-open-sourcing-our-ad-server" title="Permalink to this headline">¶</a></h1>
+<p>It’s been a while since our <a class="reference internal" href="../ad-funding-read-the-docs-whats-next/"><span class="doc">last advertising update</span></a>
+and it felt like a good time to talk about what’s working with our advertising model
+and how things are getting better.</p>
+<div class="section" id="how-advertising-is-working-for-read-the-docs">
+<h2>How advertising is working for Read the Docs<a class="headerlink" href="#how-advertising-is-working-for-read-the-docs" title="Permalink to this headline">¶</a></h2>
+<p>In our <a class="reference internal" href="../read-the-docs-2019-stats/"><span class="doc">2019 stats post</span></a>,
+we broke out our advertising revenue which was fairly flat year over year.
+The way our ad business is structured, our revenue mostly grows with increases in traffic
+and Read the Docs is mature enough that it isn’t doubling in size every year.</p>
+<p>With that said, we’re pleased with our steady and sustainable growth.
+Read the Docs doesn’t have any investors putting pressure on us for short term growth
+and that has allowed us to invest in our ad business, commercial hosting,
+and in our community version for the long term.
+We’ve rolled out a huge number of improvements to all the sides of our business
+in the last year and we’re happy with the results.
+Advertising remains the single largest source of funding for Read the Docs
+and one that scales as our costs scale.</p>
+<p>On a real world note, Covid-19 had a short term impact on our advertising revenue
+with a number of advertisers understandably pulling back due to uncertainty in funding and the economy in general.
+While the world isn’t completely back to normal, we have returned some degree of normalcy
+and most of these advertisers returned once there was a bit more clarity in the broader economy
+and the virus’ effect on the tech industry specifically.
+Advertising on Read the Docs is now close to capacity in the US, Canada, and Europe which are our largest advertising markets.</p>
+</div>
+<div class="section" id="improved-targeting-for-ads">
+<h2>Improved targeting for ads<a class="headerlink" href="#improved-targeting-for-ads" title="Permalink to this headline">¶</a></h2>
+<p>Advertising on Read the Docs is different from most ad networks out there.
+Our ad targeting is based on the content and the reader’s geography rather than personal data about our users.
+Read the Docs’ authors and readers have told us that privacy is important to them.
+That’s great because it’s important to us too!
+With that said, there are great ways to target specific content niches with ads relevant to those readers without compromising on privacy.</p>
+<p>To start, we chose a few groups of content advertisers can target where we have enough traffic
+without the ads being focused on a tiny number of projects.
+These niches are:</p>
+<ul class="simple">
+<li>Data science and machine learning</li>
+<li>Frontend web development</li>
+<li>Backend web development</li>
+<li>Security</li>
+<li>DevOps</li>
+<li>Technical writing</li>
+</ul>
+<p>We tested this improved content targeting with a select group of advertisers and the results were great.
+In some cases we saw click through rates more than double.
+Whether the ad is to hire a developer or to promote a service,
+we always want to deliver ads that are most relevant to the documentation being served.
+This results in better value to our advertisers
+while still respecting the privacy of our readers.</p>
+<div class="admonition-would-your-company-like-to-get-in-front-of-more-developers admonition">
+<p class="first admonition-title">Would your company like to get in front of more developers?</p>
+<p class="last">Tell your <a class="reference external" href="https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;utm_source=readthedocs-blog&amp;utm_campaign=ethical-advertising-2020">marketing or recruiting team</a> about Read the Docs
+and show them how they can reach over 7 million developers who Read the Docs each month!</p>
+</div>
+</div>
+<div class="section" id="open-sourcing-our-ad-server">
+<h2>Open sourcing our ad server<a class="headerlink" href="#open-sourcing-our-ad-server" title="Permalink to this headline">¶</a></h2>
+<p>One thing we’ve wanted to do for a long time is open source the code
+we use to run advertising at Read the Docs.
+While there’s always a bit of an incentive to keep advertising code closed so it can’t be abused,
+our hope is that the trust we’re building with the ethical ads model
+can be used by others who want to run their own ethical advertising.
+Read the Docs is an open source company and it’s nice to have all our code out there.
+We call it the ethical ad server.</p>
+<p>The ethical ad server is built to handle the kind of load Read the Docs itself receives
+– over a million hits per day –
+and it delivers advertising based only on content and geographic targeting
+rather than building up user profiles from personal information.
+It’s built from the ground up with user privacy in mind.
+We’re excited to share it with you so please <a class="reference external" href="https://github.com/readthedocs/ethical-ad-server">check out the code on GitHub</a>.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Just as we’re constantly delivering improvements to Read the Docs itself for our readers and project maintainers,
+we also strive to give a better experience and better results to the companies who trust Read the Docs as a marketing channel.
+I want to thank all our advertisers who believe in our approach and continue to support us
+and stay tuned to this space for more great features in the future!</p>
+<p>Our ethical ad network is just about ready for launch
+and we’re actively looking for projects to beta test the network.
+If you run a developer focused website and you’re looking for a way to earn money
+without selling out your visitors’ privacy,
+please <a class="reference external" href="mailto:ads&#37;&#52;&#48;readthedocs&#46;org?subject=Ethical%20Ad%20Network%20beta">get in touch</a>.</p>
+</div>
+</div>
+
+  <div class="section">
+  
+    
+  
+  
+  </div>
+
+      </div>
+
+      <div class="col-minor sidebar">
+  
+  
+  <ul class="post-details">
+    <li>
+      
+        <i class="fa-fw fa fa-calendar"></i>
+        01 七月 2020
+      
+    </li>
+
+      
+
+  
+  <li id="author"><span><i class="fa-fw fa fa-user"></i></span>
+    
+      
+      <a href="../archive/author/david-fischer/">David Fischer</a>
+      
+    </li>
+  
+
+  
+  <li id="location"><span><i class="fa-fw fa fa-location-arrow"></i></span>
+    
+      
+      <a href="../archive/location/san-diego-ca/">San Diego, CA</a>
+      
+    </li>
+  
+
+  
+
+  
+
+  
+  <li id="tags"><span><i class="fa-fw fa fa-tags"></i>
+      </span>
+    
+      
+      <a href="../archive/tag/advertising/">advertising</a>
+      
+    
+      
+      <a href="../archive/tag/sustainability/">sustainability</a>
+      
+    
+      
+      <a href="../archive/tag/ethical-ads/">ethical ads</a>
+      
+    </li>
+  
+  
+  </ul>
+
+
+
+<!-- Begin MailerLite Signup Form -->
+  <div id="mlb2-4710274" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4710274">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          <div class="ml-form-embedContent">
+            <h3 style="margin-left: 0">Subscribe to our mailing list</h3>
+            <p>Sign up for our blog and we'll send you news and updates about Sphinx and Read the Docs on a regular basis.</p>
+          </div>
+          <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/p8b7z2" data-code="p8b7z2" method="post" target="_blank">
+            <div class="ml-form-formContent">
+              <div class="ml-form-fieldRow ml-last-item">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email address" autocomplete="email" style="width: 90%">
+                </div>
+              </div>
+            </div>
+            <div class="ml-form-embedPermissions">
+              <div class="ml-form-embedPermissionsContent default privacy-policy">
+                <p style="margin-bottom: 0; font-size: 0.8em">You can unsubscribe anytime. For more details, review our <a href="https://docs.readthedocs.io/page/privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Subscribe</button>
+              <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display:none">
+          <div class="ml-form-successContent">
+            <h4>Thank you!</h4>
+            <p>You have successfully joined our subscriber list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function ml_webform_success_4710274(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-4710274 .row-success").show(),r(".ml-subscribe-form-4710274 .row-form").hide()}
+  </script>
+  <img src="https://track.mailerlite.com/webforms/o/4710274/p8b7z2?v1632123501" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
+<!--End mc_embed_signup-->
+
+
+<!-- Jobs 
+<h3> Read the Docs is hiring </h3>
+<ul>
+    <li><a href="https://blog.readthedocs.com/job-frontend/">Front-end Developer</a></li>
+</ul>
+-->
+
+<h3> Follow us </h3>
+
+<ul>
+<li>
+<a href="http://blog.readthedocs.com/archive/atom.xml" rel="me">Atom Feed</a>
+</li>
+<li>
+<a href="https://twitter.com/readthedocs" rel="me">Twitter</a>
+</li>
+</ul>
+
+  <h3><a href="../archive/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../newsletter2-october-2021/">07 十月 - todo and plan - October 2021</a></li>
+    
+      <li><a href="../newsletter-october-2021/">07 十月 - Read the Docs newsletter - October 2021</a></li>
+    
+      <li><a href="../newsletter-september-2021/">02 九月 - Read the Docs newsletter - September 2021</a></li>
+    
+      <li><a href="../theme-release-100rc1/">23 八月 - Theme release 1.0.0rc1</a></li>
+    
+      <li><a href="../newsletter-august-2021/">09 八月 - Read the Docs newsletter - August 2021</a></li>
+    
+  </ul>
+
+  <h3><a href="../archive/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../archive/2021/">2021 (18)</a></li>
+    
+  
+    
+    <li><a href="../archive/2020/">2020 (6)</a></li>
+    
+  
+    
+    <li><a href="../archive/2019/">2019 (15)</a></li>
+    
+  
+    
+    <li><a href="../archive/2018/">2018 (13)</a></li>
+    
+  
+    
+    <li><a href="../archive/2017/">2017 (7)</a></li>
+    
+  
+    
+    <li><a href="../archive/2016/">2016 (5)</a></li>
+    
+  
+    
+    <li><a href="../archive/2015/">2015 (9)</a></li>
+    
+  
+    
+    <li><a href="../archive/2014/">2014 (4)</a></li>
+    
+  
+    
+    <li><a href="../archive/2013/">2013 (2)</a></li>
+    
+  
+  </ul>
+
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="row">
+      <div class="col fill">
+        <ul>
+            <li>
+                &copy; Copyright 2021, Read the Docs, Inc.
+            </li>
+
+          <li>
+            Powered by <a href="http://ablog.readthedocs.org">ABlog</a>, and <a href="http://readthedocs.org/">Read the Docs</a>.
+          </li>
+            <li>
+              Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from Cuenca, Ecuador</title>
+  <id>https://blog.readthedocs.com/archive/location/cuenca-ecuador/atom.xml</id>
+  <updated>2020-05-04T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/cuenca-ecuador/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/cuenca-ecuador/atom.xml">
+    <title type="text">Automation Rules</title>
+    <id>https://blog.readthedocs.com/automation-rules/</id>
+    <updated>2020-05-04T00:00:00Z</updated>
+    <published>2020-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/automation-rules/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;automation-rules&quot;&gt;
+
+&lt;p&gt;A time ago we introduced a new feature to help users to automate some tasks on Read the Docs.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Automation rules&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you manage a project with several versions,
+you may have noticed that Read the Docs doesn’t always activate your new versions &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;.
+If you require to do any action over a new version,
+you’ll need to log in your Read the Docs account and manually do so.&lt;/p&gt;
+&lt;p&gt;With automation rules,
+you can choose what do to after a new version is created.
+To add a rule, you only need to choose a pattern and an action.
+After that, every new tag or branch that matches the pattern will trigger the action.&lt;/p&gt;
+&lt;img alt=&quot;_static/automation-rule.png&quot; src=&quot;_static/automation-rule.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;p&gt;Currently, we only have two actions available:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate version&lt;/li&gt;
+&lt;li&gt;Set version as default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the pattern, you can select:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;All versions&lt;/li&gt;
+&lt;li&gt;The ones that match SemVer&lt;/li&gt;
+&lt;li&gt;Or you can write your own using a regular expression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With automation rules you can do things like:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate new tags only&lt;/li&gt;
+&lt;li&gt;Activate only branches that start with &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;v&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Activate tags and branches that belong to the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;1.x&lt;/span&gt;&lt;/code&gt; release&lt;/li&gt;
+&lt;li&gt;Set as default tags that have the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-stable&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-release&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;li&gt;Activate all tags except those containing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;--nightly&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find more information and examples in &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;our documentation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What other tasks you would like to automate?
+Let us know on a &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/&quot;&gt;GitHub issue&lt;/a&gt;!&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We activate and build new versions automatically only if you follow &lt;span class=&quot;target&quot; id=&quot;index-0&quot;&gt;&lt;/span&gt;&lt;a class=&quot;pep reference external&quot; href=&quot;https://www.python.org/dev/peps/pep-0440&quot;&gt;&lt;strong&gt;PEP 440&lt;/strong&gt;&lt;/a&gt;,
+and the new version is greater than the current stable version.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/cuenca-ecuador/atom.xml">
+    <title type="text">New Configuration File</title>
+    <id>https://blog.readthedocs.com/configuration-file-v2/</id>
+    <updated>2019-02-20T00:00:00Z</updated>
+    <published>2019-02-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/configuration-file-v2/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-configuration-file&quot;&gt;
+
+&lt;p&gt;We are happy to announce the new version of the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;Read the Docs configuration file&lt;/a&gt; (v2).&lt;/p&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/conf.py&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;formats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you are a recurrent Read the Docs user,
+chances are that you’ve configured your projects using a &lt;cite&gt;.readthedocs.yml&lt;/cite&gt; file.&lt;/p&gt;
+&lt;p&gt;Using the web interface is quick,
+but the main advantages of using a configuration file over the web interface are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Some settings are only available using a configuration file.
+We are moving away from using the web interface.&lt;/li&gt;
+&lt;li&gt;The settings are per version rather than per project.
+This would allow different versions of docs to be built with different versions of Python
+or different requirements.&lt;/li&gt;
+&lt;li&gt;The settings live in your VCS.&lt;/li&gt;
+&lt;li&gt;Reproducible build environments over time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-did-we-change-in-the-new-version&quot;&gt;
+&lt;h2&gt;What did we change in the new version?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;All the configurations from the web interface&lt;/strong&gt;.
+In the past not all options from the web interface were available in the configuration file,
+now they are!
+We also reorganized and renamed some options to make them more clear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New defaults&lt;/strong&gt;,
+we don’t merge the values from the web interface,
+because this was confusing our users.
+This also allows us to change defaults without breaking existing projects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More flexible installations&lt;/strong&gt;,
+users can install their projects in a more flexible way,
+like multiple requirements and packages from different locations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strict validation&lt;/strong&gt; for invalid options in the configuration file,
+to avoid typos and provide more feedback on invalid configurations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;MkDocs support (previously it was only supported from the web interface).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;mkdocs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;mkdocs.yml&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;More control over Sphinx.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;html&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/source/conf.py&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Control over submodules, we don’t always need them all to build our docs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;submodules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;third-party/dependency&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;recursive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Support for multiple packages/requirements installations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;pip&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;package&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h2&gt;Future improvements&lt;/h2&gt;
+&lt;p&gt;We are already planning new features to support more projects and use cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pipfile support&lt;/strong&gt;, this is one of our more requested features,
+and we are going to ship it soon.
+Keep an eye in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/3181&quot;&gt;#3181&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Show the configuration used in each build&lt;/strong&gt;.
+We want to make more explicit to the users how we are building their docs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redirects per version&lt;/strong&gt; of your docs.
+Currently users can define global redirects only from the web interface,
+this is hard to maintain and review.
+One use case is when you change your docs structure between versions.
+Keep track of this upcoming feature in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/4221&quot;&gt;#4221&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;start-using-it&quot;&gt;
+&lt;h2&gt;Start using it&lt;/h2&gt;
+&lt;p&gt;The full docs about the new version are available &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are using the v1, you can update to v2 following our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2#migrating-from-v1&quot;&gt;migration docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have a problem using the configuration file, feel free to &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;summer-internship&quot;&gt;
+&lt;h2&gt;Summer internship&lt;/h2&gt;
+&lt;p&gt;This project was part of my summer internship in Read the Docs,
+it was held at the same time as the Google Summer of Code (GSoC) project.&lt;/p&gt;
+&lt;p&gt;Thanks to the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; (Anthony, David, Eric, and Manuel) for helping me in the process.
+Thanks to all contributors, sponsors, donors and users of Read the Docs to make the project sustainable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

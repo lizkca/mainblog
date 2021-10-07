@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged badges</title>
+  <id>https://blog.readthedocs.com/archive/tag/badges/atom.xml</id>
+  <updated>2014-08-14T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/badges/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/badges/atom.xml">
+    <title type="text">Badge Support</title>
+    <id>https://blog.readthedocs.com/badge-support/</id>
+    <updated>2014-08-14T00:00:00Z</updated>
+    <published>2014-08-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/badge-support/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;badge-support&quot;&gt;
+
+&lt;p&gt;Documentation is an often overlooked part of a software project.
+Today we are releasing badges for your docs,
+so that people can easily see that your docs are up-to-date.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;status-badges&quot;&gt;
+&lt;h2&gt;Status Badges&lt;/h2&gt;
+&lt;p&gt;The main use of badges is to show the status of your project’s build.
+They will display in green for passing,
+red for failing,
+and yellow for unknown states.&lt;/p&gt;
+&lt;p&gt;Here are a few examples:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;green&quot; src=&quot;http://img.shields.io/badge/Docs-latest-green.svg&quot; /&gt;&amp;nbsp;&lt;img alt=&quot;red&quot; src=&quot;http://img.shields.io/badge/Docs-release--1.6-red.svg&quot; /&gt;&amp;nbsp;&lt;img alt=&quot;yellow&quot; src=&quot;http://img.shields.io/badge/Docs-No%20Builds-yellow.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can see it in action in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/blob/master/README.rst&quot;&gt;Read the Docs README&lt;/a&gt;.
+They will link back to your project’s documentation page on Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;project-pages&quot;&gt;
+&lt;h2&gt;Project Pages&lt;/h2&gt;
+&lt;p&gt;You will now see badges embedded in your &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/projects/pip/&quot;&gt;project page&lt;/a&gt;.
+The default badge will be pointed at the &lt;em&gt;default version&lt;/em&gt; you have specified for your project.
+The badge URLs look like this:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://readthedocs.org/projects/pip/badge/?version=latest
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You can replace the version argument with any version that you want to show a badge for.
+If you click on the badge icon,
+you will be given snippets for RST, Markdown, and HTML;
+to make embedding it easier.&lt;/p&gt;
+&lt;p&gt;If you leave the version argument off,
+it will default to your latest version.
+This is probably best to include in your README,
+since it will stay up to date with your Read the Docs project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;design&quot;&gt;
+&lt;h2&gt;Design&lt;/h2&gt;
+&lt;p&gt;We have often wondered what we might make our badges look like.
+Luckily,
+there is a developing standard and service to support badges.
+&lt;a class=&quot;reference external&quot; href=&quot;http://shields.io&quot;&gt;http://shields.io&lt;/a&gt; is what we’ll be using to generate our badges,
+and they look beautiful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;feature-requests&quot;&gt;
+&lt;h2&gt;Feature Requests&lt;/h2&gt;
+&lt;p&gt;This is an initial attempt at adding badges to Read the Docs,
+it’s a feature we’ve wanted to add for some time.
+We have some plans to improve badges further,
+but be sure to get in touch with us if you have any feedback on how you would like to see badges used.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;,
+or you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:readthedocs&amp;#37;&amp;#52;&amp;#48;gmail&amp;#46;com&quot;&gt;readthedocs&lt;span&gt;&amp;#64;&lt;/span&gt;gmail&lt;span&gt;&amp;#46;&lt;/span&gt;com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

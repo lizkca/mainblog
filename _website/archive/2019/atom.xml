@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2019</title>
+  <id>https://blog.readthedocs.com/archive/2019/atom.xml</id>
+  <updated>2019-08-29T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2019/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Optimizing Sphinx Documentation for Search Engines</title>
+    <id>https://blog.readthedocs.com/seo-for-technical-docs/</id>
+    <updated>2019-08-29T00:00:00Z</updated>
+    <published>2019-08-29T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/seo-for-technical-docs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;optimizing-sphinx-documentation-for-search-engines&quot;&gt;
+
+&lt;p&gt;Recently, we published a guide on &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/technical-docs-seo-guide.html&quot;&gt;SEO for technical docs&lt;/a&gt;
+with the goal of helping documentation authors and project maintainers create docs
+so that end users can find what they’re looking for easier.&lt;/p&gt;
+&lt;p&gt;One developer asked me point blank after I mentioned our new guide,
+“Hasn’t Google closed most of the loopholes that sites use to rank better?”.
+I’ve heard this opinion from a few technologists before so I wasn’t too surprised.
+Moz.com, an authority on search engine optimization,
+makes a distinction between what they call &lt;a class=&quot;reference external&quot; href=&quot;https://moz.com/blog/black-hat-or-white-hat-seo-ask-better-questions&quot;&gt;black hat SEO and white hat SEO&lt;/a&gt;
+to differentiate between these “loopholes” and more useful site improvements that help SEO.&lt;/p&gt;
+&lt;p&gt;Black hat SEO is basically a set of tactics some sites use to improve rankings
+without actually making their site better to end visitors.
+This includes techniques like displaying different content to search engines (cloaking),
+link farming, or adding semi-relevant keywords into a page (keyword stuffing).
+When Google and Bing discover a site doing this,
+they take action and lower a site’s ranking until the problems are fixed.
+Black hat SEO is inherently risky and we try to stay away from this kind of SEO.&lt;/p&gt;
+&lt;p&gt;Instead our guide focuses on white hat SEO which aims to improve your docs’ search engine rankings
+by helping search engine’s understand and index your docs better and present it better to searchers.
+This kind of SEO isn’t trying to cheat search engine rankings and it’s a win for everyone.
+Searchers find the content they’re looking for more easily
+while search engines understand the content better and can show more relevant results.&lt;/p&gt;
+&lt;p&gt;Specifically, we also tried to focus on SEO for documentation
+and how Sphinx and Read the Docs make it easier including:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Making your docs display better on search engine results&lt;/li&gt;
+&lt;li&gt;Helping search engines understand and index your docs better&lt;/li&gt;
+&lt;li&gt;Improving your ranking based on user and search engine feedback&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;making-your-docs-display-better-in-search-results&quot;&gt;
+&lt;h2&gt;Making your docs display better in search results&lt;/h2&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot; style=&quot;width: 100%&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;_static/google-search-engine-results.png&quot;&gt;&lt;img alt=&quot;_static/google-search-engine-results.png&quot; src=&quot;_static/google-search-engine-results.png&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Google search engine results with the page title, URL, and a description.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Displaying more relevant information in search results will cause more people to click through to your docs.
+Again, your goal is not to use cheap tactics to rank better and trick users into clicking.
+Rather, you are trying to legitimately improve your content such that users
+better understand what to expect on a page before they click.&lt;/p&gt;
+&lt;p&gt;Some of the most important aspects of improved search listings are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Use descriptive and accurate titles in the HTML &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; tag.
+With Sphinx, the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; comes from the top heading on the page.&lt;/li&gt;
+&lt;li&gt;Ensure your URLs are descriptive. They are displayed in search results.
+For Sphinx, the URL uses the source file’s filename.&lt;/li&gt;
+&lt;li&gt;Make sure the words your readers would search for to find your site
+are actually included on your pages.
+Ideally, these key words should be in your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; or description.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These concepts are not only important in helping guide users to click on your documentation,
+most of the same optimizations are useful to the search engine when indexing your site
+and when ranking your site for searchers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;helping-search-engines-understand-your-docs&quot;&gt;
+&lt;h2&gt;Helping search engines understand your docs&lt;/h2&gt;
+&lt;p&gt;Search engines like Google and Bing crawl through the internet
+following links and redirects in an attempt to understand and build an index
+of what various pages and sites are about.&lt;/p&gt;
+&lt;p&gt;These tips and features can help you control how search engines index your docs:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Make sure your entire site can be navigated by following links.
+If you have “orphan” pages, a search engine won’t find them.
+Using Sphinx’s “toctree” directive helps make sure all your pages are indexed and navigable.&lt;/li&gt;
+&lt;li&gt;Redirects and canonical URLs are useful when the same content exists in multiple places
+or moves from one page to another.
+Read the Docs dashboard lets authors setup redirects from one page to another
+or from one version of the documentation to another.&lt;/li&gt;
+&lt;li&gt;Using a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;robots.txt&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;sitemap.xml&lt;/span&gt;&lt;/code&gt; file can help you control how search engines crawl your docs.
+For example, you could tell search engines to ignore unsupported versions of your documentation.
+Read the Docs provides both a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;robots.txt&lt;/span&gt;&lt;/code&gt; and a sitemap and has ways for you to override them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;improving-your-seo-ranking-from-feedback&quot;&gt;
+&lt;h2&gt;Improving your SEO ranking from feedback&lt;/h2&gt;
+&lt;p&gt;Search engines provide tools to help webmasters build their site better
+and to give insights and feedback about the indexing of sites by the search engine spiders.
+&lt;a class=&quot;reference external&quot; href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt; and
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.bing.com/webmaster/help/webmaster-guidelines-30fba23a&quot;&gt;Bing Webmaster Tools&lt;/a&gt;
+are tools for webmasters
+to get feedback about the crawling of their sites (or docs in our case).
+These tools can show technical issues with indexing like pages that are failing for some reason
+and also possible security or spam issues on your site that can lower your ranking.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot; style=&quot;width: 100%&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;_static/google-search-console.png&quot;&gt;&lt;img alt=&quot;_static/google-search-console.png&quot; src=&quot;_static/google-search-console.png&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Google search console showing an issue with user generated spam, a constant battle at Read the Docs.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Feedback on keywords users use to find your docs is also really helpful.
+This is true both for the phrases people searched for on a search engine
+and for the search terms people queried in Sphinx and Read the Docs’ built-in search features.
+Analytics tools like Google Analytics can provide these insights,
+but as part of our &lt;a class=&quot;reference internal&quot; href=&quot;../../improved-search-and-search-as-you-type/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;search improvements and search analytics&lt;/span&gt;&lt;/a&gt;,
+Read the Docs is going to show project maintainers the most common search queries to help them improve as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;seo-is-no-substitute-for-good-writing&quot;&gt;
+&lt;h2&gt;SEO is no substitute for good writing&lt;/h2&gt;
+&lt;p&gt;One area we didn’t detail in our guide is how more general improvements to technical writing
+can also improve your search engine rankings. This could be a whole post by itself.&lt;/p&gt;
+&lt;p&gt;Using simpler words, for example, has a number of advantages in technical writing.
+The excellent Microsoft Style Guide &lt;a class=&quot;reference external&quot; href=&quot;https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences&quot;&gt;recommends using simple words and concise sentences&lt;/a&gt;
+and Apple’s Style Guide &lt;a class=&quot;reference external&quot; href=&quot;https://help.apple.com/applestyleguide/#/apsg1ff68ab5&quot;&gt;echoes the same sentiment&lt;/a&gt;.
+Simpler sentences are easier to understand for both people
+as well as machines like search engines and automatic translators.&lt;/p&gt;
+&lt;p&gt;While any style guide you read will tell you to avoid using jargon,
+technical writing and software docs have a certain amount of unavoidable technical terminology.
+Defining these terms and phrases when you first use them helps users as well as search engines.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;in-summary&quot;&gt;
+&lt;h2&gt;In summary&lt;/h2&gt;
+&lt;p&gt;Always keep in mind that your ultimate goal is to make your docs more discoverable by people, not machines.
+While the concepts and tactics here will help you rank better with search engines,
+providing high quality documentation and making it easier to find and understand
+is the best way to make sure people actually read the docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Announcing API v3 Beta</title>
+    <id>https://blog.readthedocs.com/api-v3-beta/</id>
+    <updated>2019-08-27T00:00:00Z</updated>
+    <published>2019-08-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-beta/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-api-v3-beta&quot;&gt;
+
+&lt;p&gt;In the last months, we have been working on making our API better.
+Considering the limitations of our current REST API v2,
+we decided to make a bigger step forward and create a new API v3,
+putting the focus on the use cases we heard about from existing users.&lt;/p&gt;
+&lt;p&gt;Compared to API v2, our new API v3 has some big differences that make it more user-friendly and useful.&lt;/p&gt;
+&lt;p&gt;These differences includes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;API access requires authentication&lt;/li&gt;
+&lt;li&gt;Token based API authentication&lt;/li&gt;
+&lt;li&gt;Read and write&lt;/li&gt;
+&lt;li&gt;Resource lookup can use project’s slug&lt;/li&gt;
+&lt;li&gt;Wider resource coverage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some examples of new queries and actions that will be possible with the API are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#project-create&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Import a new project&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#projects-list&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;List all my projects&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#version-update&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Activate a version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-triggering&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Trigger a build for a specific version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-details&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Check build status&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#redirects&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Manage redirects&lt;/span&gt;&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#environment-variables&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;environment variables programmatically&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;invite-only-beta-feature&quot;&gt;
+&lt;h2&gt;Invite-only beta feature&lt;/h2&gt;
+&lt;p&gt;APIv3 is currently in an invite-only beta state on our community site, &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org&quot;&gt;https://readthedocs.org&lt;/a&gt;.
+In case you want to test it and give us feedback on it,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt; to get early access.&lt;/p&gt;
+&lt;p&gt;Based on the feedback we receive from you, we plan to add more features to cover most of the common use cases.
+Please, help us with your feedback to make the new APIv3 &lt;em&gt;even&lt;/em&gt; better!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">GSOC 2019: Autobuild Documentation for Pull Requests</title>
+    <id>https://blog.readthedocs.com/building-docs-for-pull-requests/</id>
+    <updated>2019-08-14T00:00:00Z</updated>
+    <published>2019-08-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/building-docs-for-pull-requests/" />
+    <author>
+      <name>Maksudul Haque</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-autobuild-documentation-for-pull-requests&quot;&gt;
+
+&lt;p&gt;Building documentation for pull requests is one of the most requested features of Read the Docs.
+Similar to how a continuous integration system runs a test suite on every pull request,
+this change would build the documentation for each pull request
+and send build status notification to the providers’ Status API (e.g. Github Status API).
+This will let users check if the documentation build passed
+and also how the documentation looks before merging it to master.&lt;/p&gt;
+&lt;p&gt;As a student of Google Summer of Code (GSoC) 2019, I (&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/saadmk11&quot;&gt;Maksudul Haque&lt;/a&gt;) was tasked with building this feature.
+The main goal of my project was to make it possible to build documentation whenever a pull request was created,
+and send build status notification to the Providers’ Status API.&lt;/p&gt;
+&lt;p&gt;To see this feature in action you can click on one of the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pulls&quot;&gt;pull requests&lt;/a&gt; on readthedocs.org repository.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h1&gt;Google Summer of Code&lt;/h1&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with an open source organization
+on a 3 month programming project. &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt; was one of the project ideas on
+Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/3.5.3/docs/gsoc.rst#autobuild-docs-for-pull-requests&quot;&gt;Project Ideas&lt;/a&gt; for Google Summer of Code 2019. I applied for the project and got accepted.&lt;/p&gt;
+&lt;p&gt;I started working on this project since May 2019.
+All of my work on this project can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/8&quot;&gt;Pull Request Builder Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;Many of our users wanted a way to visualize the documentation update that was made in a pull request.
+They also want to know whether the documentation build will pass before merging the pull request to master.
+This would allow users to have more confidence on the pull request
+and make the pull request less likely to break the documentation after merging.
+So, to achieve this Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; selected &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt;
+as one of the projects of Google Summer of Code 2019.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;pull-request-builder-features&quot;&gt;
+&lt;h1&gt;Pull Request Builder Features&lt;/h1&gt;
+&lt;p&gt;Currently I have implemented these features and working on more upcoming features.
+Some of the major features are as follows:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Creating External Versions:&lt;/strong&gt; We create an external version when we receive a pull request
+webhook event for a project from GitHub and trigger a build for that version.
+External versions are short-lived versions that are separate from the project’s main documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronizing External Versions:&lt;/strong&gt; Whenever there is a new commit on the pull request,
+we synchronize the external version for that pull request and trigger a new documentation build with the latest changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deleting External Versions:&lt;/strong&gt; Whenever the pull request is closed or merged,
+we delete the external Version associated with that pull request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warning Banner for pull request documentation:&lt;/strong&gt; While building documentation for pull requests
+we add a warning banner at the top of those documentations to let the users know that
+this documentation was generated for pull requests and is not the main documentation for the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We send build status reports to the status API of the provider (e.g. GitHub).
+When a build is triggered for a pull request we send build pending notification with the build URL
+and after the build has finished we send success notification if the build succeeded without any error
+or failure notification if the build failed.
+By going to the build URL provided in the status report users can view the build steps
+and also see the documentation generated by that build.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Currently, we only support GitHub and planning to extend to GitLab and BitBucket.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;getting-started&quot;&gt;
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;p&gt;Building documentation for pull requests is currently in Beta testing and only supports Github repositories.
+If you want to dive in and enable this feature for your project you can &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt;
+with the URL of your ReadtheDocs project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h1&gt;Future Improvements&lt;/h1&gt;
+&lt;p&gt;We are planing to extend this feature to other platforms such as GitLab and BitBucket.
+We are also planning to make this feature more customizable through our configuration file (&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;.readthedocs.yaml&lt;/span&gt;&lt;/code&gt;).
+If you have any improvements or features in mind for building documentation for Pull requests we would love to know about it.
+Please feel free to let us know by submitting an &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;issue on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h1&gt;Contributors Wanted&lt;/h1&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy to keep things up and running only. Therefore, its quite
+hard for them to take time to implement new features. We would like to get more contributors
+to improve this feature. If you know a bit of Django and Python and interested to improve this feature
+you are always welcome to contribute. If you need any support to start contributing, you can get in touch with
+me or any other member of  Read the Docs team. You can find all of us at &lt;cite&gt;#readthedocs&lt;/cite&gt; freenode
+IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel. I am &lt;cite&gt;saadmk11&lt;/cite&gt; at IRC and &lt;cite&gt;&amp;#64;saadmk11&lt;/cite&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;To conclude, I would like to say this was a much needed feature for Read the Docs and also its users.
+This feature will improve our platform and make it a true Continuous Documentation platform.
+I think that many users will benefit from this feature.
+We will keep making improvements along the way for a better user experience.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">GSOC 2019: Improved Search Results and Search As You Type</title>
+    <id>https://blog.readthedocs.com/improved-search-and-search-as-you-type/</id>
+    <updated>2019-08-13T00:00:00Z</updated>
+    <published>2019-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/improved-search-and-search-as-you-type/" />
+    <author>
+      <name>Vaibhav Gupta</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-improved-search-results-and-search-as-you-type&quot;&gt;
+
+&lt;p&gt;Giving users the ability to easily find the information that they
+are looking for has always been important for Read the Docs.
+This year, I, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/dojutsu-user&quot;&gt;Vaibhav Gupta&lt;/a&gt;, took the opportunity provided
+by Google Summer of Code to improve the search.
+The main goals of my &lt;a class=&quot;reference external&quot; href=&quot;https://summerofcode.withgoogle.com/projects/#5465587940065280&quot;&gt;GSoC project&lt;/a&gt; were:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;to make a &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;Sphinx extension&lt;/a&gt; to provide “search you type” experience to the users.&lt;/li&gt;
+&lt;li&gt;to add support for multiple hits per search result.&lt;/li&gt;
+&lt;li&gt;to improve the UI/UX around code search.&lt;/li&gt;
+&lt;li&gt;to add support for search analytics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Search as you type feature is live on our docs.
+You can go through these links to experience it:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=contributing&quot;&gt;https://docs.readthedocs.io/?rtd_search=contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&quot;&gt;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h2&gt;Google Summer of Code&lt;/h2&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with
+an open source organization on a 3-month programming project.
+I got accepted in the program and was excited to spend my summer with Read the Docs.&lt;/p&gt;
+&lt;p&gt;I have worked full time during the GSoC coding period and implemented various features.
+All of my search related work can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/7&quot;&gt;In-Doc Search UI Project Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;The search code was originally contributed by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/robhudson&quot;&gt;Rob Hudson&lt;/a&gt;,
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pull/493&quot;&gt;back in 2013&lt;/a&gt; and then improved upon by other contributors.
+It was greatly improved and upgraded by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/safwanrahman&quot;&gt;Safwan Rahman&lt;/a&gt; during &lt;a class=&quot;reference internal&quot; href=&quot;../../search-improvements/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;GSoC’18&lt;/span&gt;&lt;/a&gt;.
+Continuing on the same path,
+I have implemented some new features on top of the existing search backend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New Features&lt;/h2&gt;
+&lt;p&gt;During the GSoC period, I have worked on the following features:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;In-Doc Search UI&lt;/strong&gt;: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search&quot;&gt;readthedocs-sphinx-search&lt;/a&gt; is a sphinx extension that adds a clean and minimal
+search UI to your docs. It supports “search as you type” feature.
+So, it is now possible to get instant results without being redirected to any other page.
+Read the docs &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/in-doc-search-demo.gif&quot;&gt;&lt;img alt=&quot;In-doc search ui demo&quot; src=&quot;_static/in-doc-search-demo.gif&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;In-Doc Search UI Demo&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Hits Per Search Result&lt;/strong&gt;: This is one of the highly requested features.
+We now support search results from the sections of the docs, clicking on which will take you
+to that particular section and not just to the top of the result page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Search&lt;/strong&gt;: We now support code search. If you want to search a particular function
+or an API endpoint – you can just type your query and you will find it in the results.
+Eg: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;api/v3/&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;module.function&lt;/span&gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Analytics&lt;/strong&gt;: We now have support for search analytics.
+These analytics makes it easy to know what the users are looking for in your documentation.
+You can see these analytics in your project admin dashboard.
+Currently, this feature is in beta state and is available under a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/page/guides/feature-flags.html&quot;&gt;feature flag&lt;/a&gt;.
+We plan to make this available for everyone soon.
+If you want to test this feature out and help giving us feedback,
+please contact us via &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;GitHub issues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/search-analytics-demo.png&quot;&gt;&lt;img alt=&quot;Search analytics in project admin dashboard&quot; src=&quot;_static/search-analytics-demo.png&quot; style=&quot;width: 60%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Search analytics demo dashboard&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-next&quot;&gt;
+&lt;h2&gt;What Next?&lt;/h2&gt;
+&lt;p&gt;We don’t intend to stop just yet.
+We are planning to work on some more cool features in the near future,
+some of which are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Search Facets&lt;/strong&gt;:
+Facets can be used to make search more accurate.
+For example: In &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/en/latest/&quot;&gt;Celery docs&lt;/a&gt;, facets can be used to search inside &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/projects/kombu/en/latest/&quot;&gt;Kombu docs&lt;/a&gt; for “serializers”,
+like &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;subproject:&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;kombu&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;serializers&lt;/span&gt;&lt;/code&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5966&quot;&gt;readthedocs/readthedocs.org#5966&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Results Ordered By Most Viewed Pages&lt;/strong&gt;:
+It would be much more useful if the most viewed pages are shown first in the search results.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5968&quot;&gt;readthedocs/readthedocs.org#5968&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Inside Sections&lt;/strong&gt;:
+It would be good if users have the option to get the
+search results from a particular section of the documentation.
+For example: Getting results from only &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/&quot;&gt;Guides&lt;/a&gt; of our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;documentation&lt;/a&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search/issues/23&quot;&gt;readthedocs/readthedocs-sphinx-search#23&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h2&gt;Contributors Wanted&lt;/h2&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy just keeping the site up and running.
+Therefore, it’s quite hard for them to take time to implement new features.
+If you know some bit of Django or Python and Elasticsearch,
+you can contribute to the search functionality of Read the Docs.
+If you need any support to start contributing,
+you can get in touch with me or any member of Read the Docs team.
+You can find all of us at &lt;em&gt;#readthedocs&lt;/em&gt; freenode IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel.
+I am &lt;em&gt;dojutsu-user&lt;/em&gt; at IRC and &lt;em&gt;&amp;#64;dojutsu-user&lt;/em&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These new features will make it much easier to find the relevant information in the docs.
+There are an infinite number of ways it can be improved and I believe we can compete
+with major search engines in terms of documentation searching.
+We don’t need superhero or coding guru, just need people who understand Python,
+Django and Elasticsearch and have some time to write some code for us.
+You are a &lt;strong&gt;Superhero&lt;/strong&gt; to us if you can lend your time and effort to improve Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Adding Custom CSS or JavaScript to Sphinx Documentation</title>
+    <id>https://blog.readthedocs.com/custom-css-and-js-in-sphinx/</id>
+    <updated>2019-07-10T00:00:00Z</updated>
+    <published>2019-07-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/custom-css-and-js-in-sphinx/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;adding-custom-css-or-javascript-to-sphinx-documentation&quot;&gt;
+
+&lt;p&gt;In the Read the Docs documentation, we have a number of
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/index.html&quot;&gt;how-to guides&lt;/a&gt;
+to help people solve specific problems with Sphinx and Read the Docs.
+By far our most popular guide is on
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/adding-custom-css.html&quot;&gt;adding custom CSS and JavaScript to Sphinx&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In some older versions of Sphinx, this process was a little more challenging
+and it wasn’t as easy to figure out how to do it from the Sphinx docs.
+Sphinx 1.8 really streamlined this process especially for the simple cases.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;adding-additional-stylesheets-or-scripts&quot;&gt;
+&lt;h2&gt;Adding additional stylesheets or scripts&lt;/h2&gt;
+&lt;p&gt;If your custom stylesheet is &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;_static/css/custom.css&lt;/span&gt;&lt;/code&gt;,
+you can add that CSS file to the documentation using the
+Sphinx option &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/page/usage/configuration.html#confval-html_css_files&quot;&gt;html_css_files&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## conf.py&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# These folders are copied to the documentation&amp;#39;s HTML output&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html_static_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_static&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# These paths are either relative to html_static_path&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# or fully qualified paths (eg. https://...)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html_css_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;css/custom.css&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A similar approach can be used to add JavaScript files:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_js_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;js/custom.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;That’s it!
+You don’t need to create a Sphinx extension anymore to add a bit of custom CSS or JavaScript.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;customizations-supported-by-your-theme&quot;&gt;
+&lt;h2&gt;Customizations supported by your theme&lt;/h2&gt;
+&lt;p&gt;I should also note that depending on the theme you’re using and what you’re hoping to accomplish,
+you may not even need to add custom CSS or JavaScript.
+Many themes support a number of “theme options”
+for customizing their look and feel without having to write custom code.
+For example, here are all the options for the &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/page/configuring.html&quot;&gt;Read the Docs theme&lt;/a&gt; and the &lt;a class=&quot;reference external&quot; href=&quot;https://alabaster.readthedocs.io/page/customization.html&quot;&gt;Alabaster theme&lt;/a&gt;
+which are the two most popular themes on Read the Docs itself.&lt;/p&gt;
+&lt;p&gt;Both themes, for example, support the addition of Google Analytics to documentation by setting the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;analytics_id&lt;/span&gt;&lt;/code&gt; option:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## conf.py&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;html_theme_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;analytics_id&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;UA-XXXXXXX-1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#  Provided in your GA dashboard&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;in-summary&quot;&gt;
+&lt;h2&gt;In summary&lt;/h2&gt;
+&lt;p&gt;To recap, it only takes a few additions to your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt; to add custom CSS or JavaScript.
+However, it’s also worth taking a look at your theme’s docs or &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/page/usage/configuration.html#options-for-html-output&quot;&gt;Sphinx’s built-in HTML options&lt;/a&gt;
+to see if what you’re trying to do is already supported.&lt;/p&gt;
+&lt;p&gt;Happy documenting!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Read the Docs Offsite 2019</title>
+    <id>https://blog.readthedocs.com/offsite-2019/</id>
+    <updated>2019-06-20T00:00:00Z</updated>
+    <published>2019-06-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/offsite-2019/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-offsite-2019&quot;&gt;
+
+&lt;p&gt;The Read the Docs team just finished our first offsite ever in April of 2019.
+We all gathered together in person for the first time,
+and talked about the future of the project.&lt;/p&gt;
+&lt;p&gt;A picture will show this better than I can:&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;img/offsite-2019.png&quot; src=&quot;img/offsite-2019.png&quot; style=&quot;width: 90%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;The team at the house we rented in Aruba&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The full list of attendees, which is the full-time staff, from left to right:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;David Fischer&lt;/li&gt;
+&lt;li&gt;Manuel Kaufmann&lt;/li&gt;
+&lt;li&gt;Eric Holscher&lt;/li&gt;
+&lt;li&gt;Anthony Johnson&lt;/li&gt;
+&lt;li&gt;Santos Gallegos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Our biggest goal was building a shared understanding of the vision for the project.
+Being fully remote,
+it’s often hard to communicate at a deep level about mission and vision.
+Being together in person for a week gave us the space to understand each other and our views better.&lt;/p&gt;
+&lt;p&gt;The other large goal was to build a roadmap for the next 3-6 months for the project.
+We have often had smaller roadmaps,
+but never had the chance to discuss all the problems that we encounter with the project,
+and then prioritize them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;format&quot;&gt;
+&lt;h2&gt;Format&lt;/h2&gt;
+&lt;p&gt;We used the following format:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Before the offsite, we created a Trello board with a list of topics to discuss. This was all the major feature ideas, issues, and concerns that came up over the previous couple months.&lt;/li&gt;
+&lt;li&gt;For the first 3 days, we went through the list and discussed each topic. We took notes (almost 20 pages) of these discussions, and mostly tried to build a shared understanding on a path forward.&lt;/li&gt;
+&lt;li&gt;The 4th day we broke each section down into action items, and chunked them into 1-3 smaller sections of work. We called these “v1”, “v2”, and “v3” to break out the stages where each project could be shipped and have impact on our users.&lt;/li&gt;
+&lt;li&gt;The 5th day we took all the tasks, then sized and prioritized them. We broke things out into 4 piles representing months going forward, and tried to balance the tasks so each month had a similar amount of work in it. We then turned this into a Trello roadmap board.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This worked quite well for us.
+It gave us space to talk through all the various topics we had,
+but also gave concrete next steps to move forward on our tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;The most valuable outcome is something I said at the offsite:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;Before, it felt like we were 5 contributors working on an open source project. Now, it feels like we’re members of a team.&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For each member of the team,
+there was someone else they had never met in person before this.
+Having all met in person will make it much easier to collaborate online going foward,
+and to feel like we are working towards a goal that we all share.&lt;/p&gt;
+&lt;p&gt;In terms of technical output,
+the roadmap we have established will make us much more productive in our work going foward.
+The entire team now has vision around the roadmap items,
+and understands the tasks other people are working on much better.
+This has already lead to a much better ability to collaborate together.&lt;/p&gt;
+&lt;p&gt;We are hoping to do another offsite in 2020,
+and if we do our jobs right, hopefully we’ll have another teammate or two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">New Ad Format Coming to Read the Docs Community Sites</title>
+    <id>https://blog.readthedocs.com/fixed-footer-ad-all-themes/</id>
+    <updated>2019-06-18T00:00:00Z</updated>
+    <published>2019-06-18T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/fixed-footer-ad-all-themes/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-ad-format-coming-to-read-the-docs-community-sites&quot;&gt;
+
+&lt;p&gt;We view our ad program as a way to keep Read the Docs itself sustainable,
+and to use it to better support the community.
+Advertising has allowed us to have full-time employees adding new features
+and responding to issues in our issue tracker.
+We have also been able to share thousands of dollars with the open source community
+via our revenue share program and grants.&lt;/p&gt;
+&lt;p&gt;Currently, about 30% of our site traffic does not have any advertising.
+When we first launched ethical advertising in 2016,
+we launched only on &lt;a class=&quot;reference internal&quot; href=&quot;../../ads-on-other-themes/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;specific documentation themes&lt;/span&gt;&lt;/a&gt;.
+We purposely did this slowly to make sure our ads look integrated
+with Read the Docs and less obtrusive to users.&lt;/p&gt;
+&lt;p&gt;For a while, this wasn’t a problem because we had not reached capacity with advertising.
+We did not have enough paid advertisers to support the amount of pageviews Read the Docs served.
+Fast forward a couple years,
+and our advertising model has &lt;a class=&quot;reference internal&quot; href=&quot;../../ad-funding-read-the-docs-whats-next/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;proven to be successful&lt;/span&gt;&lt;/a&gt;.
+In North America and Western Europe,
+&lt;strong&gt;100% of pages that are eligible for paid advertising have a paid ad&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now that we’ve hit that limit, it makes sense to expand to more themes.
+Rather than going theme by theme as we did in the past,
+especially considering the huge number of Sphinx themes,
+we designed an ad that would work across all Sphinx themes.
+This became much easier with a more simple text-only ad as you will see.&lt;/p&gt;
+&lt;p&gt;To be very explicit,
+&lt;strong&gt;this new ad format will show advertising on all documentation themes&lt;/strong&gt;.
+We plan to roll this new ad format out more widely in stages:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;To start with, we are going to enable this ad format for community and house advertising
+on pages that already have ads on them.
+As always, we never display two ads on the same page so this ad will be instead of any other ad.&lt;/li&gt;
+&lt;li&gt;After that, we will allow paid advertisers to use this new format.
+Again, we will start only on pages that already have ads.&lt;/li&gt;
+&lt;li&gt;We will email users of custom documentation themes to let them know this change is coming.&lt;/li&gt;
+&lt;li&gt;At first, we will show only community and house ads on these custom themes.&lt;/li&gt;
+&lt;li&gt;Finally, we’ll turn on our normal ad rotation to all themes.
+We expect to complete this by the end of July.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will closely monitor feedback from document authors, readers, and advertisers during this process.
+If you have questions or comments on this, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=New%20Ad%20Format%20Feedback&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;text-only-ads&quot;&gt;
+&lt;h2&gt;Text-only ads&lt;/h2&gt;
+&lt;p&gt;We’ve wanted to try text-only ads for a while but it took time to get it right.
+From the start, we were very keen on text-only advertisements
+because they aren’t as obtrusive as image-based ads
+and they are easier for advertisers to create and experiment with multiple variations.
+What we didn’t know was whether users would engage with them at similar rates to our other ads.&lt;/p&gt;
+&lt;p&gt;We ran a small experiment with a text-only house ad
+on the Read the Docs documentation itself and the results were very promising.
+Engagement rates were over double our site average
+and even compared favorably with the same ad in the sidebar including an image.
+Those figures may not hold up as the format is rolled out more widely but it is certainly a good sign.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A text-only ad on the Read the Docs documentation. Yes, this new format will be blocked by most ad blockers.&quot; src=&quot;img/2019-text-only-ad.png&quot; style=&quot;width: 80%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;A text-only footer advertisement on the Read the Docs documentation&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I’d like to thank Eric Berry over at &lt;a class=&quot;reference external&quot; href=&quot;https://codefund.io/&quot;&gt;CodeFund&lt;/a&gt; for some great ideas
+and insights around this kind of ad format.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;opting-out&quot;&gt;
+&lt;h2&gt;Opting Out&lt;/h2&gt;
+&lt;p&gt;We understand that advertising doesn’t work for everyone – even advertising without any user tracking.&lt;/p&gt;
+&lt;p&gt;Users can opt-out of paid advertising themselves and for any projects they maintain
+although they will still see community ads for open source projects and conferences.
+Gold members of Read the Docs get an ad-free experience
+and for companies we have our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/&quot;&gt;commercial offering at readthedocs.com&lt;/a&gt;
+which is always ad-free.&lt;/p&gt;
+&lt;p&gt;If you would like to completely remove advertising from your open source project,
+but our commercial plans don’t seem like the right fit,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Alternatives%20to%20advertising&quot;&gt;get in touch&lt;/a&gt; to discuss alternatives to advertising.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Ad Funding at Read the Docs and What’s Next for Ethical Advertising</title>
+    <id>https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/</id>
+    <updated>2019-06-11T00:00:00Z</updated>
+    <published>2019-06-11T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ad-funding-at-read-the-docs-and-what-s-next-for-ethical-advertising&quot;&gt;
+
+&lt;p&gt;It has been three years since we first launched &lt;a class=&quot;reference internal&quot; href=&quot;../../ads-on-read-the-docs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ads on Read the Docs&lt;/span&gt;&lt;/a&gt;
+and while we gave a limited update in our &lt;a class=&quot;reference internal&quot; href=&quot;../../read-the-docs-2018-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;2018 stats&lt;/span&gt;&lt;/a&gt;,
+we figured it was time to give an update on ethical advertising and how it is working.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;advertising-without-tracking&quot;&gt;
+&lt;h2&gt;Advertising without tracking&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Our ethical advertising model is still going strong.&lt;/strong&gt;
+We proved that it is possible to build a business model on top of advertising
+without resorting to user tracking.
+Unlike most other ad-supported sites, we show advertising based on the context of the page,
+not by creating behavoral profiles of large numbers of individual users.
+If you are browsing documentation for a Python project, you might see a relevant ad about Python.
+It’s that simple and it works.&lt;/p&gt;
+&lt;p&gt;Despite a slow start to the year, we expect to earn about $75,000 from advertising in Q2.
+This brings our advertising revenue back to the level
+before our ads were &lt;a class=&quot;reference internal&quot; href=&quot;../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;added to major ad blocking lists&lt;/span&gt;&lt;/a&gt; last year.&lt;/p&gt;
+&lt;p&gt;While we do earn money from other sources such as our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;commercial offering&lt;/a&gt;,
+advertising continues to be our largest source of revenue and has allowed us
+to expand our team to five full-time people.
+Compared with three years ago when we were scraping along with very little money,
+our community issue tracker and support requests receive prompt responses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;progress&quot;&gt;
+&lt;h2&gt;Progress&lt;/h2&gt;
+&lt;p&gt;We’ve made great progress on advertising over the past year.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We survived a major hit to revenue from ad blocking
+without resorting to cat and mouse games of changing ad layouts and APIs to avoid ad blockers.&lt;/li&gt;
+&lt;li&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/advertising/ethical-advertising.html#community-ads&quot;&gt;community ads program&lt;/a&gt; has been significantly expanded.
+We are actively running free community advertising promoting over ten open source projects and conferences.&lt;/li&gt;
+&lt;li&gt;While we never tracked users with advertising,
+we put in place stricter &lt;a class=&quot;reference internal&quot; href=&quot;../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;Do Not Track&lt;/span&gt;&lt;/a&gt; privacy protections.
+We continue to believe that advertising can be well targeted without tracking users.&lt;/li&gt;
+&lt;li&gt;We launched an advertising vertical to let companies
+&lt;a class=&quot;reference internal&quot; href=&quot;../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;promote their open jobs&lt;/span&gt;&lt;/a&gt; to developers.&lt;/li&gt;
+&lt;li&gt;Our advertising revenue share program tripled in size.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our ethical advertising approach, with no user tracking, has been key to our sustainability
+and has allowed Read the Docs to continue to build new features and give back to our community.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-s-next&quot;&gt;
+&lt;h2&gt;What’s next&lt;/h2&gt;
+&lt;p&gt;We have some really interesting developments coming regarding ethical advertising.&lt;/p&gt;
+&lt;p&gt;We are looking to add a few more projects to our ad &lt;strong&gt;revenue share program&lt;/strong&gt;
+and help more projects reach sustainability with an ethical advertising approach.
+If your project on Read the Docs does 100k+ pageviews per month
+and you are interested in exploring a new revenue stream, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ads%20revenue%20share&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are testing a &lt;strong&gt;new text-only ad format&lt;/strong&gt; which we will detail in a future post.
+Text-only ads are something we’ve wanted for a while because we believe they are less intrusive to readers
+but easy for advertisers to experiment with multiple variations.
+So far the results have been very promising and we are planning to roll this out more widely.&lt;/p&gt;
+&lt;p&gt;Our &lt;strong&gt;ethical ad network&lt;/strong&gt; is getting closer to launch.
+It’s a shame, but there’s a critical lack of funding for open source projects
+that form the building blocks of some extremely valuable software.
+We believe that advertising can fill some of that gap
+and Read the Docs can help by sharing some of the lessons we’ve learned building our own advertising.
+If you know a site that might be interested in being a beta tester
+of a pro-privacy ad network built specifically to help fund open source,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ad%20Network%20beta&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Advertisers always have a choice where to direct their marketing spend
+and for many of them it would have been simpler to just go with the usual behemoth advertising platforms
+rather than advertising with a niche site like Read the Docs.
+I want to thank all our advertisers who believe in our approach and continue to support us.&lt;/p&gt;
+&lt;div class=&quot;admonition-would-your-company-like-to-reach-a-100-developer-audience admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Would your company like to reach a 100% developer audience?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Over 7 million developers Read the Docs each month. &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=ethical-advertising-2019&quot;&gt;Get in front of them today&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">New Configuration File</title>
+    <id>https://blog.readthedocs.com/configuration-file-v2/</id>
+    <updated>2019-02-20T00:00:00Z</updated>
+    <published>2019-02-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/configuration-file-v2/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-configuration-file&quot;&gt;
+
+&lt;p&gt;We are happy to announce the new version of the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;Read the Docs configuration file&lt;/a&gt; (v2).&lt;/p&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/conf.py&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;formats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you are a recurrent Read the Docs user,
+chances are that you’ve configured your projects using a &lt;cite&gt;.readthedocs.yml&lt;/cite&gt; file.&lt;/p&gt;
+&lt;p&gt;Using the web interface is quick,
+but the main advantages of using a configuration file over the web interface are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Some settings are only available using a configuration file.
+We are moving away from using the web interface.&lt;/li&gt;
+&lt;li&gt;The settings are per version rather than per project.
+This would allow different versions of docs to be built with different versions of Python
+or different requirements.&lt;/li&gt;
+&lt;li&gt;The settings live in your VCS.&lt;/li&gt;
+&lt;li&gt;Reproducible build environments over time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-did-we-change-in-the-new-version&quot;&gt;
+&lt;h2&gt;What did we change in the new version?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;All the configurations from the web interface&lt;/strong&gt;.
+In the past not all options from the web interface were available in the configuration file,
+now they are!
+We also reorganized and renamed some options to make them more clear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New defaults&lt;/strong&gt;,
+we don’t merge the values from the web interface,
+because this was confusing our users.
+This also allows us to change defaults without breaking existing projects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More flexible installations&lt;/strong&gt;,
+users can install their projects in a more flexible way,
+like multiple requirements and packages from different locations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strict validation&lt;/strong&gt; for invalid options in the configuration file,
+to avoid typos and provide more feedback on invalid configurations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;MkDocs support (previously it was only supported from the web interface).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;mkdocs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;mkdocs.yml&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;More control over Sphinx.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;html&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/source/conf.py&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Control over submodules, we don’t always need them all to build our docs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;submodules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;third-party/dependency&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;recursive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Support for multiple packages/requirements installations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;pip&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;package&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h2&gt;Future improvements&lt;/h2&gt;
+&lt;p&gt;We are already planning new features to support more projects and use cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pipfile support&lt;/strong&gt;, this is one of our more requested features,
+and we are going to ship it soon.
+Keep an eye in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/3181&quot;&gt;#3181&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Show the configuration used in each build&lt;/strong&gt;.
+We want to make more explicit to the users how we are building their docs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redirects per version&lt;/strong&gt; of your docs.
+Currently users can define global redirects only from the web interface,
+this is hard to maintain and review.
+One use case is when you change your docs structure between versions.
+Keep track of this upcoming feature in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/4221&quot;&gt;#4221&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;start-using-it&quot;&gt;
+&lt;h2&gt;Start using it&lt;/h2&gt;
+&lt;p&gt;The full docs about the new version are available &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are using the v1, you can update to v2 following our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2#migrating-from-v1&quot;&gt;migration docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have a problem using the configuration file, feel free to &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;summer-internship&quot;&gt;
+&lt;h2&gt;Summer internship&lt;/h2&gt;
+&lt;p&gt;This project was part of my summer internship in Read the Docs,
+it was held at the same time as the Google Summer of Code (GSoC) project.&lt;/p&gt;
+&lt;p&gt;Thanks to the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; (Anthony, David, Eric, and Manuel) for helping me in the process.
+Thanks to all contributors, sponsors, donors and users of Read the Docs to make the project sustainable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2019/atom.xml">
+    <title type="text">Tips for Getting a Developer Interview</title>
+    <id>https://blog.readthedocs.com/tips-for-getting-a-developer-interview/</id>
+    <updated>2019-02-13T00:00:00Z</updated>
+    <published>2019-02-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/tips-for-getting-a-developer-interview/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-for-getting-a-developer-interview&quot;&gt;
+
+&lt;p&gt;Over the last month, the Read the Docs team conducted 30-40 customer development interviews
+with hiring managers and recruiters
+at companies ranging from 5-person companies to the biggest names in tech.
+We wanted to learn more about hiring processes at various companies
+with the ultimate goal of building &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=next-developer-job&quot;&gt;a product to help companies find developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Last time, we covered some &lt;a class=&quot;reference internal&quot; href=&quot;../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;tips for hiring managers&lt;/span&gt;&lt;/a&gt;
+based on what companies told us they were doing.
+This time, we put together &lt;strong&gt;tips for candidates looking for their next job&lt;/strong&gt;
+based on insights we heard from hiring managers.&lt;/p&gt;
+&lt;p&gt;Rather than covering how to crack developer interviews
+or how to gain the necessary technical skills,
+these tips will focus on getting your foot in the door. Specifically:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Making your application stand out&lt;/li&gt;
+&lt;li&gt;Improving your application response rate&lt;/li&gt;
+&lt;li&gt;Getting to the interview process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;when-applying-go-deep-not-wide&quot;&gt;
+&lt;h2&gt;When applying, go deep not wide&lt;/h2&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“I don’t want candidates who drive by job sites and pepper every job they find”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;As a candidate, there is a temptation to play the numbers game and apply to as many jobs as possible.
+Many jobs sites make it easy to apply to many jobs quickly and this gives you that feeling that your job search is progressing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Based on what hiring managers told us, playing the numbers game isn’t the best approach.&lt;/strong&gt;
+While it is a bit of a job-seekers market, especially for more senior talent,
+companies are looking people who want to work for their company and who believe in their mission.
+Hiring managers told us they want applicants who
+“think about the company, then check for opportunities”.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A Facebook job post on LinkedIn with almost 300 applications in 2 weeks&quot; src=&quot;img/2019-facebook-job-opening.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;That’s almost 300 applications in 2 weeks on just one of the job sites where this is posted.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;spend-a-little-more-time-on-your-application&quot;&gt;
+&lt;h2&gt;Spend a little more time on your application&lt;/h2&gt;
+&lt;p&gt;While it takes longer to apply to a job post
+that requires a cover letter or requires answers to a few questions,
+those are great ways to have your application stand out relative to other applicants.
+You don’t want your resume to get lost in a stack of hundreds.&lt;/p&gt;
+&lt;p&gt;As we mentioned &lt;a class=&quot;reference internal&quot; href=&quot;../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;last time&lt;/span&gt;&lt;/a&gt;,
+quite a few hiring managers we talked to started requiring a cover letter
+or even just a couple questions that are unique to the company
+in order to make their job filtering candidates easier
+and get candidates who want to work there not those who just want a job.&lt;/p&gt;
+&lt;p&gt;All the companies we talked to said when they post a job they got tons of applicants,
+but that high quality, qualified applicants were still in short supply.
+When 200 people apply to a job but only 20 are willing to do a cover letter,
+a hiring manager can spend a lot more time per candidate with the smaller pool.
+One hiring manager told us explicitly “fewer resumes is better because there’s less noise”.&lt;/p&gt;
+&lt;p&gt;While I know I said getting a developer job isn’t a numbers game,
+this doesn’t strictly mean you can use these techniques
+to apply to 2-3 jobs and you’ll get hired.
+Sometimes by the time you apply, somebody is already in the final stages of getting hired.
+The position may not &lt;em&gt;really&lt;/em&gt; be open anymore.
+Don’t get discouraged in your job search.
+&lt;strong&gt;Finding the right match can take time.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id2&quot;&gt;
+&lt;img alt=&quot;Questions from the DuckDuckGo application process&quot; src=&quot;img/2019-duckduckgo-application-questions.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the questions from the DuckDuckGo application process.
+This is your place to stand out!
+DuckDuckGo was &lt;strong&gt;not&lt;/strong&gt; one of the companies we interviewed.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;make-yourself-a-referral-use-your-network&quot;&gt;
+&lt;h2&gt;Make yourself a referral: use your network&lt;/h2&gt;
+&lt;p&gt;Hiring managers universally told us their top recruiting channel
+is referrals from existing employees.
+As a candidate, use this knowledge to your advantage and
+&lt;strong&gt;make yourself into a referral hire&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Did you see an acquaintance on social media post about job openings at their company?&lt;/li&gt;
+&lt;li&gt;Does a friend or a friend of friend work at the company?&lt;/li&gt;
+&lt;li&gt;Do you have a first connection (or a very good 2nd connection) on LinkedIn who works there?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In all of these cases, you should contact that person before applying.
+Even if the person you know isn’t on the hiring team,
+your contact might be able to put you in touch with the right person.&lt;/p&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“Most [senior] people go through their network”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For a mid-level to senior candidate with 7+ years of experience,
+this is even more important based on our interviews. At that stage of your career,
+&lt;strong&gt;hiring managers we talked to expect a high quality candidate to do due diligence&lt;/strong&gt;
+on the company and team to make sure it’s a mutual fit.&lt;/p&gt;
+&lt;p&gt;Regardless of the exact route you take here,
+getting in touch with the right people to learn more about the team,
+the tech stack, and the company makes it clear that you’re very interested.
+You’re far more likely to get a response, move on to the interview process,
+and ultimately get hired.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;establishing-contact-with-companies&quot;&gt;
+&lt;h2&gt;Establishing contact with companies&lt;/h2&gt;
+&lt;p&gt;Turning yourself into a referral is easier for a senior candidate.
+But what if this is your first or second job or don’t know anybody at the company?&lt;/p&gt;
+&lt;p&gt;After referral candidates, &lt;strong&gt;the next best hiring channel in our interviews
+was local meetups and engaging the local community&lt;/strong&gt;.
+Both startups and established companies – especially when they are actively hiring –
+use meetups to find talent.
+If you’re able to meet the hiring manager in person or establish some sort of connection,
+in my experience, this raises your chances significantly.&lt;/p&gt;
+&lt;p&gt;In our interviews, another channel that mid-size and larger companies
+we talked to used to recruit was to rely on their presense at conferences.
+For many companies,
+recruiting was the primary motivator to sponsor a conference and have a booth.
+As a candidate, talking to the engineers at the booth and showing interest
+can ensure that your application doesn’t get lost among all the applicants they get.&lt;/p&gt;
+&lt;p&gt;At a smaller company, it’s frequently possible to figure out exactly
+who the hiring manager is from some combination of the website,
+hiring posts, and LinkedIn. This is a great way to make a valuable connection
+and make sure the role is a good fit.
+Contacting the hiring manager cold requires a bit of finesse so make sure to be respectful.&lt;/p&gt;
+&lt;p&gt;Places like the monthly HackerNews Who’s Hiring thread are fantastic
+because they allow direct interaction with the hiring manager
+and many companies list a person’s direct email to inquire about a position,
+learn more directly from the source, and show you’re interested.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id3&quot;&gt;
+&lt;img alt=&quot;Some of the phrases heard from hiring managers in our interviews&quot; src=&quot;img/2019-hiring-manager-phrases.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the phrases we heard from hiring managers in interviews.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;By spending a bit more time on your application,
+establishing contact with the company, and asking good questions about the work and team,
+you are showing your intent and interest in the company.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You want to make sure the hiring manager or recruiter understands
+that you’re a serious candidate and you want to work there on their team.
+Using these methods will improve your response rate and &lt;strong&gt;help you get the interview&lt;/strong&gt;.
+By doing a one-click apply on a job site, this is completely lost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Again, I’d like to thank all the hiring managers who took the time to talk to us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

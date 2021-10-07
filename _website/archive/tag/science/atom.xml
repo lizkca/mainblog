@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged science</title>
+  <id>https://blog.readthedocs.com/archive/tag/science/atom.xml</id>
+  <updated>2020-04-28T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/science/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/science/atom.xml">
+    <title type="text">Better support for scientific project documentation</title>
+    <id>https://blog.readthedocs.com/better-conda-support/</id>
+    <updated>2020-04-28T00:00:00Z</updated>
+    <published>2020-04-28T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/better-conda-support/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;better-support-for-scientific-project-documentation&quot;&gt;
+
+&lt;p&gt;In the past year, we’ve been having issues when building projects’ documentation using &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt;.
+Our build servers were running out of memory and failing projects’ builds.
+Read the Docs has this memory constraint to avoid misuse of the platform,
+causing a poor experience for other users.&lt;/p&gt;
+&lt;p&gt;Our first solution was a dedicated server for these kind of projects.
+We would manually assign them to this server on user requests.
+This workaround worked okay, but it involves a bad experience for the user and also us doing a manual step each time.
+Over time, we hit again the same issue of OOM, even giving all the memory available to one project to build its documentation.
+After some research, we found that &lt;a class=&quot;reference external&quot; href=&quot;https://www.anaconda.com/understanding-and-improving-condas-performance/&quot;&gt;this is a known issue in the conda community&lt;/a&gt; and there are some different attempts to fix it (like &lt;a class=&quot;reference external&quot; href=&quot;https://quantstack.net/mamba.html&quot;&gt;mamba&lt;/a&gt;).
+Unfortunately, none of them became the standard yet and the problem is still there.&lt;/p&gt;
+&lt;p&gt;Meanwhile, in another completely different set of work,
+we were migrating all of our infrastructure to a different architecture:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Azure &lt;em&gt;Virtual machine scale sets&lt;/em&gt; for autoscaling our servers,&lt;/li&gt;
+&lt;li&gt;Azure &lt;em&gt;storage accounts&lt;/em&gt; to store all the user’s documentation&lt;/li&gt;
+&lt;li&gt;Proxito, an internal service to remove a lot of the state from our servers (more about this migration coming in a future post)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This helped us to &lt;em&gt;reduce costs&lt;/em&gt; and allowed us to spin up &lt;em&gt;bigger instances&lt;/em&gt; for the builders.
+We have also made some other important operational changes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our builders are now single-process, giving all the memory available to only one project without worrying about affecting others.&lt;/li&gt;
+&lt;li&gt;We added &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/8e78d680d02aeba12644796b979ef62459f64932/readthedocs/builds/tasks.py#L11&quot;&gt;custom task router&lt;/a&gt; that routes small builds to small servers (3GB RAM), and big builds to larger servers (7GB RAM). This removes the need for users to ask us to upgrade their isntances.&lt;/li&gt;
+&lt;li&gt;Assigned all &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt; projects to be built by big servers by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ever had a memory issue on Read the Docs,
+we’d appreciate if you give it a try again.
+Please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;let us know&lt;/a&gt; about your experience when building scientific documentation.
+If you know that any of your friends were hitting this issue in the past,
+we encourage you to talk to them and tell them to give it a try.&lt;/p&gt;
+&lt;p&gt;We are excited to have more scientific documentation on our platform and we are doing our small part to make this happen and have better science in the world.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged continuous-documentation</title>
+  <id>https://blog.readthedocs.com/archive/tag/continuous-documentation/atom.xml</id>
+  <updated>2021-01-27T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/continuous-documentation/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/continuous-documentation/atom.xml">
+    <title type="text">Pull Request Builders available for all users</title>
+    <id>https://blog.readthedocs.com/pull-request-builder-general-availability/</id>
+    <updated>2021-01-27T00:00:00Z</updated>
+    <published>2021-01-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/pull-request-builder-general-availability/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pull-request-builders-available-for-all-users&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/autobuild-docs-for-pull-requests.html&quot;&gt;Pull Request building&lt;/a&gt; is now available for all Read the Docs users.
+We have been working on this feature for over a year,
+and having it available for all our users is a major milestone.&lt;/p&gt;
+&lt;p&gt;This feature allows users to confirm documentation builds correctly for all of their commits,
+not just ones merged into branches that are activated on Read the Docs.
+This moves documentation into your continuous integration pipeline,
+and improves the workflow for everyone working on documentation.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can read more about this new feature in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../building-docs-for-pull-requests/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous blog post announcing it&lt;/span&gt;&lt;/a&gt; and in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/autobuild-docs-for-pull-requests.html&quot;&gt;documentation for the feature&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;serving-docs-for-every-branch&quot;&gt;
+&lt;h2&gt;Serving docs for every branch&lt;/h2&gt;
+&lt;p&gt;Along with building and validating each branch on your repository,
+&lt;strong&gt;we also host a rendered version of the documentation.&lt;/strong&gt;
+This allows you to see exactly how the docs will look when they are deployed.&lt;/p&gt;
+&lt;p&gt;Building the documentation on Read the Docs during the development process also helps test integration with Read the Docs.
+The entire build process is run for each commit,
+so this will ensure that builds work as expected when you’re ready to merge into production.&lt;/p&gt;
+&lt;p&gt;These previews will stay live for 90 days from the time you merge or close the Pull Request,
+allowing you to finish any outstanding work on the task.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;limitations&quot;&gt;
+&lt;h2&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;Due to the increased demand for build resources,
+the Pull Request builders have the following limitations:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs search is not enabled on these versions&lt;/li&gt;
+&lt;li&gt;Only HTML versions of the documentation are built (not PDF, ePub, etc.)&lt;/li&gt;
+&lt;li&gt;Documentation builds are concurrency limited. Read the Docs for Business concurrency varies based on your plan, and Read the Docs Community are limited to 2 concurrent builds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are working to address these limitations over time,
+but given the increase in scale with these builds it will take some time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;give-us-feedback&quot;&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;We always love to hear from our users about the product.
+If you have feedback on this feature of any others,
+you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:hello&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;hello&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/continuous-documentation/atom.xml">
+    <title type="text">GSOC 2019: Autobuild Documentation for Pull Requests</title>
+    <id>https://blog.readthedocs.com/building-docs-for-pull-requests/</id>
+    <updated>2019-08-14T00:00:00Z</updated>
+    <published>2019-08-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/building-docs-for-pull-requests/" />
+    <author>
+      <name>Maksudul Haque</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-autobuild-documentation-for-pull-requests&quot;&gt;
+
+&lt;p&gt;Building documentation for pull requests is one of the most requested features of Read the Docs.
+Similar to how a continuous integration system runs a test suite on every pull request,
+this change would build the documentation for each pull request
+and send build status notification to the providers’ Status API (e.g. Github Status API).
+This will let users check if the documentation build passed
+and also how the documentation looks before merging it to master.&lt;/p&gt;
+&lt;p&gt;As a student of Google Summer of Code (GSoC) 2019, I (&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/saadmk11&quot;&gt;Maksudul Haque&lt;/a&gt;) was tasked with building this feature.
+The main goal of my project was to make it possible to build documentation whenever a pull request was created,
+and send build status notification to the Providers’ Status API.&lt;/p&gt;
+&lt;p&gt;To see this feature in action you can click on one of the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pulls&quot;&gt;pull requests&lt;/a&gt; on readthedocs.org repository.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h1&gt;Google Summer of Code&lt;/h1&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with an open source organization
+on a 3 month programming project. &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt; was one of the project ideas on
+Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/3.5.3/docs/gsoc.rst#autobuild-docs-for-pull-requests&quot;&gt;Project Ideas&lt;/a&gt; for Google Summer of Code 2019. I applied for the project and got accepted.&lt;/p&gt;
+&lt;p&gt;I started working on this project since May 2019.
+All of my work on this project can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/8&quot;&gt;Pull Request Builder Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;Many of our users wanted a way to visualize the documentation update that was made in a pull request.
+They also want to know whether the documentation build will pass before merging the pull request to master.
+This would allow users to have more confidence on the pull request
+and make the pull request less likely to break the documentation after merging.
+So, to achieve this Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; selected &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt;
+as one of the projects of Google Summer of Code 2019.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;pull-request-builder-features&quot;&gt;
+&lt;h1&gt;Pull Request Builder Features&lt;/h1&gt;
+&lt;p&gt;Currently I have implemented these features and working on more upcoming features.
+Some of the major features are as follows:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Creating External Versions:&lt;/strong&gt; We create an external version when we receive a pull request
+webhook event for a project from GitHub and trigger a build for that version.
+External versions are short-lived versions that are separate from the project’s main documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronizing External Versions:&lt;/strong&gt; Whenever there is a new commit on the pull request,
+we synchronize the external version for that pull request and trigger a new documentation build with the latest changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deleting External Versions:&lt;/strong&gt; Whenever the pull request is closed or merged,
+we delete the external Version associated with that pull request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warning Banner for pull request documentation:&lt;/strong&gt; While building documentation for pull requests
+we add a warning banner at the top of those documentations to let the users know that
+this documentation was generated for pull requests and is not the main documentation for the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We send build status reports to the status API of the provider (e.g. GitHub).
+When a build is triggered for a pull request we send build pending notification with the build URL
+and after the build has finished we send success notification if the build succeeded without any error
+or failure notification if the build failed.
+By going to the build URL provided in the status report users can view the build steps
+and also see the documentation generated by that build.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Currently, we only support GitHub and planning to extend to GitLab and BitBucket.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;getting-started&quot;&gt;
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;p&gt;Building documentation for pull requests is currently in Beta testing and only supports Github repositories.
+If you want to dive in and enable this feature for your project you can &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt;
+with the URL of your ReadtheDocs project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h1&gt;Future Improvements&lt;/h1&gt;
+&lt;p&gt;We are planing to extend this feature to other platforms such as GitLab and BitBucket.
+We are also planning to make this feature more customizable through our configuration file (&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;.readthedocs.yaml&lt;/span&gt;&lt;/code&gt;).
+If you have any improvements or features in mind for building documentation for Pull requests we would love to know about it.
+Please feel free to let us know by submitting an &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;issue on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h1&gt;Contributors Wanted&lt;/h1&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy to keep things up and running only. Therefore, its quite
+hard for them to take time to implement new features. We would like to get more contributors
+to improve this feature. If you know a bit of Django and Python and interested to improve this feature
+you are always welcome to contribute. If you need any support to start contributing, you can get in touch with
+me or any other member of  Read the Docs team. You can find all of us at &lt;cite&gt;#readthedocs&lt;/cite&gt; freenode
+IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel. I am &lt;cite&gt;saadmk11&lt;/cite&gt; at IRC and &lt;cite&gt;&amp;#64;saadmk11&lt;/cite&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;To conclude, I would like to say this was a much needed feature for Read the Docs and also its users.
+This feature will improve our platform and make it a true Continuous Documentation platform.
+I think that many users will benefit from this feature.
+We will keep making improvements along the way for a better user experience.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

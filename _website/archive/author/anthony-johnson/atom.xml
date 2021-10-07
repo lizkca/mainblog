@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts by Anthony Johnson</title>
+  <id>https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml</id>
+  <updated>2021-08-23T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Theme release 1.0.0rc1</title>
+    <id>https://blog.readthedocs.com/theme-release-100rc1/</id>
+    <updated>2021-08-23T00:00:00Z</updated>
+    <published>2021-08-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/theme-release-100rc1/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;theme-release-1-0-0rc1&quot;&gt;
+
+&lt;div class=&quot;admonition-update-version-1-0-0-has-been-released admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update: Version 1.0.0 has been released!&lt;/p&gt;
+&lt;p&gt;The 1.0.0 version of sphinx_rtd_theme was released Sept 13, 2021. You can
+install the latest version with:&lt;/p&gt;
+&lt;div class=&quot;highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install &lt;span class=&quot;s2&quot;&gt;&amp;quot;sphinx-rtd-theme~=1.0.0&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Alternatively, you can upgrade the version installed using:&lt;/p&gt;
+&lt;div class=&quot;last highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install --upgrade sphinx-rtd-theme
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We are closing in on the next official release of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme&quot;&gt;sphinx_rtd_theme&lt;/a&gt;, and
+we’re happy to announce that release candidate version 1.0.0rc1 was
+&lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/sphinx-rtd-theme/1.0.0rc1/&quot;&gt;released to PyPI&lt;/a&gt; last week! Project maintainers can contribute to the final
+release by &lt;a class=&quot;reference internal&quot; href=&quot;#testing&quot;&gt;testing the release candidate&lt;/a&gt; and raising any potential
+bugs on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Version 1.0.0 adds support for &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/Sphinx/&quot;&gt;Sphinx&lt;/a&gt; 4, fixes several issues stemming
+from &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/docutils/&quot;&gt;docutils&lt;/a&gt; 0.17, and contains several backwards-incompatible changes.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;backwards-incompatible-changes&quot;&gt;
+&lt;h2&gt;Backwards incompatible changes&lt;/h2&gt;
+&lt;p&gt;Users need to be aware of several backwards incompatible changes before
+upgrading:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support dropped for old dependencies&lt;/dt&gt;&lt;dd&gt;Support is removed for Sphinx versions 1.6 or older, and for Python versions
+3.0 to 3.3. Theme developers no longer test using these versions and
+compatibility is not guaranteed for these versions.&lt;/dd&gt;
+&lt;dt&gt;HTML4 support will be removed&lt;/dt&gt;&lt;dd&gt;Support for the Sphinx HTML4 writer will be deprecated in release 2.0. A
+deprecation warning was added to alert users still using the HTML4 writer.&lt;/dd&gt;
+&lt;dt&gt;Installation from source will be deprecated soon&lt;/dt&gt;&lt;dd&gt;Tentatively scheduled for release 3.0, installation from source will no
+longer be a supported installation method. Currently, users are installing
+directly from our GitHub repository, which complicates development of static
+assets. A deprecation warning was added to alert users of the upcoming
+change.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;highlights&quot;&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Here are some of the most significant additions included in release 1.0.0:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support for new dependencies&lt;/dt&gt;&lt;dd&gt;The theme now supports Sphinx 4 and docutils 0.17, both the latest in each
+respective release series.&lt;/dd&gt;
+&lt;dt&gt;New accessibility features&lt;/dt&gt;&lt;dd&gt;Also added were a number of accessibility updates, including better keyboard
+navigation support and more descriptive navigation for screen readers.&lt;/dd&gt;
+&lt;dt&gt;Added 4 new translations&lt;/dt&gt;&lt;dd&gt;The theme is close to being almost fully translated in 14 different
+languages. This will provide project maintainers with localized navigation
+elements and accessibility content.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;The theme roadmap&lt;/a&gt; has more information on upcoming releases, and
+backwards incompatible changes for each. A full list of changes included in this
+release is available in &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/changelog.html&quot;&gt;the theme changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;testing&quot;&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The 1.0.0rc1 release is a pre-release package, meaning it will not install by
+default as the most recent release. Project maintainers will need to specify the
+release version explicitly to install the release candidate.&lt;/p&gt;
+&lt;p&gt;In your package’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;extra_requirements&lt;/span&gt;&lt;/code&gt;, or a separate &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;requirements.txt&lt;/span&gt;&lt;/code&gt;
+file, you can pin this dependency with:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphinx_rtd_theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you notice any new, unwanted behavior, feel free to open an issue
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;on our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;upcoming-changes&quot;&gt;
+&lt;h2&gt;Upcoming changes&lt;/h2&gt;
+&lt;p&gt;We have several upcoming releases planned, covered in more depth in
+&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;the theme roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our next official release, currently targeted for October or November, will be
+version 1.1. This release will contain additional bug fixes and will be the last
+release supporting Sphinx versions less than 3.0. The next planed release will
+be version 2.0, in early 2022.&lt;/p&gt;
+&lt;p&gt;The 2.0 release will be dropping support for a number of old dependencies,
+including Sphinx versions &amp;lt; 3.0, Sphinx HTML4 writer support, and Internet
+Explorer 11.&lt;/p&gt;
+&lt;p&gt;As the theme moves away from supporting direct installation through our GitHub
+repository, we want to preserve development previews of theme releases. In
+addition to several more focused releases on the theme roadmap, we will also be
+periodically publishing development releases to PyPI. This will be the
+prescribed method to use unreleased theme changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Special thanks to contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/Blendify&quot;&gt;Blendify&lt;/a&gt; for keeping up with support for fresh
+dependencies, and new contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/nienn&quot;&gt;nienn&lt;/a&gt; for helping with bug fixes and the
+heavy amount of testing required for this release!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Defaulting New Projects to Python 3</title>
+    <id>https://blog.readthedocs.com/default-python-3/</id>
+    <updated>2019-02-12T00:00:00Z</updated>
+    <published>2019-02-12T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/default-python-3/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;defaulting-new-projects-to-python-3&quot;&gt;
+
+&lt;p&gt;New projects that are just getting started with Read the Docs will now use
+Python 3 by default. While it is still possible to configure your project to use
+Python 2.7 with &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;our configuration file&lt;/span&gt;&lt;/a&gt;, we
+think it’s important to help push the Python ecosystem towards adopting Python 3.&lt;/p&gt;
+&lt;p&gt;Our default Python version is currently Python 3.7. Projects can also select
+Python versions 3.6 and 3.5 using our default build image. We will eventually
+remove support for building projects with Python versions 3.3 and 3.4, however
+it is still possible to select a build image with support for either version.&lt;/p&gt;
+&lt;p&gt;To select a specific version of Python, other than our default, you can use our
+configuration file to specify a Python version, using the
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#python-version&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;python.version&lt;/span&gt;&lt;/a&gt; configuration option.&lt;/p&gt;
+&lt;p&gt;If your project does require Python version 3.3 or 3.4, you can only select
+these versions if you also specify &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;stable&lt;/span&gt;&lt;/code&gt; build image for your project’s
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#build-image-legacy&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;build.image (legacy)&lt;/span&gt;&lt;/a&gt; configuration option. As we
+release new versions of our build image, this &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;stable&lt;/span&gt;&lt;/code&gt; image will eventually
+lose support for Python 3.3 and 3.4, so it’s suggested that your project upgrade
+to a supported version of Python.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Incoming Webhook Deprecations</title>
+    <id>https://blog.readthedocs.com/webhook-deprecations/</id>
+    <updated>2019-01-21T00:00:00Z</updated>
+    <published>2019-01-21T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/webhook-deprecations/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;incoming-webhook-deprecations&quot;&gt;
+
+&lt;p&gt;In the coming weeks and months, Read the Docs will be moving some projects away
+from our legacy incoming webhooks, towards our per-project webhook integrations.&lt;/p&gt;
+&lt;p&gt;Our legacy incoming webhooks were our first attempt at allowing providers like
+GitHub to automatically trigger builds on for projects on Read the Docs. These
+webhooks lacked a number of security features, and so, about two years ago, we
+replaced these with per-project webhook integrations instead. We added a number
+of features to per-project webhook integrations at the time, and we stopped new
+projects from using the old incoming webhooks.&lt;/p&gt;
+&lt;p&gt;It’s possible that your project is still using these deprecated incoming
+webhooks if your project was configured on Read the Docs more than two years
+ago. If your project does not have an webhook integrations under the
+&lt;strong&gt;Integrations&lt;/strong&gt; section of your project’s admin dashboard, you might be using
+these legacy incoming webhooks.&lt;/p&gt;
+&lt;p&gt;In order to continue building automatically, projects should reconfigure their
+repository to use a new project webhook integration instead. For more
+information, see our docs on &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/webhooks.html#webhook-creation&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;Webhook Creation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are two important dates to note here:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;January 31st, 2019&lt;/dt&gt;&lt;dd&gt;This is the date that GitHub will stop sending notifications through their
+GitHub Services. Your project might be relying on GitHub Services if your
+GitHub repository is using the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;ReadTheDocs&lt;/span&gt;&lt;/code&gt; GitHub Service and does not
+have another webhook to Read the Docs configured.&lt;/dd&gt;
+&lt;dt&gt;April 1st, 2019&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;After this date, Read the Docs will stop accepting incoming webhook
+notifications for the remaining legacy incoming webhooks. You might be using
+one of these incoming webhooks if your repository has a webhook pointing to
+any of the following URLs:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/build&quot;&gt;https://readthedocs.org/build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/bitbucket&quot;&gt;https://readthedocs.org/bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/github&quot;&gt;https://readthedocs.org/github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/gitlab&quot;&gt;https://readthedocs.org/gitlab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;We will be sending periodic notifications over the next few weeks to the owners
+of any projects that are still configured to use these deprecated incoming
+webhooks.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Python 3.6 Support</title>
+    <id>https://blog.readthedocs.com/python-36-support/</id>
+    <updated>2018-03-29T00:00:00Z</updated>
+    <published>2018-03-29T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/python-36-support/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;python-3-6-support&quot;&gt;
+
+&lt;p&gt;A long time back, &lt;a class=&quot;reference internal&quot; href=&quot;../../../build-image-upgrade/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;we wrote about&lt;/span&gt;&lt;/a&gt; started testing
+a new build image that uses &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/yyuu/pyenv&quot;&gt;pyenv&lt;/a&gt; to support multiple versions of Python.
+Until recently, we were selectively opting projects in to help test the new
+image, but at the beginning of the year, we added a configuration option to
+allow projects to opt in to using the new image before we make it the default
+build image.&lt;/p&gt;
+&lt;p&gt;In the near future, this build image will be the default build image, but for
+now, you can manually opt your project in using our
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;YAML configuration file&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-you-need&quot;&gt;
+&lt;h2&gt;What you need&lt;/h2&gt;
+&lt;p&gt;In order to use Python 3.6, you need to select our &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;latest&lt;/span&gt;&lt;/code&gt; build image, and
+you need to select to use Python 3.6. The build image is controlled with the
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#build-image-legacy&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;build.image (legacy)&lt;/span&gt;&lt;/a&gt; setting in the YAML config, and you can
+set the Python version with the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#python-version&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;python.version&lt;/span&gt;&lt;/a&gt;
+setting.&lt;/p&gt;
+&lt;p&gt;Your project’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt; file should contain:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.6&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you run in to any problems building, you might also need to wipe your version
+for now. We plan to have some of the issues switching Python versions and build
+images resolved before making a move to a new build image.&lt;/p&gt;
+&lt;p&gt;As always, if you notice anything strange with your build, feel free to raise an
+issue on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">PyCon 2017 in Review</title>
+    <id>https://blog.readthedocs.com/pycon-2017/</id>
+    <updated>2017-05-31T00:00:00Z</updated>
+    <published>2017-05-31T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/pycon-2017/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pycon-2017-in-review&quot;&gt;
+
+&lt;p&gt;Things are finally getting back to normal for us after another very busy PyCon.
+It’s always wonderful seeing old friends and getting a chance to meet new
+friends from the community. PyCon provides a great outlet to talk to others in
+our community about the problems we all face as open source developers and open
+source companies – like funding, sustainability, and building community. We are
+sad to see PyCon leave Portland, but luckily &lt;a class=&quot;reference external&quot; href=&quot;http://www.pycascades.com/&quot;&gt;PyCascades&lt;/a&gt; will soon be filling
+the void left in &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Cascadia_(bioregion)&quot;&gt;Cascadia&lt;/a&gt; after PyCon moves on.&lt;/p&gt;
+&lt;p&gt;This year, we announced official sprints on Read the Docs during the sprint
+week following PyCon. We focused our sprint efforts on code cleanup, in order
+to avoid the problems on-boarding new contributors we normally face as a large
+project.&lt;/p&gt;
+&lt;p&gt;The sprints went surprisingly well this year. We were able to enlist the help
+of several new contributors during sprints, and folks didn’t waste any time
+diving into the code. It was a large relief to finally spend some time
+addressing code cleanup and removal. &lt;strong&gt;Contributors were able to create and
+merge 38 pull requests over the week&lt;/strong&gt;, and we’re still wrapping up work on
+several other pull requests. Our work focused on several areas in particular:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Linting strictness&lt;/dt&gt;&lt;dd&gt;When we started a serious effort to lint our codebase, we decided to address
+linting incrementally. We currently do a primary pass with low strictness,
+and a second pass of higher strictness only on select paths. During the
+sprints, contributors were able to pick off and focus on a single Django
+application. Cumulatively, contributors were able to fix linting issues
+across all of our applications and we’re very close to again raising our
+strictness application-wide.&lt;/dd&gt;
+&lt;dt&gt;Code removal&lt;/dt&gt;&lt;dd&gt;Several contributors moved on to hunting down and removing some unused code
+and dependencies. Having started with linting and testing problems, these
+contributors seemed well primed to understanding more complex parts of our
+code. We were able to remove several unused legacy pieces of code and some
+unused dependencies as a result.&lt;/dd&gt;
+&lt;dt&gt;Python 3&lt;/dt&gt;&lt;dd&gt;Contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gthank&quot;&gt;gthank&lt;/a&gt; started porting Read the Docs to Python 3 before the
+sprints, and was able to drop by our sprint to debug some problems with
+porting. We’ve been wanting to port to Python 3 for years now, but
+unfortunately, we could never justify this work as the core team. This pull
+request is still a work in progress, but we anxiously await being able to
+make the switch to Python 3.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;As the Read the Docs core team is small, we can’t easily justify using our time
+to focus on long standing issues with code quality, so the PyCon sprints were a perfect
+opportunity to focus on this type of clean up. Our codebase is complex and
+unwieldy to new contributors, so focusing on linting and testing allowed
+contributors to jump in without having to spend the better part of a day setting
+up our full stack.&lt;/p&gt;
+&lt;p&gt;We were very gracious to have all of this help. A big thanks once again to all
+of our new contributors who stuck around and contributed:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/cmc333333&quot;&gt;cmc333333&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/lordmauve&quot;&gt;lordmauve&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/fmoor&quot;&gt;fmoor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/smcoll&quot;&gt;smcoll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gthank&quot;&gt;gthank&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PyCon has now wrapped up, but our next stop this summer is &lt;a class=&quot;reference external&quot; href=&quot;https://2017.djangocon.us/&quot;&gt;DjangoCon 2017&lt;/a&gt; in
+Spokane, WA. We look forward to seeing some more of you there and hopefully
+working with some of you to sprint on Read the Docs again!&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Release for May 12, 2017</title>
+    <id>https://blog.readthedocs.com/release-2017-05-12/</id>
+    <updated>2017-05-12T00:00:00Z</updated>
+    <published>2017-05-12T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/release-2017-05-12/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;release-for-may-12-2017&quot;&gt;
+
+&lt;p&gt;Yesterday, we rolled out improved webhook management for projects, and several
+bug fixes around our upgrade to Sphinx 1.5.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;webhook-management&quot;&gt;
+&lt;h2&gt;Webhook management&lt;/h2&gt;
+&lt;p&gt;We’ve been slowly making upgrades to our webhook management page. Projects that
+set up new webhooks will see a list of webhooks that we have configured,
+including HTTP exchanges that we encounter from each remote webhook.&lt;/p&gt;
+&lt;p&gt;Some of the other improvements to our webhook management include a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/webhooks.html#using-the-generic-api-integration&quot;&gt;new generic
+webhook endpoint&lt;/a&gt;, the ability to create arbitrary webhooks,
+and the ability to now re-establish webhooks on a per-provider basis.&lt;/p&gt;
+&lt;p&gt;You can play with the new features by selecting a project, opening the project
+admin dashboard, and selecting &lt;strong&gt;Integrations&lt;/strong&gt;. If your project is relatively
+new, webhook integrations will be created for existing remote webhooks. If your
+project has been configured for a long time, or you are using our old webhook
+endpoints, such as &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://readthedocs.org/github&lt;/span&gt;&lt;/code&gt;, you won’t notice anything
+new on the integrations dashboard page. You can still manually create a webhook
+and configure your repository to point to the new Read the Docs webhook
+endpoint however.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;bug-fixes&quot;&gt;
+&lt;h2&gt;Bug fixes&lt;/h2&gt;
+&lt;p&gt;Following the release of Sphinx 1.5, we set this version as the default version
+for Sphinx projects on Read the Docs. This in turn caused an issue with our
+override of the Sphinx search mechanism. We currently override this to provide
+our own search indexes, however the patch to this file was incompatible with
+Sphinx 1.5.&lt;/p&gt;
+&lt;p&gt;Due to this incompatibility, if a search query did not return anything from our
+indexes, but did match the Sphinx internal index, the links would have been
+incorrect.&lt;/p&gt;
+&lt;p&gt;We are now patching this search mechanism regardless of which version of Sphinx
+is used, and the broken links are no longer returned in the search results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;problems&quot;&gt;
+&lt;h2&gt;Problems?&lt;/h2&gt;
+&lt;p&gt;If you encounter any problems with any of the recent changes, feel free to open
+up a bug report on our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Build Image Upgrades</title>
+    <id>https://blog.readthedocs.com/build-image-upgrade/</id>
+    <updated>2017-02-14T00:00:00Z</updated>
+    <published>2017-02-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/build-image-upgrade/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;build-image-upgrades&quot;&gt;
+
+&lt;p&gt;Starting this week, we’ll be deploying a new default image for our documentation
+build environments. This image will change the default Python versions that are
+supported.&lt;/p&gt;
+&lt;p&gt;We aren’t expecting any issues to arise from this change, but be sure to raise
+any issues on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt; if you notice any strange behavior. The new
+build image supports Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;2.7&lt;/span&gt;&lt;/code&gt; and Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.5&lt;/span&gt;&lt;/code&gt;, dropping support for
+Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;. If you require access to Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;, we suggest you sign up
+for access to our next beta image.&lt;/p&gt;
+&lt;p&gt;The next image for our build process is now being tested. This image will
+support multiple versions of Python: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;2.7&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.3&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.5&lt;/span&gt;&lt;/code&gt;, and
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.6&lt;/span&gt;&lt;/code&gt;. Instead of relying on the distribution’s versions of Python, multiple
+versions are instead installed from source, using &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/yyuu/pyenv&quot;&gt;pyenv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you’d like beta access to this build image for your projects, you can sign
+up here:&lt;/p&gt;
+&lt;div class=&quot;admonition-update admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Users are now able to opt in to a build image that support Python 3.6,
+signing up for beta access is no longer required. For more information, see
+our blog post on &lt;a class=&quot;reference internal&quot; href=&quot;../../../python-36-support/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;Python 3.6 Support&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We are slowly moving project configuration to our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/yaml-config.html&quot;&gt;YAML configuration file&lt;/a&gt;,
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt;. Access to specific versions of Python will only be
+available using this configuration method, by specifying a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/yaml-config.html#python-version&quot;&gt;python.version&lt;/a&gt;
+element.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Securing Subdomains</title>
+    <id>https://blog.readthedocs.com/securing-subdomains/</id>
+    <updated>2016-04-27T00:00:00Z</updated>
+    <published>2016-04-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/securing-subdomains/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;securing-subdomains&quot;&gt;
+
+&lt;p&gt;Starting today, Read the Docs will start hosting projects from subdomains on
+the domain &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/code&gt;, instead of on &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt;. This change
+addresses some security concerns around site cookies while hosting user
+generated data on the same domain as our dashboard.&lt;/p&gt;
+&lt;p&gt;Changes to provide security against broader threats have been in place for a
+while, however there are still a few scenarios that can only be addressed by
+migrating to a separate domain.&lt;/p&gt;
+&lt;p&gt;We implemented session hijacking detection and took precautions to limit cookie
+usage, but there are still a number of scenarios utilizing XSS and CSRF attacks
+that we aren’t able to protect against while hosting documentation from
+subdomains on the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt; domain. Moving documentation hosting to a
+separate domain will provide more complete isolation between the two user
+interfaces.&lt;/p&gt;
+&lt;p&gt;Projects will automatically be redirected, and this redirect will remain
+in place for the foreseeable future. Still, you should plan on updating links to
+your documentation after the new domain goes live.&lt;/p&gt;
+&lt;p&gt;If you notice any problems with the changes, feel free to open an issue on our
+issue tracker: &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;http://github.com/rtfd/readthedocs.org/issues&lt;/a&gt;. If you do notice
+any security issues, contact us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:security&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;security&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt; with more
+information.&lt;/p&gt;
+&lt;p&gt;Keep on documenting,
+The Read the Docs Team&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Read the Docs Awarded Mozilla Open Source Support Grant</title>
+    <id>https://blog.readthedocs.com/rtd-awarded-mozilla-open-source-support-grant/</id>
+    <updated>2015-12-10T00:00:00Z</updated>
+    <published>2015-12-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/rtd-awarded-mozilla-open-source-support-grant/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-awarded-mozilla-open-source-support-grant&quot;&gt;
+
+&lt;p&gt;Several months back, Mozilla launched a new initiative – the &lt;a class=&quot;reference external&quot; href=&quot;https://wiki.mozilla.org/MOSS&quot;&gt;MOSS&lt;/a&gt; program –
+to provide financial support to the open source software projects it relies on.
+Mozilla allocated $1 million to the MOSS fund to provide grants for up to 10
+projects matching the program’s criteria.&lt;/p&gt;
+&lt;p&gt;Read the Docs is among the &lt;a class=&quot;reference external&quot; href=&quot;https://blog.mozilla.org/blog/2015/12/10/mozilla-open-source-support-first-awards-made/&quot;&gt;first round of awards&lt;/a&gt; made for the MOSS program.
+Our proposed grant, for $48,000, is to build a separate instance that integrates
+with the Python Package Index’s upcoming website, &lt;a class=&quot;reference external&quot; href=&quot;https://warehouse.python.org/&quot;&gt;Warehouse&lt;/a&gt;. This integration
+will provide automatic API reference documentation upon package release, with
+authentication tied to PyPI and simple configuration inside the distribution.
+API reference documentation on every release will be the starting point of this
+work, prose documentation generation will be more difficult here, as not all
+packages use Sphinx or rST for documentation.&lt;/p&gt;
+&lt;p&gt;Having consistent API reference documentation across all released distributions
+will be an enormous benefit to the Python ecosystem. API reference documentation
+will be found in a single space, with version specificity, and will be able to
+be tightly inter-linked across projects. This is hopefully the start of work
+that could benefit other communities as well, by putting more emphasis on usable
+documentation and best documentation practices.&lt;/p&gt;
+&lt;p&gt;We are currently just into the planning stage for this work. We hope to have an
+official roadmap planned out, and a detailed breakdown of the work involved, in
+the coming weeks. This post will be followed up with a more detailed look at our
+plan and the work required. Work on this grant will hopefully begin early in the
+new year and will be spaced out throughout the year.&lt;/p&gt;
+&lt;p&gt;Funding open source software communities is still a difficult proposition for
+most companies. We appreciate Mozilla’s stance and commitment to open source and
+can only hope more companies take note and learn how to put value on the health
+of the communities they rely on.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/author/anthony-johnson/atom.xml">
+    <title type="text">Securing Build Processes</title>
+    <id>https://blog.readthedocs.com/securing-build-processes/</id>
+    <updated>2015-09-30T00:00:00Z</updated>
+    <published>2015-09-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/securing-build-processes/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;securing-build-processes&quot;&gt;
+
+&lt;p&gt;We’ve recently introduced a new build container subsystem based on Docker to readthedocs.org,
+which should go mostly unnoticed for users.
+We’re still ironing out some bugs with the system,
+so raise an issue on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt; if you are noticing any new issues
+with your project builds.&lt;/p&gt;
+&lt;p&gt;This new system is part of an over-due security update to help isolate arbitrary
+code execution.  As Read the Docs has grown, protecting against arbitrary
+execution was a rapidly growing concern.  This build isolation layer was
+developed as part of readthedocs.com, where security concerns are paramount due
+to private repository access. We’ve been testing it for roll out on the
+community site since then, but hadn’t committed to switching production build
+servers over due to the number of possible side effects.&lt;/p&gt;
+&lt;p&gt;This immediate change was in response to a &lt;a class=&quot;reference external&quot; href=&quot;http://alex.hyperiongray.com/posts/302352-pwn-the-docs&quot;&gt;release&lt;/a&gt; yesterday outlining some
+possible attack vectors when dealing with arbitrary code execution and Python.
+We didn’t want to delay the fix for any longer following this release, and
+decided to deal with any lingering issues as soon as they came up.&lt;/p&gt;
+&lt;p&gt;We have no reason to believe that any users have been effected by the reported issue.
+As a part of rolling out this new system,
+we have provisioned new build servers.
+We are also actively monitoring for any other possible issues.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-it-works&quot;&gt;
+&lt;h2&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;Under the new system,
+we provision a unique container for each build.
+All build steps that depend on executing code (setup.py, pip, Sphinx),
+run inside that container as individual commands,
+triggered from the host build server.
+The container has 10 minutes to complete these build commands before we time out the
+build and kill the container system.
+A filesystem is shared from the host build server,
+which only contains the project checkout and artifact directories.
+The container has no other access to the build server filesystem.&lt;/p&gt;
+&lt;p&gt;Our host build servers are firewalled from our application and database servers,
+so they have no ability to connect to them.
+Communication is done over a task queue on a dedicated server.
+To start a build,
+the web servers put a build task in a queue which is read by the build servers.
+The host build servers manage the container creation,
+command execution inside the container,
+and the reporting of command and command return via our API.
+When a build is finished,
+a task is inserted into the queue,
+and web servers pull documentation from the build server to be served.
+All communication with the task queue and API happens outside of the container,
+with the container strictly acting as a mechanism for command execution.&lt;/p&gt;
+&lt;p&gt;Breaking out of this system requires a privilege escalation attack,
+and the ability to break out of the container in order to access the outer build system.
+All of these measures are required because our system runs user code.
+To properly fix this situation,
+we are working to remove arbitrary execution form our stack entirely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;fixing-arbitrary-execution&quot;&gt;
+&lt;h2&gt;Fixing Arbitrary Execution&lt;/h2&gt;
+&lt;p&gt;Arbitrary execution is something that is difficult, if not impossible, for us to
+avoid currently. It’s built into Sphinx’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; system, which gives Sphinx such
+a useful reference documentation implementation.&lt;/p&gt;
+&lt;p&gt;However, executing Python in order to evaluate docstrings is a broken pattern.
+For our purposes, it requires installing project dependencies and executing the
+code of each Python project on Read the Docs.  These are two steps that introduce a
+substantial number of issues with usability and number of security concerns.&lt;/p&gt;
+&lt;p&gt;Ideally, using a project like &lt;a class=&quot;reference external&quot; href=&quot;http://epydoc.sourceforge.net/&quot;&gt;Epydoc&lt;/a&gt; to help take place of &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; would
+be the best path forward. This takes the approach of parsing the code, instead
+of executing the code. This avoids executing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;setup.py&lt;/span&gt;&lt;/code&gt; on the project,
+and installing any dependencies, which is where code execution currently happens.
+We’ve been working for some time now on supporting this with &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;,
+but don’t think it’s an adequate solution for every Python project just yet.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Epydoc is not a strong project for us to rely on currently, as
+activity has winded down in the past years and it lacks Python 3 support.
+Another project with the same focus is &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/twisted/pydoctor/&quot;&gt;pydoctor&lt;/a&gt;,
+though work to implement Python 3 support is required there too.&lt;/p&gt;
+&lt;p&gt;The other source of code execution is the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt; file inside Sphinx.
+We have also been working on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+which implements a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt; file that will move Sphinx configuration
+into a non-executable format.
+This will remove the last step to remove arbitrary execution in our environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;for-more&quot;&gt;
+&lt;h2&gt;For more&lt;/h2&gt;
+&lt;p&gt;Read the Docs is an open source project.
+If you are interested in helping us with the above tasks,
+we are always happy to have help.
+Specifically if you are able to help with development of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;
+or &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+that would greatly increase the speed that we can migrate to those solutions.
+Also,
+if you are knowledgeable in ways of locking Docker down even more,
+we would love to talk.&lt;/p&gt;
+&lt;p&gt;As always,
+you can email us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:security&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;security&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt; for any issues that might be security related.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

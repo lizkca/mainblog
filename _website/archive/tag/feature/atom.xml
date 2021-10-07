@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged feature</title>
+  <id>https://blog.readthedocs.com/archive/tag/feature/atom.xml</id>
+  <updated>2021-05-19T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/feature/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">Install custom operating system packages (apt)</title>
+    <id>https://blog.readthedocs.com/apt-packages/</id>
+    <updated>2021-05-19T00:00:00Z</updated>
+    <published>2021-05-19T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/apt-packages/" />
+    <author>
+      <name>Juan Luis Cano Rodríguez</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;install-custom-operating-system-packages-apt&quot;&gt;
+
+&lt;p&gt;We are thrilled to announce that now Read the Docs users
+can declare custom operating system packages in their project configuration
+that will get installed in our Ubuntu-based builders using &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;apt&lt;/span&gt;&lt;/code&gt;.
+This has been a long awaited feature,
+and we think it will simplify the configuration of many projects,
+especially scientific ones.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;previous-solutions&quot;&gt;
+&lt;h2&gt;Previous solutions&lt;/h2&gt;
+&lt;p&gt;The Ubuntu images used by our builders
+contain &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-docker-images/blob/8e4f035c219307e30f5e3326c3c8271cee4f2631/Dockerfile#L15-L131&quot;&gt;lots of preinstalled system
+packages&lt;/a&gt;
+that we ship to all the projects
+to make the most common use cases possible.
+This includes compilers, development headers of common libraries, and others.&lt;/p&gt;
+&lt;p&gt;However, on one hand this makes our images way bigger than necessary,
+and it is still not enough to solve 100 % of the use cases.
+Fortunately, Read the Docs has supported the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/guides/conda.html&quot;&gt;conda package
+manager&lt;/a&gt;
+for a long time already,
+and this has allowed users with special needs to add
+any non-Python libraries they needed.
+Still, interoperability between conda and pip is not perfect,
+and for users that are not used to conda this could feel like a hack.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-apt-packages-configuration&quot;&gt;
+&lt;h2&gt;New &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;apt_packages&lt;/span&gt;&lt;/code&gt; configuration&lt;/h2&gt;
+&lt;p&gt;To overcome all these problems, we have added a new configuration value,
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;build.apt_packages&lt;/span&gt;&lt;/code&gt;, that receive a list of APT packages
+that will be installed in our Ubuntu-based images.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#build-apt-packages&quot;&gt;Our configuration
+documentation&lt;/a&gt;
+contains a simple example:&lt;/p&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;latest&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;apt_packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;libclang&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;cmake&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;(Notice that at the moment our images are based Ubuntu 18.04,
+this will change in the near future)&lt;/p&gt;
+&lt;p&gt;And you can draw inspiration from some community projects that are using this feature already:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://geoserver-rest.readthedocs.io/&quot;&gt;geoserver-rest&lt;/a&gt;, a Python library to interact with GeoServer, uses &lt;cite&gt;apt_packages&lt;/cite&gt;
+to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gicait/geoserver-rest/blob/70ec799937b18ec7baed6fd3f7b2bf2f11dd8237/.readthedocs.yaml#L3-L12&quot;&gt;install some GDAL and pycurl
+dependencies&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://ucx-py.readthedocs.io/&quot;&gt;UCX-Py&lt;/a&gt;, a Python interface for the low-level networking library UCX,
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rapidsai/ucx-py/blob/504ba8efecafaf48b5a2692113b8da70f8229721/.readthedocs.yml#L3-L6&quot;&gt;installs extra dependencies to temporarily work around upstream
+issues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are happy that this feature is already being used
+minutes after being deployed
+and are looking forward to seeing more projects make use of it.&lt;/p&gt;
+&lt;p&gt;Remember you can always see the latest changes to our platforms in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/changelog.html&quot;&gt;Read the Docs
+Changelog&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://ethical-ad-server.readthedocs.io/page/developer/changelog.html&quot;&gt;Ethical Ad Server
+Changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Considering using Read the Docs for your next Sphinx or MkDocs project?
+Check out &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;our documentation&lt;/a&gt; to get started!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">API v3 is now stable</title>
+    <id>https://blog.readthedocs.com/api-v3-stable/</id>
+    <updated>2021-02-16T00:00:00Z</updated>
+    <published>2021-02-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-stable/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;api-v3-is-now-stable&quot;&gt;
+
+&lt;p&gt;We are excited to announce that our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;API v3&lt;/a&gt; has reached a stable release,
+and is now available for all Read the Docs users.
+Since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../api-v3-beta/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;announced the API v3 beta&lt;/span&gt;&lt;/a&gt;,
+we have been adding extra functionality and bug-fixing minor issues based on user feedback.&lt;/p&gt;
+&lt;p&gt;The new API v3 &lt;em&gt;is not&lt;/em&gt; a fully replacement (yet!) of API v2,
+but &lt;strong&gt;we highly recommend using API v3 for all the new integrations&lt;/strong&gt;.
+API v2 will be deprecated soon,
+though we don’t have a firm timeline for deprecation.
+We will alert users with our plans when we do.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;p&gt;We’re excited about the following actions that API v3 makes possible:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Import new projects&lt;/li&gt;
+&lt;li&gt;Activate a version&lt;/li&gt;
+&lt;li&gt;Trigger builds&lt;/li&gt;
+&lt;li&gt;Check build status&lt;/li&gt;
+&lt;li&gt;Manage redirects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;API v3 allows you to easily manage common tasks on your Read the Docs project and organization.
+These include:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Setting up documentation for a new project&lt;/li&gt;
+&lt;li&gt;Automating the release of a new version&lt;/li&gt;
+&lt;li&gt;Pausing a release if you detect a failed build&lt;/li&gt;
+&lt;li&gt;Automatically create redirects for changes files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;help-us-make-it-better&quot;&gt;
+&lt;h2&gt;Help us make it better&lt;/h2&gt;
+&lt;p&gt;We always love to hear from users about how they are using the API.
+We want to help you manage your documentation in the easiest and most efficient way possible.
+Please, feel free to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;open an issue in our issue tracker&lt;/a&gt;
+if there is a use case we are not covering.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">Pull Request Builders available for all users</title>
+    <id>https://blog.readthedocs.com/pull-request-builder-general-availability/</id>
+    <updated>2021-01-27T00:00:00Z</updated>
+    <published>2021-01-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/pull-request-builder-general-availability/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pull-request-builders-available-for-all-users&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/autobuild-docs-for-pull-requests.html&quot;&gt;Pull Request building&lt;/a&gt; is now available for all Read the Docs users.
+We have been working on this feature for over a year,
+and having it available for all our users is a major milestone.&lt;/p&gt;
+&lt;p&gt;This feature allows users to confirm documentation builds correctly for all of their commits,
+not just ones merged into branches that are activated on Read the Docs.
+This moves documentation into your continuous integration pipeline,
+and improves the workflow for everyone working on documentation.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can read more about this new feature in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../building-docs-for-pull-requests/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous blog post announcing it&lt;/span&gt;&lt;/a&gt; and in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/autobuild-docs-for-pull-requests.html&quot;&gt;documentation for the feature&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;serving-docs-for-every-branch&quot;&gt;
+&lt;h2&gt;Serving docs for every branch&lt;/h2&gt;
+&lt;p&gt;Along with building and validating each branch on your repository,
+&lt;strong&gt;we also host a rendered version of the documentation.&lt;/strong&gt;
+This allows you to see exactly how the docs will look when they are deployed.&lt;/p&gt;
+&lt;p&gt;Building the documentation on Read the Docs during the development process also helps test integration with Read the Docs.
+The entire build process is run for each commit,
+so this will ensure that builds work as expected when you’re ready to merge into production.&lt;/p&gt;
+&lt;p&gt;These previews will stay live for 90 days from the time you merge or close the Pull Request,
+allowing you to finish any outstanding work on the task.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;limitations&quot;&gt;
+&lt;h2&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;Due to the increased demand for build resources,
+the Pull Request builders have the following limitations:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs search is not enabled on these versions&lt;/li&gt;
+&lt;li&gt;Only HTML versions of the documentation are built (not PDF, ePub, etc.)&lt;/li&gt;
+&lt;li&gt;Documentation builds are concurrency limited. Read the Docs for Business concurrency varies based on your plan, and Read the Docs Community are limited to 2 concurrent builds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are working to address these limitations over time,
+but given the increase in scale with these builds it will take some time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;give-us-feedback&quot;&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;We always love to hear from our users about the product.
+If you have feedback on this feature of any others,
+you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:hello&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;hello&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">Automation Rules</title>
+    <id>https://blog.readthedocs.com/automation-rules/</id>
+    <updated>2020-05-04T00:00:00Z</updated>
+    <published>2020-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/automation-rules/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;automation-rules&quot;&gt;
+
+&lt;p&gt;A time ago we introduced a new feature to help users to automate some tasks on Read the Docs.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Automation rules&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you manage a project with several versions,
+you may have noticed that Read the Docs doesn’t always activate your new versions &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;.
+If you require to do any action over a new version,
+you’ll need to log in your Read the Docs account and manually do so.&lt;/p&gt;
+&lt;p&gt;With automation rules,
+you can choose what do to after a new version is created.
+To add a rule, you only need to choose a pattern and an action.
+After that, every new tag or branch that matches the pattern will trigger the action.&lt;/p&gt;
+&lt;img alt=&quot;_static/automation-rule.png&quot; src=&quot;_static/automation-rule.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;p&gt;Currently, we only have two actions available:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate version&lt;/li&gt;
+&lt;li&gt;Set version as default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the pattern, you can select:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;All versions&lt;/li&gt;
+&lt;li&gt;The ones that match SemVer&lt;/li&gt;
+&lt;li&gt;Or you can write your own using a regular expression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With automation rules you can do things like:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate new tags only&lt;/li&gt;
+&lt;li&gt;Activate only branches that start with &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;v&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Activate tags and branches that belong to the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;1.x&lt;/span&gt;&lt;/code&gt; release&lt;/li&gt;
+&lt;li&gt;Set as default tags that have the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-stable&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-release&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;li&gt;Activate all tags except those containing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;--nightly&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find more information and examples in &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;our documentation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What other tasks you would like to automate?
+Let us know on a &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/&quot;&gt;GitHub issue&lt;/a&gt;!&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We activate and build new versions automatically only if you follow &lt;span class=&quot;target&quot; id=&quot;index-0&quot;&gt;&lt;/span&gt;&lt;a class=&quot;pep reference external&quot; href=&quot;https://www.python.org/dev/peps/pep-0440&quot;&gt;&lt;strong&gt;PEP 440&lt;/strong&gt;&lt;/a&gt;,
+and the new version is greater than the current stable version.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">Announcing API v3 Beta</title>
+    <id>https://blog.readthedocs.com/api-v3-beta/</id>
+    <updated>2019-08-27T00:00:00Z</updated>
+    <published>2019-08-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-beta/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-api-v3-beta&quot;&gt;
+
+&lt;p&gt;In the last months, we have been working on making our API better.
+Considering the limitations of our current REST API v2,
+we decided to make a bigger step forward and create a new API v3,
+putting the focus on the use cases we heard about from existing users.&lt;/p&gt;
+&lt;p&gt;Compared to API v2, our new API v3 has some big differences that make it more user-friendly and useful.&lt;/p&gt;
+&lt;p&gt;These differences includes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;API access requires authentication&lt;/li&gt;
+&lt;li&gt;Token based API authentication&lt;/li&gt;
+&lt;li&gt;Read and write&lt;/li&gt;
+&lt;li&gt;Resource lookup can use project’s slug&lt;/li&gt;
+&lt;li&gt;Wider resource coverage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some examples of new queries and actions that will be possible with the API are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#project-create&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Import a new project&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#projects-list&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;List all my projects&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#version-update&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Activate a version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-triggering&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Trigger a build for a specific version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-details&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Check build status&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#redirects&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Manage redirects&lt;/span&gt;&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#environment-variables&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;environment variables programmatically&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;invite-only-beta-feature&quot;&gt;
+&lt;h2&gt;Invite-only beta feature&lt;/h2&gt;
+&lt;p&gt;APIv3 is currently in an invite-only beta state on our community site, &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org&quot;&gt;https://readthedocs.org&lt;/a&gt;.
+In case you want to test it and give us feedback on it,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt; to get early access.&lt;/p&gt;
+&lt;p&gt;Based on the feedback we receive from you, we plan to add more features to cover most of the common use cases.
+Please, help us with your feedback to make the new APIv3 &lt;em&gt;even&lt;/em&gt; better!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">GSOC 2019: Autobuild Documentation for Pull Requests</title>
+    <id>https://blog.readthedocs.com/building-docs-for-pull-requests/</id>
+    <updated>2019-08-14T00:00:00Z</updated>
+    <published>2019-08-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/building-docs-for-pull-requests/" />
+    <author>
+      <name>Maksudul Haque</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-autobuild-documentation-for-pull-requests&quot;&gt;
+
+&lt;p&gt;Building documentation for pull requests is one of the most requested features of Read the Docs.
+Similar to how a continuous integration system runs a test suite on every pull request,
+this change would build the documentation for each pull request
+and send build status notification to the providers’ Status API (e.g. Github Status API).
+This will let users check if the documentation build passed
+and also how the documentation looks before merging it to master.&lt;/p&gt;
+&lt;p&gt;As a student of Google Summer of Code (GSoC) 2019, I (&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/saadmk11&quot;&gt;Maksudul Haque&lt;/a&gt;) was tasked with building this feature.
+The main goal of my project was to make it possible to build documentation whenever a pull request was created,
+and send build status notification to the Providers’ Status API.&lt;/p&gt;
+&lt;p&gt;To see this feature in action you can click on one of the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pulls&quot;&gt;pull requests&lt;/a&gt; on readthedocs.org repository.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h1&gt;Google Summer of Code&lt;/h1&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with an open source organization
+on a 3 month programming project. &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt; was one of the project ideas on
+Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/3.5.3/docs/gsoc.rst#autobuild-docs-for-pull-requests&quot;&gt;Project Ideas&lt;/a&gt; for Google Summer of Code 2019. I applied for the project and got accepted.&lt;/p&gt;
+&lt;p&gt;I started working on this project since May 2019.
+All of my work on this project can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/8&quot;&gt;Pull Request Builder Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;Many of our users wanted a way to visualize the documentation update that was made in a pull request.
+They also want to know whether the documentation build will pass before merging the pull request to master.
+This would allow users to have more confidence on the pull request
+and make the pull request less likely to break the documentation after merging.
+So, to achieve this Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; selected &lt;strong&gt;Autobuild Documentation for Pull Requests&lt;/strong&gt;
+as one of the projects of Google Summer of Code 2019.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;pull-request-builder-features&quot;&gt;
+&lt;h1&gt;Pull Request Builder Features&lt;/h1&gt;
+&lt;p&gt;Currently I have implemented these features and working on more upcoming features.
+Some of the major features are as follows:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Creating External Versions:&lt;/strong&gt; We create an external version when we receive a pull request
+webhook event for a project from GitHub and trigger a build for that version.
+External versions are short-lived versions that are separate from the project’s main documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronizing External Versions:&lt;/strong&gt; Whenever there is a new commit on the pull request,
+we synchronize the external version for that pull request and trigger a new documentation build with the latest changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deleting External Versions:&lt;/strong&gt; Whenever the pull request is closed or merged,
+we delete the external Version associated with that pull request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Warning Banner for pull request documentation:&lt;/strong&gt; While building documentation for pull requests
+we add a warning banner at the top of those documentations to let the users know that
+this documentation was generated for pull requests and is not the main documentation for the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We send build status reports to the status API of the provider (e.g. GitHub).
+When a build is triggered for a pull request we send build pending notification with the build URL
+and after the build has finished we send success notification if the build succeeded without any error
+or failure notification if the build failed.
+By going to the build URL provided in the status report users can view the build steps
+and also see the documentation generated by that build.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Currently, we only support GitHub and planning to extend to GitLab and BitBucket.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;getting-started&quot;&gt;
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;p&gt;Building documentation for pull requests is currently in Beta testing and only supports Github repositories.
+If you want to dive in and enable this feature for your project you can &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt;
+with the URL of your ReadtheDocs project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h1&gt;Future Improvements&lt;/h1&gt;
+&lt;p&gt;We are planing to extend this feature to other platforms such as GitLab and BitBucket.
+We are also planning to make this feature more customizable through our configuration file (&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;.readthedocs.yaml&lt;/span&gt;&lt;/code&gt;).
+If you have any improvements or features in mind for building documentation for Pull requests we would love to know about it.
+Please feel free to let us know by submitting an &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;issue on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h1&gt;Contributors Wanted&lt;/h1&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy to keep things up and running only. Therefore, its quite
+hard for them to take time to implement new features. We would like to get more contributors
+to improve this feature. If you know a bit of Django and Python and interested to improve this feature
+you are always welcome to contribute. If you need any support to start contributing, you can get in touch with
+me or any other member of  Read the Docs team. You can find all of us at &lt;cite&gt;#readthedocs&lt;/cite&gt; freenode
+IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel. I am &lt;cite&gt;saadmk11&lt;/cite&gt; at IRC and &lt;cite&gt;&amp;#64;saadmk11&lt;/cite&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;To conclude, I would like to say this was a much needed feature for Read the Docs and also its users.
+This feature will improve our platform and make it a true Continuous Documentation platform.
+I think that many users will benefit from this feature.
+We will keep making improvements along the way for a better user experience.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">GSOC 2019: Improved Search Results and Search As You Type</title>
+    <id>https://blog.readthedocs.com/improved-search-and-search-as-you-type/</id>
+    <updated>2019-08-13T00:00:00Z</updated>
+    <published>2019-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/improved-search-and-search-as-you-type/" />
+    <author>
+      <name>Vaibhav Gupta</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-improved-search-results-and-search-as-you-type&quot;&gt;
+
+&lt;p&gt;Giving users the ability to easily find the information that they
+are looking for has always been important for Read the Docs.
+This year, I, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/dojutsu-user&quot;&gt;Vaibhav Gupta&lt;/a&gt;, took the opportunity provided
+by Google Summer of Code to improve the search.
+The main goals of my &lt;a class=&quot;reference external&quot; href=&quot;https://summerofcode.withgoogle.com/projects/#5465587940065280&quot;&gt;GSoC project&lt;/a&gt; were:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;to make a &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;Sphinx extension&lt;/a&gt; to provide “search you type” experience to the users.&lt;/li&gt;
+&lt;li&gt;to add support for multiple hits per search result.&lt;/li&gt;
+&lt;li&gt;to improve the UI/UX around code search.&lt;/li&gt;
+&lt;li&gt;to add support for search analytics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Search as you type feature is live on our docs.
+You can go through these links to experience it:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=contributing&quot;&gt;https://docs.readthedocs.io/?rtd_search=contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&quot;&gt;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h2&gt;Google Summer of Code&lt;/h2&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with
+an open source organization on a 3-month programming project.
+I got accepted in the program and was excited to spend my summer with Read the Docs.&lt;/p&gt;
+&lt;p&gt;I have worked full time during the GSoC coding period and implemented various features.
+All of my search related work can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/7&quot;&gt;In-Doc Search UI Project Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;The search code was originally contributed by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/robhudson&quot;&gt;Rob Hudson&lt;/a&gt;,
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pull/493&quot;&gt;back in 2013&lt;/a&gt; and then improved upon by other contributors.
+It was greatly improved and upgraded by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/safwanrahman&quot;&gt;Safwan Rahman&lt;/a&gt; during &lt;a class=&quot;reference internal&quot; href=&quot;../../../search-improvements/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;GSoC’18&lt;/span&gt;&lt;/a&gt;.
+Continuing on the same path,
+I have implemented some new features on top of the existing search backend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New Features&lt;/h2&gt;
+&lt;p&gt;During the GSoC period, I have worked on the following features:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;In-Doc Search UI&lt;/strong&gt;: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search&quot;&gt;readthedocs-sphinx-search&lt;/a&gt; is a sphinx extension that adds a clean and minimal
+search UI to your docs. It supports “search as you type” feature.
+So, it is now possible to get instant results without being redirected to any other page.
+Read the docs &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/in-doc-search-demo.gif&quot;&gt;&lt;img alt=&quot;In-doc search ui demo&quot; src=&quot;_static/in-doc-search-demo.gif&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;In-Doc Search UI Demo&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Hits Per Search Result&lt;/strong&gt;: This is one of the highly requested features.
+We now support search results from the sections of the docs, clicking on which will take you
+to that particular section and not just to the top of the result page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Search&lt;/strong&gt;: We now support code search. If you want to search a particular function
+or an API endpoint – you can just type your query and you will find it in the results.
+Eg: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;api/v3/&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;module.function&lt;/span&gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Analytics&lt;/strong&gt;: We now have support for search analytics.
+These analytics makes it easy to know what the users are looking for in your documentation.
+You can see these analytics in your project admin dashboard.
+Currently, this feature is in beta state and is available under a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/page/guides/feature-flags.html&quot;&gt;feature flag&lt;/a&gt;.
+We plan to make this available for everyone soon.
+If you want to test this feature out and help giving us feedback,
+please contact us via &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;GitHub issues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/search-analytics-demo.png&quot;&gt;&lt;img alt=&quot;Search analytics in project admin dashboard&quot; src=&quot;_static/search-analytics-demo.png&quot; style=&quot;width: 60%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Search analytics demo dashboard&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-next&quot;&gt;
+&lt;h2&gt;What Next?&lt;/h2&gt;
+&lt;p&gt;We don’t intend to stop just yet.
+We are planning to work on some more cool features in the near future,
+some of which are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Search Facets&lt;/strong&gt;:
+Facets can be used to make search more accurate.
+For example: In &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/en/latest/&quot;&gt;Celery docs&lt;/a&gt;, facets can be used to search inside &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/projects/kombu/en/latest/&quot;&gt;Kombu docs&lt;/a&gt; for “serializers”,
+like &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;subproject:&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;kombu&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;serializers&lt;/span&gt;&lt;/code&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5966&quot;&gt;readthedocs/readthedocs.org#5966&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Results Ordered By Most Viewed Pages&lt;/strong&gt;:
+It would be much more useful if the most viewed pages are shown first in the search results.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5968&quot;&gt;readthedocs/readthedocs.org#5968&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Inside Sections&lt;/strong&gt;:
+It would be good if users have the option to get the
+search results from a particular section of the documentation.
+For example: Getting results from only &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/&quot;&gt;Guides&lt;/a&gt; of our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;documentation&lt;/a&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search/issues/23&quot;&gt;readthedocs/readthedocs-sphinx-search#23&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h2&gt;Contributors Wanted&lt;/h2&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy just keeping the site up and running.
+Therefore, it’s quite hard for them to take time to implement new features.
+If you know some bit of Django or Python and Elasticsearch,
+you can contribute to the search functionality of Read the Docs.
+If you need any support to start contributing,
+you can get in touch with me or any member of Read the Docs team.
+You can find all of us at &lt;em&gt;#readthedocs&lt;/em&gt; freenode IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel.
+I am &lt;em&gt;dojutsu-user&lt;/em&gt; at IRC and &lt;em&gt;&amp;#64;dojutsu-user&lt;/em&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These new features will make it much easier to find the relevant information in the docs.
+There are an infinite number of ways it can be improved and I believe we can compete
+with major search engines in terms of documentation searching.
+We don’t need superhero or coding guru, just need people who understand Python,
+Django and Elasticsearch and have some time to write some code for us.
+You are a &lt;strong&gt;Superhero&lt;/strong&gt; to us if you can lend your time and effort to improve Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">New Configuration File</title>
+    <id>https://blog.readthedocs.com/configuration-file-v2/</id>
+    <updated>2019-02-20T00:00:00Z</updated>
+    <published>2019-02-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/configuration-file-v2/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-configuration-file&quot;&gt;
+
+&lt;p&gt;We are happy to announce the new version of the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;Read the Docs configuration file&lt;/a&gt; (v2).&lt;/p&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/conf.py&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;formats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;all&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you are a recurrent Read the Docs user,
+chances are that you’ve configured your projects using a &lt;cite&gt;.readthedocs.yml&lt;/cite&gt; file.&lt;/p&gt;
+&lt;p&gt;Using the web interface is quick,
+but the main advantages of using a configuration file over the web interface are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Some settings are only available using a configuration file.
+We are moving away from using the web interface.&lt;/li&gt;
+&lt;li&gt;The settings are per version rather than per project.
+This would allow different versions of docs to be built with different versions of Python
+or different requirements.&lt;/li&gt;
+&lt;li&gt;The settings live in your VCS.&lt;/li&gt;
+&lt;li&gt;Reproducible build environments over time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-did-we-change-in-the-new-version&quot;&gt;
+&lt;h2&gt;What did we change in the new version?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;All the configurations from the web interface&lt;/strong&gt;.
+In the past not all options from the web interface were available in the configuration file,
+now they are!
+We also reorganized and renamed some options to make them more clear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New defaults&lt;/strong&gt;,
+we don’t merge the values from the web interface,
+because this was confusing our users.
+This also allows us to change defaults without breaking existing projects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More flexible installations&lt;/strong&gt;,
+users can install their projects in a more flexible way,
+like multiple requirements and packages from different locations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strict validation&lt;/strong&gt; for invalid options in the configuration file,
+to avoid typos and provide more feedback on invalid configurations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;MkDocs support (previously it was only supported from the web interface).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;mkdocs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;mkdocs.yml&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;More control over Sphinx.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;sphinx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;html&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/source/conf.py&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;fail_on_warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Control over submodules, we don’t always need them all to build our docs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;submodules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;third-party/dependency&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;recursive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Support for multiple packages/requirements installations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight-yaml notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;3.7&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;docs/requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;requirements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;requirements.txt&lt;/span&gt;
+    &lt;span class=&quot;p p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;pip&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l l-Scalar l-Scalar-Plain&quot;&gt;package&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;future-improvements&quot;&gt;
+&lt;h2&gt;Future improvements&lt;/h2&gt;
+&lt;p&gt;We are already planning new features to support more projects and use cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pipfile support&lt;/strong&gt;, this is one of our more requested features,
+and we are going to ship it soon.
+Keep an eye in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/3181&quot;&gt;#3181&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Show the configuration used in each build&lt;/strong&gt;.
+We want to make more explicit to the users how we are building their docs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redirects per version&lt;/strong&gt; of your docs.
+Currently users can define global redirects only from the web interface,
+this is hard to maintain and review.
+One use case is when you change your docs structure between versions.
+Keep track of this upcoming feature in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/4221&quot;&gt;#4221&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;start-using-it&quot;&gt;
+&lt;h2&gt;Start using it&lt;/h2&gt;
+&lt;p&gt;The full docs about the new version are available &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are using the v1, you can update to v2 following our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/config-file/v2#migrating-from-v1&quot;&gt;migration docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have a problem using the configuration file, feel free to &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;summer-internship&quot;&gt;
+&lt;h2&gt;Summer internship&lt;/h2&gt;
+&lt;p&gt;This project was part of my summer internship in Read the Docs,
+it was held at the same time as the Google Summer of Code (GSoC) project.&lt;/p&gt;
+&lt;p&gt;Thanks to the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; (Anthony, David, Eric, and Manuel) for helping me in the process.
+Thanks to all contributors, sponsors, donors and users of Read the Docs to make the project sustainable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">Improved Search</title>
+    <id>https://blog.readthedocs.com/search-improvements/</id>
+    <updated>2019-02-11T00:00:00Z</updated>
+    <published>2019-02-11T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/search-improvements/" />
+    <author>
+      <name>Safwan Rahman</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;improved-search&quot;&gt;
+
+&lt;p&gt;Have you ever struggled with a poorly documented software project?
+What about a well documented project but you can’t find the right section inside the docs?
+The Read the Docs &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/team.html#development-team&quot;&gt;core team&lt;/a&gt; has realized the importance of good search for documentation
+and got me to take the challenge as a Google Summer of Code student.
+The main goal of my GSoC project was to refactor the search code together with upgrading the backend
+search engine, as well as adding more features to our search functionality like exact match search,
+case insensitive search, search as you type, suggestions and more.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h2&gt;Google Summer of Code&lt;/h2&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with an open source organization
+on a 3 month programming project. The core team of Read the Docs proposed some &lt;a class=&quot;reference external&quot; href=&quot;https://git.io/fN9GK&quot;&gt;Project Ideas&lt;/a&gt;,
+one of them was &lt;strong&gt;Refactor &amp;amp; improve our search code&lt;/strong&gt;. I (&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/safwanrahman&quot;&gt;Safwan Rahman&lt;/a&gt;) was keen to get my hands dirty with
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt; and grasped the opportunity to do so by applying
+for this project and I got accepted.&lt;/p&gt;
+&lt;p&gt;I have worked full time for from April to August to upgrade the whole codebase
+to compatible with &lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/guide/en/elasticsearch/reference/6.3/index.html&quot;&gt;Elasticsearch 6.x&lt;/a&gt; and also implemented various features like:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/2457&quot;&gt;Exact Matching Search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/2328&quot;&gt;Case Insensitive Search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pull/4292&quot;&gt;Improved Result Order&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pull/4368&quot;&gt;Zero Downtime Indexing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Together with this, we are planning more features like the following:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/504&quot;&gt;Search as You Type and Autocomplete&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/4289&quot;&gt;Code Search&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of my search related work can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/rtfd/projects/3&quot;&gt;Search Project Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Search is a vital part of any documentation hosting platform, so people can get the
+information they need. As a documentation hosting platform, the same rules apply to
+Read the Docs. Because of having a small core team, the search functionality
+of Read the Docs has lagged behind for quite a while now. Initially the search code
+was voluntarily contributed by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/robhudson&quot;&gt;Rob Hudson&lt;/a&gt;,  &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pull/493&quot;&gt;back in 2013&lt;/a&gt; and then improved by other
+contributors. The search infrastructure was already outdated as
+Read the Docs were using &lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/guide/en/elasticsearch/reference/1.3/index.html&quot;&gt;Elasticsearch 1.3.x&lt;/a&gt; which was already reached its
+End of Life in 2016. Therefore, Upgrading the search infrastructure was badly needed.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;built-in-search-vs-read-the-docs-search&quot;&gt;
+&lt;h3&gt;Built in Search vs Read the Docs Search&lt;/h3&gt;
+&lt;p&gt;Both Sphinx and MkDocs already have built in search functionality. But the features are very limited.
+At Read the Docs, we have felt the limitations and therefore we index the documentations in our
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt; index so that we can provide better search experience like:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Search across multiple projects&lt;/li&gt;
+&lt;li&gt;Advanced query syntax&lt;/li&gt;
+&lt;li&gt;Search inside subprojects&lt;/li&gt;
+&lt;li&gt;Improved search result order&lt;/li&gt;
+&lt;li&gt;Public Search API (Documentation pending)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Currently, we do not index MkDocs documents with&lt;/strong&gt; &lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/products/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;,
+but &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/1088&quot;&gt;any kind of help is welcome&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New Features&lt;/h2&gt;
+&lt;p&gt;In the 4 months of full time work, I have implemented these features along with
+many bug fixes. Some of the major features are as following:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/2457&quot;&gt;Exact Matching Search&lt;/a&gt;: Exact matching is one of our most highly requested
+features for Read the Docs. Now you can search for exact word in documentation
+by having your query inside quotation (&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;/code&gt;). So if you search
+for &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;quot;Here&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;foo&amp;quot;&lt;/span&gt;&lt;/code&gt; (with the quotation), you will get all the documentation where the full
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Here&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;foo&lt;/span&gt;&lt;/code&gt; phrase exists.&lt;/li&gt;
+&lt;li&gt;Simple Query String Syntax support: Now you can use &lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html#_simple_query_string_syntax&quot;&gt;Simple Query String Syntax&lt;/a&gt; for
+searching. For example, if you search with &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Mozilla&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;+-Firefox&lt;/span&gt;&lt;/code&gt;, you will get documentation
+where the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Mozilla&lt;/span&gt;&lt;/code&gt; word is present, but &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Firefox&lt;/span&gt;&lt;/code&gt; word is not present.
+For more information, you can look at the &lt;a class=&quot;reference external&quot; href=&quot;https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html#_simple_query_string_syntax&quot;&gt;Simple Query String Syntax&lt;/a&gt; documentation.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/2328&quot;&gt;Case Insensitive Search&lt;/a&gt;: The search is now case insensitive. So if you search for &lt;cite&gt;Foo&lt;/cite&gt;,
+you will get all the documentation which have one of either &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Foo&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;FOO&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;foo&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;fOO&lt;/span&gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pull/4292&quot;&gt;Improved Result order&lt;/a&gt;: The result order is improved dramatically. Therefore if you Search
+with &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;Bar&lt;/span&gt;&lt;/code&gt;, you will first see the documentation which have both &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;Bar&lt;/span&gt;&lt;/code&gt;, then
+you will see other documentation which have either &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Foo&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Bar&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/2013&quot;&gt;Auto Removing from Search Index&lt;/a&gt;: In the past, if any page got removed from documentation,
+the page was still available in documentation. But from now on, the page will be removed
+automatically from the search index as soon as its no longer in the documentation.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pull/4368&quot;&gt;Zero Downtime Indexing&lt;/a&gt;: As search is an important part of documentation, there will be no
+downtime while we reindex our Elasticsearch Index. So the search will be much more reliable
+than before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;code-improvements&quot;&gt;
+&lt;h2&gt;Code Improvements&lt;/h2&gt;
+&lt;p&gt;Code quality is very important in development world, specially in open source.
+As I have rewritten the search functionality from scratch, the code quality
+is improved in many ways like test coverage and documentation. So its easy for
+any contributor to start working on the search functionality&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h2&gt;Contributors Wanted&lt;/h2&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy to keep things up and running only. Therefore, its quite
+hard for them to take time to implement new features. If you know some bit of
+Django or Python and Elasticsearch, you can contribute into the search functionality
+of Read the Docs. If you need any support to start contributing, you can get in touch with
+me or any member of  Read the Docs team. You can find all of us at &lt;cite&gt;#readthedocs&lt;/cite&gt; freenode
+IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel. I am &lt;cite&gt;safwan&lt;/cite&gt; at IRC and &lt;cite&gt;&amp;#64;safwanrahman&lt;/cite&gt;
+at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;To conclude, I must say that the Search improvement in Read the Docs was very
+necessary and I’m glad I could improve it in such a short amount of time.
+There are an infinite number of ways it can be improved and I believe we can compete
+with major search engines in terms of documentation searching.
+Due to the constraints of only working for three months,
+a number of compelling features were left out such as &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/504&quot;&gt;Search as You Type and Autocomplete&lt;/a&gt; and
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/4289&quot;&gt;Code Search&lt;/a&gt; functionality. Moreover, proper documentation is needed for the search
+architecture. I have tried to write test cases for most of the scenario, but because of
+time constrains, a lot of code is out of test coverage.&lt;/p&gt;
+&lt;p&gt;I strongly hope that we will get the left behind work done within a short amount of time.
+This can be done easily if we get more contributors donate their time for improving Read the Docs.
+We don’t need superhero or coding guru, just need people who understand Python, Django and
+Elasticsearch and have some time to write some code for us. You are a &lt;strong&gt;Superhero&lt;/strong&gt; to us
+if you can lend your time and effort to improve Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/feature/atom.xml">
+    <title type="text">HTTPS for Custom Domains</title>
+    <id>https://blog.readthedocs.com/https-for-custom-domains/</id>
+    <updated>2018-08-13T00:00:00Z</updated>
+    <published>2018-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/https-for-custom-domains/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;https-for-custom-domains&quot;&gt;
+
+&lt;p&gt;Read the Docs hosts documentation for over 80,000 open source projects
+and over 2,500 of those projects are hosted on their own individual domains.
+Documentation hosted on &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;*.readthedocs.io&lt;/span&gt;&lt;/code&gt; has supported HTTPS for a number of years,
+but one of our most requested features was to make HTTPS on other domains easy.
+Today we are happy to announce that &lt;strong&gt;Read the Docs supports HTTPS on custom domains&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Earlier this year, Cloudflare contacted us to support HTTPS
+for the thousands of open source documentation projects on their own domains.
+They generously provided us with their &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/ssl-for-saas-providers/&quot;&gt;SSL for SaaS&lt;/a&gt; package
+to ease the integration on our side.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-https-is-important&quot;&gt;
+&lt;h2&gt;Why HTTPS is important&lt;/h2&gt;
+&lt;p&gt;HTTPS encrypts traffic between your computer and Read the Docs’ servers
+and allows your browser to verify that the website you are talking to
+is the one that you requested.
+HTTPS ensures there is no man-in-the-middle snooping on your connection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;configuring-your-domain&quot;&gt;
+&lt;h2&gt;Configuring your domain&lt;/h2&gt;
+&lt;p&gt;If you followed our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/alternate_domains.html&quot;&gt;documentation for custom domains&lt;/a&gt;
+and you are using a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to Read the Docs,
+no action is required on your part.&lt;/p&gt;
+&lt;p&gt;If you have had your Read the Docs setup for many years you may have followed some old directions
+that suggested creating a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;slug&amp;gt;.readthedocs.org&lt;/span&gt;&lt;/code&gt;.
+Depending on your setup, we may not have been able to issue a certificate for your domain.
+In that case, update your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-did-it-take-so-long&quot;&gt;
+&lt;h2&gt;Why did it take so long?&lt;/h2&gt;
+&lt;p&gt;It’s 2018! HTTPS is supposed to be easy, right?
+For a few domains, getting a certificate isn’t too hard.
+For 2,500+ domains, things get a bit more complicated.&lt;/p&gt;
+&lt;p&gt;We identified a number of challenges including:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Retrying failed requests to issue certificates&lt;/li&gt;
+&lt;li&gt;Handling when users remove DNS records that would allow us to issue certificates&lt;/li&gt;
+&lt;li&gt;Getting our web servers and load balancers to handle dynamically adding and updating certificates on the fly&lt;/li&gt;
+&lt;li&gt;Handling recurring tasks to re-issue updated certificates before they expire&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cloudflare reduced most of this complexity to a few API calls made when a new domain is configured or removed.
+Without their support, we would still be working on this feature.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;next-steps&quot;&gt;
+&lt;h2&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;There are a few more things left on our road map for this feature.
+In the next few weeks we will begin to generate HTTPS links for custom domains where we have a certificate.
+After that change has been deployed for a few weeks, we will begin to redirect custom domain traffic to HTTPS.&lt;/p&gt;
+&lt;p&gt;As always, if you’re having any trouble with a particular domain,
+don’t hesitate to let us know in our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

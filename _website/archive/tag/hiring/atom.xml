@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged hiring</title>
+  <id>https://blog.readthedocs.com/archive/tag/hiring/atom.xml</id>
+  <updated>2021-01-06T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/hiring/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/hiring/atom.xml">
+    <title type="text">Read the Docs is hiring for multiple positions</title>
+    <id>https://blog.readthedocs.com/read-the-docs-is-hiring-q1-2021/</id>
+    <updated>2021-01-06T00:00:00Z</updated>
+    <published>2021-01-06T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-is-hiring-q1-2021/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-is-hiring-for-multiple-positions&quot;&gt;
+
+&lt;p&gt;Read the Docs received a &lt;a class=&quot;reference internal&quot; href=&quot;../../../czi-grant-announcement/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;grant to support scientific software&lt;/span&gt;&lt;/a&gt; at the beginning of this year.
+As part of this,
+we are hiring for two new positions related to the grant work:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;A &lt;a class=&quot;reference internal&quot; href=&quot;../../../job-frontend/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;frontend developer with design skills&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class=&quot;reference internal&quot; href=&quot;../../../job-devrel/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;developer advocate with documentation skills&lt;/span&gt;&lt;/a&gt; (&lt;strong&gt;This position has been filled, and is no longer active&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please look at each of the job postings for much more detail on what to expect with the job.&lt;/p&gt;
+&lt;p&gt;We are excited to be able to expand our small team and increase the support we’re giving to the scientific open source community.
+Throughout 2021 we are going to be vastly improving our documentation and building major new features around embedding documentation content,
+based on the work from this grant.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-hiring-will-be-structured&quot;&gt;
+&lt;h2&gt;How hiring will be structured&lt;/h2&gt;
+&lt;p&gt;The way we are currently planning to structure this work is to have 50% of the time spent working on grant work,
+and the other 50% working on Read the Docs itself.
+The codebase and community we’re building require a good amount of onboarding time,
+so we are excited to be able to use the grant funds to also improve the overall experience of Read the Docs users.&lt;/p&gt;
+&lt;p&gt;You can apply to the jobs with the links above to the full job descriptions,
+where you will be asked to fill out a form with a few questions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;about-read-the-docs&quot;&gt;
+&lt;h2&gt;About Read the Docs&lt;/h2&gt;
+&lt;p&gt;Read the Docs is a large open source project providing documentation building and hosting.
+You can think of it a continuous integration for docs.
+We do around 500 million pageviews each year.
+We are a small team,
+but &lt;strong&gt;this role will have a large impact of millions of users.&lt;/strong&gt;
+Almost all of our codebase is open source
+and we feel strongly about supporting the community while sustaining the project in an ethical manner.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/hiring/atom.xml">
+    <title type="text">Tips for Getting a Developer Interview</title>
+    <id>https://blog.readthedocs.com/tips-for-getting-a-developer-interview/</id>
+    <updated>2019-02-13T00:00:00Z</updated>
+    <published>2019-02-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/tips-for-getting-a-developer-interview/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-for-getting-a-developer-interview&quot;&gt;
+
+&lt;p&gt;Over the last month, the Read the Docs team conducted 30-40 customer development interviews
+with hiring managers and recruiters
+at companies ranging from 5-person companies to the biggest names in tech.
+We wanted to learn more about hiring processes at various companies
+with the ultimate goal of building &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=next-developer-job&quot;&gt;a product to help companies find developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Last time, we covered some &lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;tips for hiring managers&lt;/span&gt;&lt;/a&gt;
+based on what companies told us they were doing.
+This time, we put together &lt;strong&gt;tips for candidates looking for their next job&lt;/strong&gt;
+based on insights we heard from hiring managers.&lt;/p&gt;
+&lt;p&gt;Rather than covering how to crack developer interviews
+or how to gain the necessary technical skills,
+these tips will focus on getting your foot in the door. Specifically:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Making your application stand out&lt;/li&gt;
+&lt;li&gt;Improving your application response rate&lt;/li&gt;
+&lt;li&gt;Getting to the interview process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;when-applying-go-deep-not-wide&quot;&gt;
+&lt;h2&gt;When applying, go deep not wide&lt;/h2&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“I don’t want candidates who drive by job sites and pepper every job they find”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;As a candidate, there is a temptation to play the numbers game and apply to as many jobs as possible.
+Many jobs sites make it easy to apply to many jobs quickly and this gives you that feeling that your job search is progressing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Based on what hiring managers told us, playing the numbers game isn’t the best approach.&lt;/strong&gt;
+While it is a bit of a job-seekers market, especially for more senior talent,
+companies are looking people who want to work for their company and who believe in their mission.
+Hiring managers told us they want applicants who
+“think about the company, then check for opportunities”.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A Facebook job post on LinkedIn with almost 300 applications in 2 weeks&quot; src=&quot;img/2019-facebook-job-opening.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;That’s almost 300 applications in 2 weeks on just one of the job sites where this is posted.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;spend-a-little-more-time-on-your-application&quot;&gt;
+&lt;h2&gt;Spend a little more time on your application&lt;/h2&gt;
+&lt;p&gt;While it takes longer to apply to a job post
+that requires a cover letter or requires answers to a few questions,
+those are great ways to have your application stand out relative to other applicants.
+You don’t want your resume to get lost in a stack of hundreds.&lt;/p&gt;
+&lt;p&gt;As we mentioned &lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;last time&lt;/span&gt;&lt;/a&gt;,
+quite a few hiring managers we talked to started requiring a cover letter
+or even just a couple questions that are unique to the company
+in order to make their job filtering candidates easier
+and get candidates who want to work there not those who just want a job.&lt;/p&gt;
+&lt;p&gt;All the companies we talked to said when they post a job they got tons of applicants,
+but that high quality, qualified applicants were still in short supply.
+When 200 people apply to a job but only 20 are willing to do a cover letter,
+a hiring manager can spend a lot more time per candidate with the smaller pool.
+One hiring manager told us explicitly “fewer resumes is better because there’s less noise”.&lt;/p&gt;
+&lt;p&gt;While I know I said getting a developer job isn’t a numbers game,
+this doesn’t strictly mean you can use these techniques
+to apply to 2-3 jobs and you’ll get hired.
+Sometimes by the time you apply, somebody is already in the final stages of getting hired.
+The position may not &lt;em&gt;really&lt;/em&gt; be open anymore.
+Don’t get discouraged in your job search.
+&lt;strong&gt;Finding the right match can take time.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id2&quot;&gt;
+&lt;img alt=&quot;Questions from the DuckDuckGo application process&quot; src=&quot;img/2019-duckduckgo-application-questions.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the questions from the DuckDuckGo application process.
+This is your place to stand out!
+DuckDuckGo was &lt;strong&gt;not&lt;/strong&gt; one of the companies we interviewed.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;make-yourself-a-referral-use-your-network&quot;&gt;
+&lt;h2&gt;Make yourself a referral: use your network&lt;/h2&gt;
+&lt;p&gt;Hiring managers universally told us their top recruiting channel
+is referrals from existing employees.
+As a candidate, use this knowledge to your advantage and
+&lt;strong&gt;make yourself into a referral hire&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Did you see an acquaintance on social media post about job openings at their company?&lt;/li&gt;
+&lt;li&gt;Does a friend or a friend of friend work at the company?&lt;/li&gt;
+&lt;li&gt;Do you have a first connection (or a very good 2nd connection) on LinkedIn who works there?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In all of these cases, you should contact that person before applying.
+Even if the person you know isn’t on the hiring team,
+your contact might be able to put you in touch with the right person.&lt;/p&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“Most [senior] people go through their network”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For a mid-level to senior candidate with 7+ years of experience,
+this is even more important based on our interviews. At that stage of your career,
+&lt;strong&gt;hiring managers we talked to expect a high quality candidate to do due diligence&lt;/strong&gt;
+on the company and team to make sure it’s a mutual fit.&lt;/p&gt;
+&lt;p&gt;Regardless of the exact route you take here,
+getting in touch with the right people to learn more about the team,
+the tech stack, and the company makes it clear that you’re very interested.
+You’re far more likely to get a response, move on to the interview process,
+and ultimately get hired.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;establishing-contact-with-companies&quot;&gt;
+&lt;h2&gt;Establishing contact with companies&lt;/h2&gt;
+&lt;p&gt;Turning yourself into a referral is easier for a senior candidate.
+But what if this is your first or second job or don’t know anybody at the company?&lt;/p&gt;
+&lt;p&gt;After referral candidates, &lt;strong&gt;the next best hiring channel in our interviews
+was local meetups and engaging the local community&lt;/strong&gt;.
+Both startups and established companies – especially when they are actively hiring –
+use meetups to find talent.
+If you’re able to meet the hiring manager in person or establish some sort of connection,
+in my experience, this raises your chances significantly.&lt;/p&gt;
+&lt;p&gt;In our interviews, another channel that mid-size and larger companies
+we talked to used to recruit was to rely on their presense at conferences.
+For many companies,
+recruiting was the primary motivator to sponsor a conference and have a booth.
+As a candidate, talking to the engineers at the booth and showing interest
+can ensure that your application doesn’t get lost among all the applicants they get.&lt;/p&gt;
+&lt;p&gt;At a smaller company, it’s frequently possible to figure out exactly
+who the hiring manager is from some combination of the website,
+hiring posts, and LinkedIn. This is a great way to make a valuable connection
+and make sure the role is a good fit.
+Contacting the hiring manager cold requires a bit of finesse so make sure to be respectful.&lt;/p&gt;
+&lt;p&gt;Places like the monthly HackerNews Who’s Hiring thread are fantastic
+because they allow direct interaction with the hiring manager
+and many companies list a person’s direct email to inquire about a position,
+learn more directly from the source, and show you’re interested.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id3&quot;&gt;
+&lt;img alt=&quot;Some of the phrases heard from hiring managers in our interviews&quot; src=&quot;img/2019-hiring-manager-phrases.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the phrases we heard from hiring managers in interviews.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;By spending a bit more time on your application,
+establishing contact with the company, and asking good questions about the work and team,
+you are showing your intent and interest in the company.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You want to make sure the hiring manager or recruiter understands
+that you’re a serious candidate and you want to work there on their team.
+Using these methods will improve your response rate and &lt;strong&gt;help you get the interview&lt;/strong&gt;.
+By doing a one-click apply on a job site, this is completely lost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Again, I’d like to thank all the hiring managers who took the time to talk to us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/hiring/atom.xml">
+    <title type="text">Lessons From and For Hiring Managers</title>
+    <id>https://blog.readthedocs.com/lessons-from-hiring-manager-interviews/</id>
+    <updated>2019-01-30T00:00:00Z</updated>
+    <published>2019-01-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/lessons-from-hiring-manager-interviews/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;lessons-from-and-for-hiring-managers&quot;&gt;
+
+&lt;p&gt;Over the last four weeks, the Read the Docs team did dozens of customer development interviews with engineering hiring managers.
+We wanted to learn more about hiring processes at various companies
+with the ultimate goal of building a product to help companies find developers.
+We talked to people looking for talent at five person companies all the way up to the biggest names in tech.
+In this post, I am going to cover some of the common things we heard from hiring managers
+and &lt;strong&gt;share some ways for hiring managers to improve their company’s process&lt;/strong&gt;.
+In our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;next post in this series&lt;/span&gt;&lt;/a&gt;, I will have some actionable tips
+for job seekers based on the same interviews.&lt;/p&gt;
+&lt;p&gt;Since this is a long post, I figured I’d share some of the key takeaways:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Have a strategy for getting more referrals&lt;/strong&gt; whether that is actively asking employees or having an overly generous referral bonus.
+Referrals are probably your top source of candidates so figuring out how to get more will save you time and money in the end.
+Then do the same for your other best recruiting channels.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reach passive candidates&lt;/strong&gt;. There are a lot more passive candidates than active ones so have a plan to reach them.
+Great developers (especially senior ones) probably aren’t actively looking for a new job and it’s a job-seekers market.
+Even if somebody isn’t considering a new job at all, the next time they do, you want them to think of your company.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recruiting for diversity is a focus&lt;/strong&gt; for hiring managers.
+Put together a concrete plan for getting more diverse candidates and meeting your diversity goals.
+Engaging with local developer communities and nonprofits and encouraging referrals worked well for companies we talked to.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get more signal in your application process&lt;/strong&gt; by adding a step such as a cover letter, quiz,
+or simply add a couple questions folks have to answer.
+Making candidates spend even one extra minute on their application can save you hours filtering resumes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-is-read-the-docs-tackling-hiring-hasn-t-that-been-done&quot;&gt;
+&lt;h2&gt;Why is Read the Docs tackling hiring? Hasn’t that been done?&lt;/h2&gt;
+&lt;p&gt;While we didn’t initially think about Read the Docs ads for recruiting,
+based on some &lt;a class=&quot;reference internal&quot; href=&quot;../../../hiring-developers-with-readthedocs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;unexpected past successes&lt;/span&gt;&lt;/a&gt;,
+we decided to position promoted jobs as one of our main verticals within our advertising.
+Rather than dash forward and create a product, however, we started by just talking to hiring managers
+to understand the hiring process better so we can best meet their needs with something we create.&lt;/p&gt;
+&lt;p&gt;One of the questions we asked in our interviews was how long it took to hire their most recent developer?
+Specifically, we asked hiring managers to consider how much time they and their team spent sourcing candidates,
+filtering resumes, preparing for and doing phone and onsite interviews, and anything else.
+Internal recruiters’ time is valuable too, but we figured the hiring manager
+would probably underestimate how much time the recruiter spent since they didn’t directly observe it.
+While answers were all over the place, the range with the most overlap was &lt;strong&gt;50-100 hours of engineering time to make a hire&lt;/strong&gt;.
+No huge revelation here, but companies make a massive investment in hiring.&lt;/p&gt;
+&lt;p&gt;From my days being an interviewer at Qualcomm and Amazon as well as a smaller startup,
+I’d say fifty hours is on the low side for big company but about right for a smaller company.
+When something costs 50+ engineering hours to do,
+any improvement is worth a lot of time and money
+and at Read the Docs we believe we can help significantly here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;top-hiring-channels&quot;&gt;
+&lt;h2&gt;Top hiring channels&lt;/h2&gt;
+&lt;p&gt;It was no big surprise to hear that &lt;strong&gt;referrals were the top hiring channel&lt;/strong&gt;.
+The second best channel was a bit of a surprise with local meetups and local communities being very high in a majority of interviews
+although this was less true among the largest companies we talked to.
+Companies also had some success with recruiting at conferences, using various job sites, and proactive outreach.&lt;/p&gt;
+&lt;p&gt;Hiring managers shared strategies with us that they used to increase the number of referral and community candidates they got.
+Two different companies we talked to hosted multiple local meetups at their offices and one of those hiring managers said
+“being plugged into the community” was their main channel for hiring.&lt;/p&gt;
+&lt;p&gt;Another hiring manager who focused a lot on developers with security experience talked about having “LinkedIn parties”
+where either a hiring manager or internal recruiter sat with engineers on their team one-on-one to go through their LinkedIn network.
+Even when he heard a person “is great, but they’ll never change jobs”, that was a good candidate to target.
+Security is such a high demand field, he said, that very few great people are actively looking for a job.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Job seeker timeline&quot; src=&quot;img/2019-job-seeker-timeline.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;reaching-people-who-aren-t-looking-is-critical&quot;&gt;
+&lt;h2&gt;Reaching people who aren’t looking is critical&lt;/h2&gt;
+&lt;p&gt;One of our biggest takeaways from the interviews was that companies wanted to reach candidates before they started actively looking.
+Most of the hiring managers we talked to stressed the importance of getting in front of passive candidates.
+Certainly fewer people are actively looking for developer jobs than those who are just open to a change.
+A few different reasons were given but I actually think &lt;a class=&quot;reference external&quot; href=&quot;https://www.inc.com/magazine/20070501/column-guest.html&quot;&gt;Joel Spolsky had it right&lt;/a&gt; when he said
+top developers “barely ever apply for jobs at all. That’s because they already have jobs.”&lt;/p&gt;
+&lt;p&gt;This quote isn’t necessarily a slight against people who apply actively to jobs.
+Virtually everyone I know in tech started their career applying to a job.
+Rather, the message here is that as a developer becomes a mid-level developer
+and then becomes a senior developer, they are more likely to rely on their network
+to somewhat passively job seek rather than going through the front door
+and simply applying on a company website.&lt;/p&gt;
+&lt;p&gt;Reaching people who aren’t actively looking is one area where Read the Docs can really help.
+Companies want to reach them when they are just thinking about a new job or perhaps passively seeking.
+Developers who come to our site are actively building software, not job-seeking.
+Many of them are content at their current position.
+For those that aren’t, this is a perfect place to showcase great companies
+and help Read the Docs’ visitors to find their next job.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;recruiters-can-be-worth-it&quot;&gt;
+&lt;h2&gt;Recruiters can be worth it&lt;/h2&gt;
+&lt;p&gt;In each interview, we asked whether the company used recruiters or recruiting related services (eg. Hired, Triplebyte).
+Universally, hiring managers brought up how expensive recruiters are,
+but most of the people we talked to who had actually used recruiters in the past had a positive impression overall.
+Hiring takes a ton of time, typically from senior folks at the company.
+At smaller startups, that’s frequently the CEO or CTO.
+Even though the price is high, recruiters who help speed that process along are worth it.&lt;/p&gt;
+&lt;p&gt;I think the quote that really summed it up was from a VP of engineering at a startup that just raised a Series B.
+He’s trying to grow his team by 10 developers this year (about a 50% increase).
+His experience hiring his first couple developers through a 2-person boutique recruiting firm was great and
+he would use them for hiring everyone “if hiring 10 people didn’t mean $100k+” in fees alone.&lt;/p&gt;
+&lt;p&gt;Full disclosure: &lt;a class=&quot;reference external&quot; href=&quot;https://triplebyte.com&quot;&gt;Triplebyte&lt;/a&gt; is an advertiser on Read the Docs. We’re fans.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;diversity-and-inclusivity-in-hiring&quot;&gt;
+&lt;h2&gt;Diversity and inclusivity in hiring&lt;/h2&gt;
+&lt;p&gt;We didn’t ask any questions around hiring for diversity
+but fully six hiring managers volunteered information on their companies’ strategies
+for getting more diverse candidates.
+This is why I love this kind of interview where the goal is just to listen to what hiring managers say
+and dig deeper when you hear something interesting.
+Some of the larger companies we talked to had explicit diversity goals set at the company level.
+Even among the hiring managers at smaller companies,
+they shared some tactics they used to get more diverse candidates to apply.&lt;/p&gt;
+&lt;p&gt;Of the companies with hard diversity goals, most of them told us that their strategy
+entailed syndicating their job openings to diversity focused jobs sites
+or in some cases engaging directly with relevant interest groups.
+In terms of efficacy, reviews of these various jobs boards was mixed.&lt;/p&gt;
+&lt;p&gt;On the more positive side, hiring managers cited
+Girl Develop It, Black Girls Code, and PyLadies as fantastic channels
+for &lt;strong&gt;both increasing candidate diversity and for high quality applicants&lt;/strong&gt;.
+Two companies also talked about trying to decrease bias
+in their job postings using &lt;a class=&quot;reference external&quot; href=&quot;https://textio.com/&quot;&gt;Textio&lt;/a&gt; and similar services.&lt;/p&gt;
+&lt;p&gt;Having multiple people mention diversity completely unprompted really shows that this topic
+is becoming higher priority for companies and hiring managers.
+It also shows that it if hiring for diversity is important to your company,
+you need to have a plan for actually making those goals a reality.
+It’s worth checking whether the strategy actually works too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;remember-sourcing-is-the-bigger-problem&quot;&gt;
+&lt;h2&gt;Remember, sourcing is the bigger problem&lt;/h2&gt;
+&lt;p&gt;Every single hiring manager we talked to complained about the time they spent filtering resumes from applicants.
+Some choice quotes I heard included “95% of applicants weren’t a fit” even after only reviewing the resume
+and a hiring manager who posted to a very popular remote-only job board told me he got “literally one thousand applications”.
+While I believe this is a legitimate complaint,
+I think &lt;a class=&quot;reference external&quot; href=&quot;http://blog.alinelerner.com/building-a-product-in-the-technical-recruiting-space-read-this-first/&quot;&gt;Aline Lerner, founder of interviewing.io said it best&lt;/a&gt;
+when she said “Engineering hiring isn’t a filtering problem. It’s a sourcing problem.”
+The reason we heard it a lot is that filtering is a very time-consuming task that hiring managers directly deal with.&lt;/p&gt;
+&lt;p&gt;The real problem here is that &lt;strong&gt;the number of applicants to a job post is a vanity metric&lt;/strong&gt;.
+What hiring managers are looking for is qualified applicants, which is harder to gauge without some additional work.
+One of the problems here is that a lot of jobs sites make it really easy for candidates to apply to lots of jobs.
+This is understandable from their perspective as more applicants makes their platform seem more valuable.
+There’s no reason for a job board to put artificial barriers into the application funnel,
+but hiring managers told us they want candidates who want to work for their company
+not somebody who is applying to every job out there.&lt;/p&gt;
+&lt;p&gt;Instead of building product here, I think hiring managers just need a few tweaks
+to get more of a signal of candidate quality and intent in their applications.
+A few of the hiring managers we talked to described how they did this.
+Multiple hiring managers mentioned how they required a cover letter that answered specific questions (“why us” was the most popular).
+Another hiring manager described how his hiring system just asked a few short questions of candidates
+– for example, “what is the software project you’re most proud of” – when they applied.
+When a candidate didn’t do a cover letter or didn’t answer the questions, they weren’t considered.
+The latter solution seemed like the best of both worlds as it solves the one-click apply problem without being too much of a barrier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;I’d like to thank all the hiring managers who took time out of their days (or in some cases evenings) to talk to us.
+If you’re a hiring manager or an internal company recruiter and you’d like to share your experiences and help Read the Docs,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Lessons+From+Hiring+Managers+Post&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check back soon for our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;next post in this series&lt;/span&gt;&lt;/a&gt;
+which covers tips for candidates based on the same interviews!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; This blog was updated to mention our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;new post&lt;/span&gt;&lt;/a&gt; in the series&lt;/p&gt;
+&lt;div class=&quot;admonition-ready-to-hire-your-next-developer-fast admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Ready to hire your next developer, fast!&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=hiring-manager-interviews-i&quot;&gt;Get in front of passive candidates already using your tech&lt;/a&gt; by promoting your job openings with Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/hiring/atom.xml">
+    <title type="text">Tips to Hire Developers with Read the Docs</title>
+    <id>https://blog.readthedocs.com/hiring-developers-with-readthedocs/</id>
+    <updated>2018-10-30T00:00:00Z</updated>
+    <published>2018-10-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/hiring-developers-with-readthedocs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-to-hire-developers-with-read-the-docs&quot;&gt;
+
+&lt;p&gt;Read the Docs is probably not the first place you think of if you are recruiting.
+However, over &lt;strong&gt;7 million unique developers use Read the Docs each month&lt;/strong&gt; from all over the world.
+We didn’t set out to build a better job board,
+but after a number of advertisers used our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html&quot;&gt;ethical ads&lt;/a&gt; for recruiting,
+we discovered that Read the Docs was a great place to find developer talent.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;hiring-with-read-the-docs-works&quot;&gt;
+&lt;h2&gt;Hiring with Read the Docs works&lt;/h2&gt;
+&lt;p&gt;Developers are not always actively job seeking
+by browsing job boards or company careers pages.
+However, they are on Read the Docs reading about the libraries and frameworks they use.
+Even when people aren’t actively looking for a new job,
+many are open to exploring new opportunities.&lt;/p&gt;
+&lt;p&gt;On Read the Docs, we found that developers engage with hiring ads
+at a higher rate than any other kind of advertising.
+With hiring ads, developers get ads that are relevant and interesting
+and companies reach the folks actively using the tech they are recruiting for.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Click-through rate by ad type Q3 2018&quot; src=&quot;img/2018-ctr-adtype.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;be-specific-and-find-the-right-developers&quot;&gt;
+&lt;h2&gt;Be specific and find the right developers&lt;/h2&gt;
+&lt;p&gt;If you are looking for Python developers,
+you can configure your hiring ad to only show on Python related documentation.
+You can further refine your audience to Read the Docs visitors in specific regions.
+Whether you are looking for a remote Python data scientist or a blockchain developer in Switzerland,
+be as specific as possible.
+This ensures you don’t get unqualified candidates
+as well as making sure you catch the eyes of the people you are interested in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;set-the-right-expectations&quot;&gt;
+&lt;h2&gt;Set the right expectations&lt;/h2&gt;
+&lt;p&gt;In any type of advertising, setting appropriate expectations can make the difference
+between a lackluster and successful campaign. In hiring, it is even more critical.
+This means making sure that your hiring ad for a front-end JavaScript developer
+links directly to your JavaScript developer job listing page where people can click “apply”.
+Don’t link to a listing of all of your open positions unless your hiring ad sets that expectation.
+Nothing is worse for the developer than clicking on a hiring ad
+and not knowing what to do next.&lt;/p&gt;
+&lt;p&gt;Likewise, some things can set the wrong kind of expectation.
+Most developers have seen enough hiring posts for “rockstars” and “ninjas” to know what to expect.
+Be honest and upfront and you will attract the right folks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;stand-out&quot;&gt;
+&lt;h2&gt;Stand out&lt;/h2&gt;
+&lt;p&gt;Developers get contacted all the time by recruiters
+and it can be difficult to show prospective employees why they should check out your company.
+People look for all sorts of different things when seeking a new job
+from working with a high-caliber team to working for a company whose goals they agree with.
+You should highlight your best selling points right on your hiring ad as early as possible.
+If your company affords a fantastic work/life balance, mention that.
+A company in a great location, with a beautiful office, and top of the line hardware
+should definitely feature that.
+Focusing on your best attributes shows you care about your developers
+and helps you appeal to people who care about your products and mission.&lt;/p&gt;
+&lt;div class=&quot;admonition-are-you-hiring admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Are you hiring?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=hire-developers&quot;&gt;Find qualified candidates&lt;/a&gt; already using your tech by promoting your job openings with Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/hiring/atom.xml">
+    <title type="text">Read the Docs is hiring!</title>
+    <id>https://blog.readthedocs.com/read-the-docs-is-hiring/</id>
+    <updated>2015-05-04T00:00:00Z</updated>
+    <published>2015-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-is-hiring/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-is-hiring&quot;&gt;
+
+&lt;p&gt;Thanks to our successful &lt;a class=&quot;reference external&quot; href=&quot;http://blog.readthedocs.com/fundraising-wrapup/&quot;&gt;fundraiser&lt;/a&gt;,
+we have the ability to pay people to work on Read the Docs.&lt;/p&gt;
+&lt;p&gt;We have two positions that we are looking for:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Community Developer&lt;/li&gt;
+&lt;li&gt;Operations Developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These will be part-time remote contract positions.&lt;/p&gt;
+&lt;p&gt;Our budget is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;40 total hours each week&lt;/li&gt;
+&lt;li&gt;Paid at $50/hr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These hours will be split between the two roles,
+and our time managing and doing administrative tasks.
+We expect each person to work around 15-20 hours each week.
+It will initially be for a 3-month period,
+after which we will evaluate the program,
+and continue it with renewed funding if it is successful.&lt;/p&gt;
+&lt;p&gt;We understand that money and time can be an obstacle to working on OSS,
+so let this be your opportunity to join us!
+We are hoping to build a team that is diverse in view points and location,
+and that definitely includes folks like you.
+Historically under-represented folks in the open source world will be given preference.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community-developer&quot;&gt;
+&lt;h2&gt;Community Developer&lt;/h2&gt;
+&lt;p&gt;You will help us build community and give our users a better experience.
+Help us make the code base better,
+and build a thriving open source project along the way.&lt;/p&gt;
+&lt;p&gt;Your jobs will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Triage and fix bugs as they come in via GitHub, IRC, and the Mailing List&lt;/li&gt;
+&lt;li&gt;Work through the back log of GitHub Issues, fixing and closing them&lt;/li&gt;
+&lt;li&gt;Doing ongoing maintenance of the code base, including upgrading Django versions, refactoring, and other technical debt clean up&lt;/li&gt;
+&lt;li&gt;Work onboarding developers into the code base&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Linux (Ubuntu)&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;li&gt;Sphinx &amp;amp; Docutils&lt;/li&gt;
+&lt;li&gt;GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;operations-developer&quot;&gt;
+&lt;h2&gt;Operations Developer&lt;/h2&gt;
+&lt;p&gt;You will help us operate the largest open source documentation website in the world.
+We currently get over 15,000,000 pageviews a month,
+and we hope to maintain a reliable and stable hosting platform for years to come.&lt;/p&gt;
+&lt;p&gt;Your responsibilities will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Manage backups of our databases&lt;/li&gt;
+&lt;li&gt;Manage usage of our web and build machines, keeping them up to date and within capacity&lt;/li&gt;
+&lt;li&gt;Build new infrastructure and help us scale the existing machines&lt;/li&gt;
+&lt;li&gt;Write code to make Read the Docs easier to scale and sustain&lt;/li&gt;
+&lt;li&gt;Be included in an On Call rotation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Postgres&lt;/li&gt;
+&lt;li&gt;Munin&lt;/li&gt;
+&lt;li&gt;Nagios&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Elastic Search&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We will prefer candidates in non-US based time zones to simplify our on call rotation.&lt;/strong&gt;
+Nobody should have to wake up at night to fix issues!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-to-apply&quot;&gt;
+&lt;h2&gt;How to Apply&lt;/h2&gt;
+&lt;p&gt;Thanks for everyone who has applied. We are in the process of choosing a candidate, and applications are now closed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

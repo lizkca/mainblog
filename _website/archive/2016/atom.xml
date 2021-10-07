@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2016</title>
+  <id>https://blog.readthedocs.com/archive/2016/atom.xml</id>
+  <updated>2016-11-17T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2016/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2016/atom.xml">
+    <title type="text">Announcing pydoc.io beta</title>
+    <id>https://blog.readthedocs.com/announcing-pydoc-io/</id>
+    <updated>2016-11-17T00:00:00Z</updated>
+    <published>2016-11-17T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/announcing-pydoc-io/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-pydoc-io-beta&quot;&gt;
+
+&lt;p&gt;Today we’re excited to announce our latest project: &lt;a class=&quot;reference external&quot; href=&quot;https://pydoc.io&quot;&gt;https://pydoc.io&lt;/a&gt;.
+This work was made possible by the &lt;a class=&quot;reference internal&quot; href=&quot;../../rtd-awarded-mozilla-open-source-support-grant/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;MOSS Grant&lt;/span&gt;&lt;/a&gt; from Mozilla.
+Thanks to Mozilla for funding our time building this wonderful community resource.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;about-pydoc-io&quot;&gt;
+&lt;h2&gt;About pydoc.io&lt;/h2&gt;
+&lt;p&gt;Running Read the Docs,
+we’ve always been proud of the documentation tooling that the Python community has.
+We prioritize prose over API documentation listings,
+and generally have a high standard of documentation in our projects.&lt;/p&gt;
+&lt;p&gt;There are a specific set of use cases that API reference documentation support,
+and the Python community doesn’t support them well.
+Tools like &lt;a class=&quot;reference external&quot; href=&quot;http://godoc.org&quot;&gt;http://godoc.org&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;http://rubydoc.info&quot;&gt;http://rubydoc.info&lt;/a&gt; provide these for others languages,
+and we now introduce &lt;a class=&quot;reference external&quot; href=&quot;http://pydoc.io&quot;&gt;http://pydoc.io&lt;/a&gt; as the Python community’s version of that.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-is-it&quot;&gt;
+&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Pydoc.io will eventually auto-generate API reference documentation for every package on PyPI.
+Our beta release will support a limited set of packages that we are using for testing.
+Over time we’ll expand the tooling to automatically support generating docs for any package posted on PyPI.&lt;/p&gt;
+&lt;p&gt;Reference documentation is wonderful for folks who already know how a library works,
+and simply want to use it.
+It’s also great for navigating and understanding the internals of a piece of code.
+Giving them simple access to nicely rendered API documentation supports using and understanding libraries in a nicer way than reading code.
+We’re happy to build out these tools,
+along with the wonderful prose tools we’ve always had with Sphinx itself.&lt;/p&gt;
+&lt;p&gt;Our progress and some context is tracked in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/1957&quot;&gt;issue 1957&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-tools&quot;&gt;
+&lt;h2&gt;The tools&lt;/h2&gt;
+&lt;p&gt;This project is built on top of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sphinx-doc/sphinx&quot;&gt;Sphinx&lt;/a&gt; at it’s core.
+On top of that,
+we’ve layered a few different tools:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;dl class=&quot;first docutils&quot;&gt;
+&lt;dt&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi/&quot;&gt;sphinx-autoapi&lt;/a&gt; which is the tool that takes Python source files and turns them into rST.&lt;/dt&gt;&lt;dd&gt;&lt;ul&gt;
+&lt;li&gt;Internally, this uses the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/PyCQA/pydocstyle/&quot;&gt;pydocstyle&lt;/a&gt; AST parser, which we use for a parse-only representation of the Python files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/pydoc.io&quot;&gt;pydoc.io&lt;/a&gt; is a Django application that is the actual web front-end and documentation building code.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/apitheme/&quot;&gt;sphinx-apitheme&lt;/a&gt; is the Sphinx theme that powers the actual API listing pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest piece to call out here is the parse-only documentation generation.
+Sphinx’s autodoc module,
+and most Python documentation generators rely on importing the code to get docstrings.
+As we’ve learned with Read the Docs,
+this is quite impractical for a large set of libraries,
+including the scientific ecosystem that heavily relies on C libraries.
+&lt;strong&gt;Building and supporting a parse-only API tool makes doc builds faster and more reliable.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We have built on top of the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;pydocstyle&lt;/span&gt;&lt;/code&gt; AST,
+but it looks like we’ll likely have to build out our own AST traversal to retrieve all docstrings and construct declarations that we need to output.
+We have looked into some of the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/davidhalter/jedi/issues/630&quot;&gt;other AST options&lt;/a&gt; in Python,
+but haven’t decided on what direction we want to go when building our own.&lt;/p&gt;
+&lt;p&gt;We have put a good deal of work into all these different pieces,
+but there is still a lot of work to be done.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;give-us-feedback&quot;&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This is a very beta release&lt;/strong&gt;.
+We have developed a few different sets of tools,
+and would love your feedback.
+In particular:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Give us examples of API documentation patterns that you like. We’d like to incorporate powerful patterns into our theme.&lt;/li&gt;
+&lt;li&gt;Don’t give us feedback on specific design issues with the theme, we’re still working on it!&lt;/li&gt;
+&lt;li&gt;Let us know if you have ideas about how we can improve the general usability of the documentation&lt;/li&gt;
+&lt;li&gt;Let us know features that you wish the site had&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thanks again to Mozilla,
+who funded this work.
+It wouldn’t have been possible without them,
+and we’re happy they funded the initial development.
+We’re always looking at ways to make the ongoing maintenance sustainable,
+so please reach out to us if you’d like to help with our efforts!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2016/atom.xml">
+    <title type="text">Running ads with Sentry</title>
+    <id>https://blog.readthedocs.com/ads-with-sentry/</id>
+    <updated>2016-10-24T00:00:00Z</updated>
+    <published>2016-10-24T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-with-sentry/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;running-ads-with-sentry&quot;&gt;
+
+&lt;p&gt;We’re excited to announce our first partner in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/advertising/ethical-advertising.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Ethical Advertising&lt;/span&gt;&lt;/a&gt;
+campaign: &lt;a class=&quot;reference external&quot; href=&quot;https://sentry.io/&quot;&gt;Sentry&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sentry was a natural first partner,
+both because they have a long history
+supporting and contributing to the open source community, and because they also
+strive to support open source while building a sustainable business around their
+project.&lt;/p&gt;
+&lt;p&gt;Sentry has built a sustainable business built around a 100% open source project,
+with all components of their stack available under a developer (and company) friendly license.
+The company also continue to support the community beyond its own contributions.
+It’s backed projects like &lt;a class=&quot;reference external&quot; href=&quot;https://www.djangoproject.com/fundraising/&quot;&gt;Django&lt;/a&gt;, the &lt;a class=&quot;reference external&quot; href=&quot;https://fund.django-rest-framework.org/topics/funding/&quot;&gt;Django REST framework&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://vuejs.org&quot;&gt;Vue.js&lt;/a&gt;,
+and &lt;a class=&quot;reference external&quot; href=&quot;https://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt;, as well as providing Sentry free for all open source projects.&lt;/p&gt;
+&lt;p&gt;We are excited to be working with companies that see the value in open source and treating our users with respect.
+Making a commitment to do advertising in an ethical manner allows us to feel good about serving ads,
+and allows users to know their privacy isn’t being violated.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sentry.io/&quot;&gt;Sentry&lt;/a&gt; is a product that allows developers to capture and debug their production errors. It allows you to proactively respond to issues on your site, keeping both your users and your ops team happy.
+We’ve been using Sentry on our projects here at Read the Docs for a while now,
+and it’s a great way to handle errors in our production Django environment.
+We wholeheartedly recommend their product, and thank them for their sponsorship.&lt;/p&gt;
+&lt;img alt=&quot;img/sentry-ad.png&quot; class=&quot;align-center&quot; src=&quot;img/sentry-ad.png&quot; style=&quot;width: 330px;&quot; /&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2016/atom.xml">
+    <title type="text">Securing Subdomains</title>
+    <id>https://blog.readthedocs.com/securing-subdomains/</id>
+    <updated>2016-04-27T00:00:00Z</updated>
+    <published>2016-04-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/securing-subdomains/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;securing-subdomains&quot;&gt;
+
+&lt;p&gt;Starting today, Read the Docs will start hosting projects from subdomains on
+the domain &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/code&gt;, instead of on &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt;. This change
+addresses some security concerns around site cookies while hosting user
+generated data on the same domain as our dashboard.&lt;/p&gt;
+&lt;p&gt;Changes to provide security against broader threats have been in place for a
+while, however there are still a few scenarios that can only be addressed by
+migrating to a separate domain.&lt;/p&gt;
+&lt;p&gt;We implemented session hijacking detection and took precautions to limit cookie
+usage, but there are still a number of scenarios utilizing XSS and CSRF attacks
+that we aren’t able to protect against while hosting documentation from
+subdomains on the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt; domain. Moving documentation hosting to a
+separate domain will provide more complete isolation between the two user
+interfaces.&lt;/p&gt;
+&lt;p&gt;Projects will automatically be redirected, and this redirect will remain
+in place for the foreseeable future. Still, you should plan on updating links to
+your documentation after the new domain goes live.&lt;/p&gt;
+&lt;p&gt;If you notice any problems with the changes, feel free to open an issue on our
+issue tracker: &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;http://github.com/rtfd/readthedocs.org/issues&lt;/a&gt;. If you do notice
+any security issues, contact us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:security&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;security&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt; with more
+information.&lt;/p&gt;
+&lt;p&gt;Keep on documenting,
+The Read the Docs Team&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2016/atom.xml">
+    <title type="text">Advertising on Read the Docs Community Sites</title>
+    <id>https://blog.readthedocs.com/ads-on-read-the-docs/</id>
+    <updated>2016-03-09T00:00:00Z</updated>
+    <published>2016-03-09T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-on-read-the-docs/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;advertising-on-read-the-docs-community-sites&quot;&gt;
+
+&lt;p&gt;On Monday, we enabled an ad space on documentation pages hosted on readthedocs.org.
+We have tested the ad space in the past,
+and had followed up with a &lt;a class=&quot;reference internal&quot; href=&quot;../../state-of-the-docs-2015/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;discussion of the implications&lt;/span&gt;&lt;/a&gt; of advertising.
+The space was meant to be totally unobtrusive to the browsing and usage of documentation pages,
+and doesn’t enable third-party tracking of users in any way.
+This is all in an effort to help raise funds to support continued support and maintenance on the project,
+and ensure free and open documentation stays available.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;sustainability&quot;&gt;
+&lt;h2&gt;Sustainability&lt;/h2&gt;
+&lt;p&gt;Read the Docs is a &lt;a class=&quot;reference internal&quot; href=&quot;../../read-the-docs-2015-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;massive project&lt;/span&gt;&lt;/a&gt;,
+and requires a large amount of work to keep running and support.
+We receive support requests and must tend to the operations of the servers on a daily basis.
+Neither of these tasks lend to volunteer contributions,
+they both require dedicated support roles for such a large site.
+&lt;strong&gt;I’ve personally been wearing a pager in support of the project for over 4 years,
+all on a volunteer basis.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Though we have done multiple donation drives,
+and have enabled other ways for users to support us,
+these only supply a limited amount of funding.
+Our users are the last ones we want to charge,
+they are other open source projects who aren’t paid themselves!
+This puts us in a hard situation.
+Selling a small amount of documentation reader attention allows us to sustainably support Read the Docs without affecting authors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;no-tracking&quot;&gt;
+&lt;h2&gt;No Tracking&lt;/h2&gt;
+&lt;p&gt;We firmly believe that the major issue with the advertising industry isn’t advertising,
+but tracking of users and third-party scripts.
+&lt;strong&gt;To address this,
+we don’t allow any tracking of our users by third-party scripts.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We do record the number of impressions each image gets from our server logs,
+and we track clicks with Google Analytics,
+which only we have access to.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;opting-out&quot;&gt;
+&lt;h2&gt;Opting Out&lt;/h2&gt;
+&lt;p&gt;We have added multiple ways to opt out of the advertising on Read the Docs.
+Inside the &lt;strong&gt;Admin &amp;gt; Advertising&lt;/strong&gt; section of every project,
+you can see options to control or remove advertising on your project.
+These options include:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Supporting us &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/accounts/gold/subscription/?&quot;&gt;financially&lt;/a&gt; with Read the Docs Gold.&lt;/li&gt;
+&lt;li&gt;Supporting us with &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/contribute.html?&quot;&gt;your time&lt;/a&gt; by contributing to the project.&lt;/li&gt;
+&lt;li&gt;Moving to our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/pricing/?&quot;&gt;paid product&lt;/a&gt; over at readthedocs.com.&lt;/li&gt;
+&lt;li&gt;Opting out without doing any of the above. This will make us a little sad, but we understand not everyone has the means to contribute back.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
+&lt;h2&gt;The Future&lt;/h2&gt;
+&lt;p&gt;In a perfect world we wouldn’t include advertising on our pages.
+If you are at a company or another institution that would like to fund operations,
+support,
+and development of the project,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:hello&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;com&quot;&gt;contact us&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;For the foreseeable future, supporting the Read the Docs community site with advertising is our most viable model.
+We hope that you understand our thoughts here,
+and we’re always happy to have feedback or to field new ideas that might allow us to not require this in the future!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2016/atom.xml">
+    <title type="text">Read the Docs 2015 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2015-stats/</id>
+    <updated>2016-01-15T00:00:00Z</updated>
+    <published>2016-01-15T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2015-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2015-stats&quot;&gt;
+
+&lt;p&gt;2015 has been another great year for Read the Docs.
+We’ve addressed some long-standing issues like not having Markdown support,
+and built a number of wonderful tools for the documentation community.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2015-01-01&amp;amp;to=2015-12-31&amp;amp;type=c&quot;&gt;27 people&lt;/a&gt; who committed code (-41% from last year)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;1931 commits&lt;/a&gt; (+54%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2015-01-01&amp;amp;type=Issues&quot;&gt;800 issues&lt;/a&gt; - 630 closed, 170 open (+60%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have a much lower number of people who committed to the code-base this year,
+while increasing the number of commits and issues by over 50%.
+This is mainly because we worked with &lt;a class=&quot;reference external&quot; href=&quot;http://gremu.net/&quot;&gt;Gregor&lt;/a&gt; for three months after our fundraiser.&lt;/p&gt;
+&lt;p&gt;The lack of committers is sad though,
+and I hope that we can get more people involved with the project over time.
+It really is unsustainable at the current level of community involvement.
+All of our operations and user support tasks are done by vanishingly small number of volunteers,
+with no new growth in that group of folks.&lt;/p&gt;
+&lt;p&gt;Interested in contributing?
+We have &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/contribute.html#contributing-to-development&quot;&gt;documentation on contributing&lt;/a&gt; on the site.
+You can also contribute financially at our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;sustainability page&lt;/a&gt; or by buying a monthly &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/accounts/gold/&quot;&gt;Gold&lt;/a&gt; subscription.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;170 Million Page Views (+55%)&lt;/li&gt;
+&lt;li&gt;38 Million Unique Visitors (+58%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+It’s great to see so many people reading documentation that we are hosting.&lt;/p&gt;
+&lt;p&gt;We remain one of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.alexa.com/siteinfo/readthedocs.org&quot;&gt;largest sites&lt;/a&gt; on the internet,
+and that doesn’t account for traffic to CNAME’s,
+which is another 40% of our traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;28000 projects (+85%)&lt;/li&gt;
+&lt;li&gt;39001 users (+75%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.
+We are happy to host documentation for all open source projects,
+and are glad the community finds the services useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community.
+We launched a &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;Sustainabilty Campaign&lt;/a&gt; earlier this year that funded work for 3 months.
+It was great to have help with our support workflow.&lt;/p&gt;
+&lt;p&gt;We are launching a new user-supported funding model this year,
+and we hope to be able to bring someone on to work on support in a more permanent basis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2015 has been a year of mixed result.
+We have continued growing and serving more traffic.
+However,
+our contributor base shrank,
+and we haven’t been doing a good job of supporting users in the second half of the year.&lt;/p&gt;
+&lt;p&gt;We hope that with renewed funding we’ll be able to better support users in 2016.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged offsite</title>
+  <id>https://blog.readthedocs.com/archive/tag/offsite/atom.xml</id>
+  <updated>2019-06-20T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/offsite/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/offsite/atom.xml">
+    <title type="text">Read the Docs Offsite 2019</title>
+    <id>https://blog.readthedocs.com/offsite-2019/</id>
+    <updated>2019-06-20T00:00:00Z</updated>
+    <published>2019-06-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/offsite-2019/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-offsite-2019&quot;&gt;
+
+&lt;p&gt;The Read the Docs team just finished our first offsite ever in April of 2019.
+We all gathered together in person for the first time,
+and talked about the future of the project.&lt;/p&gt;
+&lt;p&gt;A picture will show this better than I can:&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;img/offsite-2019.png&quot; src=&quot;img/offsite-2019.png&quot; style=&quot;width: 90%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;The team at the house we rented in Aruba&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The full list of attendees, which is the full-time staff, from left to right:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;David Fischer&lt;/li&gt;
+&lt;li&gt;Manuel Kaufmann&lt;/li&gt;
+&lt;li&gt;Eric Holscher&lt;/li&gt;
+&lt;li&gt;Anthony Johnson&lt;/li&gt;
+&lt;li&gt;Santos Gallegos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Our biggest goal was building a shared understanding of the vision for the project.
+Being fully remote,
+it’s often hard to communicate at a deep level about mission and vision.
+Being together in person for a week gave us the space to understand each other and our views better.&lt;/p&gt;
+&lt;p&gt;The other large goal was to build a roadmap for the next 3-6 months for the project.
+We have often had smaller roadmaps,
+but never had the chance to discuss all the problems that we encounter with the project,
+and then prioritize them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;format&quot;&gt;
+&lt;h2&gt;Format&lt;/h2&gt;
+&lt;p&gt;We used the following format:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Before the offsite, we created a Trello board with a list of topics to discuss. This was all the major feature ideas, issues, and concerns that came up over the previous couple months.&lt;/li&gt;
+&lt;li&gt;For the first 3 days, we went through the list and discussed each topic. We took notes (almost 20 pages) of these discussions, and mostly tried to build a shared understanding on a path forward.&lt;/li&gt;
+&lt;li&gt;The 4th day we broke each section down into action items, and chunked them into 1-3 smaller sections of work. We called these “v1”, “v2”, and “v3” to break out the stages where each project could be shipped and have impact on our users.&lt;/li&gt;
+&lt;li&gt;The 5th day we took all the tasks, then sized and prioritized them. We broke things out into 4 piles representing months going forward, and tried to balance the tasks so each month had a similar amount of work in it. We then turned this into a Trello roadmap board.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This worked quite well for us.
+It gave us space to talk through all the various topics we had,
+but also gave concrete next steps to move forward on our tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;The most valuable outcome is something I said at the offsite:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;Before, it felt like we were 5 contributors working on an open source project. Now, it feels like we’re members of a team.&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For each member of the team,
+there was someone else they had never met in person before this.
+Having all met in person will make it much easier to collaborate online going foward,
+and to feel like we are working towards a goal that we all share.&lt;/p&gt;
+&lt;p&gt;In terms of technical output,
+the roadmap we have established will make us much more productive in our work going foward.
+The entire team now has vision around the roadmap items,
+and understands the tasks other people are working on much better.
+This has already lead to a much better ability to collaborate together.&lt;/p&gt;
+&lt;p&gt;We are hoping to do another offsite in 2020,
+and if we do our jobs right, hopefully we’ll have another teammate or two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

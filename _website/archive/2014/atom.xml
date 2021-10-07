@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2014</title>
+  <id>https://blog.readthedocs.com/archive/2014/atom.xml</id>
+  <updated>2014-12-31T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2014/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2014/atom.xml">
+    <title type="text">Read the Docs 2014 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2014-stats/</id>
+    <updated>2014-12-31T00:00:00Z</updated>
+    <published>2014-12-31T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2014-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2014-stats&quot;&gt;
+
+&lt;p&gt;2014 has been another banner year for Read the Docs.
+The project has been steadily growing in the open source ecosystem,
+expanding a good deal outside of the Python community.
+We have built a bunch of fantastic new features,
+and continued improving the documentation experience for the open source world.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our latest 30 days stats at &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;http://www.seethestats.com/site/readthedocs.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our post from 2013 is also available here: &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;https://blog.readthedocs.com/read-the-docs-2013-stats/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2014-01-01&amp;amp;to=2014-12-31&amp;amp;type=c&quot;&gt;46 people&lt;/a&gt; who committed code (+17% from last year)&lt;/li&gt;
+&lt;li&gt;1253 commits (+127%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2014-01-01&amp;amp;type=Issues&quot;&gt;500 issues&lt;/a&gt; - 376 closed, 130 open (+84%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have over doubled the commit count from the previous year,
+along with having almost double the issues.
+Our contributor base has grown slowly,
+but not nearly at the rate of issues and user growth.&lt;/p&gt;
+&lt;p&gt;A big part of that is the addition of &lt;a class=&quot;reference external&quot; href=&quot;http://ohess.org&quot;&gt;Anthony&lt;/a&gt; to the core team. He has been a great help, and done lots of good work on the project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;110 Million Page Views (+70%)&lt;/li&gt;
+&lt;li&gt;24 Million Unique Visitors (+85%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+It’s great to see so many people reading documentation that we are hosting.&lt;/p&gt;
+&lt;p&gt;With an average time of 3 minutes per page,
+this means users have spent &lt;strong&gt;nearly 600 years&lt;/strong&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt; reading documentation on Read the Docs this year.
+I can only imagine how much development time has been saved.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;I believe this makes Read the Docs the biggest documentation hosting website in the world. Pretty neat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A picture shows more than the words do, I think. Here is our weekly graph for the year:&lt;/p&gt;
+&lt;img alt=&quot;img/2014-stats.png&quot; src=&quot;img/2014-stats.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;15128 projects (+90%)&lt;/li&gt;
+&lt;li&gt;22263 users (+90%)&lt;/li&gt;
+&lt;li&gt;2053616 builds (+97%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;on Gittip&lt;/a&gt;.
+I am very grateful for the support that the community has given the project over the years.
+We haven’t been promoting the sponsorship on Gittip,
+so the numbers there have gone down.&lt;/p&gt;
+&lt;p&gt;We are looking at more funding options in the new year,
+more on that soon :)&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$100/wk (-40%)&lt;/li&gt;
+&lt;li&gt;100 people giving money (-12%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2014 has been an amazing year for Read the Docs.
+We have continued growing and serving more traffic.&lt;/p&gt;
+&lt;p&gt;We are working on a number of new features to expand the user base,
+and make the site more approachable.
+We look forward to continuing to improve the documentation ecosystem in the new year.&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2min 51sec * 108,801,906 views / 525,600 minutes/year = 589.6 years&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2014/atom.xml">
+    <title type="text">User-defined Redirects</title>
+    <id>https://blog.readthedocs.com/user-defined-redirects/</id>
+    <updated>2014-08-22T00:00:00Z</updated>
+    <published>2014-08-22T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/user-defined-redirects/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;user-defined-redirects&quot;&gt;
+
+&lt;p&gt;Today we are announcing User-defined Redirects for Read the Docs.
+This has been a long requested feature that should cut down on 404’s when migrating your documentation.&lt;/p&gt;
+&lt;p&gt;Read the Docs has long had &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/redirects.html&quot;&gt;Redirects&lt;/a&gt;,
+but they are managed automatically for only certain use cases.
+This change allows users to control a specific set of common redirects.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;prefix-redirects&quot;&gt;
+&lt;h2&gt;Prefix Redirects&lt;/h2&gt;
+&lt;p&gt;The most useful and requested application of redirects was to migrate to Read the Docs from an old host.
+You would have your docs served at a previous URL,
+but that URL would break once you moved them.
+Read the Docs includes a language and version slug in your documentation,
+but not all documentation is hosted this way.&lt;/p&gt;
+&lt;p&gt;Say that you previously had your docs hosted at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://docs.example.com/dev/&lt;/span&gt;&lt;/code&gt;,
+and you move &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;docs.example.com&lt;/span&gt;&lt;/code&gt; to point at Read the Docs.
+Users will have a bookmark saved to a page at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://docs.example.com/dev/install.html&lt;/span&gt;&lt;/code&gt;,
+a URL that no longer exists.&lt;/p&gt;
+&lt;p&gt;You can now set a &lt;em&gt;Prefix Redirect&lt;/em&gt; that will redirect all 404’s with a prefix to a new place.
+The example configuration would be:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Prefix&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redirect&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;From&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Your user’s query would now redirect in the following manner:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Where &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;en&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;latest&lt;/span&gt;&lt;/code&gt; are the default language and version values for your project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-redirects&quot;&gt;
+&lt;h2&gt;Page Redirects&lt;/h2&gt;
+&lt;p&gt;A more specific case is when you move a page around in your docs.
+The old page will start 404’ing,
+and your users will be confused.
+&lt;em&gt;Page Redirects&lt;/em&gt; let you redirect a specific page.&lt;/p&gt;
+&lt;p&gt;Say you move the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;example.html&lt;/span&gt;&lt;/code&gt; page into a subdirectory of examples: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;examples/intro.html&lt;/span&gt;&lt;/code&gt;.
+You would set the following configuration:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redirect&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;From&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;To&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;sphinx-redirects&quot;&gt;
+&lt;h2&gt;Sphinx Redirects&lt;/h2&gt;
+&lt;p&gt;We also support redirects for changing the type of documentation Sphinx is building.
+If you switch between &lt;em&gt;HTMLDir&lt;/em&gt; and &lt;em&gt;HTML&lt;/em&gt;, your URL’s will change.
+A page at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;/en/latest/install.html&lt;/span&gt;&lt;/code&gt; will be served at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;/en/latest/install/&lt;/span&gt;&lt;/code&gt;,
+or vice versa.
+The built in redirects for this will handle redirecting users appropriately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;implementation&quot;&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;Since we serve documentation in a highly available way,
+we do not run any logic when we’re serving documentation.
+This means that redirects will only happen in the case of a &lt;em&gt;404 File Not Found&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the future we might implement redirect logic in Javascript,
+but this first version is only implemented in the 404 handlers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;feature-requests&quot;&gt;
+&lt;h2&gt;Feature Requests&lt;/h2&gt;
+&lt;p&gt;This is an initial attempt at redirects.
+We have some plans to improve this,
+but get in touch with us if you have ideas for improving the feature.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;,
+or you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:readthedocs&amp;#37;&amp;#52;&amp;#48;gmail&amp;#46;com&quot;&gt;readthedocs&lt;span&gt;&amp;#64;&lt;/span&gt;gmail&lt;span&gt;&amp;#46;&lt;/span&gt;com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2014/atom.xml">
+    <title type="text">Badge Support</title>
+    <id>https://blog.readthedocs.com/badge-support/</id>
+    <updated>2014-08-14T00:00:00Z</updated>
+    <published>2014-08-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/badge-support/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;badge-support&quot;&gt;
+
+&lt;p&gt;Documentation is an often overlooked part of a software project.
+Today we are releasing badges for your docs,
+so that people can easily see that your docs are up-to-date.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;status-badges&quot;&gt;
+&lt;h2&gt;Status Badges&lt;/h2&gt;
+&lt;p&gt;The main use of badges is to show the status of your project’s build.
+They will display in green for passing,
+red for failing,
+and yellow for unknown states.&lt;/p&gt;
+&lt;p&gt;Here are a few examples:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;green&quot; src=&quot;http://img.shields.io/badge/Docs-latest-green.svg&quot; /&gt;&amp;nbsp;&lt;img alt=&quot;red&quot; src=&quot;http://img.shields.io/badge/Docs-release--1.6-red.svg&quot; /&gt;&amp;nbsp;&lt;img alt=&quot;yellow&quot; src=&quot;http://img.shields.io/badge/Docs-No%20Builds-yellow.svg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can see it in action in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/blob/master/README.rst&quot;&gt;Read the Docs README&lt;/a&gt;.
+They will link back to your project’s documentation page on Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;project-pages&quot;&gt;
+&lt;h2&gt;Project Pages&lt;/h2&gt;
+&lt;p&gt;You will now see badges embedded in your &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/projects/pip/&quot;&gt;project page&lt;/a&gt;.
+The default badge will be pointed at the &lt;em&gt;default version&lt;/em&gt; you have specified for your project.
+The badge URLs look like this:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://readthedocs.org/projects/pip/badge/?version=latest
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You can replace the version argument with any version that you want to show a badge for.
+If you click on the badge icon,
+you will be given snippets for RST, Markdown, and HTML;
+to make embedding it easier.&lt;/p&gt;
+&lt;p&gt;If you leave the version argument off,
+it will default to your latest version.
+This is probably best to include in your README,
+since it will stay up to date with your Read the Docs project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;design&quot;&gt;
+&lt;h2&gt;Design&lt;/h2&gt;
+&lt;p&gt;We have often wondered what we might make our badges look like.
+Luckily,
+there is a developing standard and service to support badges.
+&lt;a class=&quot;reference external&quot; href=&quot;http://shields.io&quot;&gt;http://shields.io&lt;/a&gt; is what we’ll be using to generate our badges,
+and they look beautiful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;feature-requests&quot;&gt;
+&lt;h2&gt;Feature Requests&lt;/h2&gt;
+&lt;p&gt;This is an initial attempt at adding badges to Read the Docs,
+it’s a feature we’ve wanted to add for some time.
+We have some plans to improve badges further,
+but be sure to get in touch with us if you have any feedback on how you would like to see badges used.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;,
+or you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:readthedocs&amp;#37;&amp;#52;&amp;#48;gmail&amp;#46;com&quot;&gt;readthedocs&lt;span&gt;&amp;#64;&lt;/span&gt;gmail&lt;span&gt;&amp;#46;&lt;/span&gt;com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2014/atom.xml">
+    <title type="text">Welcome</title>
+    <id>https://blog.readthedocs.com/welcome/</id>
+    <updated>2014-08-07T00:00:00Z</updated>
+    <published>2014-08-07T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/welcome/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;welcome&quot;&gt;
+
+&lt;p&gt;Welcome to the Read the Docs blog.form me.&lt;/p&gt;
+&lt;p&gt;We will be doing regular feature announcements on the blog as we build them.
+There are also a number of recently released features that we’ll highlight there as well.&lt;/p&gt;
+&lt;p&gt;We have back ported some old blog posts from Eric Holscher’s blog that were about Read the Docs,
+so that you can find them a bit easier in the future.&lt;/p&gt;
+&lt;p&gt;Thanks for stopping by.
+We’ll have some awesome new features for you next week.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2013</title>
+  <id>https://blog.readthedocs.com/archive/2013/atom.xml</id>
+  <updated>2013-12-23T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2013/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2013/atom.xml">
+    <title type="text">Read the Docs 2013 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2013-stats/</id>
+    <updated>2013-12-23T00:00:00Z</updated>
+    <published>2013-12-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2013-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2013-stats&quot;&gt;
+
+&lt;p&gt;2013 has been a big year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+Our mission is to make documentation hosting easier,
+with the overall goal of increasing the quality of documentation in the programming world.
+I believe that we have been doing good work towards that goal,
+and I want to share some numbers to reflect our progress.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;Our community has been great this year.
+I have been really happy to see a few people submit multiple patches and features.
+This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2013-01-01&amp;amp;to=2013-12-21&amp;amp;type=c&quot;&gt;39 people&lt;/a&gt; who committed code&lt;/li&gt;
+&lt;li&gt;550 commits&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?q=created%3A%3E%3D2013-01-01&amp;amp;source=cc&amp;amp;type=Issues&quot;&gt;271 issues&lt;/a&gt; - 218 closed, 53 open&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to &lt;a class=&quot;reference external&quot; href=&quot;http://blog.wraithan.net/&quot;&gt;Wraithan&lt;/a&gt; in particular,
+who has taken on a large role in helping maintain the site and servers.&lt;/p&gt;
+&lt;p&gt;If there is anyone else out there who would like to help with operations,
+especially outside of US timezones,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:eric&amp;#37;&amp;#52;&amp;#48;ericholscher&amp;#46;com&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our growth in page views has always been crazy to me.
+It was somewhere in mid-2011 that Read the Docs went from a hobby project,
+into something projects depended on.
+This growth has never stopped,
+and today a large number of important projects depend on Read the Docs.&lt;/p&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;65 Million Page Views&lt;/li&gt;
+&lt;li&gt;13 Million Unique Visitors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For context,
+these numbers are similar to what &lt;a class=&quot;reference external&quot; href=&quot;https://blog.mozilla.org/files/2013/12/mozilla_eoy_2013_EN_72dpi_FINAL.jpg&quot;&gt;MDN has&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;These numbers are actually a bit low.
+Some themes don’t support default Sphinx template blocks,
+so we can’t count them in our stats correctly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I think an image shows this a bit better than words:&lt;/p&gt;
+&lt;img alt=&quot;img/2013-stats.png&quot; src=&quot;img/2013-stats.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;Our pageviews are driven mainly by 100 or so high traffic sites.
+We have a lot of small projects that are up on Read the Docs too that we love.&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;7949 projects&lt;/li&gt;
+&lt;li&gt;11679 users&lt;/li&gt;
+&lt;li&gt;1040182 builds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;on Gittip&lt;/a&gt;.
+I am very grateful for the support that the community has given the project over the years.
+It is great validation that people value the service you are providing,
+even when you give it away for free.&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$167/wk currently&lt;/li&gt;
+&lt;li&gt;114 people giving money&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2013 has been a great year for Read the Docs.
+We have made a lot of progress,
+and I think 2014 will be even better.&lt;/p&gt;
+&lt;p&gt;We are working on a number of new features to expand the user base,
+and make the site more approachable.
+We forward to continuing to improve the documentation ecosystem in the new year.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2013/atom.xml">
+    <title type="text">A New Theme for Read the Docs</title>
+    <id>https://blog.readthedocs.com/new-theme-read-the-docs/</id>
+    <updated>2013-11-04T00:00:00Z</updated>
+    <published>2013-11-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/new-theme-read-the-docs/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;a-new-theme-for-read-the-docs&quot;&gt;
+
+&lt;p&gt;We have been &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pulse/monthly&quot;&gt;hard at work&lt;/a&gt; improving &lt;a class=&quot;reference external&quot; href=&quot;http://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt; over the past month.
+A large amount of back end work has been going on,
+and now we have a brand new documentation theme to showcase it.&lt;/p&gt;
+&lt;p&gt;We have looked at how people use documentation,
+and built a beautiful and highly functional &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/&quot;&gt;new interface&lt;/a&gt; for browsing documentation.
+We created a solution that looks great and works well.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;creation&quot;&gt;
+&lt;h2&gt;Creation&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://twitter.com/enemykite&quot;&gt;Dave Snider&lt;/a&gt; approached me about a month ago,
+interested in helping improve the documentation ecosystem.
+We talked about what could improve the Read the Docs experience for the greatest number of our users,
+and a new theme seemed like a great place to start.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-new-theme&quot;&gt;
+&lt;h2&gt;The New Theme&lt;/h2&gt;
+&lt;div class=&quot;section&quot; id=&quot;full-site&quot;&gt;
+&lt;h3&gt;Full site&lt;/h3&gt;
+&lt;p&gt;The full documentation page is now beautiful and streamlined.
+We got rid of the visual clutter and integrated a full-project Table of Contents in the sidebar.
+When you go into a specific page,
+a page-level contents get embedded in the sidebar as well.
+This allows you to keep context inside the documentation when you land on a page from a search.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;old&quot;&gt;
+&lt;h4&gt;Old&lt;/h4&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/hWOnmKy.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/hWOnmKy.png&quot; src=&quot;http://i.imgur.com/hWOnmKy.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new&quot;&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/7oLntvR.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/7oLntvR.png&quot; src=&quot;http://i.imgur.com/7oLntvR.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;flyout&quot;&gt;
+&lt;h3&gt;Flyout&lt;/h3&gt;
+&lt;p&gt;Read the Docs provides a lot of functionality for documentation projects.
+The flyout is the avenue to accessing that functionality.
+We need to pack all our functionality into this space.&lt;/p&gt;
+&lt;p&gt;In the new theme,
+the flyout is integrated into the bottom left of the theme.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;id1&quot;&gt;
+&lt;h4&gt;Old&lt;/h4&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/new-theme-read-the-docs.rst&lt;/tt&gt;, line 61); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate implicit target name: “old”.&lt;/div&gt;
+&lt;p&gt;The old flyout let you:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Change versions&lt;/li&gt;
+&lt;li&gt;Go back to Read the Docs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/CBDPzbD.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/CBDPzbD.png&quot; src=&quot;http://i.imgur.com/CBDPzbD.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/new-theme-read-the-docs.rst&lt;/tt&gt;, line 73); &lt;em&gt;&lt;a href=&quot;#id2&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate implicit target name: “new”.&lt;/div&gt;
+&lt;p&gt;The new flyout lets you:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Change versions&lt;/li&gt;
+&lt;li&gt;Go back to Read the Docs&lt;/li&gt;
+&lt;li&gt;See the current version&lt;/li&gt;
+&lt;li&gt;Show if the current version is out of date&lt;/li&gt;
+&lt;li&gt;Download docs for offline viewing&lt;/li&gt;
+&lt;li&gt;Contribute edits on GitHub or Bitbucket&lt;/li&gt;
+&lt;li&gt;Do a full-text search (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/9DRP8fj.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/9DRP8fj.png&quot; src=&quot;http://i.imgur.com/9DRP8fj.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;mobile&quot;&gt;
+&lt;h3&gt;Mobile&lt;/h3&gt;
+&lt;p&gt;The new theme really shines on mobile.
+We provide a beautiful interface for phones and tablets,
+while staying completely functional.&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/29uEpVs.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/29uEpVs.png&quot; src=&quot;http://i.imgur.com/29uEpVs.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;using-it&quot;&gt;
+&lt;h2&gt;Using it&lt;/h2&gt;
+&lt;p&gt;There are two ways that you can use this theme on Read the Docs.
+The first is to simply leave your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;html_theme&lt;/span&gt;&lt;/code&gt; variable set to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;default&lt;/span&gt;&lt;/code&gt;.
+This is now the default Read the Docs theme.
+You can also set &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;RTD_NEW_THEME&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;True&lt;/span&gt;&lt;/code&gt; in your project’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt;,
+and we will use our theme when building on Read the Docs no matter what &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;html_theme&lt;/span&gt;&lt;/code&gt; is set to.&lt;/p&gt;
+&lt;p&gt;After you change these settings,
+simply rebuild your docs and the theme should update.
+More information about the theme can be found on the &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/stable/&quot;&gt;theme documentation page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to continue using the old theme,
+simply set &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;RTD_OLD_THEME&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;True&lt;/span&gt;&lt;/code&gt; in your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This theme is a great addition to the documentation ecosystem.
+It is highly functional and beautiful,
+allowing users to easily navigate and find what they need.&lt;/p&gt;
+&lt;p&gt;We have a few more tricks up our sleeves,
+but theme is ready to launch today.
+Over the next few weeks we’ll be adding a bit more functionality to it,
+which should be even more delightful.&lt;/p&gt;
+&lt;p&gt;I hope that you enjoy using it.
+If you have any feedback,
+please &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/snide/sphinx_rtd_theme/issues&quot;&gt;open an issue&lt;/a&gt; on GitHub.
+To follow announcements for Read the Docs,
+follow &lt;a class=&quot;reference external&quot; href=&quot;http://twitter.com/readthedocs&quot;&gt;us on Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to support work like this,
+help &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;fund development on Read the Docs&lt;/a&gt; on Gittip.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

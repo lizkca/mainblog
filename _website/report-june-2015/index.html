@@ -1,0 +1,353 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:title" content="Report - June 2015" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="report-june-2015.html" />
+  <meta property="og:site_name" content="Read the Docs Blog" />
+  <meta property="og:description" content="With the Write the Docs conference wrapped up in May, we shifted our focus back to Read the Docs for the remainder of May and June. Following our post on contract positions available with Read the ..." />
+  <meta property="og:image" content="https://blog.readthedocs.com/_static/logo-opengraph.png" />
+  <meta property="og:image:alt" content="Read the Docs Blog" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <title>Report - June 2015 &#8212; Read the Docs Blog</title>
+    <link rel="stylesheet" href="../_static/main.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+  
+  <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Puritan:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../_static/local.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer data-domain="blog.readthedocs.com" src="https://plausible.io/js/plausible.js"></script>
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../archive/atom.xml" title="Read the Docs Blog">
+  
+  
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head><body>
+  <!-- BEGIN header -->
+  <div id="header">
+    <div class="row">
+      <div class="logo">
+        <h1><a href="../">
+            <img src="../_static/logo.png" height="48" />
+            Read the Docs Blog
+        </a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="https://readthedocs.com">Back to site</a></li>
+          <li><a href="mailto:hello@readthedocs.com">Contact&nbsp;Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END header -->
+
+  <div id="content">
+    <div class="wrapper">
+
+      <div class="col-major content">
+          
+  <div class="section" id="report-june-2015">
+<h1>Report - June 2015<a class="headerlink" href="#report-june-2015" title="Permalink to this headline">¶</a></h1>
+<p>With the <a class="reference external" href="http://writethedocs.org">Write the Docs</a> conference wrapped up in May, we shifted our focus
+back to Read the Docs for the remainder of May and June. Following our post
+<a class="reference internal" href="../read-the-docs-is-hiring/"><span class="doc">on contract positions available</span></a> with Read the
+Docs, we hired two contractors to work with us and focus on support and
+stability for readthedocs.org. <a class="reference external" href="https://github.com/gregmuellegger">Gregor Müllegger</a> will be working on support
+and development, and <a class="reference external" href="https://github.com/onewheelskyward">Andrew Kreps</a> has helped us on building and improving our
+operations infrastructure.</p>
+<div class="section" id="updates">
+<h2>Updates<a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h2>
+<p>Read the Docs had the following major updates in June:</p>
+<div class="section" id="ops">
+<h3>Ops<a class="headerlink" href="#ops" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Elastic Search support was upgraded and our search cluster is now hosted on
+<a class="reference external" href="http://found.no">Found</a>.</li>
+<li>We greatly improved the Read the Docs infrastructure, including monitoring and alerting, as well as server
+environment consistency. Using Nagios and Graphite, as well as Salt, for this task.</li>
+<li>Static assets were migrated to use a CDN, provided by <a class="reference external" href="http://maxcdn.com">MaxCDN</a>.</li>
+<li>We did a fresh provision of our build cluster using Salt. Previously, there were slight
+disparities between the servers, which surfaced some issues during builds.</li>
+<li>Fixed Python 3 build environments with new virtualenv and pip.</li>
+<li>Changed our queueing strategy to not be tied to a single specific build machine.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="dev">
+<h3>Dev<a class="headerlink" href="#dev" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Output formats such as PDF and ePub are now configurable, but continue to default
+to on.</li>
+<li>Added the ability to wipe the Build environment to the Versions page.</li>
+<li>We started to address issues with stable version detection</li>
+<li>Fixed issues related to version name slugging.</li>
+<li>In order to move away from third party analytics, we have spun up an instance
+of Piwik. We plan on testing this with our production traffic in the coming months.</li>
+<li>Fixed “Edit on GitHub” links for stable versions</li>
+<li>General refactoring and cleanup of the codebase, and added test coverage.</li>
+</ul>
+</div></blockquote>
+<p>For more information on our development orchestration, visit or subscribe to our
+<a class="reference external" href="https://trello.com/b/tF04aNrT/read-the-docs-public">public Trello board</a>.</p>
+</div>
+</div>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<p>We have started to formalize on a ticket triage process and have more focus on
+performing project management in the open. This is a very welcome change to our
+existing workflow and hope to continue improving on it.</p>
+<p>In the month of June:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Read the Docs saw <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue">50 new issues</a> in the month of June</li>
+<li>26 of those issues <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue+state%3Aclosed">have been closed</a></li>
+<li><a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue+state%3Aopen">The remaining 24</a> have been triaged but remain unresolved</li>
+<li>Additionally, <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A%3C2015-06-01+type%3Aissue+state%3Aclosed+closed%3A2015-06-01..2015-06-30">19 outstanding issues</a> were closed out</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="next-month">
+<h2>Next Month<a class="headerlink" href="#next-month" title="Permalink to this headline">¶</a></h2>
+<p>Once work is wrapped up on version detection cleanup, we hope to start
+improving our Github/Bitbucket integration and user experience
+issues around deleting old projects and versions from Read the Docs.</p>
+<p>We will also be testing internal analytics in the coming months. Our stance is
+that user data, for both our users and for readers of hosted documentation,
+should not be handed over to third party services like Google Analytics. We hope
+to replace external analytics with an internally hosted service, so that your
+data remains with us.</p>
+<p>Feel free to raise any questions you have about any of these changes on our
+<a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues">issue tracker</a>, or on our Freenode IRC channel, #readthedocs.</p>
+</div>
+</div>
+
+  <div class="section">
+  
+    
+  
+  
+  </div>
+
+      </div>
+
+      <div class="col-minor sidebar">
+  
+  
+  <ul class="post-details">
+    <li>
+      
+        <i class="fa-fw fa fa-calendar"></i>
+        01 七月 2015
+      
+    </li>
+
+      
+
+  
+  <li id="author"><span><i class="fa-fw fa fa-user"></i></span>
+    
+      
+      <a href="../archive/author/anthony-johnson/">Anthony Johnson</a>
+      
+    </li>
+  
+
+  
+  <li id="location"><span><i class="fa-fw fa fa-location-arrow"></i></span>
+    
+      
+      <a href="../archive/location/portland-oregon/">Portland, Oregon</a>
+      
+    </li>
+  
+
+  
+
+  
+
+  
+  <li id="tags"><span><i class="fa-fw fa fa-tag"></i></span>
+    
+      
+      <a href="../archive/tag/report/">report</a>
+      
+    </li>
+  
+  
+  </ul>
+
+
+
+<!-- Begin MailerLite Signup Form -->
+  <div id="mlb2-4710274" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4710274">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          <div class="ml-form-embedContent">
+            <h3 style="margin-left: 0">Subscribe to our mailing list</h3>
+            <p>Sign up for our blog and we'll send you news and updates about Sphinx and Read the Docs on a regular basis.</p>
+          </div>
+          <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/p8b7z2" data-code="p8b7z2" method="post" target="_blank">
+            <div class="ml-form-formContent">
+              <div class="ml-form-fieldRow ml-last-item">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email address" autocomplete="email" style="width: 90%">
+                </div>
+              </div>
+            </div>
+            <div class="ml-form-embedPermissions">
+              <div class="ml-form-embedPermissionsContent default privacy-policy">
+                <p style="margin-bottom: 0; font-size: 0.8em">You can unsubscribe anytime. For more details, review our <a href="https://docs.readthedocs.io/page/privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Subscribe</button>
+              <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display:none">
+          <div class="ml-form-successContent">
+            <h4>Thank you!</h4>
+            <p>You have successfully joined our subscriber list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function ml_webform_success_4710274(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-4710274 .row-success").show(),r(".ml-subscribe-form-4710274 .row-form").hide()}
+  </script>
+  <img src="https://track.mailerlite.com/webforms/o/4710274/p8b7z2?v1632123501" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
+<!--End mc_embed_signup-->
+
+
+<!-- Jobs 
+<h3> Read the Docs is hiring </h3>
+<ul>
+    <li><a href="https://blog.readthedocs.com/job-frontend/">Front-end Developer</a></li>
+</ul>
+-->
+
+<h3> Follow us </h3>
+
+<ul>
+<li>
+<a href="http://blog.readthedocs.com/archive/atom.xml" rel="me">Atom Feed</a>
+</li>
+<li>
+<a href="https://twitter.com/readthedocs" rel="me">Twitter</a>
+</li>
+</ul>
+
+  <h3><a href="../archive/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../newsletter2-october-2021/">07 十月 - todo and plan - October 2021</a></li>
+    
+      <li><a href="../newsletter-october-2021/">07 十月 - Read the Docs newsletter - October 2021</a></li>
+    
+      <li><a href="../newsletter-september-2021/">02 九月 - Read the Docs newsletter - September 2021</a></li>
+    
+      <li><a href="../theme-release-100rc1/">23 八月 - Theme release 1.0.0rc1</a></li>
+    
+      <li><a href="../newsletter-august-2021/">09 八月 - Read the Docs newsletter - August 2021</a></li>
+    
+  </ul>
+
+  <h3><a href="../archive/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../archive/2021/">2021 (18)</a></li>
+    
+  
+    
+    <li><a href="../archive/2020/">2020 (6)</a></li>
+    
+  
+    
+    <li><a href="../archive/2019/">2019 (15)</a></li>
+    
+  
+    
+    <li><a href="../archive/2018/">2018 (13)</a></li>
+    
+  
+    
+    <li><a href="../archive/2017/">2017 (7)</a></li>
+    
+  
+    
+    <li><a href="../archive/2016/">2016 (5)</a></li>
+    
+  
+    
+    <li><a href="../archive/2015/">2015 (9)</a></li>
+    
+  
+    
+    <li><a href="../archive/2014/">2014 (4)</a></li>
+    
+  
+    
+    <li><a href="../archive/2013/">2013 (2)</a></li>
+    
+  
+  </ul>
+
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="row">
+      <div class="col fill">
+        <ul>
+            <li>
+                &copy; Copyright 2021, Read the Docs, Inc.
+            </li>
+
+          <li>
+            Powered by <a href="http://ablog.readthedocs.org">ABlog</a>, and <a href="http://readthedocs.org/">Read the Docs</a>.
+          </li>
+            <li>
+              Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

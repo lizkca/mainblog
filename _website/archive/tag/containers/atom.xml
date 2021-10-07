@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged containers</title>
+  <id>https://blog.readthedocs.com/archive/tag/containers/atom.xml</id>
+  <updated>2015-09-30T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/containers/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/containers/atom.xml">
+    <title type="text">Securing Build Processes</title>
+    <id>https://blog.readthedocs.com/securing-build-processes/</id>
+    <updated>2015-09-30T00:00:00Z</updated>
+    <published>2015-09-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/securing-build-processes/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;securing-build-processes&quot;&gt;
+
+&lt;p&gt;We’ve recently introduced a new build container subsystem based on Docker to readthedocs.org,
+which should go mostly unnoticed for users.
+We’re still ironing out some bugs with the system,
+so raise an issue on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt; if you are noticing any new issues
+with your project builds.&lt;/p&gt;
+&lt;p&gt;This new system is part of an over-due security update to help isolate arbitrary
+code execution.  As Read the Docs has grown, protecting against arbitrary
+execution was a rapidly growing concern.  This build isolation layer was
+developed as part of readthedocs.com, where security concerns are paramount due
+to private repository access. We’ve been testing it for roll out on the
+community site since then, but hadn’t committed to switching production build
+servers over due to the number of possible side effects.&lt;/p&gt;
+&lt;p&gt;This immediate change was in response to a &lt;a class=&quot;reference external&quot; href=&quot;http://alex.hyperiongray.com/posts/302352-pwn-the-docs&quot;&gt;release&lt;/a&gt; yesterday outlining some
+possible attack vectors when dealing with arbitrary code execution and Python.
+We didn’t want to delay the fix for any longer following this release, and
+decided to deal with any lingering issues as soon as they came up.&lt;/p&gt;
+&lt;p&gt;We have no reason to believe that any users have been effected by the reported issue.
+As a part of rolling out this new system,
+we have provisioned new build servers.
+We are also actively monitoring for any other possible issues.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-it-works&quot;&gt;
+&lt;h2&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;Under the new system,
+we provision a unique container for each build.
+All build steps that depend on executing code (setup.py, pip, Sphinx),
+run inside that container as individual commands,
+triggered from the host build server.
+The container has 10 minutes to complete these build commands before we time out the
+build and kill the container system.
+A filesystem is shared from the host build server,
+which only contains the project checkout and artifact directories.
+The container has no other access to the build server filesystem.&lt;/p&gt;
+&lt;p&gt;Our host build servers are firewalled from our application and database servers,
+so they have no ability to connect to them.
+Communication is done over a task queue on a dedicated server.
+To start a build,
+the web servers put a build task in a queue which is read by the build servers.
+The host build servers manage the container creation,
+command execution inside the container,
+and the reporting of command and command return via our API.
+When a build is finished,
+a task is inserted into the queue,
+and web servers pull documentation from the build server to be served.
+All communication with the task queue and API happens outside of the container,
+with the container strictly acting as a mechanism for command execution.&lt;/p&gt;
+&lt;p&gt;Breaking out of this system requires a privilege escalation attack,
+and the ability to break out of the container in order to access the outer build system.
+All of these measures are required because our system runs user code.
+To properly fix this situation,
+we are working to remove arbitrary execution form our stack entirely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;fixing-arbitrary-execution&quot;&gt;
+&lt;h2&gt;Fixing Arbitrary Execution&lt;/h2&gt;
+&lt;p&gt;Arbitrary execution is something that is difficult, if not impossible, for us to
+avoid currently. It’s built into Sphinx’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; system, which gives Sphinx such
+a useful reference documentation implementation.&lt;/p&gt;
+&lt;p&gt;However, executing Python in order to evaluate docstrings is a broken pattern.
+For our purposes, it requires installing project dependencies and executing the
+code of each Python project on Read the Docs.  These are two steps that introduce a
+substantial number of issues with usability and number of security concerns.&lt;/p&gt;
+&lt;p&gt;Ideally, using a project like &lt;a class=&quot;reference external&quot; href=&quot;http://epydoc.sourceforge.net/&quot;&gt;Epydoc&lt;/a&gt; to help take place of &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; would
+be the best path forward. This takes the approach of parsing the code, instead
+of executing the code. This avoids executing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;setup.py&lt;/span&gt;&lt;/code&gt; on the project,
+and installing any dependencies, which is where code execution currently happens.
+We’ve been working for some time now on supporting this with &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;,
+but don’t think it’s an adequate solution for every Python project just yet.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Epydoc is not a strong project for us to rely on currently, as
+activity has winded down in the past years and it lacks Python 3 support.
+Another project with the same focus is &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/twisted/pydoctor/&quot;&gt;pydoctor&lt;/a&gt;,
+though work to implement Python 3 support is required there too.&lt;/p&gt;
+&lt;p&gt;The other source of code execution is the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt; file inside Sphinx.
+We have also been working on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+which implements a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt; file that will move Sphinx configuration
+into a non-executable format.
+This will remove the last step to remove arbitrary execution in our environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;for-more&quot;&gt;
+&lt;h2&gt;For more&lt;/h2&gt;
+&lt;p&gt;Read the Docs is an open source project.
+If you are interested in helping us with the above tasks,
+we are always happy to have help.
+Specifically if you are able to help with development of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;
+or &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+that would greatly increase the speed that we can migrate to those solutions.
+Also,
+if you are knowledgeable in ways of locking Docker down even more,
+we would love to talk.&lt;/p&gt;
+&lt;p&gt;As always,
+you can email us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:security&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;security&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt; for any issues that might be security related.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

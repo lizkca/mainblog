@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged business</title>
+  <id>https://blog.readthedocs.com/archive/tag/business/atom.xml</id>
+  <updated>2019-06-20T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/business/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">Read the Docs Offsite 2019</title>
+    <id>https://blog.readthedocs.com/offsite-2019/</id>
+    <updated>2019-06-20T00:00:00Z</updated>
+    <published>2019-06-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/offsite-2019/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-offsite-2019&quot;&gt;
+
+&lt;p&gt;The Read the Docs team just finished our first offsite ever in April of 2019.
+We all gathered together in person for the first time,
+and talked about the future of the project.&lt;/p&gt;
+&lt;p&gt;A picture will show this better than I can:&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;img/offsite-2019.png&quot; src=&quot;img/offsite-2019.png&quot; style=&quot;width: 90%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;The team at the house we rented in Aruba&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The full list of attendees, which is the full-time staff, from left to right:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;David Fischer&lt;/li&gt;
+&lt;li&gt;Manuel Kaufmann&lt;/li&gt;
+&lt;li&gt;Eric Holscher&lt;/li&gt;
+&lt;li&gt;Anthony Johnson&lt;/li&gt;
+&lt;li&gt;Santos Gallegos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Our biggest goal was building a shared understanding of the vision for the project.
+Being fully remote,
+it’s often hard to communicate at a deep level about mission and vision.
+Being together in person for a week gave us the space to understand each other and our views better.&lt;/p&gt;
+&lt;p&gt;The other large goal was to build a roadmap for the next 3-6 months for the project.
+We have often had smaller roadmaps,
+but never had the chance to discuss all the problems that we encounter with the project,
+and then prioritize them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;format&quot;&gt;
+&lt;h2&gt;Format&lt;/h2&gt;
+&lt;p&gt;We used the following format:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Before the offsite, we created a Trello board with a list of topics to discuss. This was all the major feature ideas, issues, and concerns that came up over the previous couple months.&lt;/li&gt;
+&lt;li&gt;For the first 3 days, we went through the list and discussed each topic. We took notes (almost 20 pages) of these discussions, and mostly tried to build a shared understanding on a path forward.&lt;/li&gt;
+&lt;li&gt;The 4th day we broke each section down into action items, and chunked them into 1-3 smaller sections of work. We called these “v1”, “v2”, and “v3” to break out the stages where each project could be shipped and have impact on our users.&lt;/li&gt;
+&lt;li&gt;The 5th day we took all the tasks, then sized and prioritized them. We broke things out into 4 piles representing months going forward, and tried to balance the tasks so each month had a similar amount of work in it. We then turned this into a Trello roadmap board.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This worked quite well for us.
+It gave us space to talk through all the various topics we had,
+but also gave concrete next steps to move forward on our tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;The most valuable outcome is something I said at the offsite:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;Before, it felt like we were 5 contributors working on an open source project. Now, it feels like we’re members of a team.&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For each member of the team,
+there was someone else they had never met in person before this.
+Having all met in person will make it much easier to collaborate online going foward,
+and to feel like we are working towards a goal that we all share.&lt;/p&gt;
+&lt;p&gt;In terms of technical output,
+the roadmap we have established will make us much more productive in our work going foward.
+The entire team now has vision around the roadmap items,
+and understands the tasks other people are working on much better.
+This has already lead to a much better ability to collaborate together.&lt;/p&gt;
+&lt;p&gt;We are hoping to do another offsite in 2020,
+and if we do our jobs right, hopefully we’ll have another teammate or two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">New Ad Format Coming to Read the Docs Community Sites</title>
+    <id>https://blog.readthedocs.com/fixed-footer-ad-all-themes/</id>
+    <updated>2019-06-18T00:00:00Z</updated>
+    <published>2019-06-18T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/fixed-footer-ad-all-themes/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-ad-format-coming-to-read-the-docs-community-sites&quot;&gt;
+
+&lt;p&gt;We view our ad program as a way to keep Read the Docs itself sustainable,
+and to use it to better support the community.
+Advertising has allowed us to have full-time employees adding new features
+and responding to issues in our issue tracker.
+We have also been able to share thousands of dollars with the open source community
+via our revenue share program and grants.&lt;/p&gt;
+&lt;p&gt;Currently, about 30% of our site traffic does not have any advertising.
+When we first launched ethical advertising in 2016,
+we launched only on &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-other-themes/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;specific documentation themes&lt;/span&gt;&lt;/a&gt;.
+We purposely did this slowly to make sure our ads look integrated
+with Read the Docs and less obtrusive to users.&lt;/p&gt;
+&lt;p&gt;For a while, this wasn’t a problem because we had not reached capacity with advertising.
+We did not have enough paid advertisers to support the amount of pageviews Read the Docs served.
+Fast forward a couple years,
+and our advertising model has &lt;a class=&quot;reference internal&quot; href=&quot;../../../ad-funding-read-the-docs-whats-next/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;proven to be successful&lt;/span&gt;&lt;/a&gt;.
+In North America and Western Europe,
+&lt;strong&gt;100% of pages that are eligible for paid advertising have a paid ad&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now that we’ve hit that limit, it makes sense to expand to more themes.
+Rather than going theme by theme as we did in the past,
+especially considering the huge number of Sphinx themes,
+we designed an ad that would work across all Sphinx themes.
+This became much easier with a more simple text-only ad as you will see.&lt;/p&gt;
+&lt;p&gt;To be very explicit,
+&lt;strong&gt;this new ad format will show advertising on all documentation themes&lt;/strong&gt;.
+We plan to roll this new ad format out more widely in stages:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;To start with, we are going to enable this ad format for community and house advertising
+on pages that already have ads on them.
+As always, we never display two ads on the same page so this ad will be instead of any other ad.&lt;/li&gt;
+&lt;li&gt;After that, we will allow paid advertisers to use this new format.
+Again, we will start only on pages that already have ads.&lt;/li&gt;
+&lt;li&gt;We will email users of custom documentation themes to let them know this change is coming.&lt;/li&gt;
+&lt;li&gt;At first, we will show only community and house ads on these custom themes.&lt;/li&gt;
+&lt;li&gt;Finally, we’ll turn on our normal ad rotation to all themes.
+We expect to complete this by the end of July.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will closely monitor feedback from document authors, readers, and advertisers during this process.
+If you have questions or comments on this, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=New%20Ad%20Format%20Feedback&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;text-only-ads&quot;&gt;
+&lt;h2&gt;Text-only ads&lt;/h2&gt;
+&lt;p&gt;We’ve wanted to try text-only ads for a while but it took time to get it right.
+From the start, we were very keen on text-only advertisements
+because they aren’t as obtrusive as image-based ads
+and they are easier for advertisers to create and experiment with multiple variations.
+What we didn’t know was whether users would engage with them at similar rates to our other ads.&lt;/p&gt;
+&lt;p&gt;We ran a small experiment with a text-only house ad
+on the Read the Docs documentation itself and the results were very promising.
+Engagement rates were over double our site average
+and even compared favorably with the same ad in the sidebar including an image.
+Those figures may not hold up as the format is rolled out more widely but it is certainly a good sign.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A text-only ad on the Read the Docs documentation. Yes, this new format will be blocked by most ad blockers.&quot; src=&quot;img/2019-text-only-ad.png&quot; style=&quot;width: 80%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;A text-only footer advertisement on the Read the Docs documentation&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I’d like to thank Eric Berry over at &lt;a class=&quot;reference external&quot; href=&quot;https://codefund.io/&quot;&gt;CodeFund&lt;/a&gt; for some great ideas
+and insights around this kind of ad format.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;opting-out&quot;&gt;
+&lt;h2&gt;Opting Out&lt;/h2&gt;
+&lt;p&gt;We understand that advertising doesn’t work for everyone – even advertising without any user tracking.&lt;/p&gt;
+&lt;p&gt;Users can opt-out of paid advertising themselves and for any projects they maintain
+although they will still see community ads for open source projects and conferences.
+Gold members of Read the Docs get an ad-free experience
+and for companies we have our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/&quot;&gt;commercial offering at readthedocs.com&lt;/a&gt;
+which is always ad-free.&lt;/p&gt;
+&lt;p&gt;If you would like to completely remove advertising from your open source project,
+but our commercial plans don’t seem like the right fit,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Alternatives%20to%20advertising&quot;&gt;get in touch&lt;/a&gt; to discuss alternatives to advertising.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">Ad Funding at Read the Docs and What’s Next for Ethical Advertising</title>
+    <id>https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/</id>
+    <updated>2019-06-11T00:00:00Z</updated>
+    <published>2019-06-11T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ad-funding-at-read-the-docs-and-what-s-next-for-ethical-advertising&quot;&gt;
+
+&lt;p&gt;It has been three years since we first launched &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-read-the-docs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ads on Read the Docs&lt;/span&gt;&lt;/a&gt;
+and while we gave a limited update in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../read-the-docs-2018-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;2018 stats&lt;/span&gt;&lt;/a&gt;,
+we figured it was time to give an update on ethical advertising and how it is working.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;advertising-without-tracking&quot;&gt;
+&lt;h2&gt;Advertising without tracking&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Our ethical advertising model is still going strong.&lt;/strong&gt;
+We proved that it is possible to build a business model on top of advertising
+without resorting to user tracking.
+Unlike most other ad-supported sites, we show advertising based on the context of the page,
+not by creating behavoral profiles of large numbers of individual users.
+If you are browsing documentation for a Python project, you might see a relevant ad about Python.
+It’s that simple and it works.&lt;/p&gt;
+&lt;p&gt;Despite a slow start to the year, we expect to earn about $75,000 from advertising in Q2.
+This brings our advertising revenue back to the level
+before our ads were &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;added to major ad blocking lists&lt;/span&gt;&lt;/a&gt; last year.&lt;/p&gt;
+&lt;p&gt;While we do earn money from other sources such as our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;commercial offering&lt;/a&gt;,
+advertising continues to be our largest source of revenue and has allowed us
+to expand our team to five full-time people.
+Compared with three years ago when we were scraping along with very little money,
+our community issue tracker and support requests receive prompt responses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;progress&quot;&gt;
+&lt;h2&gt;Progress&lt;/h2&gt;
+&lt;p&gt;We’ve made great progress on advertising over the past year.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We survived a major hit to revenue from ad blocking
+without resorting to cat and mouse games of changing ad layouts and APIs to avoid ad blockers.&lt;/li&gt;
+&lt;li&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/advertising/ethical-advertising.html#community-ads&quot;&gt;community ads program&lt;/a&gt; has been significantly expanded.
+We are actively running free community advertising promoting over ten open source projects and conferences.&lt;/li&gt;
+&lt;li&gt;While we never tracked users with advertising,
+we put in place stricter &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;Do Not Track&lt;/span&gt;&lt;/a&gt; privacy protections.
+We continue to believe that advertising can be well targeted without tracking users.&lt;/li&gt;
+&lt;li&gt;We launched an advertising vertical to let companies
+&lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;promote their open jobs&lt;/span&gt;&lt;/a&gt; to developers.&lt;/li&gt;
+&lt;li&gt;Our advertising revenue share program tripled in size.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our ethical advertising approach, with no user tracking, has been key to our sustainability
+and has allowed Read the Docs to continue to build new features and give back to our community.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-s-next&quot;&gt;
+&lt;h2&gt;What’s next&lt;/h2&gt;
+&lt;p&gt;We have some really interesting developments coming regarding ethical advertising.&lt;/p&gt;
+&lt;p&gt;We are looking to add a few more projects to our ad &lt;strong&gt;revenue share program&lt;/strong&gt;
+and help more projects reach sustainability with an ethical advertising approach.
+If your project on Read the Docs does 100k+ pageviews per month
+and you are interested in exploring a new revenue stream, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ads%20revenue%20share&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are testing a &lt;strong&gt;new text-only ad format&lt;/strong&gt; which we will detail in a future post.
+Text-only ads are something we’ve wanted for a while because we believe they are less intrusive to readers
+but easy for advertisers to experiment with multiple variations.
+So far the results have been very promising and we are planning to roll this out more widely.&lt;/p&gt;
+&lt;p&gt;Our &lt;strong&gt;ethical ad network&lt;/strong&gt; is getting closer to launch.
+It’s a shame, but there’s a critical lack of funding for open source projects
+that form the building blocks of some extremely valuable software.
+We believe that advertising can fill some of that gap
+and Read the Docs can help by sharing some of the lessons we’ve learned building our own advertising.
+If you know a site that might be interested in being a beta tester
+of a pro-privacy ad network built specifically to help fund open source,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ad%20Network%20beta&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Advertisers always have a choice where to direct their marketing spend
+and for many of them it would have been simpler to just go with the usual behemoth advertising platforms
+rather than advertising with a niche site like Read the Docs.
+I want to thank all our advertisers who believe in our approach and continue to support us.&lt;/p&gt;
+&lt;div class=&quot;admonition-would-your-company-like-to-reach-a-100-developer-audience admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Would your company like to reach a 100% developer audience?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Over 7 million developers Read the Docs each month. &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=ethical-advertising-2019&quot;&gt;Get in front of them today&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">Update on Ad Blocking and Acceptable Ads</title>
+    <id>https://blog.readthedocs.com/ad-blocker-update/</id>
+    <updated>2018-05-21T00:00:00Z</updated>
+    <published>2018-05-21T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ad-blocker-update/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;update-on-ad-blocking-and-acceptable-ads&quot;&gt;
+
+&lt;p&gt;A few weeks ago, we shared about the
+&lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;challenge ad blocking presented to our sustainability&lt;/span&gt;&lt;/a&gt;
+and what we were doing about it.
+On May 4th, Read the Docs was added to the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/&quot;&gt;Acceptable Ads list&lt;/a&gt;
+meaning that our visitors running ad blockers who choose to allow unintrusive advertising
+will see our ads again.
+The &lt;strong&gt;impact to our ad views, clicks, and revenue was immediate&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;data-on-our-inclusion-in-the-acceptable-ads-list&quot;&gt;
+&lt;h2&gt;Data on our inclusion in the Acceptable Ads list&lt;/h2&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Impact of ad blocking and acceptable ads at Read the Docs&quot; src=&quot;img/2018-readthedocs-adblocker-update.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;32% of Read the Docs visitors run an ad blocker&lt;/dt&gt;&lt;dd&gt;Estimates around the web vary regarding what percentage of people
+run ad blockers and it varies heavily by industry.
+We discussed this figure a bit in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous post&lt;/span&gt;&lt;/a&gt;.&lt;/dd&gt;
+&lt;dt&gt;It took a month from application to inclusion in the list&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We discovered about our inclusion in the &lt;a class=&quot;reference external&quot; href=&quot;https://easylist.to/&quot;&gt;EasyList&lt;/a&gt; ad blocker list
+within a couple days and immediately applied to the Acceptable Ads program.
+No changes were required of us to meet the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/en/about/criteria&quot;&gt;Acceptable Ads criteria&lt;/a&gt;
+and we also qualified for &lt;a class=&quot;reference external&quot; href=&quot;https://adblockplus.org/en/acceptable-ads#privacy-friendly-acceptable-ads&quot;&gt;Acceptable Ads without third-party tracking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While Eyeo, the company behind AdBlock Plus,
+derives &lt;a class=&quot;reference external&quot; href=&quot;https://adblockplus.org/about#monetization&quot;&gt;most of their revenue&lt;/a&gt; from the Acceptable Ads initiative
+by charging large entities,
+Read the Docs &lt;strong&gt;did not&lt;/strong&gt; pay for inclusion on the list.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Over half of those running an ad blocker allow acceptable ads&lt;/dt&gt;&lt;dd&gt;Given our more tech-savvy and privacy-focused audience,
+we didn’t know what to expect.
+Not every ad blocker allows acceptable ads by default
+and even then users can choose to turn them off.&lt;/dd&gt;
+&lt;dt&gt;People running ad blockers DO click on ads&lt;/dt&gt;&lt;dd&gt;We can definitively say this is true of our audience.
+Our click-through rate did not change based on ad blocking or
+our inclusion in the acceptable ads list at all.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Of the ad views and clicks blocked by ad blockers,
+inclusion in the Acceptable Ads list meant that 55-60%
+of our ad-blocking visitors choose to allow our ads.
+This directly translated into revenue toward our sustainability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;building-our-ethical-ads&quot;&gt;
+&lt;h2&gt;Building our Ethical Ads&lt;/h2&gt;
+&lt;p&gt;The Acceptable Ads list is definitely a step in the right direction for us.
+We share the goal of unintrusive advertising that respects our audience.&lt;/p&gt;
+&lt;p&gt;People understand that advertising funds much of the web.
+As ads got larger, more annoying,
+and ad networks stored more information on millions of people, however,
+many people finally decided to install ad blockers.
+This is the &lt;a class=&quot;reference external&quot; href=&quot;https://medium.com/the-graph/how-to-reverse-publisher-revenue-drain-c33e41bf0665&quot;&gt;largest boycott in human history&lt;/a&gt; and blaming users isn’t the answer.&lt;/p&gt;
+&lt;p&gt;Based on our experience with ad blocking and the Acceptable Ads list,
+it is clear that visitors will allow advertising that doesn’t disrupt user experience
+and doesn’t track people.&lt;/p&gt;
+&lt;p&gt;We are glad to have made progress toward regaining our sustaining revenue.
+Read the Docs is continuing on our experiment to fund open source infrastructure
+in a way that is a win/win for all parties,
+and we are glad you’re following along with us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">Ads and Ad blockers</title>
+    <id>https://blog.readthedocs.com/ads-and-adblocking/</id>
+    <updated>2018-05-02T00:00:00Z</updated>
+    <published>2018-05-02T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-and-adblocking/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ads-and-ad-blockers&quot;&gt;
+
+&lt;p&gt;Last time, we shared how &lt;a class=&quot;reference internal&quot; href=&quot;../../../ethical-advertising-works/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ethical advertising works&lt;/span&gt;&lt;/a&gt;
+to keep Read the Docs sustainable without creepy ad targeting.
+This time, we will share about one of our biggest challenges with advertising.
+At the beginning of April, Read the Docs was added to one of the most popular
+ad block lists: the &lt;a class=&quot;reference external&quot; href=&quot;https://easylist.to/&quot;&gt;Easylist&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;ad-blocker-fallout&quot;&gt;
+&lt;h2&gt;Ad blocker fallout&lt;/h2&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Effect of ad blocking on Read the Docs ad views&quot; src=&quot;img/2018-readthedocs-adblocker-fallout.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Getting added to the EasyList had a significant and immediate impact
+on the bottom line at Read the Docs.
+Right around April 1, &lt;strong&gt;32% of our ad views simply vanished&lt;/strong&gt;.
+At first, we thought we had done something horribly wrong
+but then we discovered that this was due entirely to ad blocking.
+Our actual traffic wasn’t down at all.&lt;/p&gt;
+&lt;p&gt;Users’ browsers were simply downloading the updated EasyList
+which blocked ads on Read the Docs.
+In terms of ad viewership, weekdays
+– our busiest days and the peaks in the graph –
+became more like weekends and weekends fell off a cliff.
+We had always guessed what percentage of our user base ran ad blockers.
+Now we know. We knew this day would come as we became more successful
+but we had hoped it was a ways off considering we weren’t part of a large ad network.&lt;/p&gt;
+&lt;p&gt;This directly affected our operations and staff.
+Our operating costs didn’t go down in any significant way, but revenue sure did.
+Advertising is by far the largest source of revenue at Read the Docs
+and it just dropped by about a third.
+This meant that we had to cut some costs where we could and slow down some hiring plans.
+While Read the Docs is not a non-profit company,
+all the revenue is reinvested into the project itself, paying maintainers,
+and other places in the open source ecosystem.
+The situation is not dire by any means,
+but it was certainly disappointing that we ended up on the same list
+with popup advertisers who couldn’t care less about privacy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;all-about-ad-blockers&quot;&gt;
+&lt;h2&gt;All about ad blockers&lt;/h2&gt;
+&lt;p&gt;Ad blockers fulfill a legitimate need to mitigate the
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/ethical-advertising.html#ethical-info&quot;&gt;significant downsides of advertising&lt;/a&gt; from tracking across the internet,
+security implications of third-party code,
+and impacting the UX and performance of sites.&lt;/p&gt;
+&lt;p&gt;At Read the Docs, we specifically didn’t want those things.
+That’s why we built the ad network we wanted to exist with
+only relevant ads and no creepy behavioral targeting.&lt;/p&gt;
+&lt;p&gt;According to a &lt;a class=&quot;reference external&quot; href=&quot;https://pagefair.com/downloads/2017/01/PageFair-2017-Adblock-Report.pdf&quot;&gt;2017 report from PageFair&lt;/a&gt; (pdf),
+a company that specializes in quantifying ad blocking,
+11% of global web users run an ad blocker.
+Considering that Read the Docs’ core audience is tech-savvy,
+privacy-conscious developers,
+it should be no surprise that our number is higher.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-are-we-doing-about-it&quot;&gt;
+&lt;h2&gt;What are we doing about it&lt;/h2&gt;
+&lt;p&gt;It will be an uphill battle to get back to where we were in terms of revenue
+and sustaining Read the Docs, here are a few things we are working on:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We applied to the &lt;a class=&quot;reference external&quot; href=&quot;https://acceptableads.com/&quot;&gt;acceptable ads&lt;/a&gt; list,
+an ad block list enabled on many ad blockers by default
+that enables some unobtrusive advertising.
+We are very hopeful here but it does take quite a bit longer
+to get on this list than it does to get blocked.&lt;/li&gt;
+&lt;li&gt;Nagging users into allowing ads on Read the Docs.
+We are envisioning more of a polite nag in a similar vein to &lt;a class=&quot;reference external&quot; href=&quot;https://jsfiddle.net/&quot;&gt;jsfiddle&lt;/a&gt;
+rather than an “adblock wall” which prevents usage of Read the Docs
+until it’s allowed.&lt;/li&gt;
+&lt;li&gt;Blogging and raising awareness of how ad blocking affects us and other
+open source projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While we could simply change our CSS and ad API to avoid blocking
+since we host our ads ourselves,  we decided not to engage in a cat and mouse game
+since this work would not benefit users.&lt;/p&gt;
+&lt;p&gt;Advertising funds much of the web and many people recognize
+that while there are plenty of bad actors in the ad industry
+– think pop-under ad networks or ads that navigate your browser for you –
+some advertising is necessary to power the web we know and love
+especially when it comes to open source software which has
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/&quot;&gt;unique funding challenges&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: On May 4th, Read the Docs was added to the acceptable ads list!
+We will collect data over the next couple weeks and have a follow-up post
+on what effects this had on advertising.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;open-source-advertising-list&quot;&gt;
+&lt;h2&gt;Open source advertising list&lt;/h2&gt;
+&lt;p&gt;At Read the Docs, we also discovered that we are not the only open source project
+that got our advertising blocked by ad blockers.
+Many open source projects that fund themselves
+through advertising get blocked
+and some of them don’t have the resources to navigate the acceptable ads program
+or understand the inner workings of ad blockers.&lt;/p&gt;
+&lt;p&gt;Likewise, some web users may not want to allow all acceptable ads
+which includes many ads from the big networks but we are hoping they would be
+willing to accept ads that benefit their community of software developers.&lt;/p&gt;
+&lt;p&gt;We are launching a &lt;strong&gt;new initiative&lt;/strong&gt; to
+&lt;a class=&quot;reference external&quot; href=&quot;https://ads-for-open-source.readthedocs.io&quot;&gt;allow advertising that benefits open source software&lt;/a&gt;. We encourage
+you to subscribe to the this list and support open source.
+If you run an open source project affected by ad blockers, we would love to help you too.&lt;/p&gt;
+&lt;div class=&quot;admonition-advertisers admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Advertisers&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;If you are an advertiser interested in reaching a 100% developer
+audience who cares deeply about privacy,
+we would love to &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/&quot;&gt;hear from you&lt;/a&gt; too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/business/atom.xml">
+    <title type="text">Ethical Advertising Works</title>
+    <id>https://blog.readthedocs.com/ethical-advertising-works/</id>
+    <updated>2018-04-16T00:00:00Z</updated>
+    <published>2018-04-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ethical-advertising-works/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ethical-advertising-works&quot;&gt;
+
+&lt;p&gt;It has been two years since we first launched &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-read-the-docs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ads on Read the Docs&lt;/span&gt;&lt;/a&gt;.
+We figured it was time to report on the results that we’ve seen,
+and say thanks to those who have helped us along the way.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-results&quot;&gt;
+&lt;h2&gt;The Results&lt;/h2&gt;
+&lt;p&gt;To put it simply:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ethical Advertising works&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In Q1 2018,
+our estimated revenue from advertising is $75,000.
+This is enough to fund our small team of 4 people to work on Read the Docs full-time.&lt;/p&gt;
+&lt;p&gt;When we started building our ethical advertising model,
+we didn’t know how it would work out.
+We didn’t know much about the ad industry,
+and we were doing things different than everyone else.&lt;/p&gt;
+&lt;p&gt;We are happy to report that you can build advertising that is a win/win/win for all parties:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs wins because we generate revenue, allowing us to sustain our operations&lt;/li&gt;
+&lt;li&gt;Advertisers win because they are able to reach our audience of developers, helping to grow their business.&lt;/li&gt;
+&lt;li&gt;Users win because their privacy is maintained, and they continue to have access to our service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ethical advertising on Read the Docs has not been without its challenges,
+which we will cover in future posts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;tracking-users-isn-t-required&quot;&gt;
+&lt;h2&gt;Tracking users isn’t required&lt;/h2&gt;
+&lt;p&gt;Along the way we’ve been trying to prove a simple thesis:&lt;/p&gt;
+&lt;p&gt;We can have successful advertising without tracking our users.
+So much of the trouble facing the ad industry these days is because of this massive databases of user data.&lt;/p&gt;
+&lt;p&gt;We have been able to show that we can show ads without knowing exactly who our users are.
+The content they are reading is enough to show them targeted ads,
+without knowing anything about them.
+Specifically:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We do not let advertisers run 3rd party code on Read the Docs. Ad images and javascript is all hosted by us.&lt;/li&gt;
+&lt;li&gt;We do not provide advertisers with data dumps, except aggregated reports on the clicks and views their ads got.&lt;/li&gt;
+&lt;li&gt;We target our ads based only on geography and the details of the page being visited, not on a profile of the user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re now taking a look at what we’ve learned,
+and how we might help more infrastructure projects reach sustainability with an ethical advertising approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;towards-an-ethical-ad-network&quot;&gt;
+&lt;h2&gt;Towards an Ethical Ad Network&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;We have shown that an advertising business model that respects users can also sustain critical open source infrastructure.&lt;/strong&gt;
+We hope that we can act as an example for other projects that depend on ads.
+You can make money without giving away your users data.&lt;/p&gt;
+&lt;p&gt;Developers have the power to shift the ad industry to respect user privacy.
+We must start with our own projects,
+leading by example.
+We need to have all the ads in the open source ecosystem respect user privacy,
+and then we can start to apply pressure to other parts of the tech industry.&lt;/p&gt;
+&lt;p&gt;We realize that not every open source project can do all the work that we’ve done.
+We want to explore how we can build an &lt;strong&gt;Ethical Ad Network&lt;/strong&gt;,
+where user data isn’t sent to us,
+but each project doesn’t need to do ad sales.&lt;/p&gt;
+&lt;p&gt;Our ethical ad network is still in the planning phases,
+but if you know a project that might be interested in being a beta tester,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;I’d like to thank all of companies who have believed in our ethical ads initiative.
+You can only sell something if people buy it,
+and I’d like to give credit to the folks who have believed in our concept:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Twilio&lt;/li&gt;
+&lt;li&gt;Sentry&lt;/li&gt;
+&lt;li&gt;Rollbar&lt;/li&gt;
+&lt;li&gt;Stream&lt;/li&gt;
+&lt;li&gt;Intel&lt;/li&gt;
+&lt;li&gt;Data Dog&lt;/li&gt;
+&lt;li&gt;Mongo&lt;/li&gt;
+&lt;li&gt;Hosted Graphite&lt;/li&gt;
+&lt;li&gt;Level 12&lt;/li&gt;
+&lt;li&gt;Pyup&lt;/li&gt;
+&lt;li&gt;Triplebyte&lt;/li&gt;
+&lt;li&gt;Linode&lt;/li&gt;
+&lt;li&gt;Digital Impact Alliance&lt;/li&gt;
+&lt;li&gt;Digital Ocean&lt;/li&gt;
+&lt;li&gt;Exoscale&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Odoo&lt;/li&gt;
+&lt;li&gt;CircleCI&lt;/li&gt;
+&lt;li&gt;Cherry Servers&lt;/li&gt;
+&lt;li&gt;Uniregistry&lt;/li&gt;
+&lt;li&gt;OSCON&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Want your company to be on the list?
+You can get more information on our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/&quot;&gt;advertising page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

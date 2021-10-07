@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged year-in-review</title>
+  <id>https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml</id>
+  <updated>2021-03-17T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2020 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2020-stats/</id>
+    <updated>2021-03-17T00:00:00Z</updated>
+    <published>2021-03-17T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2020-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2020-stats&quot;&gt;
+
+&lt;p&gt;2020 was a rough year for everyone,
+including our team.
+We managed to make it through,
+and continue to have 5 folks working full-time to make Read the Docs better for you.&lt;/p&gt;
+&lt;p&gt;We are going into 2021 with a &lt;a class=&quot;reference internal&quot; href=&quot;../../../czi-grant-announcement/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;new grant&lt;/span&gt;&lt;/a&gt;,
+which will require us to do some &lt;a class=&quot;reference internal&quot; href=&quot;../../../jobs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;hiring&lt;/span&gt;&lt;/a&gt;.
+We also launched our &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;EthicalAds network&lt;/a&gt;,
+which is bringing our approach to sustainability to the tech community as a whole.&lt;/p&gt;
+&lt;p&gt;As we have for the past 7 years,
+we are proud to share our 2020 stats post.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2018-stats/&quot;&gt;2018&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2019-stats/&quot;&gt;2019&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;580 Million Page Views (from 465 million)&lt;/li&gt;
+&lt;li&gt;156 Million Unique Visitors (from 120 million)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;240,000 projects (from 200,000)&lt;/li&gt;
+&lt;li&gt;430,000 users (from 400,000)&lt;/li&gt;
+&lt;li&gt;2,480,063 builds (from 10 million total last year)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.
+We do notice a uptick in usage across the site,
+both in terms of support and traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;14 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2020-01-01&amp;amp;to=2020-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (from 21)&lt;/li&gt;
+&lt;li&gt;3636 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (from 4793)&lt;/li&gt;
+&lt;li&gt;532 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues?q=is%3Aissue+created%3A2020-01-01..2020-12-31+&quot;&gt;issues&lt;/a&gt; - 104 open, 428 closed (from 609)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been working to move user support issues to email from GitHub,
+which likely addresses the reduction in ticket numbers.
+We are also working to expand our ecosystem of projects,
+so the commits to the main repository are down.
+We expect across our theme, extensions, and other projects commits are up this year,
+and we’re appreciative of all the work people contribute.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$234,000 advertising (from $249,000)&lt;/li&gt;
+&lt;li&gt;$30,000 Gold users and donations (from $26,600)&lt;/li&gt;
+&lt;li&gt;5 paid staff (same as last year)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the launch of &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;EthicalAds&lt;/a&gt;, we are excited to continue to grow our advertising business,
+and expand it to the larger community.
+We are also seeing continued growth of our paid product at &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;https://readthedocs.com&lt;/a&gt;,
+which is allowing us to fund further growth of the Read the Docs codebase for all our users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We continue to work to improve Read the Docs for our users.
+We’re excited for the growth we expect in 2021,
+and hope that you’ll join us for the next chapter of our story.&lt;/p&gt;
+&lt;p&gt;The Read the Docs Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2019 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2019-stats/</id>
+    <updated>2020-05-14T00:00:00Z</updated>
+    <published>2020-05-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2019-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2019-stats&quot;&gt;
+
+&lt;p&gt;2019 was another good year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+We continue to have a team of 5 folks working on the project,
+and we’ve rolled out a number of new features for the year.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published since 2013.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2018-stats/&quot;&gt;2018&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;465 Million Page Views (from 400M)&lt;/li&gt;
+&lt;li&gt;120 Million Unique Visitors (from 77M)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; last year, our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;200,000 projects (from 100k)&lt;/li&gt;
+&lt;li&gt;400,000 users (from 150k)&lt;/li&gt;
+&lt;li&gt;10,188,182 builds (new this year)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.
+We do notice a uptick in usage across the site,
+both in terms of support and traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;21 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2019-01-01&amp;amp;to=2019-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (from 28)&lt;/li&gt;
+&lt;li&gt;4793 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (from 3774)&lt;/li&gt;
+&lt;li&gt;609 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues?q=is%3Aissue+created%3A2019-01-01..2019-12-31+&quot;&gt;issues&lt;/a&gt; - 80 open, 529 closed (from 797)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have continued to have a similar team working on the project this year,
+but have actually made more commits.
+We moved our support queue from issues to email,
+which likely accounts for the lower issue count.
+We’re quite happy with our closed issue stats this year,
+which are much better than previous years.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$275,000 in revenue from readthedocs.org (from 294,000)&lt;/li&gt;
+&lt;li&gt;$249,000 from advertising (from $278,000)&lt;/li&gt;
+&lt;li&gt;$26,600 from Gold users (from $16,000)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our advertising has been pretty steady for 2019.
+The small drop in the year-over-year comparison we account to the fact that ad blockers happened halfway through 2018,
+meaning that the comparison is 15% lower in terms of our total traffic.&lt;/p&gt;
+&lt;p&gt;We continue to be hosted by &lt;a class=&quot;reference external&quot; href=&quot;https://azure.microsoft.com/en-us/&quot;&gt;Azure&lt;/a&gt;,
+and we’re using a lot of their nicer feature to keep our costs down.
+You can find some posts on our blog about this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We continue to keep working to improve the documentation ecosystem in the software industry.
+We’re excited about a number of new features that we’re working on this year,
+and expect to continue to be a resource you can depend on for a long time to come :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2018 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2018-stats/</id>
+    <updated>2019-01-08T00:00:00Z</updated>
+    <published>2019-01-08T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2018-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2018-stats&quot;&gt;
+
+&lt;p&gt;2018 was another good year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+We’ve settled into a sustainability model that is working for us,
+and have a team of 5 folks working full-time on the project.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published for the past 6 years.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;400 Million Page Views (up from 338M, 18%)&lt;/li&gt;
+&lt;li&gt;77 Million Unique Visitors (up from 75M, 3%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; in May, our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;100,000 projects (up from 77k, 30%)&lt;/li&gt;
+&lt;li&gt;155,000 users (up from 103k, 50%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;28 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2018-01-01&amp;amp;to=2018-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (up from 23, 22%)&lt;/li&gt;
+&lt;li&gt;3774 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (up from 1058, 257%)&lt;/li&gt;
+&lt;li&gt;797 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue++created%3A2018-01-01..2019-01-01+&quot;&gt;issues&lt;/a&gt; - 189 open, 608 closed (up from 513, 55%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see the number of commits and issues has gone up quite a bit.
+This is largely because of the additional staffing we have had on the project,
+allowing us to be more active to both our users and to release more features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$294,000 in revenue from readthedocs.org (up from $218,000, 35%)&lt;/li&gt;
+&lt;li&gt;$278,000 from advertising (up 59%)&lt;/li&gt;
+&lt;li&gt;$16,000 from Gold users (up 16%)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest impact to our revenue this year was &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;our ads being blocked&lt;/span&gt;&lt;/a&gt;.
+This happened in May,
+and caused an initial 32% reduction in our ad revenue.
+We were &lt;a class=&quot;reference internal&quot; href=&quot;../../../ad-blocker-update/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;added to the Acceptable Ads&lt;/span&gt;&lt;/a&gt; list later in the month,
+which regained around half of our revenue.
+So for the second half of the year,
+our ad revenue was down about 15%.&lt;/p&gt;
+&lt;p&gt;We are also exploring sharing revenue with our documentation authors.
+There are currently 3 projects enrolled in a revenue share,
+and we’re hoping to expand that in 2019 to better support open source projects.&lt;/p&gt;
+&lt;p&gt;The project is now on firm financial footing.
+We have a cash reserve that will allow us to pay all of our staff for more than 3 months in the event of a loss of revenue,
+which allows us to be more flexible with our revenue going forward.
+This funding allowed us to expand from 4 to 5 full-time folks working on the project.&lt;/p&gt;
+&lt;p&gt;We also moved hosting to &lt;a class=&quot;reference external&quot; href=&quot;https://azure.microsoft.com/en-us/&quot;&gt;Azure&lt;/a&gt; this year in August from &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+who both have sponsored our hosting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This year we’ve continued to invest in our ethical advertising approach,
+growing our team by one member and building lots of new features.
+It feels like the project is progressing quite well,
+and we’re committing way more code and dealing with a much larger number of user issues.&lt;/p&gt;
+&lt;p&gt;It feels like success to be able to properly support our community by improving the product,
+while creating a business model that we can be proud of.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2017 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2017-stats/</id>
+    <updated>2018-02-14T00:00:00Z</updated>
+    <published>2018-02-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2017-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2017-stats&quot;&gt;
+
+&lt;p&gt;2017 was a good year for Read the Docs.
+We’ve settled into a sustainability model that is working for us,
+and have started to grow our team to be able to better support the community.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published for the past 5 years.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;338 Million Page Views (up from 252M in 2016)&lt;/li&gt;
+&lt;li&gt;75 Million Unique Visitors (up from 56M in 2016)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We remain one of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.alexa.com/siteinfo/readthedocs.io&quot;&gt;largest sites&lt;/a&gt; on the internet.
+Turns out &lt;em&gt;a lot of people&lt;/em&gt; read documentation each day for open source projects!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;77,000 projects (up from 53k in 2016)&lt;/li&gt;
+&lt;li&gt;103,000 users (up from 65k in 2016)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily this year,
+so these numbers might be a bit skewed.
+I believe they should be pretty accurate in terms of percentage growth though.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;23 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2017-01-01&amp;amp;to=2017-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (up from 18 in 2016)&lt;/li&gt;
+&lt;li&gt;1058 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (similar to 1032 in 2016)&lt;/li&gt;
+&lt;li&gt;513 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2017-01-01&amp;amp;type=Issues&quot;&gt;issues&lt;/a&gt; - 194 open, 319 closed (up from 461 in 2016)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$250,000 in revenue (up from $75,000 in 2016)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We now have four full-time people working on the project.
+This has made it feel like we’re able to move forward,
+instead of simply fighting to stay in the same place.&lt;/p&gt;
+&lt;p&gt;Our largest initiative this year has been our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/ethical-advertising.html&quot;&gt;Ethical Advertising&lt;/a&gt; initiative.
+It has been going quite well,
+and is the primary driver of our ability to hire a team to work on things.&lt;/p&gt;
+&lt;p&gt;Our other two funding sources are readthedocs.com &amp;amp; donations.
+Both are bringing in appreciable amounts of money,
+but the advertising is at around 5x the combined value of our other revenue sources.&lt;/p&gt;
+&lt;p&gt;Our hosting costs continue to be sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.
+We’re looking at moving hosting providers in 2018,
+because Rackspace is winding down their support for OSS hosting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We have decided to invest in building a sustainable business instead of trying to work only on volunteer effort.
+This has allowed us to focus on things we can control,
+build a small team,
+and help improve the product for all of our users.&lt;/p&gt;
+&lt;p&gt;We look forward to continuing to grow into 2018!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2016 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2016-stats/</id>
+    <updated>2017-01-13T00:00:00Z</updated>
+    <published>2017-01-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2016-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2016-stats&quot;&gt;
+
+&lt;p&gt;Congrats,
+you made it through 2016!
+Read the Docs has been rolling along,
+and we’ve had another interesting year as well.&lt;/p&gt;
+&lt;p&gt;For a quick summary:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our level of contributions and commits has gone down a good bit this year.&lt;/li&gt;
+&lt;li&gt;Our traffic and user growth has been quite steady, which is particularly impressive at the scale we’re operating at.&lt;/li&gt;
+&lt;li&gt;Our efforts at funding the project have also started to bear fruit, and 2017 is looking to be the year that Read the Docs will become a sustainable project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will go into more detail below about each of these details.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;252 Million Page Views (+48%)&lt;/li&gt;
+&lt;li&gt;56 Million Unique Visitors (+47%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+This is particularly impressive given the scale that we’re operating at.
+We’re quite happy to see folks using Read the Docs more and more,
+as well as seeing many other projects using our theme or other concepts that we’ve pioneered in the general software ecosystem.&lt;/p&gt;
+&lt;p&gt;We remain one of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.alexa.com/siteinfo/readthedocs.io&quot;&gt;largest sites&lt;/a&gt; on the internet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;53673 projects (+91%)&lt;/li&gt;
+&lt;li&gt;64585 users (+65%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.&lt;/p&gt;
+&lt;p&gt;We are happy to host documentation for all open source projects,
+and are glad the community finds the service useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2016-01-01&amp;amp;to=2016-12-31&amp;amp;type=c&quot;&gt;18 people&lt;/a&gt; who committed code (-50% from last year)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;1032 commits&lt;/a&gt; (-46%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2016-01-01&amp;amp;type=Issues&quot;&gt;461 issues&lt;/a&gt; - 236 open, 225 closed (-42%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our community activity is much lower this year,
+which is a multi-year trend that we’ve been seeing.
+This is in part due to the maturity of the project and code base,
+but also because we’ve struggled to attract and retain new contributors.
+The code base and project are reasonably hard to set up,
+and we haven’t had enough time and focus on onboarding contributors into the project.&lt;/p&gt;
+&lt;p&gt;Additionally, as a hosted service,
+the majority of issues we receive are support requests.
+These issues don’t necessarily lend to user contributions,
+and are generally low priority for us as we don’t have any additional time to volunteer to resolving them.&lt;/p&gt;
+&lt;p&gt;It’s been our plan to address this support gap for a while.
+Starting this year,
+we plan to create a part-time role, dedicated to handling support.
+Ideally, we would promote someone from our community for this role,
+however this pool doesn’t exist at the moment.&lt;/p&gt;
+&lt;p&gt;As maintainers,
+we are discouraged by the continued lack of interest in contributing to our project,
+but fully realize that we also have a role in this.
+We can reduce complexity and make our projects more approachable.
+We can also be more vocal about where and how you can start to contribute.
+In the past, we assumed users would come to us with interest in contributing,
+however we’ve also received feedback that it’s not apparent we require the help.
+If you’re interested in contributing,
+never hesitate to ask where you can contribute.
+We’re happy to have contributions of any size.&lt;/p&gt;
+&lt;p&gt;We certainly aren’t the only project that has trouble attracting contributions,
+there is a &lt;a class=&quot;reference external&quot; href=&quot;http://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure&quot;&gt;plethora of examples&lt;/a&gt; in the open source ecosystem of this problem.
+It would be great if projects could rely strictly on volunteers for maintenance,
+however there are economics of this problem that we can solve by ourselves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs continue to be sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Our largest initiative this year has been our attempt at building &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/ethical-advertising.html&quot;&gt;Ethical Advertising&lt;/a&gt; into our site.
+The project has been well received,
+which we have been grateful for.
+Funding is a fundamental part of sustainability,
+and we’re glad people are supportive of our efforts to get there.&lt;/p&gt;
+&lt;p&gt;The best outcome of our sustainability efforts is that we’re going to be able to hire someone part time to handle support for our users.
+Support has always been an area that we have not done our best work,
+nor have we had enough time to handle it well.
+We’re excited to give support and community development more consistent attention,
+and hope that it leads to a better experience for users and perhaps even more contributions.&lt;/p&gt;
+&lt;p&gt;Our other efforts at sustainability are also progressing. Our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/&quot;&gt;commercial hosting service&lt;/a&gt; is starting to slowly build revenue from users who want private documentation.
+We hope to continue to build that into another source of revenue,
+which can help support development of the code base.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2016 has been another year of mixed results.&lt;/p&gt;
+&lt;p&gt;We are continuing to see more users and folks who are reading documentation on our platform.
+We think the software industry is caring more and more about documentation by the year,
+and we’re helping to play a role.&lt;/p&gt;
+&lt;p&gt;The downside is that as a community project,
+we still continue to have trouble attracting contributions, especially repeat contributions.
+We hope that with some of the changes we make this year this won’t continue to be the case.&lt;/p&gt;
+&lt;p&gt;Either way, thanks to everyone that has helped us this last year!
+We appreciate all your support, contributions, and patience,
+and hope we can make 2017 the year that we can call our project sustainable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2015 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2015-stats/</id>
+    <updated>2016-01-15T00:00:00Z</updated>
+    <published>2016-01-15T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2015-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2015-stats&quot;&gt;
+
+&lt;p&gt;2015 has been another great year for Read the Docs.
+We’ve addressed some long-standing issues like not having Markdown support,
+and built a number of wonderful tools for the documentation community.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2015-01-01&amp;amp;to=2015-12-31&amp;amp;type=c&quot;&gt;27 people&lt;/a&gt; who committed code (-41% from last year)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;1931 commits&lt;/a&gt; (+54%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2015-01-01&amp;amp;type=Issues&quot;&gt;800 issues&lt;/a&gt; - 630 closed, 170 open (+60%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have a much lower number of people who committed to the code-base this year,
+while increasing the number of commits and issues by over 50%.
+This is mainly because we worked with &lt;a class=&quot;reference external&quot; href=&quot;http://gremu.net/&quot;&gt;Gregor&lt;/a&gt; for three months after our fundraiser.&lt;/p&gt;
+&lt;p&gt;The lack of committers is sad though,
+and I hope that we can get more people involved with the project over time.
+It really is unsustainable at the current level of community involvement.
+All of our operations and user support tasks are done by vanishingly small number of volunteers,
+with no new growth in that group of folks.&lt;/p&gt;
+&lt;p&gt;Interested in contributing?
+We have &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/contribute.html#contributing-to-development&quot;&gt;documentation on contributing&lt;/a&gt; on the site.
+You can also contribute financially at our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;sustainability page&lt;/a&gt; or by buying a monthly &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/accounts/gold/&quot;&gt;Gold&lt;/a&gt; subscription.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;170 Million Page Views (+55%)&lt;/li&gt;
+&lt;li&gt;38 Million Unique Visitors (+58%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+It’s great to see so many people reading documentation that we are hosting.&lt;/p&gt;
+&lt;p&gt;We remain one of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.alexa.com/siteinfo/readthedocs.org&quot;&gt;largest sites&lt;/a&gt; on the internet,
+and that doesn’t account for traffic to CNAME’s,
+which is another 40% of our traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;28000 projects (+85%)&lt;/li&gt;
+&lt;li&gt;39001 users (+75%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.
+We are happy to host documentation for all open source projects,
+and are glad the community finds the services useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community.
+We launched a &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;Sustainabilty Campaign&lt;/a&gt; earlier this year that funded work for 3 months.
+It was great to have help with our support workflow.&lt;/p&gt;
+&lt;p&gt;We are launching a new user-supported funding model this year,
+and we hope to be able to bring someone on to work on support in a more permanent basis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2015 has been a year of mixed result.
+We have continued growing and serving more traffic.
+However,
+our contributor base shrank,
+and we haven’t been doing a good job of supporting users in the second half of the year.&lt;/p&gt;
+&lt;p&gt;We hope that with renewed funding we’ll be able to better support users in 2016.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2014 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2014-stats/</id>
+    <updated>2014-12-31T00:00:00Z</updated>
+    <published>2014-12-31T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2014-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2014-stats&quot;&gt;
+
+&lt;p&gt;2014 has been another banner year for Read the Docs.
+The project has been steadily growing in the open source ecosystem,
+expanding a good deal outside of the Python community.
+We have built a bunch of fantastic new features,
+and continued improving the documentation experience for the open source world.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our latest 30 days stats at &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;http://www.seethestats.com/site/readthedocs.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our post from 2013 is also available here: &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;https://blog.readthedocs.com/read-the-docs-2013-stats/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2014-01-01&amp;amp;to=2014-12-31&amp;amp;type=c&quot;&gt;46 people&lt;/a&gt; who committed code (+17% from last year)&lt;/li&gt;
+&lt;li&gt;1253 commits (+127%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2014-01-01&amp;amp;type=Issues&quot;&gt;500 issues&lt;/a&gt; - 376 closed, 130 open (+84%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have over doubled the commit count from the previous year,
+along with having almost double the issues.
+Our contributor base has grown slowly,
+but not nearly at the rate of issues and user growth.&lt;/p&gt;
+&lt;p&gt;A big part of that is the addition of &lt;a class=&quot;reference external&quot; href=&quot;http://ohess.org&quot;&gt;Anthony&lt;/a&gt; to the core team. He has been a great help, and done lots of good work on the project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;110 Million Page Views (+70%)&lt;/li&gt;
+&lt;li&gt;24 Million Unique Visitors (+85%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+It’s great to see so many people reading documentation that we are hosting.&lt;/p&gt;
+&lt;p&gt;With an average time of 3 minutes per page,
+this means users have spent &lt;strong&gt;nearly 600 years&lt;/strong&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt; reading documentation on Read the Docs this year.
+I can only imagine how much development time has been saved.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;I believe this makes Read the Docs the biggest documentation hosting website in the world. Pretty neat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A picture shows more than the words do, I think. Here is our weekly graph for the year:&lt;/p&gt;
+&lt;img alt=&quot;img/2014-stats.png&quot; src=&quot;img/2014-stats.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;15128 projects (+90%)&lt;/li&gt;
+&lt;li&gt;22263 users (+90%)&lt;/li&gt;
+&lt;li&gt;2053616 builds (+97%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;on Gittip&lt;/a&gt;.
+I am very grateful for the support that the community has given the project over the years.
+We haven’t been promoting the sponsorship on Gittip,
+so the numbers there have gone down.&lt;/p&gt;
+&lt;p&gt;We are looking at more funding options in the new year,
+more on that soon :)&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$100/wk (-40%)&lt;/li&gt;
+&lt;li&gt;100 people giving money (-12%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2014 has been an amazing year for Read the Docs.
+We have continued growing and serving more traffic.&lt;/p&gt;
+&lt;p&gt;We are working on a number of new features to expand the user base,
+and make the site more approachable.
+We look forward to continuing to improve the documentation ecosystem in the new year.&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2min 51sec * 108,801,906 views / 525,600 minutes/year = 589.6 years&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/year-in-review/atom.xml">
+    <title type="text">Read the Docs 2013 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2013-stats/</id>
+    <updated>2013-12-23T00:00:00Z</updated>
+    <published>2013-12-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2013-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2013-stats&quot;&gt;
+
+&lt;p&gt;2013 has been a big year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+Our mission is to make documentation hosting easier,
+with the overall goal of increasing the quality of documentation in the programming world.
+I believe that we have been doing good work towards that goal,
+and I want to share some numbers to reflect our progress.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;Our community has been great this year.
+I have been really happy to see a few people submit multiple patches and features.
+This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2013-01-01&amp;amp;to=2013-12-21&amp;amp;type=c&quot;&gt;39 people&lt;/a&gt; who committed code&lt;/li&gt;
+&lt;li&gt;550 commits&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?q=created%3A%3E%3D2013-01-01&amp;amp;source=cc&amp;amp;type=Issues&quot;&gt;271 issues&lt;/a&gt; - 218 closed, 53 open&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to &lt;a class=&quot;reference external&quot; href=&quot;http://blog.wraithan.net/&quot;&gt;Wraithan&lt;/a&gt; in particular,
+who has taken on a large role in helping maintain the site and servers.&lt;/p&gt;
+&lt;p&gt;If there is anyone else out there who would like to help with operations,
+especially outside of US timezones,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:eric&amp;#37;&amp;#52;&amp;#48;ericholscher&amp;#46;com&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our growth in page views has always been crazy to me.
+It was somewhere in mid-2011 that Read the Docs went from a hobby project,
+into something projects depended on.
+This growth has never stopped,
+and today a large number of important projects depend on Read the Docs.&lt;/p&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;65 Million Page Views&lt;/li&gt;
+&lt;li&gt;13 Million Unique Visitors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For context,
+these numbers are similar to what &lt;a class=&quot;reference external&quot; href=&quot;https://blog.mozilla.org/files/2013/12/mozilla_eoy_2013_EN_72dpi_FINAL.jpg&quot;&gt;MDN has&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;These numbers are actually a bit low.
+Some themes don’t support default Sphinx template blocks,
+so we can’t count them in our stats correctly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I think an image shows this a bit better than words:&lt;/p&gt;
+&lt;img alt=&quot;img/2013-stats.png&quot; src=&quot;img/2013-stats.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;Our pageviews are driven mainly by 100 or so high traffic sites.
+We have a lot of small projects that are up on Read the Docs too that we love.&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;7949 projects&lt;/li&gt;
+&lt;li&gt;11679 users&lt;/li&gt;
+&lt;li&gt;1040182 builds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs are sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Development on Read the Docs is funded by the community &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;on Gittip&lt;/a&gt;.
+I am very grateful for the support that the community has given the project over the years.
+It is great validation that people value the service you are providing,
+even when you give it away for free.&lt;/p&gt;
+&lt;p&gt;The stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$167/wk currently&lt;/li&gt;
+&lt;li&gt;114 people giving money&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2013 has been a great year for Read the Docs.
+We have made a lot of progress,
+and I think 2014 will be even better.&lt;/p&gt;
+&lt;p&gt;We are working on a number of new features to expand the user base,
+and make the site more approachable.
+We forward to continuing to improve the documentation ecosystem in the new year.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

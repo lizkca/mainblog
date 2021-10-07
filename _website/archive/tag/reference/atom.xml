@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged reference</title>
+  <id>https://blog.readthedocs.com/archive/tag/reference/atom.xml</id>
+  <updated>2021-02-16T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/reference/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/reference/atom.xml">
+    <title type="text">API v3 is now stable</title>
+    <id>https://blog.readthedocs.com/api-v3-stable/</id>
+    <updated>2021-02-16T00:00:00Z</updated>
+    <published>2021-02-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-stable/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;api-v3-is-now-stable&quot;&gt;
+
+&lt;p&gt;We are excited to announce that our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;API v3&lt;/a&gt; has reached a stable release,
+and is now available for all Read the Docs users.
+Since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../api-v3-beta/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;announced the API v3 beta&lt;/span&gt;&lt;/a&gt;,
+we have been adding extra functionality and bug-fixing minor issues based on user feedback.&lt;/p&gt;
+&lt;p&gt;The new API v3 &lt;em&gt;is not&lt;/em&gt; a fully replacement (yet!) of API v2,
+but &lt;strong&gt;we highly recommend using API v3 for all the new integrations&lt;/strong&gt;.
+API v2 will be deprecated soon,
+though we don’t have a firm timeline for deprecation.
+We will alert users with our plans when we do.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;p&gt;We’re excited about the following actions that API v3 makes possible:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Import new projects&lt;/li&gt;
+&lt;li&gt;Activate a version&lt;/li&gt;
+&lt;li&gt;Trigger builds&lt;/li&gt;
+&lt;li&gt;Check build status&lt;/li&gt;
+&lt;li&gt;Manage redirects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;API v3 allows you to easily manage common tasks on your Read the Docs project and organization.
+These include:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Setting up documentation for a new project&lt;/li&gt;
+&lt;li&gt;Automating the release of a new version&lt;/li&gt;
+&lt;li&gt;Pausing a release if you detect a failed build&lt;/li&gt;
+&lt;li&gt;Automatically create redirects for changes files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;help-us-make-it-better&quot;&gt;
+&lt;h2&gt;Help us make it better&lt;/h2&gt;
+&lt;p&gt;We always love to hear from users about how they are using the API.
+We want to help you manage your documentation in the easiest and most efficient way possible.
+Please, feel free to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;open an issue in our issue tracker&lt;/a&gt;
+if there is a use case we are not covering.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/reference/atom.xml">
+    <title type="text">Announcing API v3 Beta</title>
+    <id>https://blog.readthedocs.com/api-v3-beta/</id>
+    <updated>2019-08-27T00:00:00Z</updated>
+    <published>2019-08-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-beta/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-api-v3-beta&quot;&gt;
+
+&lt;p&gt;In the last months, we have been working on making our API better.
+Considering the limitations of our current REST API v2,
+we decided to make a bigger step forward and create a new API v3,
+putting the focus on the use cases we heard about from existing users.&lt;/p&gt;
+&lt;p&gt;Compared to API v2, our new API v3 has some big differences that make it more user-friendly and useful.&lt;/p&gt;
+&lt;p&gt;These differences includes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;API access requires authentication&lt;/li&gt;
+&lt;li&gt;Token based API authentication&lt;/li&gt;
+&lt;li&gt;Read and write&lt;/li&gt;
+&lt;li&gt;Resource lookup can use project’s slug&lt;/li&gt;
+&lt;li&gt;Wider resource coverage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some examples of new queries and actions that will be possible with the API are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#project-create&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Import a new project&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#projects-list&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;List all my projects&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#version-update&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Activate a version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-triggering&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Trigger a build for a specific version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-details&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Check build status&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#redirects&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Manage redirects&lt;/span&gt;&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#environment-variables&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;environment variables programmatically&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;invite-only-beta-feature&quot;&gt;
+&lt;h2&gt;Invite-only beta feature&lt;/h2&gt;
+&lt;p&gt;APIv3 is currently in an invite-only beta state on our community site, &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org&quot;&gt;https://readthedocs.org&lt;/a&gt;.
+In case you want to test it and give us feedback on it,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt; to get early access.&lt;/p&gt;
+&lt;p&gt;Based on the feedback we receive from you, we plan to add more features to cover most of the common use cases.
+Please, help us with your feedback to make the new APIv3 &lt;em&gt;even&lt;/em&gt; better!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/reference/atom.xml">
+    <title type="text">Read the Docs Public API</title>
+    <id>https://blog.readthedocs.com/api-v2/</id>
+    <updated>2018-08-02T00:00:00Z</updated>
+    <published>2018-08-02T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v2/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-public-api&quot;&gt;
+
+&lt;p&gt;Recently, we revamped Read the Docs’ public API.
+Previously, our latest API (v2) was used by our build processes
+but not heavily used by outside users.&lt;/p&gt;
+&lt;p&gt;As part of this process, we put effort into making sure the API is easy to use
+to access Read the Docs &lt;em&gt;projects&lt;/em&gt;, &lt;em&gt;builds&lt;/em&gt;, and &lt;em&gt;versions&lt;/em&gt;,
+easier to filter builds and versions by a particular project,
+and that the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/api/v2.html&quot;&gt;documentation&lt;/a&gt; is up-to-date.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;deprecation-of-api-v1-and-connecting-over-insecure-http&quot;&gt;
+&lt;h2&gt;Deprecation of API v1 and connecting over insecure HTTP&lt;/h2&gt;
+&lt;p&gt;As part of this process, we are formally deprecating support for our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/api/v1.html&quot;&gt;API v1&lt;/a&gt;.
+It will be &lt;strong&gt;supported through at least January 1, 2019&lt;/strong&gt;
+but we strongly encourage all users to migrate to API v2 at their earliest convenience.&lt;/p&gt;
+&lt;p&gt;In addition, both API v1 and API v2 allowed connecting over insecure HTTP
+as opposed to HTTPS. &lt;strong&gt;Beginning in January 2019, we will be redirecting requests over HTTP to HTTPS.&lt;/strong&gt;
+This will improve security and allow us to add more security related features to the API going forward.
+For most users, this should be a one line change to connect to the HTTPS version of the API.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-in-touch&quot;&gt;
+&lt;h2&gt;Get in touch&lt;/h2&gt;
+&lt;p&gt;We are always interested in the amazing things people create when data is openly shared.
+In addition, we are always looking in improve our API to enable more projects and mashups.
+If you use Read the Docs’ public API for your project
+or there are additional features you’d like to see in it,
+we would love to &lt;a class=&quot;reference external&quot; href=&quot;mailto:team&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;hear from you&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/reference/atom.xml">
+    <title type="text">Announcing pydoc.io beta</title>
+    <id>https://blog.readthedocs.com/announcing-pydoc-io/</id>
+    <updated>2016-11-17T00:00:00Z</updated>
+    <published>2016-11-17T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/announcing-pydoc-io/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-pydoc-io-beta&quot;&gt;
+
+&lt;p&gt;Today we’re excited to announce our latest project: &lt;a class=&quot;reference external&quot; href=&quot;https://pydoc.io&quot;&gt;https://pydoc.io&lt;/a&gt;.
+This work was made possible by the &lt;a class=&quot;reference internal&quot; href=&quot;../../../rtd-awarded-mozilla-open-source-support-grant/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;MOSS Grant&lt;/span&gt;&lt;/a&gt; from Mozilla.
+Thanks to Mozilla for funding our time building this wonderful community resource.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;about-pydoc-io&quot;&gt;
+&lt;h2&gt;About pydoc.io&lt;/h2&gt;
+&lt;p&gt;Running Read the Docs,
+we’ve always been proud of the documentation tooling that the Python community has.
+We prioritize prose over API documentation listings,
+and generally have a high standard of documentation in our projects.&lt;/p&gt;
+&lt;p&gt;There are a specific set of use cases that API reference documentation support,
+and the Python community doesn’t support them well.
+Tools like &lt;a class=&quot;reference external&quot; href=&quot;http://godoc.org&quot;&gt;http://godoc.org&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;http://rubydoc.info&quot;&gt;http://rubydoc.info&lt;/a&gt; provide these for others languages,
+and we now introduce &lt;a class=&quot;reference external&quot; href=&quot;http://pydoc.io&quot;&gt;http://pydoc.io&lt;/a&gt; as the Python community’s version of that.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-is-it&quot;&gt;
+&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Pydoc.io will eventually auto-generate API reference documentation for every package on PyPI.
+Our beta release will support a limited set of packages that we are using for testing.
+Over time we’ll expand the tooling to automatically support generating docs for any package posted on PyPI.&lt;/p&gt;
+&lt;p&gt;Reference documentation is wonderful for folks who already know how a library works,
+and simply want to use it.
+It’s also great for navigating and understanding the internals of a piece of code.
+Giving them simple access to nicely rendered API documentation supports using and understanding libraries in a nicer way than reading code.
+We’re happy to build out these tools,
+along with the wonderful prose tools we’ve always had with Sphinx itself.&lt;/p&gt;
+&lt;p&gt;Our progress and some context is tracked in &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/1957&quot;&gt;issue 1957&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-tools&quot;&gt;
+&lt;h2&gt;The tools&lt;/h2&gt;
+&lt;p&gt;This project is built on top of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sphinx-doc/sphinx&quot;&gt;Sphinx&lt;/a&gt; at it’s core.
+On top of that,
+we’ve layered a few different tools:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;dl class=&quot;first docutils&quot;&gt;
+&lt;dt&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi/&quot;&gt;sphinx-autoapi&lt;/a&gt; which is the tool that takes Python source files and turns them into rST.&lt;/dt&gt;&lt;dd&gt;&lt;ul&gt;
+&lt;li&gt;Internally, this uses the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/PyCQA/pydocstyle/&quot;&gt;pydocstyle&lt;/a&gt; AST parser, which we use for a parse-only representation of the Python files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/pydoc.io&quot;&gt;pydoc.io&lt;/a&gt; is a Django application that is the actual web front-end and documentation building code.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/apitheme/&quot;&gt;sphinx-apitheme&lt;/a&gt; is the Sphinx theme that powers the actual API listing pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest piece to call out here is the parse-only documentation generation.
+Sphinx’s autodoc module,
+and most Python documentation generators rely on importing the code to get docstrings.
+As we’ve learned with Read the Docs,
+this is quite impractical for a large set of libraries,
+including the scientific ecosystem that heavily relies on C libraries.
+&lt;strong&gt;Building and supporting a parse-only API tool makes doc builds faster and more reliable.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We have built on top of the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;pydocstyle&lt;/span&gt;&lt;/code&gt; AST,
+but it looks like we’ll likely have to build out our own AST traversal to retrieve all docstrings and construct declarations that we need to output.
+We have looked into some of the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/davidhalter/jedi/issues/630&quot;&gt;other AST options&lt;/a&gt; in Python,
+but haven’t decided on what direction we want to go when building our own.&lt;/p&gt;
+&lt;p&gt;We have put a good deal of work into all these different pieces,
+but there is still a lot of work to be done.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;give-us-feedback&quot;&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This is a very beta release&lt;/strong&gt;.
+We have developed a few different sets of tools,
+and would love your feedback.
+In particular:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Give us examples of API documentation patterns that you like. We’d like to incorporate powerful patterns into our theme.&lt;/li&gt;
+&lt;li&gt;Don’t give us feedback on specific design issues with the theme, we’re still working on it!&lt;/li&gt;
+&lt;li&gt;Let us know if you have ideas about how we can improve the general usability of the documentation&lt;/li&gt;
+&lt;li&gt;Let us know features that you wish the site had&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thanks again to Mozilla,
+who funded this work.
+It wouldn’t have been possible without them,
+and we’re happy they funded the initial development.
+We’re always looking at ways to make the ongoing maintenance sustainable,
+so please reach out to us if you’d like to help with our efforts!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

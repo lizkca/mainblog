@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged open source</title>
+  <id>https://blog.readthedocs.com/archive/tag/open-source/atom.xml</id>
+  <updated>2015-05-01T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/open-source/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/open-source/atom.xml">
+    <title type="text">Fundraising Wrapup</title>
+    <id>https://blog.readthedocs.com/fundraising-wrapup/</id>
+    <updated>2015-05-01T00:00:00Z</updated>
+    <published>2015-05-01T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/fundraising-wrapup/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;fundraising-wrapup&quot;&gt;
+
+&lt;p&gt;First off, a big ol’ thank you is in order for everyone that helped support us.
+You all helped us hit our funding goal, and with time to spare.  We’re humbled
+to have such an abundance of support, and to know so many people share our
+vision for great documentation.&lt;/p&gt;
+&lt;p&gt;Really, thank you all. ❤&lt;/p&gt;
+&lt;p&gt;We started the fund raise drive at the beginning of PyCon, and in a little under
+3 weeks you were able to bring us up to our funding goal of $24,000. With the
+end of April, we’ve wrapped up fundraising for now. You can &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;still contribute&lt;/a&gt;
+however, and give us a head start on our next fund raising goal.&lt;/p&gt;
+&lt;p&gt;We set our goal to cover support costs for the next 3 months, and to set Read
+the Docs on a path to becoming self-sustaining. It will allow us to dedicate
+time to supporting and maintaining the service as it continues to grow.&lt;/p&gt;
+&lt;p&gt;So far, we’ve had &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/#supporters&quot;&gt;157 contributions&lt;/a&gt;, and we couldn’t have hit our goal
+without the help of everyone. The Python Software Foundation graciously provided
+us with a grant for $8,000 to go towards the continued support efforts.  Our
+largest corporate sponsors include &lt;a class=&quot;reference external&quot; href=&quot;http://twilio.com&quot;&gt;Twilio&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://getsentry.com&quot;&gt;Sentry&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://dreamhost.com&quot;&gt;DreamHost&lt;/a&gt;, and
+&lt;a class=&quot;reference external&quot; href=&quot;http://lincolnloop.com&quot;&gt;Lincoln Loop&lt;/a&gt;. Additionally, we have received generous service sponsorships
+from &lt;a class=&quot;reference external&quot; href=&quot;http://elastic.co&quot;&gt;Elastic Search&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://maxcdn.com&quot;&gt;MaxCDN&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;http://gandi.net&quot;&gt;Gandi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Again, a huge thank you to everyone that made this happen!&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-to-expect&quot;&gt;
+&lt;h2&gt;What to Expect&lt;/h2&gt;
+&lt;p&gt;We are building a company around an open source service, and we strive to remain
+open about what we’re doing. As a first step, we will be documenting how our
+time is used up and how we are allocating funds for the costs. We will be
+providing updates on our &lt;a class=&quot;reference external&quot; href=&quot;https://trello.com/b/tF04aNrT/read-the-docs-public&quot;&gt;public Trello board&lt;/a&gt;, we welcome you to
+subscribe for updates and to provide us with feedback.&lt;/p&gt;
+&lt;p&gt;The funds will go towards covering the support and maintenance costs of Read the
+Docs each week. We want to increase our capacity to handle support requests by
+working with someone on a part-time contract basis, working solely on managing
+this support burden.&lt;/p&gt;
+&lt;p&gt;Each week, the funds will pay for up to 40 hours of time spent supporting the
+service.  We look to cover triaging support requests and operations maintenance
+and emergency support with this time. Time will be split up between several
+engineers, we hope to cover part of the week with our time and the majority of
+the time each week with a third set of hands. Development will continue as a
+community supported mechanism, with the time of the core team donated to the
+project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

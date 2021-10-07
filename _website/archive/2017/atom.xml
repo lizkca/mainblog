@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2017</title>
+  <id>https://blog.readthedocs.com/archive/2017/atom.xml</id>
+  <updated>2017-08-10T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2017/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">MOSS Final Report</title>
+    <id>https://blog.readthedocs.com/moss-final-report/</id>
+    <updated>2017-08-10T00:00:00Z</updated>
+    <published>2017-08-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/moss-final-report/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;moss-final-report&quot;&gt;
+
+&lt;p&gt;Last year,
+we were given a &lt;a class=&quot;reference internal&quot; href=&quot;../../rtd-awarded-mozilla-open-source-support-grant/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;MOSS Award&lt;/span&gt;&lt;/a&gt; to work on improving the Python documentation ecosystem.
+We &lt;a class=&quot;reference internal&quot; href=&quot;../../announcing-pydoc-io/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;announced&lt;/span&gt;&lt;/a&gt; the initial deployment last November,
+and this is the retrospective post about how the project as a whole went.&lt;/p&gt;
+&lt;p&gt;This work is live at &lt;a class=&quot;reference external&quot; href=&quot;http://www.pydoc.io/&quot;&gt;http://www.pydoc.io/&lt;/a&gt; and on GitHub:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/pydoc.io&quot;&gt;https://github.com/rtfd/pydoc.io&lt;/a&gt; - the source code for the site&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;https://github.com/rtfd/sphinx-autoapi&lt;/a&gt; - the source code for parse-only API generation&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/apitheme&quot;&gt;https://github.com/rtfd/apitheme&lt;/a&gt; - A Sphinx theme for API docs (incomplete)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pydoc.io was created to generate API documentation for all Python packages.
+We have now generated over 17,000 sets of API documentation for packages uploaded to PyPI,
+without executing a single line of Python code from those projects.
+This is the primary goal of the project,
+and it has been successful.&lt;/p&gt;
+&lt;p&gt;The original grant covered the following items,
+which I’ll talk about in more detail:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Add to Read the Docs the ability to build documentation from a release tarball of code in addition to the existing ability to build it from a version control system.&lt;/li&gt;
+&lt;li&gt;Add to Read the Docs the ability to generate API documentation by parsing the Python code rather than by importing it.&lt;/li&gt;
+&lt;li&gt;Add automatic documentation generation to the next version of the Python Package Index, Warehouse (&lt;a class=&quot;reference external&quot; href=&quot;https://warehouse.python.org/&quot;&gt;https://warehouse.python.org/&lt;/a&gt;) - both API documentation and Sphinx documentation.&lt;/li&gt;
+&lt;li&gt;Build out a custom hosting infrastructure for a new domain (&amp;lt;package&amp;gt;.pythondocs.com) or (&amp;lt;package&amp;gt;.python.readthedocs.org).&lt;/li&gt;
+&lt;li&gt;Appropriate testing of the new code, and supporting the Python community in using the new facility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After talking through each point,
+I’ll cover a few higher level thoughts on the topic of grant funding open source services.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;add-ability-to-build-docs-from-a-tarball&quot;&gt;
+&lt;h2&gt;Add ability to build docs from a tarball&lt;/h2&gt;
+&lt;p&gt;This was focused on adding the ability to work with tarballs (zip files) instead of Version Control systems to Read the Docs.
+As we got further into the development,
+we &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/1957&quot;&gt;realized&lt;/a&gt; it would be simpler to just create a new code project,
+instead of trying to adapt Read the Docs for this purpose.&lt;/p&gt;
+&lt;p&gt;We ended up creating the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/pydoc.io&quot;&gt;pydoc.io&lt;/a&gt; project as a new Django application.
+It explicitly works with PyPI to download packages,
+and doesn’t know anything about Version Control.&lt;/p&gt;
+&lt;p&gt;We did this for a number of reasons,
+but the primary one was to enable contributions.
+The Read the Docs codebase had &lt;em&gt;a lot&lt;/em&gt; of complexity around VCS,
+and that complexity makes it hard to work on.
+We are hoping that development on Pydoc will be adopted by the community,
+in a manner that Read the Docs hasn’t been.
+Keeping the project simple and easy to contribute to was a large goal here.&lt;/p&gt;
+&lt;p&gt;Creating an entirely new code base also required us to spend time starting from scratch.
+Instead of leveraging our own modeling,
+hosting,
+and other infrastructure,
+we have to create it all again from scratch.
+This ate up a decent amount of time that could have otherwise been spent on development,
+but I think it still makes more sense to do it this way.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;add-ability-to-generate-sphinx-documentation-with-parsing-instead-of-importing-python-code&quot;&gt;
+&lt;h2&gt;Add ability to generate Sphinx documentation with parsing instead of importing Python code&lt;/h2&gt;
+&lt;p&gt;This work has been mostly successful,
+and lives in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi/&quot;&gt;sphinx-autoapi&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;As covered in the initial grant proposal,
+having a parse-only solution for API documentation is a useful tool in the Python community.
+This allows us to generate API docs for arbitrary code that is published to PyPI,
+without having to execute it.
+However,
+given Python’s dynamic nature,
+there will always be some subset of data that can only be gathered by running the code.&lt;/p&gt;
+&lt;p&gt;We have gotten the autoapi solution to a point where we consider it about 90% done,
+and it is generally useful.
+You can see it in action on any project that is published to Pydoc currently:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.pydoc.io/pypi/invenio-admin-1.0.0b2/autoapi/ext/index.html&quot;&gt;https://www.pydoc.io/pypi/invenio-admin-1.0.0b2/autoapi/ext/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.pydoc.io/pypi/actappliance-0.3.2/index.html&quot;&gt;https://www.pydoc.io/pypi/actappliance-0.3.2/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.pydoc.io/pypi/pyote-1.4.dev0/index.html&quot;&gt;https://www.pydoc.io/pypi/pyote-1.4.dev0/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;add-automatic-documentation-generation-as-packages-are-published-to-pypi&quot;&gt;
+&lt;h2&gt;Add automatic documentation generation as packages are published to PyPI&lt;/h2&gt;
+&lt;p&gt;This is the primary value of the Pydoc &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/pydoc.io&quot;&gt;source code&lt;/a&gt;.
+It is an implementation of a Django app that polls PyPI,
+and generates API documentation for each package as it is published.
+Currently we are only supporting the Wheel format,
+and projects published on Python 3.
+We view this as a way to get people to move their packages into the future.&lt;/p&gt;
+&lt;p&gt;We currently have over &lt;strong&gt;10,000&lt;/strong&gt; versions published to Pydoc.
+We have been live building API documentation since the release of the beta in November.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;testing-of-the-new-code-and-support-the-community&quot;&gt;
+&lt;h2&gt;Testing of the new code, and support the community&lt;/h2&gt;
+&lt;p&gt;We have written some good unit tests for the autoapi code,
+but pydoc.io itself is not as well tested as it could be.
+In terms of supporting the community,
+that hasn’t been happening since we haven’t gotten much uptake in usage.
+I’ll cover this a bit more in the take aways below,
+but there is a large amount of marketing that would need to happen in order for us to fulfill the full value of the project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;high-level-take-aways&quot;&gt;
+&lt;h2&gt;High Level Take Aways&lt;/h2&gt;
+&lt;p&gt;When we applied for the grant,
+the idea was to extend the ability of Read the Docs and Sphinx.
+In extending Read the Docs,
+we have mostly failed.
+We broke Pydoc out into its own project,
+in order to make it much easier to contribute to.
+&lt;strong&gt;This means that little of the work has been contributed back to Read the Docs code itself.&lt;/strong&gt;
+However,
+we have done a lot of work around building extensions to Sphinx.
+This is work that is more widely applicable to any Sphinx user,
+which is more useful in general for the Python and programming community as a whole.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Creating open source software and not telling people about it is not inherently valuable.&lt;/strong&gt;
+We did work on the major aspects of the grant,
+but we didn’t have the energy or focus to actually spend time marketing the new tools we have created.
+Originally when we took the grant,
+we thought it would be part of Read the Docs,
+and so would naturally get exposure that way.
+Once the site was split out as a separate instance,
+it become necessary to market that,
+along with all the other work we were already doing.&lt;/p&gt;
+&lt;p&gt;One of the things that we’ve struggled with in funding and sustainability is the fact that we are a service.
+&lt;strong&gt;We felt that we needed to ask MOSS for money to complete specific,
+actionable features.&lt;/strong&gt;
+What we really need is funding for operating the service (wearing a pager),
+supporting our users (responding to issues on GitHub),
+helping mentor new contributors (reviewing Pull Requests),
+and other activities that don’t have a flashy outcome.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I think that one thing that would help here is an explicit MOSS track that covers services or sustaining maintenance.&lt;/strong&gt;
+A lot of funding is geared towards new development and R&amp;amp;D,
+and there needs to be more money out there for simply keeping things going.
+That would have been the most valuable money that we could have taken,
+and in the end,
+building out new capacity ended up effectively being more of a distraction from our core project goals.&lt;/p&gt;
+&lt;p&gt;We also spent a good deal of time creating our own API theme: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/apitheme&quot;&gt;https://github.com/rtfd/apitheme&lt;/a&gt;.
+We realized part of the way through development that we should focus on getting the basic project done,
+and we could focus on nicer theming later.
+This ate up a chunk of time that wasn’t necessary,
+but I think the vision for a dedicated Sphinx API doc theme is a good one.
+This is another place where we could bring in the community to hopefully work towards a better outcome,
+but needed to dedicate time for that activity.&lt;/p&gt;
+&lt;p&gt;In the end,
+we’re glad we got the experience doing this MOSS grant,
+and know a lot more about doing something similar in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">Ads on the Alabaster Theme on Read the Docs Community Sites</title>
+    <id>https://blog.readthedocs.com/ads-on-other-themes/</id>
+    <updated>2017-06-16T00:00:00Z</updated>
+    <published>2017-06-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-on-other-themes/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ads-on-the-alabaster-theme-on-read-the-docs-community-sites&quot;&gt;
+
+&lt;p&gt;We’ve been running our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/advertising/ethical-advertising.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;ethical advertising&lt;/span&gt;&lt;/a&gt; campaign for over a year now,
+and it is starting to show success on making Read the Docs more sustainable.&lt;/p&gt;
+&lt;p&gt;Over this time,
+we have only been running ads on Read the Docs themed projects.
+The primary reason for this is making sure that our display of ads is consistent and doesn’t negatively impact the user experience.
+We’re trying hard to build a sustainability model that respects our users,
+and making sure things are well designed and unobtrusive is an important part of this.&lt;/p&gt;
+&lt;p&gt;We’ve planned on expanding to other themes,
+but we haven’t simply because it didn’t give us any value.
+We serve about 60% of our traffic on the Read the Docs theme,
+so until we have 100% of those views sold,
+we haven’t expanded the themes.
+We’ve now hit that limit,
+so we’re planning to expand to our second most popular theme:
+&lt;strong&gt;Alabaster&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We view our ad program as a way to raise revenue,
+and use that to better support the community.
+There are other ways that we can support the community as well,
+so today we’re also launching a &lt;strong&gt;Community Ads&lt;/strong&gt; initiative.
+This will highlight projects in the community that we believe in and care about,
+and use around 10% of our traffic for those ads.&lt;/p&gt;
+&lt;p&gt;To explicitly repeat:
+&lt;strong&gt;we will start showing ads on Alabaster themes on Read the Docs&lt;/strong&gt; starting in the beginning of July.
+We plan to roll this out in stages:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We’ll email the project owners of all projects using the Alabaster theme&lt;/li&gt;
+&lt;li&gt;We’ll start with an initial ad that points to this blog post for a few days&lt;/li&gt;
+&lt;li&gt;Then showing our Community Ad on Alabaster projects for a few days&lt;/li&gt;
+&lt;li&gt;Finally, we’ll expand to our full paid ad rotation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read below to learn more about these specific projects,
+and what we’re doing with the money it brings in.&lt;/p&gt;
+&lt;div class=&quot;contents local topic&quot; id=&quot;contents&quot;&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#changes-to-our-advertising-program&quot; id=&quot;id1&quot;&gt;Changes to our advertising program&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#community-ads&quot; id=&quot;id2&quot;&gt;Community Ads&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#project-user-opt-out-changes&quot; id=&quot;id3&quot;&gt;Project &amp;amp; User opt out changes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#what-we-re-doing-with-the-money&quot; id=&quot;id4&quot;&gt;What we’re doing with the money&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#paying-salaries&quot; id=&quot;id5&quot;&gt;Paying Salaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#paying-to-support-our-users&quot; id=&quot;id6&quot;&gt;Paying to support our users&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference internal&quot; href=&quot;#please-give-us-feedback&quot; id=&quot;id7&quot;&gt;Please give us feedback&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;changes-to-our-advertising-program&quot;&gt;
+&lt;h2&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id1&quot;&gt;Changes to our advertising program&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Along with this expansion of where we show the theme,
+we’re also updating our ad program in a few ways.
+In particular:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We will start showing Community Ads on around 10% of our traffic, for free. This will promote other open source projects, and other products/projects that we think are important, but don’t have money for ads.&lt;/li&gt;
+&lt;li&gt;Projects that opt out of normal advertising, as previously supported, will now be shown &lt;em&gt;only&lt;/em&gt; ads from our Community Ads partners.&lt;/li&gt;
+&lt;li&gt;Users will be able to opt out of all paid ads with a profile setting, but will still see Community Ads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/advertising/ethical-advertising.html#opting-out&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;learn more&lt;/span&gt;&lt;/a&gt; about opting out in our docs.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community-ads&quot;&gt;
+&lt;h3&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id2&quot;&gt;Community Ads&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are a large number of projects that we care about in the software ecosystem. A large number of them are operate like we have for the past 6 years, with almost no income. Our new Community Ads program will highlight one of these projects each month.&lt;/p&gt;
+&lt;p&gt;We’ll show 10% of our ad inventory each month to support an open source project that we care about.
+We are working to set up an application process to be considered,
+but we’ve already picked our first Community Ad recipients: &lt;strong&gt;Sustain&lt;/strong&gt; and &lt;strong&gt;Beeware&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://pybee.org/&quot;&gt;Beeware&lt;/a&gt; is a collection of projects that can be used to help develop, debug and launch Python software. Each tool follows the Unix philosophy of doing one thing well. The primary goal is to bring Python to the browser, mobile devices, and everywhere else that we wish Python ran natively.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sustainoss.org/&quot;&gt;Sustain&lt;/a&gt; is a one-day conference about open source sustainability. We ran ads for it earlier this month, and it is now sold out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;project-user-opt-out-changes&quot;&gt;
+&lt;h3&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id3&quot;&gt;Project &amp;amp; User opt out changes&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Previously we’ve allowed project owners to opt out of advertising.
+We’re now expanding this to allow users to opt out of advertising as well.
+We are changing the meaning of opting out to mean opting out of paid ads.
+Everyone who has opted out of paid advertising will be shown Community Ads instead.
+We know some folks disagree with the ideas of companies paying for their attention,
+but we believe that supporting the efforts of projects in the community should be important to everyone.&lt;/p&gt;
+&lt;p&gt;To repeat,
+&lt;strong&gt;Users and Projects can now opt out of paid ads, but will be shown Community Ads instead&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-we-re-doing-with-the-money&quot;&gt;
+&lt;h2&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id4&quot;&gt;What we’re doing with the money&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We have a couple primary things that we are spending money on,
+and plan to spend money on:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Paying part of the full-time salaries for the primary maintainers of Read the Docs (Eric Holscher &amp;amp; Anthony Johnson)&lt;/li&gt;
+&lt;li&gt;Paying for contractors in order to support our users&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’d like to talk a bit more on each of these.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;paying-salaries&quot;&gt;
+&lt;h3&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id5&quot;&gt;Paying Salaries&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Read the Docs is a massive internet service.
+We serve around 30 million _pageviews_ a month (calculated by Google Analytics, this is over 200 million _requests_ a month.)
+We are currently running the entire show with two full-time staff,
+which is incredibly understaffed compared to most internet services.&lt;/p&gt;
+&lt;p&gt;We hope that over time we will be able to pay salaries for more people,
+but it’s hard to find qualified people who will work at below market rates.
+So,
+we’re focusing on hiring contractors at this point.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;paying-to-support-our-users&quot;&gt;
+&lt;h3&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id6&quot;&gt;Paying to support our users&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This is the primary goal of our new income from advertising.
+We brought on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/humitos&quot;&gt;Manuel Kauffman&lt;/a&gt; for his time helping support our users on our GitHub issue tracker.
+We plan to expand this program with new income,
+so that we are able to provide our open source users with better support.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;please-give-us-feedback&quot;&gt;
+&lt;h2&gt;&lt;a class=&quot;toc-backref&quot; href=&quot;#id7&quot;&gt;Please give us feedback&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We’re making these changes to continue building a sustainable business model for open source.
+We try to be transparent with our thinking,
+and along those lines we’d like to know your thoughts.
+If there is anything else we could be doing better,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:dev&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">PyCon 2017 in Review</title>
+    <id>https://blog.readthedocs.com/pycon-2017/</id>
+    <updated>2017-05-31T00:00:00Z</updated>
+    <published>2017-05-31T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/pycon-2017/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pycon-2017-in-review&quot;&gt;
+
+&lt;p&gt;Things are finally getting back to normal for us after another very busy PyCon.
+It’s always wonderful seeing old friends and getting a chance to meet new
+friends from the community. PyCon provides a great outlet to talk to others in
+our community about the problems we all face as open source developers and open
+source companies – like funding, sustainability, and building community. We are
+sad to see PyCon leave Portland, but luckily &lt;a class=&quot;reference external&quot; href=&quot;http://www.pycascades.com/&quot;&gt;PyCascades&lt;/a&gt; will soon be filling
+the void left in &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Cascadia_(bioregion)&quot;&gt;Cascadia&lt;/a&gt; after PyCon moves on.&lt;/p&gt;
+&lt;p&gt;This year, we announced official sprints on Read the Docs during the sprint
+week following PyCon. We focused our sprint efforts on code cleanup, in order
+to avoid the problems on-boarding new contributors we normally face as a large
+project.&lt;/p&gt;
+&lt;p&gt;The sprints went surprisingly well this year. We were able to enlist the help
+of several new contributors during sprints, and folks didn’t waste any time
+diving into the code. It was a large relief to finally spend some time
+addressing code cleanup and removal. &lt;strong&gt;Contributors were able to create and
+merge 38 pull requests over the week&lt;/strong&gt;, and we’re still wrapping up work on
+several other pull requests. Our work focused on several areas in particular:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Linting strictness&lt;/dt&gt;&lt;dd&gt;When we started a serious effort to lint our codebase, we decided to address
+linting incrementally. We currently do a primary pass with low strictness,
+and a second pass of higher strictness only on select paths. During the
+sprints, contributors were able to pick off and focus on a single Django
+application. Cumulatively, contributors were able to fix linting issues
+across all of our applications and we’re very close to again raising our
+strictness application-wide.&lt;/dd&gt;
+&lt;dt&gt;Code removal&lt;/dt&gt;&lt;dd&gt;Several contributors moved on to hunting down and removing some unused code
+and dependencies. Having started with linting and testing problems, these
+contributors seemed well primed to understanding more complex parts of our
+code. We were able to remove several unused legacy pieces of code and some
+unused dependencies as a result.&lt;/dd&gt;
+&lt;dt&gt;Python 3&lt;/dt&gt;&lt;dd&gt;Contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gthank&quot;&gt;gthank&lt;/a&gt; started porting Read the Docs to Python 3 before the
+sprints, and was able to drop by our sprint to debug some problems with
+porting. We’ve been wanting to port to Python 3 for years now, but
+unfortunately, we could never justify this work as the core team. This pull
+request is still a work in progress, but we anxiously await being able to
+make the switch to Python 3.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;As the Read the Docs core team is small, we can’t easily justify using our time
+to focus on long standing issues with code quality, so the PyCon sprints were a perfect
+opportunity to focus on this type of clean up. Our codebase is complex and
+unwieldy to new contributors, so focusing on linting and testing allowed
+contributors to jump in without having to spend the better part of a day setting
+up our full stack.&lt;/p&gt;
+&lt;p&gt;We were very gracious to have all of this help. A big thanks once again to all
+of our new contributors who stuck around and contributed:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/cmc333333&quot;&gt;cmc333333&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/lordmauve&quot;&gt;lordmauve&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/fmoor&quot;&gt;fmoor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/smcoll&quot;&gt;smcoll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gthank&quot;&gt;gthank&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PyCon has now wrapped up, but our next stop this summer is &lt;a class=&quot;reference external&quot; href=&quot;https://2017.djangocon.us/&quot;&gt;DjangoCon 2017&lt;/a&gt; in
+Spokane, WA. We look forward to seeing some more of you there and hopefully
+working with some of you to sprint on Read the Docs again!&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">Release for May 12, 2017</title>
+    <id>https://blog.readthedocs.com/release-2017-05-12/</id>
+    <updated>2017-05-12T00:00:00Z</updated>
+    <published>2017-05-12T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/release-2017-05-12/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;release-for-may-12-2017&quot;&gt;
+
+&lt;p&gt;Yesterday, we rolled out improved webhook management for projects, and several
+bug fixes around our upgrade to Sphinx 1.5.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;webhook-management&quot;&gt;
+&lt;h2&gt;Webhook management&lt;/h2&gt;
+&lt;p&gt;We’ve been slowly making upgrades to our webhook management page. Projects that
+set up new webhooks will see a list of webhooks that we have configured,
+including HTTP exchanges that we encounter from each remote webhook.&lt;/p&gt;
+&lt;p&gt;Some of the other improvements to our webhook management include a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/webhooks.html#using-the-generic-api-integration&quot;&gt;new generic
+webhook endpoint&lt;/a&gt;, the ability to create arbitrary webhooks,
+and the ability to now re-establish webhooks on a per-provider basis.&lt;/p&gt;
+&lt;p&gt;You can play with the new features by selecting a project, opening the project
+admin dashboard, and selecting &lt;strong&gt;Integrations&lt;/strong&gt;. If your project is relatively
+new, webhook integrations will be created for existing remote webhooks. If your
+project has been configured for a long time, or you are using our old webhook
+endpoints, such as &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://readthedocs.org/github&lt;/span&gt;&lt;/code&gt;, you won’t notice anything
+new on the integrations dashboard page. You can still manually create a webhook
+and configure your repository to point to the new Read the Docs webhook
+endpoint however.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;bug-fixes&quot;&gt;
+&lt;h2&gt;Bug fixes&lt;/h2&gt;
+&lt;p&gt;Following the release of Sphinx 1.5, we set this version as the default version
+for Sphinx projects on Read the Docs. This in turn caused an issue with our
+override of the Sphinx search mechanism. We currently override this to provide
+our own search indexes, however the patch to this file was incompatible with
+Sphinx 1.5.&lt;/p&gt;
+&lt;p&gt;Due to this incompatibility, if a search query did not return anything from our
+indexes, but did match the Sphinx internal index, the links would have been
+incorrect.&lt;/p&gt;
+&lt;p&gt;We are now patching this search mechanism regardless of which version of Sphinx
+is used, and the broken links are no longer returned in the search results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;problems&quot;&gt;
+&lt;h2&gt;Problems?&lt;/h2&gt;
+&lt;p&gt;If you encounter any problems with any of the recent changes, feel free to open
+up a bug report on our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">Uniregistry sponsors Read the Docs and Open Source</title>
+    <id>https://blog.readthedocs.com/ads-with-uniregistry/</id>
+    <updated>2017-04-03T00:00:00Z</updated>
+    <published>2017-04-03T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ads-with-uniregistry/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;uniregistry-sponsors-read-the-docs-and-open-source&quot;&gt;
+
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;&lt;img alt=&quot;_static/uniregistry-top.jpg&quot; src=&quot;_static/uniregistry-top.jpg&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;Today we’re excited to announce an important sponsorship partner in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/advertising/ethical-advertising.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Ethical Advertising&lt;/span&gt;&lt;/a&gt; campaign: &lt;a class=&quot;reference external&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;Uniregistry&lt;/a&gt;. Our goal with our ethical advertising program is to provide important funding for open source, and show that it can be done ethically – without tracking our users and only offering ads from relevant partners.&lt;/p&gt;
+&lt;p&gt;Domain registration was identified early as a natural partner to our program, because it sits in the stack of necessary infrastructure for all of us that work on making the internet. We wanted the right partner, because historically we feel that domain registration companies have had awful UX. We’ll cover a few of the criteria we used to reach the conclusion to partner with Uniregistry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We’ve worked with Uniregistry to offer 25% off first year registrations and/or transfers for Read the Docs users&lt;/strong&gt;,
+using the code &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;DOCS25&lt;/span&gt;&lt;/code&gt;.
+&lt;a class=&quot;reference external&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;Sign up&lt;/a&gt; now to get started.
+Purchasing domain names with Uniregistry is easy and secure,
+and you’ll find a number of features that you won’t find with other registrars:&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;usability&quot;&gt;
+&lt;h2&gt;Usability&lt;/h2&gt;
+&lt;p&gt;Uniregistry makes every interaction simple and minimal.
+This pays off with a complete experience that should delight you.
+It doesn’t suck.&lt;/p&gt;
+&lt;p&gt;Domain registration starts with search.
+Their clutter-free, fast-loading search gives access to hundreds of TLDs worldwide.
+They make everything you might need to do possible within one or two clicks, instead of 10.&lt;/p&gt;
+&lt;p&gt;They also have native apps on iOS and Android, and make it easy to grab a new domain, manage your existing names, or transfer in and out at your leisure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;privacy-and-security&quot;&gt;
+&lt;h2&gt;Privacy and Security&lt;/h2&gt;
+&lt;p&gt;Uniregistry offers free WHOIS Privacy on every domain. There’s no nickel-and-diming to protect your personal information. In recent years, those of you who have your phone numbers and emails on domain registration have come to experience being heckled by automated phone calls and spam. Uniregistry takes this off the table with no extra cost to you.  Uniregistry’s competitors charge between $3.99 and $7.99 for what should be your right, not a paid privilege.&lt;/p&gt;
+&lt;p&gt;Two step verification is built right into the product as well. They are the registrar for people who own one domain or thousands, so they had to build in security and tools to put you in complete control. Since they have handled the use case of the most demanding domain owners in the industry, you get the same benefits even if you just buy one.&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;&lt;img alt=&quot;_static/uniregistry-interface.jpg&quot; src=&quot;_static/uniregistry-interface.jpg&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;price&quot;&gt;
+&lt;h2&gt;Price&lt;/h2&gt;
+&lt;p&gt;Most domain registrars which provide good pricing are constantly up-selling and playing renewal games that cost money.  Uniregistry offer transparent, honest pricing on your most valuable assets. They have built a business like we would, they have never charged its customers for WHOIS privacy, they believe that freedom from unwelcome solicitation or online harassment is a fundamental right, not an opportunity for an upsell.&lt;/p&gt;
+&lt;p&gt;Uniregistry is hyper-focused on domain registration. They don’t offer hosting, so you are not being up-sold constantly. Their pricing across the board is competitive, while providing a first class experience.&lt;/p&gt;
+&lt;p&gt;Additionally, we worked with Uniregistry to give you a discount for not only new domain purchases, but also your transfers. Use this link as our thank you for supporting open source through your domain registration. &lt;a class=&quot;reference external&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;Try it&lt;/a&gt; and see if you agree.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;no-lock-in&quot;&gt;
+&lt;h2&gt;No Lock-in&lt;/h2&gt;
+&lt;p&gt;Uniregistry doesn’t hide things like domain transfer codes. Domain renewals are a major source of cheap profit for other hosts, but it’s quite simple to switch with Uniregistry. They provide the transparency required to be a long term partner to you in managing your online presence.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-story-behind-the-story&quot;&gt;
+&lt;h2&gt;The Story behind the story&lt;/h2&gt;
+&lt;p&gt;Uniregistry was founded by Frank Schilling. They are the fastest growing registrar on the planet, driven by Frank, who is the best-known individual on the planet when it comes to domain registration. Under his direction, they have grown to be the operator of 25 new gTLDs, with more than 3.5 million domains under management.&lt;/p&gt;
+&lt;p&gt;As part of this sponsorship, Frank said, “I have a deep level of respect and love for this industry. I want nothing more than to grow a sustainable and dynamic business that empowers future generations of entrepreneurs, domain name investors, online businesses, and individual users around the world. The ultimate goal of Uniregistry is to make getting online easy. I believe we’re improving that experience each day. We are helping our customers unlock the tremendous power of their domains.”&lt;/p&gt;
+&lt;p&gt;We’re happy to partner with Uniregistry to offer you a great domain experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-started&quot;&gt;
+&lt;h2&gt;Get Started&lt;/h2&gt;
+&lt;p&gt;Uniregistry is offering our users 25% off first year registrations and/or transfers into Uniregistry, using the code &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;DOCS25&lt;/span&gt;&lt;/code&gt;.
+We hope that you’ll enjoy getting started with the service,
+and find it as useful as we do.
+&lt;a class=&quot;reference external&quot; href=&quot;https://uniregistry.com/readthedocs&quot;&gt;Sign up&lt;/a&gt; now to get started.&lt;/p&gt;
+&lt;p&gt;Some small print: &lt;em&gt;Terms: Offer valid from March 31, 2017 to May 31, 2017 at 23:59:59 UTC for first year registrations and/or transfers in to Uniregistry.com. Excludes select extensions: .sucks &amp;amp; .game. Not including premiums. For redemption, you must have or create a new account at Uniregistry.com and comply with all Uniregistry.com registration policies and terms of service. Cannot be used in conjunction with any other offer, sale, discount or promotion; not redeemable for any other service; no cash value. This offer and all Uniregistry registration services are governed by the law of Grand Cayman, our home.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">Build Image Upgrades</title>
+    <id>https://blog.readthedocs.com/build-image-upgrade/</id>
+    <updated>2017-02-14T00:00:00Z</updated>
+    <published>2017-02-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/build-image-upgrade/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;build-image-upgrades&quot;&gt;
+
+&lt;p&gt;Starting this week, we’ll be deploying a new default image for our documentation
+build environments. This image will change the default Python versions that are
+supported.&lt;/p&gt;
+&lt;p&gt;We aren’t expecting any issues to arise from this change, but be sure to raise
+any issues on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt; if you notice any strange behavior. The new
+build image supports Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;2.7&lt;/span&gt;&lt;/code&gt; and Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.5&lt;/span&gt;&lt;/code&gt;, dropping support for
+Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;. If you require access to Python &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;, we suggest you sign up
+for access to our next beta image.&lt;/p&gt;
+&lt;p&gt;The next image for our build process is now being tested. This image will
+support multiple versions of Python: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;2.7&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.3&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.4&lt;/span&gt;&lt;/code&gt;, &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.5&lt;/span&gt;&lt;/code&gt;, and
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;3.6&lt;/span&gt;&lt;/code&gt;. Instead of relying on the distribution’s versions of Python, multiple
+versions are instead installed from source, using &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/yyuu/pyenv&quot;&gt;pyenv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you’d like beta access to this build image for your projects, you can sign
+up here:&lt;/p&gt;
+&lt;div class=&quot;admonition-update admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Users are now able to opt in to a build image that support Python 3.6,
+signing up for beta access is no longer required. For more information, see
+our blog post on &lt;a class=&quot;reference internal&quot; href=&quot;../../python-36-support/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;Python 3.6 Support&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We are slowly moving project configuration to our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/yaml-config.html&quot;&gt;YAML configuration file&lt;/a&gt;,
+&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt;. Access to specific versions of Python will only be
+available using this configuration method, by specifying a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/yaml-config.html#python-version&quot;&gt;python.version&lt;/a&gt;
+element.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2017/atom.xml">
+    <title type="text">Read the Docs 2016 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2016-stats/</id>
+    <updated>2017-01-13T00:00:00Z</updated>
+    <published>2017-01-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2016-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2016-stats&quot;&gt;
+
+&lt;p&gt;Congrats,
+you made it through 2016!
+Read the Docs has been rolling along,
+and we’ve had another interesting year as well.&lt;/p&gt;
+&lt;p&gt;For a quick summary:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our level of contributions and commits has gone down a good bit this year.&lt;/li&gt;
+&lt;li&gt;Our traffic and user growth has been quite steady, which is particularly impressive at the scale we’re operating at.&lt;/li&gt;
+&lt;li&gt;Our efforts at funding the project have also started to bear fruit, and 2017 is looking to be the year that Read the Docs will become a sustainable project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will go into more detail below about each of these details.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;252 Million Page Views (+48%)&lt;/li&gt;
+&lt;li&gt;56 Million Unique Visitors (+47%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page view growth has been steady again this year.
+This is particularly impressive given the scale that we’re operating at.
+We’re quite happy to see folks using Read the Docs more and more,
+as well as seeing many other projects using our theme or other concepts that we’ve pioneered in the general software ecosystem.&lt;/p&gt;
+&lt;p&gt;We remain one of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.alexa.com/siteinfo/readthedocs.io&quot;&gt;largest sites&lt;/a&gt; on the internet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;53673 projects (+91%)&lt;/li&gt;
+&lt;li&gt;64585 users (+65%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read the Docs has some high profile projects that push a lot of traffic.
+There are however thousands of smaller libraries and projects that fill out that full range of documentation that we host.&lt;/p&gt;
+&lt;p&gt;We are happy to host documentation for all open source projects,
+and are glad the community finds the service useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2016-01-01&amp;amp;to=2016-12-31&amp;amp;type=c&quot;&gt;18 people&lt;/a&gt; who committed code (-50% from last year)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;1032 commits&lt;/a&gt; (-46%)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/search?utf8=%E2%9C%93&amp;amp;q=created%3A%3E%3D2016-01-01&amp;amp;type=Issues&quot;&gt;461 issues&lt;/a&gt; - 236 open, 225 closed (-42%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our community activity is much lower this year,
+which is a multi-year trend that we’ve been seeing.
+This is in part due to the maturity of the project and code base,
+but also because we’ve struggled to attract and retain new contributors.
+The code base and project are reasonably hard to set up,
+and we haven’t had enough time and focus on onboarding contributors into the project.&lt;/p&gt;
+&lt;p&gt;Additionally, as a hosted service,
+the majority of issues we receive are support requests.
+These issues don’t necessarily lend to user contributions,
+and are generally low priority for us as we don’t have any additional time to volunteer to resolving them.&lt;/p&gt;
+&lt;p&gt;It’s been our plan to address this support gap for a while.
+Starting this year,
+we plan to create a part-time role, dedicated to handling support.
+Ideally, we would promote someone from our community for this role,
+however this pool doesn’t exist at the moment.&lt;/p&gt;
+&lt;p&gt;As maintainers,
+we are discouraged by the continued lack of interest in contributing to our project,
+but fully realize that we also have a role in this.
+We can reduce complexity and make our projects more approachable.
+We can also be more vocal about where and how you can start to contribute.
+In the past, we assumed users would come to us with interest in contributing,
+however we’ve also received feedback that it’s not apparent we require the help.
+If you’re interested in contributing,
+never hesitate to ask where you can contribute.
+We’re happy to have contributions of any size.&lt;/p&gt;
+&lt;p&gt;We certainly aren’t the only project that has trouble attracting contributions,
+there is a &lt;a class=&quot;reference external&quot; href=&quot;http://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure&quot;&gt;plethora of examples&lt;/a&gt; in the open source ecosystem of this problem.
+It would be great if projects could rely strictly on volunteers for maintenance,
+however there are economics of this problem that we can solve by ourselves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;p&gt;Our hosting costs continue to be sponsored by &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+which is fantastically generous of them.&lt;/p&gt;
+&lt;p&gt;Our largest initiative this year has been our attempt at building &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/ethical-advertising.html&quot;&gt;Ethical Advertising&lt;/a&gt; into our site.
+The project has been well received,
+which we have been grateful for.
+Funding is a fundamental part of sustainability,
+and we’re glad people are supportive of our efforts to get there.&lt;/p&gt;
+&lt;p&gt;The best outcome of our sustainability efforts is that we’re going to be able to hire someone part time to handle support for our users.
+Support has always been an area that we have not done our best work,
+nor have we had enough time to handle it well.
+We’re excited to give support and community development more consistent attention,
+and hope that it leads to a better experience for users and perhaps even more contributions.&lt;/p&gt;
+&lt;p&gt;Our other efforts at sustainability are also progressing. Our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/&quot;&gt;commercial hosting service&lt;/a&gt; is starting to slowly build revenue from users who want private documentation.
+We hope to continue to build that into another source of revenue,
+which can help support development of the code base.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;2016 has been another year of mixed results.&lt;/p&gt;
+&lt;p&gt;We are continuing to see more users and folks who are reading documentation on our platform.
+We think the software industry is caring more and more about documentation by the year,
+and we’re helping to play a role.&lt;/p&gt;
+&lt;p&gt;The downside is that as a community project,
+we still continue to have trouble attracting contributions, especially repeat contributions.
+We hope that with some of the changes we make this year this won’t continue to be the case.&lt;/p&gt;
+&lt;p&gt;Either way, thanks to everyone that has helped us this last year!
+We appreciate all your support, contributions, and patience,
+and hope we can make 2017 the year that we can call our project sustainable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,405 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:title" content="GSOC 2019: Improved Search Results and Search As You Type" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="improved-search-and-search-as-you-type.html" />
+  <meta property="og:site_name" content="Read the Docs Blog" />
+  <meta property="og:description" content="Giving users the ability to easily find the information that they are looking for has always been important for Read the Docs. This year, I, Vaibhav Gupta, took the opportunity provided by Google S..." />
+  <meta property="og:image" content="https://blog.readthedocs.com/_static/logo-opengraph.png" />
+  <meta property="og:image:alt" content="Read the Docs Blog" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <title>GSOC 2019: Improved Search Results and Search As You Type &#8212; Read the Docs Blog</title>
+    <link rel="stylesheet" href="../_static/main.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+  
+  <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Puritan:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../_static/local.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer data-domain="blog.readthedocs.com" src="https://plausible.io/js/plausible.js"></script>
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../archive/atom.xml" title="Read the Docs Blog">
+  
+  
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head><body>
+  <!-- BEGIN header -->
+  <div id="header">
+    <div class="row">
+      <div class="logo">
+        <h1><a href="../">
+            <img src="../_static/logo.png" height="48" />
+            Read the Docs Blog
+        </a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="https://readthedocs.com">Back to site</a></li>
+          <li><a href="mailto:hello@readthedocs.com">Contact&nbsp;Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END header -->
+
+  <div id="content">
+    <div class="wrapper">
+
+      <div class="col-major content">
+          
+  <div class="section" id="gsoc-2019-improved-search-results-and-search-as-you-type">
+<h1>GSOC 2019: Improved Search Results and Search As You Type<a class="headerlink" href="#gsoc-2019-improved-search-results-and-search-as-you-type" title="Permalink to this headline">¶</a></h1>
+<p>Giving users the ability to easily find the information that they
+are looking for has always been important for Read the Docs.
+This year, I, <a class="reference external" href="https://github.com/dojutsu-user">Vaibhav Gupta</a>, took the opportunity provided
+by Google Summer of Code to improve the search.
+The main goals of my <a class="reference external" href="https://summerofcode.withgoogle.com/projects/#5465587940065280">GSoC project</a> were:</p>
+<ul class="simple">
+<li>to make a <a class="reference external" href="https://readthedocs-sphinx-search.readthedocs.io/en/latest/">Sphinx extension</a> to provide “search you type” experience to the users.</li>
+<li>to add support for multiple hits per search result.</li>
+<li>to improve the UI/UX around code search.</li>
+<li>to add support for search analytics.</li>
+</ul>
+<p>Search as you type feature is live on our docs.
+You can go through these links to experience it:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.readthedocs.io/?rtd_search=contributing">https://docs.readthedocs.io/?rtd_search=contributing</a></li>
+<li><a class="reference external" href="https://docs.readthedocs.io/?rtd_search=api/v3/projects/">https://docs.readthedocs.io/?rtd_search=api/v3/projects/</a></li>
+</ul>
+<div class="section" id="google-summer-of-code">
+<h2>Google Summer of Code<a class="headerlink" href="#google-summer-of-code" title="Permalink to this headline">¶</a></h2>
+<p>Google Summer of Code is a global program where students work with
+an open source organization on a 3-month programming project.
+I got accepted in the program and was excited to spend my summer with Read the Docs.</p>
+<p>I have worked full time during the GSoC coding period and implemented various features.
+All of my search related work can be seen in the <a class="reference external" href="https://github.com/orgs/readthedocs/projects/7">In-Doc Search UI Project Board</a>.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The search code was originally contributed by <a class="reference external" href="https://github.com/robhudson">Rob Hudson</a>,
+<a class="reference external" href="https://github.com/readthedocs/readthedocs.org/pull/493">back in 2013</a> and then improved upon by other contributors.
+It was greatly improved and upgraded by <a class="reference external" href="https://github.com/safwanrahman">Safwan Rahman</a> during <a class="reference internal" href="../search-improvements/"><span class="doc">GSoC’18</span></a>.
+Continuing on the same path,
+I have implemented some new features on top of the existing search backend.</p>
+</div>
+<div class="section" id="new-features">
+<h2>New Features<a class="headerlink" href="#new-features" title="Permalink to this headline">¶</a></h2>
+<p>During the GSoC period, I have worked on the following features:</p>
+<ul class="simple">
+<li><strong>In-Doc Search UI</strong>: <a class="reference external" href="https://github.com/readthedocs/readthedocs-sphinx-search">readthedocs-sphinx-search</a> is a sphinx extension that adds a clean and minimal
+search UI to your docs. It supports “search as you type” feature.
+So, it is now possible to get instant results without being redirected to any other page.
+Read the docs <a class="reference external" href="https://readthedocs-sphinx-search.readthedocs.io/en/latest/">here</a>.</li>
+</ul>
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="/_static/in-doc-search-demo.gif"><img alt="In-doc search ui demo" src="../_images/in-doc-search-demo.gif" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">In-Doc Search UI Demo</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><strong>Multiple Hits Per Search Result</strong>: This is one of the highly requested features.
+We now support search results from the sections of the docs, clicking on which will take you
+to that particular section and not just to the top of the result page.</li>
+<li><strong>Code Search</strong>: We now support code search. If you want to search a particular function
+or an API endpoint – you can just type your query and you will find it in the results.
+Eg: <code class="docutils literal notranslate"><span class="pre">api/v3/</span></code> or <code class="docutils literal notranslate"><span class="pre">module.function</span></code>.</li>
+<li><strong>Search Analytics</strong>: We now have support for search analytics.
+These analytics makes it easy to know what the users are looking for in your documentation.
+You can see these analytics in your project admin dashboard.
+Currently, this feature is in beta state and is available under a <a class="reference external" href="http://docs.readthedocs.io/page/guides/feature-flags.html">feature flag</a>.
+We plan to make this available for everyone soon.
+If you want to test this feature out and help giving us feedback,
+please contact us via <a class="reference external" href="https://github.com/readthedocs/readthedocs.org/issues/new">GitHub issues</a>.</li>
+</ul>
+<div class="figure align-center" id="id2">
+<a class="reference external image-reference" href="/_static/search-analytics-demo.png"><img alt="Search analytics in project admin dashboard" src="../_images/search-analytics-demo.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Search analytics demo dashboard</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="what-next">
+<h2>What Next?<a class="headerlink" href="#what-next" title="Permalink to this headline">¶</a></h2>
+<p>We don’t intend to stop just yet.
+We are planning to work on some more cool features in the near future,
+some of which are:</p>
+<ul class="simple">
+<li><strong>Search Facets</strong>:
+Facets can be used to make search more accurate.
+For example: In <a class="reference external" href="http://docs.celeryproject.org/en/latest/">Celery docs</a>, facets can be used to search inside <a class="reference external" href="http://docs.celeryproject.org/projects/kombu/en/latest/">Kombu docs</a> for “serializers”,
+like <code class="docutils literal notranslate"><span class="pre">subproject:</span> <span class="pre">kombu</span> <span class="pre">serializers</span></code>.
+(<a class="reference external" href="https://github.com/readthedocs/readthedocs.org/issues/5966">readthedocs/readthedocs.org#5966</a>)</li>
+<li><strong>Search Results Ordered By Most Viewed Pages</strong>:
+It would be much more useful if the most viewed pages are shown first in the search results.
+(<a class="reference external" href="https://github.com/readthedocs/readthedocs.org/issues/5968">readthedocs/readthedocs.org#5968</a>)</li>
+<li><strong>Search Inside Sections</strong>:
+It would be good if users have the option to get the
+search results from a particular section of the documentation.
+For example: Getting results from only <a class="reference external" href="https://docs.readthedocs.io/page/guides/">Guides</a> of our <a class="reference external" href="https://docs.readthedocs.io/">documentation</a>.
+(<a class="reference external" href="https://github.com/readthedocs/readthedocs-sphinx-search/issues/23">readthedocs/readthedocs-sphinx-search#23</a>).</li>
+</ul>
+</div>
+<div class="section" id="contributors-wanted">
+<h2>Contributors Wanted<a class="headerlink" href="#contributors-wanted" title="Permalink to this headline">¶</a></h2>
+<p>As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy just keeping the site up and running.
+Therefore, it’s quite hard for them to take time to implement new features.
+If you know some bit of Django or Python and Elasticsearch,
+you can contribute to the search functionality of Read the Docs.
+If you need any support to start contributing,
+you can get in touch with me or any member of Read the Docs team.
+You can find all of us at <em>#readthedocs</em> freenode IRC channel or <a class="reference external" href="https://gitter.im/rtfd/readthedocs.org">readthedocs gitter</a> channel.
+I am <em>dojutsu-user</em> at IRC and <em>&#64;dojutsu-user</em> at gitter.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>These new features will make it much easier to find the relevant information in the docs.
+There are an infinite number of ways it can be improved and I believe we can compete
+with major search engines in terms of documentation searching.
+We don’t need superhero or coding guru, just need people who understand Python,
+Django and Elasticsearch and have some time to write some code for us.
+You are a <strong>Superhero</strong> to us if you can lend your time and effort to improve Read the Docs.</p>
+</div>
+</div>
+
+  <div class="section">
+  
+    
+  
+  
+  </div>
+
+      </div>
+
+      <div class="col-minor sidebar">
+  
+  
+  <ul class="post-details">
+    <li>
+      
+        <i class="fa-fw fa fa-calendar"></i>
+        13 八月 2019
+      
+    </li>
+
+      
+
+  
+  <li id="author"><span><i class="fa-fw fa fa-user"></i></span>
+    
+      
+      <a href="../archive/author/vaibhav-gupta/">Vaibhav Gupta</a>
+      
+    </li>
+  
+
+  
+  <li id="location"><span><i class="fa-fw fa fa-location-arrow"></i></span>
+    
+      
+      <a href="../archive/location/lucknow-india/">Lucknow, India</a>
+      
+    </li>
+  
+
+  
+
+  
+
+  
+  <li id="tags"><span><i class="fa-fw fa fa-tags"></i>
+      </span>
+    
+      
+      <a href="../archive/tag/gsoc/">gsoc</a>
+      
+    
+      
+      <a href="../archive/tag/search/">search</a>
+      
+    
+      
+      <a href="../archive/tag/feature/">feature</a>
+      
+    
+      
+      <a href="../archive/tag/in-doc-search/">in-doc-search</a>
+      
+    
+      
+      <a href="../archive/tag/analytics/">analytics</a>
+      
+    </li>
+  
+  
+  </ul>
+
+
+
+<!-- Begin MailerLite Signup Form -->
+  <div id="mlb2-4710274" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4710274">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          <div class="ml-form-embedContent">
+            <h3 style="margin-left: 0">Subscribe to our mailing list</h3>
+            <p>Sign up for our blog and we'll send you news and updates about Sphinx and Read the Docs on a regular basis.</p>
+          </div>
+          <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/p8b7z2" data-code="p8b7z2" method="post" target="_blank">
+            <div class="ml-form-formContent">
+              <div class="ml-form-fieldRow ml-last-item">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email address" autocomplete="email" style="width: 90%">
+                </div>
+              </div>
+            </div>
+            <div class="ml-form-embedPermissions">
+              <div class="ml-form-embedPermissionsContent default privacy-policy">
+                <p style="margin-bottom: 0; font-size: 0.8em">You can unsubscribe anytime. For more details, review our <a href="https://docs.readthedocs.io/page/privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Subscribe</button>
+              <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display:none">
+          <div class="ml-form-successContent">
+            <h4>Thank you!</h4>
+            <p>You have successfully joined our subscriber list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function ml_webform_success_4710274(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-4710274 .row-success").show(),r(".ml-subscribe-form-4710274 .row-form").hide()}
+  </script>
+  <img src="https://track.mailerlite.com/webforms/o/4710274/p8b7z2?v1632123501" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
+<!--End mc_embed_signup-->
+
+
+<!-- Jobs 
+<h3> Read the Docs is hiring </h3>
+<ul>
+    <li><a href="https://blog.readthedocs.com/job-frontend/">Front-end Developer</a></li>
+</ul>
+-->
+
+<h3> Follow us </h3>
+
+<ul>
+<li>
+<a href="http://blog.readthedocs.com/archive/atom.xml" rel="me">Atom Feed</a>
+</li>
+<li>
+<a href="https://twitter.com/readthedocs" rel="me">Twitter</a>
+</li>
+</ul>
+
+  <h3><a href="../archive/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../newsletter2-october-2021/">07 十月 - todo and plan - October 2021</a></li>
+    
+      <li><a href="../newsletter-october-2021/">07 十月 - Read the Docs newsletter - October 2021</a></li>
+    
+      <li><a href="../newsletter-september-2021/">02 九月 - Read the Docs newsletter - September 2021</a></li>
+    
+      <li><a href="../theme-release-100rc1/">23 八月 - Theme release 1.0.0rc1</a></li>
+    
+      <li><a href="../newsletter-august-2021/">09 八月 - Read the Docs newsletter - August 2021</a></li>
+    
+  </ul>
+
+  <h3><a href="../archive/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../archive/2021/">2021 (18)</a></li>
+    
+  
+    
+    <li><a href="../archive/2020/">2020 (6)</a></li>
+    
+  
+    
+    <li><a href="../archive/2019/">2019 (15)</a></li>
+    
+  
+    
+    <li><a href="../archive/2018/">2018 (13)</a></li>
+    
+  
+    
+    <li><a href="../archive/2017/">2017 (7)</a></li>
+    
+  
+    
+    <li><a href="../archive/2016/">2016 (5)</a></li>
+    
+  
+    
+    <li><a href="../archive/2015/">2015 (9)</a></li>
+    
+  
+    
+    <li><a href="../archive/2014/">2014 (4)</a></li>
+    
+  
+    
+    <li><a href="../archive/2013/">2013 (2)</a></li>
+    
+  
+  </ul>
+
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="row">
+      <div class="col fill">
+        <ul>
+            <li>
+                &copy; Copyright 2021, Read the Docs, Inc.
+            </li>
+
+          <li>
+            Powered by <a href="http://ablog.readthedocs.org">ABlog</a>, and <a href="http://readthedocs.org/">Read the Docs</a>.
+          </li>
+            <li>
+              Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

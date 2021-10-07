@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged redirects</title>
+  <id>https://blog.readthedocs.com/archive/tag/redirects/atom.xml</id>
+  <updated>2014-08-22T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/redirects/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/redirects/atom.xml">
+    <title type="text">User-defined Redirects</title>
+    <id>https://blog.readthedocs.com/user-defined-redirects/</id>
+    <updated>2014-08-22T00:00:00Z</updated>
+    <published>2014-08-22T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/user-defined-redirects/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;user-defined-redirects&quot;&gt;
+
+&lt;p&gt;Today we are announcing User-defined Redirects for Read the Docs.
+This has been a long requested feature that should cut down on 404’s when migrating your documentation.&lt;/p&gt;
+&lt;p&gt;Read the Docs has long had &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/redirects.html&quot;&gt;Redirects&lt;/a&gt;,
+but they are managed automatically for only certain use cases.
+This change allows users to control a specific set of common redirects.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;prefix-redirects&quot;&gt;
+&lt;h2&gt;Prefix Redirects&lt;/h2&gt;
+&lt;p&gt;The most useful and requested application of redirects was to migrate to Read the Docs from an old host.
+You would have your docs served at a previous URL,
+but that URL would break once you moved them.
+Read the Docs includes a language and version slug in your documentation,
+but not all documentation is hosted this way.&lt;/p&gt;
+&lt;p&gt;Say that you previously had your docs hosted at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://docs.example.com/dev/&lt;/span&gt;&lt;/code&gt;,
+and you move &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;docs.example.com&lt;/span&gt;&lt;/code&gt; to point at Read the Docs.
+Users will have a bookmark saved to a page at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://docs.example.com/dev/install.html&lt;/span&gt;&lt;/code&gt;,
+a URL that no longer exists.&lt;/p&gt;
+&lt;p&gt;You can now set a &lt;em&gt;Prefix Redirect&lt;/em&gt; that will redirect all 404’s with a prefix to a new place.
+The example configuration would be:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Prefix&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redirect&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;From&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Your user’s query would now redirect in the following manner:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Where &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;en&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;latest&lt;/span&gt;&lt;/code&gt; are the default language and version values for your project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-redirects&quot;&gt;
+&lt;h2&gt;Page Redirects&lt;/h2&gt;
+&lt;p&gt;A more specific case is when you move a page around in your docs.
+The old page will start 404’ing,
+and your users will be confused.
+&lt;em&gt;Page Redirects&lt;/em&gt; let you redirect a specific page.&lt;/p&gt;
+&lt;p&gt;Say you move the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;example.html&lt;/span&gt;&lt;/code&gt; page into a subdirectory of examples: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;examples/intro.html&lt;/span&gt;&lt;/code&gt;.
+You would set the following configuration:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Page&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Redirect&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;From&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;To&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;sphinx-redirects&quot;&gt;
+&lt;h2&gt;Sphinx Redirects&lt;/h2&gt;
+&lt;p&gt;We also support redirects for changing the type of documentation Sphinx is building.
+If you switch between &lt;em&gt;HTMLDir&lt;/em&gt; and &lt;em&gt;HTML&lt;/em&gt;, your URL’s will change.
+A page at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;/en/latest/install.html&lt;/span&gt;&lt;/code&gt; will be served at &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;/en/latest/install/&lt;/span&gt;&lt;/code&gt;,
+or vice versa.
+The built in redirects for this will handle redirecting users appropriately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;implementation&quot;&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;Since we serve documentation in a highly available way,
+we do not run any logic when we’re serving documentation.
+This means that redirects will only happen in the case of a &lt;em&gt;404 File Not Found&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the future we might implement redirect logic in Javascript,
+but this first version is only implemented in the 404 handlers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;feature-requests&quot;&gt;
+&lt;h2&gt;Feature Requests&lt;/h2&gt;
+&lt;p&gt;This is an initial attempt at redirects.
+We have some plans to improve this,
+but get in touch with us if you have ideas for improving the feature.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/rtfd/readthedocs.org/issues&quot;&gt;file an issue&lt;/a&gt;,
+or you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:readthedocs&amp;#37;&amp;#52;&amp;#48;gmail&amp;#46;com&quot;&gt;readthedocs&lt;span&gt;&amp;#64;&lt;/span&gt;gmail&lt;span&gt;&amp;#46;&lt;/span&gt;com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

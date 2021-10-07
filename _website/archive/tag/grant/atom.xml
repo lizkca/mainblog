@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged grant</title>
+  <id>https://blog.readthedocs.com/archive/tag/grant/atom.xml</id>
+  <updated>2021-06-10T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/grant/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/grant/atom.xml">
+    <title type="text">New release of sphinx-hoverxref with support for intersphinx</title>
+    <id>https://blog.readthedocs.com/hoverxref-intersphinx/</id>
+    <updated>2021-06-10T00:00:00Z</updated>
+    <published>2021-06-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/hoverxref-intersphinx/" />
+    <author>
+      <name>Juan Luis Cano Rodríguez</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-release-of-sphinx-hoverxref-with-support-for-intersphinx&quot;&gt;
+
+&lt;p&gt;We have released version 0.6b1 of &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;,
+a Sphinx extension that shows a &lt;em&gt;content preview&lt;/em&gt;
+of a cross-reference.&lt;/p&gt;
+&lt;p&gt;This extension is an essential part
+of the work we are doing to improve interoperability of documentation in general,
+and scientific documentation in particular,
+thanks to the &lt;a class=&quot;reference external&quot; href=&quot;/czi-grant-announcement&quot;&gt;CZI grant&lt;/a&gt; we received last year.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_images/sphinx-hoverxref-showcase.gif&quot;&gt;&lt;img alt=&quot;sphinx-hoverxref displaying tooltips for cross references&quot; src=&quot;img/sphinx-hoverxref-showcase.gif&quot; style=&quot;width: 60%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;sphinx-hoverxref displaying a tooltip including an equation&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;embedding-content-previews&quot;&gt;
+&lt;h2&gt;Embedding content previews&lt;/h2&gt;
+&lt;p&gt;Technical documentation is full of cross-references (or &lt;em&gt;xrefs&lt;/em&gt;):
+hyperlinks to related parts of the documentation (or even to an external project)
+that help contextualize the information.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html&quot;&gt;Sphinx provides powerful tools for creating
+xrefs&lt;/a&gt;,
+which can be used to link other parts of the documentation,
+and in the case of software projects, also to specific objects of the API.&lt;/p&gt;
+&lt;p&gt;However, jumping through several links while reading some documentation
+can be distracting, since opening them might need either a context switch
+or keeping a new browser tab for a later moment.&lt;/p&gt;
+&lt;p&gt;Here is where &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt; comes to the rescue:
+it scans the cross-references and attaches content previews to them
+(either &lt;em&gt;tooltips&lt;/em&gt; or &lt;em&gt;modal&lt;/em&gt; dialogues)
+that embed the contents of the page the xrefs point to.
+This way, when the user is interested in a particular topic,
+they can hover the mouse over the link
+and display the content preview
+instead of opening the link.&lt;/p&gt;
+&lt;p&gt;Moreover, the content previews created by &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;
+also work if the embedded content requires a particular extension to be rendered.
+This makes it possible to embed content that includes mathematical equations, for example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;support-for-intersphinx&quot;&gt;
+&lt;h2&gt;Support for &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;intersphinx&lt;/span&gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Version 0.6b1 of &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt; introduces opt-in support for Intersphinx linking.
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html&quot;&gt;sphinx.ext.intersphinx&lt;/a&gt;
+is a Sphinx extension
+that generates automatic links to the documentation of objects in other projects,
+and now it’s possible to show floating windows on them too.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_images/sphinx-hoverxref-intersphinx.png&quot;&gt;&lt;img alt=&quot;A project (left) embedding content from another project linked through intersphinx (right) using sphinx-hoverxref&quot; src=&quot;img/sphinx-hoverxref-intersphinx.png&quot; style=&quot;width: 80%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;A project (left) embedding content from another project linked through intersphinx (right)
+using sphinx-hoverxref&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;To enable it, the user needs to specify
+which projects from the &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping&quot;&gt;intersphinx_mapping&lt;/a&gt;
+will be scanned by &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;sphinx-hoverxref&lt;/span&gt;&lt;/code&gt;, using a new configuration value:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Values of the intersphinx_mapping keys that you want to enable hoverxref on&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hoverxref_intersphinx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;astropy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;numpy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;scipy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;matplotlib&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Moreover, the look &amp;amp; feel of the current project is preserved
+even if the target documentation has a different theme or colors,
+which makes the result more visually consistent.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;At the moment, the target project needs to be hosted on Read the Docs,
+which is a limitation that we hope to remove in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can draw inspiration from some community projects that are using this feature already:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://grill.readthedocs.io/&quot;&gt;The Grill&lt;/a&gt;, an extension for digital content creation with Maya, Houdini, and other 3D modeling applications,
+and references another project called &lt;a class=&quot;reference external&quot; href=&quot;https://naming.readthedocs.io/&quot;&gt;naming&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.poliastro.space/&quot;&gt;poliastro&lt;/a&gt;, a Python library for interactive Astrodynamics
+that makes cross-references to &lt;a class=&quot;reference external&quot; href=&quot;https://docs.astropy.org/&quot;&gt;Astropy&lt;/a&gt; and other projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are excited to see what our users can do with &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;,
+and will continue working on it in the future.&lt;/p&gt;
+&lt;p&gt;Considering using Read the Docs for your next Sphinx or MkDocs project?
+Check out &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;our documentation&lt;/a&gt; to get started!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/grant/atom.xml">
+    <title type="text">Announcing Chan Zuckerberg Initiative Grant to Expand the Interoperability of Scientific Documentation</title>
+    <id>https://blog.readthedocs.com/czi-grant-announcement/</id>
+    <updated>2020-11-19T00:00:00Z</updated>
+    <published>2020-11-19T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/czi-grant-announcement/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-chan-zuckerberg-initiative-grant-to-expand-the-interoperability-of-scientific-documentation&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt; has received a $200,000 grant from the Chan Zuckerberg Initiative’s &lt;a class=&quot;reference external&quot; href=&quot;https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/&quot;&gt;Essential Open Source for Science&lt;/a&gt; (EOSS) program.
+Read the Docs is the largest open source documentation hosting platform in the world.
+We provide hosting for many scientific software packages,
+including some that have received EOSS funding in the past.
+You can read more about this round of grants in the &lt;a class=&quot;reference external&quot; href=&quot;https://cziscience.medium.com/scaling-open-infrastructure-and-reproducibility-in-biomedicine-69546a399747&quot;&gt;official announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our grant has two parts:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Part 1 allows us to develop new software to improve the interoperability of scientific documentation.&lt;/li&gt;
+&lt;li&gt;Part 2 allows us do advocacy work around the importance and value of documentation in the scientific community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re excited about the chance to work with the scientific community to improve the overall experience of writing and reading documentation.
+We plan to do a lot of outreach to various community members,
+so that we can ensure we’re building tools that provide the most value.
+We also plan to write content that will hopefully make the process of documenting scientific code easier.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-1-improve-the-interoperability-of-scientific-documentation&quot;&gt;
+&lt;h2&gt;Part 1: improve the interoperability of scientific documentation&lt;/h2&gt;
+&lt;p&gt;This work is something that we’ve been doing as a side project for some time now.
+We have an extension to Sphinx that we call &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx-hoverxref&quot;&gt;sphinx-hoverxref&lt;/a&gt;.
+It provides hovering tooltips for Sphinx projects when hover over a link.
+You might be familiar with this functionality on GitHub or Wikipedia – this project adds that functionality to any project hosted on Read the Docs.
+You can see a &lt;a class=&quot;reference external&quot; href=&quot;https://cpython-ericholscher.readthedocs.io/en/sphinx-hoverxref/whatsnew/3.9.html&quot;&gt;live demo&lt;/a&gt; on a fork of the Python documentation.&lt;/p&gt;
+&lt;p&gt;The goal of the grant will be to expand this functionality by doing a few things:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improving and documenting the backend Embed API on Read the Docs, allowing documentation content to be embedded anywhere on the web.&lt;/li&gt;
+&lt;li&gt;Building a JavaScript client for the Embed API, which includes tooltips showing the content on any website.&lt;/li&gt;
+&lt;li&gt;Integrating this JS client and backend API together in a new version of sphinx-hoverxref.&lt;/li&gt;
+&lt;li&gt;Extending sphinx-hoverxref to work across multiple Read the Docs sites, allowing content hovers across the entire scientific documentation ecosystem.&lt;/li&gt;
+&lt;li&gt;If time allows, also extending the backend Embed API to support Sphinx documentation hosted outside of Read the Docs, allowing even more interoperability between documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are planning to contract a frontend developer to help with this work.
+The Python work will likely be carried out by our existing team,
+funded via the grant.
+This is because of the complexities involved with the Read the Docs and Sphinx integration,
+it will be more cost effective to have people already familiar with the codebases on these tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-2-advocacy-work-around-documentation-in-the-scientific-community&quot;&gt;
+&lt;h2&gt;Part 2: Advocacy work around documentation in the scientific community&lt;/h2&gt;
+&lt;p&gt;We know that documentation is a pain point for scientific projects. There is a lack of resources in the community, and we feel that we can be a central clearing house for better documentation tutorials and best practices. This part of the funding will be about growing appreciation and knowledge of documentation in the scientific community in general, and advocating for time to be spent on crafting good documentation with the best tooling.&lt;/p&gt;
+&lt;p&gt;Part of this work would be letting people know about the work in Part 1, promoting the tooling to make better documentation in the Scientific Python ecosystem. Beyond that, we will also promote tutorials and best practices around documentation for Scientific users, leading to more resources being available and better documentation in the community.&lt;/p&gt;
+&lt;p&gt;The high-level roadmap for this part of the grant is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improve documentation and promote the work in Part 1.&lt;/li&gt;
+&lt;li&gt;Adapt the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/&quot;&gt;Guides&lt;/a&gt; section of the Read the Docs documentation into a more full-featured Education section, along with standardizing and editing all existing guides.&lt;/li&gt;
+&lt;li&gt;Expand our existing &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-tutorial.readthedocs.io/&quot;&gt;Sphinx Tutorial&lt;/a&gt;, hopefully adding it upstream to Sphinx as the official tutorial&lt;/li&gt;
+&lt;li&gt;Write additional documentation guides focused on the scientific community, based on feedback from people in the community. This will likely include tutorials on integrating Jupyter with Sphinx, &lt;a class=&quot;reference external&quot; href=&quot;https://jupyterbook.org/intro.html&quot;&gt;Jupyterbook&lt;/a&gt;, and other pain points that users have.&lt;/li&gt;
+&lt;li&gt;If time allows, we would also love to work on curating some of the documentation resources at &lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/topics/&quot;&gt;Write the Docs&lt;/a&gt;, specifically topics that are relevant to scientific projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As part of this work, we plan to contract someone in a technical writer/developer evangelist role.
+Someone with knowledge of the scientific community would be a great benefit,
+given that we plan to seek feedback from many scientific projects on the priority of tasks we work on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;looking-forward&quot;&gt;
+&lt;h2&gt;Looking forward&lt;/h2&gt;
+&lt;p&gt;We are starting to look for contractors who would be a good fit for the work.
+People who care about documentation and are already connected with the scientific community are a big plus.
+We hope to post proper job descriptions for these roles in the near future,
+but wanted to note that we’re looking in our initial announcement.&lt;/p&gt;
+&lt;p&gt;This is the largest grant that we’ve ever received,
+and we are working hard to make sure it’s successful.
+We appreciate the trust that the Chan Zuckerberg Initiative has placed in us,
+and we will work hard to make sure the results of this grant will be adopted across the scientific ecosystem.&lt;/p&gt;
+&lt;p&gt;If you want to keep up to date with this work,
+you can follow along on &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/readthedocs/&quot;&gt;GitHub&lt;/a&gt; or &lt;a class=&quot;reference external&quot; href=&quot;#mc_embed_signup_scroll&quot;&gt;subscribe&lt;/a&gt; to our blog for updates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

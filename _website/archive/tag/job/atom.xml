@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged job</title>
+  <id>https://blog.readthedocs.com/archive/tag/job/atom.xml</id>
+  <updated>2015-05-04T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/job/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/job/atom.xml">
+    <title type="text">Read the Docs is hiring!</title>
+    <id>https://blog.readthedocs.com/read-the-docs-is-hiring/</id>
+    <updated>2015-05-04T00:00:00Z</updated>
+    <published>2015-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-is-hiring/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-is-hiring&quot;&gt;
+
+&lt;p&gt;Thanks to our successful &lt;a class=&quot;reference external&quot; href=&quot;http://blog.readthedocs.com/fundraising-wrapup/&quot;&gt;fundraiser&lt;/a&gt;,
+we have the ability to pay people to work on Read the Docs.&lt;/p&gt;
+&lt;p&gt;We have two positions that we are looking for:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Community Developer&lt;/li&gt;
+&lt;li&gt;Operations Developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These will be part-time remote contract positions.&lt;/p&gt;
+&lt;p&gt;Our budget is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;40 total hours each week&lt;/li&gt;
+&lt;li&gt;Paid at $50/hr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These hours will be split between the two roles,
+and our time managing and doing administrative tasks.
+We expect each person to work around 15-20 hours each week.
+It will initially be for a 3-month period,
+after which we will evaluate the program,
+and continue it with renewed funding if it is successful.&lt;/p&gt;
+&lt;p&gt;We understand that money and time can be an obstacle to working on OSS,
+so let this be your opportunity to join us!
+We are hoping to build a team that is diverse in view points and location,
+and that definitely includes folks like you.
+Historically under-represented folks in the open source world will be given preference.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community-developer&quot;&gt;
+&lt;h2&gt;Community Developer&lt;/h2&gt;
+&lt;p&gt;You will help us build community and give our users a better experience.
+Help us make the code base better,
+and build a thriving open source project along the way.&lt;/p&gt;
+&lt;p&gt;Your jobs will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Triage and fix bugs as they come in via GitHub, IRC, and the Mailing List&lt;/li&gt;
+&lt;li&gt;Work through the back log of GitHub Issues, fixing and closing them&lt;/li&gt;
+&lt;li&gt;Doing ongoing maintenance of the code base, including upgrading Django versions, refactoring, and other technical debt clean up&lt;/li&gt;
+&lt;li&gt;Work onboarding developers into the code base&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Linux (Ubuntu)&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;li&gt;Sphinx &amp;amp; Docutils&lt;/li&gt;
+&lt;li&gt;GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;operations-developer&quot;&gt;
+&lt;h2&gt;Operations Developer&lt;/h2&gt;
+&lt;p&gt;You will help us operate the largest open source documentation website in the world.
+We currently get over 15,000,000 pageviews a month,
+and we hope to maintain a reliable and stable hosting platform for years to come.&lt;/p&gt;
+&lt;p&gt;Your responsibilities will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Manage backups of our databases&lt;/li&gt;
+&lt;li&gt;Manage usage of our web and build machines, keeping them up to date and within capacity&lt;/li&gt;
+&lt;li&gt;Build new infrastructure and help us scale the existing machines&lt;/li&gt;
+&lt;li&gt;Write code to make Read the Docs easier to scale and sustain&lt;/li&gt;
+&lt;li&gt;Be included in an On Call rotation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Postgres&lt;/li&gt;
+&lt;li&gt;Munin&lt;/li&gt;
+&lt;li&gt;Nagios&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Elastic Search&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We will prefer candidates in non-US based time zones to simplify our on call rotation.&lt;/strong&gt;
+Nobody should have to wake up at night to fix issues!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-to-apply&quot;&gt;
+&lt;h2&gt;How to Apply&lt;/h2&gt;
+&lt;p&gt;Thanks for everyone who has applied. We are in the process of choosing a candidate, and applications are now closed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

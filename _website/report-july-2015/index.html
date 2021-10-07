@@ -1,0 +1,390 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:title" content="Report - July 2015" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="report-july-2015.html" />
+  <meta property="og:site_name" content="Read the Docs Blog" />
+  <meta property="og:description" content="August was a hectic month for us. So busy, in fact, we never wrote this update. We dropped the ball on getting this report out on time, but hope to keep on top of future updates. Goals: July was a ..." />
+  <meta property="og:image" content="https://blog.readthedocs.com/_static/logo-opengraph.png" />
+  <meta property="og:image:alt" content="Read the Docs Blog" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <title>Report - July 2015 &#8212; Read the Docs Blog</title>
+    <link rel="stylesheet" href="../_static/main.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+  
+  <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Puritan:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../_static/local.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer data-domain="blog.readthedocs.com" src="https://plausible.io/js/plausible.js"></script>
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../archive/atom.xml" title="Read the Docs Blog">
+  
+  
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+  </head><body>
+  <!-- BEGIN header -->
+  <div id="header">
+    <div class="row">
+      <div class="logo">
+        <h1><a href="../">
+            <img src="../_static/logo.png" height="48" />
+            Read the Docs Blog
+        </a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="https://readthedocs.com">Back to site</a></li>
+          <li><a href="mailto:hello@readthedocs.com">Contact&nbsp;Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END header -->
+
+  <div id="content">
+    <div class="wrapper">
+
+      <div class="col-major content">
+          
+  <div class="section" id="report-july-2015">
+<h1>Report - July 2015<a class="headerlink" href="#report-july-2015" title="Permalink to this headline">¶</a></h1>
+<p>August was a hectic month for us. So busy, in fact, we never wrote this update.
+We dropped the ball on getting this report out on time, but hope to keep on top
+of future updates.</p>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<p>July was a month of stability fixes, with some substantial changes to our
+infrastructure. First, here’s an update on some of the goals we had set with
+our last monthly update:</p>
+<dl class="docutils">
+<dt>Improve Github/Bitbucket integration</dt><dd>This got pushed to next month, we didn’t focus on this as much as we had
+hoped.</dd>
+<dt>Test internal analytics</dt><dd><p>We have a basic testbed for internal analytics set up, but haven’t gone as
+far as pushing this integration into production. We still need to test
+production load and what the dataset would look like over the course of a
+month.</p>
+<p>This is on hold for the moment.</p>
+</dd>
+</dl>
+<p>We also set some additional goals near the beginning of the month:</p>
+<dl class="docutils">
+<dt>Finish rolling out a new stack</dt><dd><p>Our servers were all reasonably aged and have not been re-provisioned in a
+long while. We set the goal to move all configuration to configuration
+management and be able to reproduce servers in a predictable manner.</p>
+<p>We were able to finish moving all provisioning to configuration management
+and rolled out all new servers, including some new servers.</p>
+</dd>
+<dt>Improve monitoring</dt><dd><p>We have hit a lot of common cases that we should be tracking as part of our
+standard operations notifications. We set the goal to improve our
+notification and debugging capabilities.</p>
+<p>With fresh provisioning, we now also have a programmatic approach towards
+setting up system checks and notifications, and have expanded our reporting
+a great deal.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="update-details">
+<h2>Update Details<a class="headerlink" href="#update-details" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ops">
+<h3>Ops<a class="headerlink" href="#ops" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Fresh web servers</dt><dd>Last month, we rolled out fresh build servers, strictly using configuration
+management to provision servers. This month, we continued by moving web
+server provision to our configuration management and re-rolling all of our
+web servers.</dd>
+<dt>Fresh database servers and migration</dt><dd><p>We also rolled new database servers, and took the opportunity to upgrade our
+database’s PostgreSQL instance and perform some needed schema changes.</p>
+<p>We decided to perform the migration late one evening, when our then primary
+database server was included in an outage of some Rackspace infrastructure.
+The outage resulted in some extended downtime, and we were not immediately
+able to migrate data from the database server to the fresh instance. The
+outage resolved early in the morning and migration wrapped shortly after.</p>
+<p>The new instance performed better than expected, once we made it live.  The
+fresh instance had more memory and increased bandwidth for disk operations.
+Along with a reindex of a table with slow queries, we noticed significant
+reduction in query times and a great improvement of stability.</p>
+</dd>
+<dt>Improved monitoring</dt><dd>We started to catch some edge cases that were not previously monitored and
+improved greatly on our monitoring and graphing.</dd>
+</dl>
+</div>
+<div class="section" id="dev">
+<h3>Dev<a class="headerlink" href="#dev" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Django 1.8 upgrade</dt><dd>Our previous version of Django was on the now unsupported 1.6 branch. With
+1.8 released, we felt it was a great chance to finally upgrade our
+dependencies.</dd>
+<dt>Triage process</dt><dd>We have formalized our <a class="reference external" href="http://docs.readthedocs.org/en/latest/contribute.html#triaging-tickets">triage process</a> for development. This will guide
+how we make decisions on our issue tracker.</dd>
+</dl>
+<dl class="docutils">
+<dt>Linting</dt><dd>Linting has not been performed on the codebase for a long while. We felt
+this was important to get back to in order to ensure code quality.</dd>
+<dt>Stable version improvements</dt><dd>There has been some buggy behavior behind the stable version detection. We
+worked here to clean up some of the broken behavior.</dd>
+<dt>Fix slugging on versions</dt><dd>There have been a number of error cases that have surfaced around version
+slugging recently. This works to fix some logic errors on edge cases.</dd>
+</dl>
+<p>For more information on our development orchestration, visit or subscribe to our
+<a class="reference external" href="https://trello.com/b/tF04aNrT/read-the-docs-public">public Trello board</a>.</p>
+</div>
+</div>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<p>In the month of July:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Read the Docs saw <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A2015-07-01..2015-07-31+type%3Aissue">80 new issues</a></li>
+<li>50 of those issues <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A2015-07-01..2015-07-31+type%3Aissue+state%3Aclosed">have been closed</a></li>
+<li>Additionally, <a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;q=created%3A%3C2015-07-01+type%3Aissue+state%3Aclosed+closed%3A2015-07-01..2015-07-31">35 outstanding issues</a> were closed out</li>
+</ul>
+</div></blockquote>
+<p>Feel free to raise any questions you have about any of these changes on our
+<a class="reference external" href="https://github.com/rtfd/readthedocs.org/issues">issue tracker</a>, or on our Freenode IRC channel, #readthedocs.</p>
+</div>
+<div class="section" id="goals-for-next-month">
+<h2>Goals for Next Month<a class="headerlink" href="#goals-for-next-month" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Improve Github/Bitbucket integration</dt><dd>We have pushed this up to next month, we still need to address some failures
+as part of Github/Bitbucket integration.</dd>
+<dt>Better Sphinx experience for authoring</dt><dd>We can streamline a lot of the experience around using Sphinx, and at the
+same time, make more reproduceable builds, locally, for authors. This would
+involve mimicking more of what we preform in our build backend for local
+authoring.</dd>
+<dt>More code cleanup</dt><dd>We started some linting efforts to bring code quality up, we will continue
+deeper and more thorough linting efforts.</dd>
+<dt>More features to user gold subscription</dt><dd>We would like to have more users on a recurring subscription, which is a
+great step towards sustainability. We should be surfacing features and
+reminding users to donate if they are using some of those features.</dd>
+</dl>
+</div>
+</div>
+
+  <div class="section">
+  
+    
+  
+  
+  </div>
+
+      </div>
+
+      <div class="col-minor sidebar">
+  
+  
+  <ul class="post-details">
+    <li>
+      
+        <i class="fa-fw fa fa-calendar"></i>
+        09 九月 2015
+      
+    </li>
+
+      
+
+  
+  <li id="author"><span><i class="fa-fw fa fa-user"></i></span>
+    
+      
+      <a href="../archive/author/anthony-johnson/">Anthony Johnson</a>
+      
+    </li>
+  
+
+  
+  <li id="location"><span><i class="fa-fw fa fa-location-arrow"></i></span>
+    
+      
+      <a href="../archive/location/portland-oregon/">Portland, Oregon</a>
+      
+    </li>
+  
+
+  
+
+  
+
+  
+  <li id="tags"><span><i class="fa-fw fa fa-tag"></i></span>
+    
+      
+      <a href="../archive/tag/report/">report</a>
+      
+    </li>
+  
+  
+  </ul>
+
+
+
+<!-- Begin MailerLite Signup Form -->
+  <div id="mlb2-4710274" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4710274">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          <div class="ml-form-embedContent">
+            <h3 style="margin-left: 0">Subscribe to our mailing list</h3>
+            <p>Sign up for our blog and we'll send you news and updates about Sphinx and Read the Docs on a regular basis.</p>
+          </div>
+          <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/p8b7z2" data-code="p8b7z2" method="post" target="_blank">
+            <div class="ml-form-formContent">
+              <div class="ml-form-fieldRow ml-last-item">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email address" autocomplete="email" style="width: 90%">
+                </div>
+              </div>
+            </div>
+            <div class="ml-form-embedPermissions">
+              <div class="ml-form-embedPermissionsContent default privacy-policy">
+                <p style="margin-bottom: 0; font-size: 0.8em">You can unsubscribe anytime. For more details, review our <a href="https://docs.readthedocs.io/page/privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Subscribe</button>
+              <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display:none">
+          <div class="ml-form-successContent">
+            <h4>Thank you!</h4>
+            <p>You have successfully joined our subscriber list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function ml_webform_success_4710274(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-4710274 .row-success").show(),r(".ml-subscribe-form-4710274 .row-form").hide()}
+  </script>
+  <img src="https://track.mailerlite.com/webforms/o/4710274/p8b7z2?v1632123501" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
+<!--End mc_embed_signup-->
+
+
+<!-- Jobs 
+<h3> Read the Docs is hiring </h3>
+<ul>
+    <li><a href="https://blog.readthedocs.com/job-frontend/">Front-end Developer</a></li>
+</ul>
+-->
+
+<h3> Follow us </h3>
+
+<ul>
+<li>
+<a href="http://blog.readthedocs.com/archive/atom.xml" rel="me">Atom Feed</a>
+</li>
+<li>
+<a href="https://twitter.com/readthedocs" rel="me">Twitter</a>
+</li>
+</ul>
+
+  <h3><a href="../archive/">Recent Posts</a></h3>
+  <ul>
+    
+    
+      <li><a href="../newsletter2-october-2021/">07 十月 - todo and plan - October 2021</a></li>
+    
+      <li><a href="../newsletter-october-2021/">07 十月 - Read the Docs newsletter - October 2021</a></li>
+    
+      <li><a href="../newsletter-september-2021/">02 九月 - Read the Docs newsletter - September 2021</a></li>
+    
+      <li><a href="../theme-release-100rc1/">23 八月 - Theme release 1.0.0rc1</a></li>
+    
+      <li><a href="../newsletter-august-2021/">09 八月 - Read the Docs newsletter - August 2021</a></li>
+    
+  </ul>
+
+  <h3><a href="../archive/archive/">Archives</a></h3>
+  <ul>
+  
+    
+    <li><a href="../archive/2021/">2021 (18)</a></li>
+    
+  
+    
+    <li><a href="../archive/2020/">2020 (6)</a></li>
+    
+  
+    
+    <li><a href="../archive/2019/">2019 (15)</a></li>
+    
+  
+    
+    <li><a href="../archive/2018/">2018 (13)</a></li>
+    
+  
+    
+    <li><a href="../archive/2017/">2017 (7)</a></li>
+    
+  
+    
+    <li><a href="../archive/2016/">2016 (5)</a></li>
+    
+  
+    
+    <li><a href="../archive/2015/">2015 (9)</a></li>
+    
+  
+    
+    <li><a href="../archive/2014/">2014 (4)</a></li>
+    
+  
+    
+    <li><a href="../archive/2013/">2013 (2)</a></li>
+    
+  
+  </ul>
+
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="row">
+      <div class="col fill">
+        <ul>
+            <li>
+                &copy; Copyright 2021, Read the Docs, Inc.
+            </li>
+
+          <li>
+            Powered by <a href="http://ablog.readthedocs.org">ABlog</a>, and <a href="http://readthedocs.org/">Read the Docs</a>.
+          </li>
+            <li>
+              Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

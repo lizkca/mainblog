@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from San Diego, CA</title>
+  <id>https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml</id>
+  <updated>2020-07-01T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Advertising update and open sourcing our ad server</title>
+    <id>https://blog.readthedocs.com/advertising-improvements-2020/</id>
+    <updated>2020-07-01T00:00:00Z</updated>
+    <published>2020-07-01T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/advertising-improvements-2020/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;advertising-update-and-open-sourcing-our-ad-server&quot;&gt;
+
+&lt;p&gt;It’s been a while since our &lt;a class=&quot;reference internal&quot; href=&quot;../../../ad-funding-read-the-docs-whats-next/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;last advertising update&lt;/span&gt;&lt;/a&gt;
+and it felt like a good time to talk about what’s working with our advertising model
+and how things are getting better.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-advertising-is-working-for-read-the-docs&quot;&gt;
+&lt;h2&gt;How advertising is working for Read the Docs&lt;/h2&gt;
+&lt;p&gt;In our &lt;a class=&quot;reference internal&quot; href=&quot;../../../read-the-docs-2019-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;2019 stats post&lt;/span&gt;&lt;/a&gt;,
+we broke out our advertising revenue which was fairly flat year over year.
+The way our ad business is structured, our revenue mostly grows with increases in traffic
+and Read the Docs is mature enough that it isn’t doubling in size every year.&lt;/p&gt;
+&lt;p&gt;With that said, we’re pleased with our steady and sustainable growth.
+Read the Docs doesn’t have any investors putting pressure on us for short term growth
+and that has allowed us to invest in our ad business, commercial hosting,
+and in our community version for the long term.
+We’ve rolled out a huge number of improvements to all the sides of our business
+in the last year and we’re happy with the results.
+Advertising remains the single largest source of funding for Read the Docs
+and one that scales as our costs scale.&lt;/p&gt;
+&lt;p&gt;On a real world note, Covid-19 had a short term impact on our advertising revenue
+with a number of advertisers understandably pulling back due to uncertainty in funding and the economy in general.
+While the world isn’t completely back to normal, we have returned some degree of normalcy
+and most of these advertisers returned once there was a bit more clarity in the broader economy
+and the virus’ effect on the tech industry specifically.
+Advertising on Read the Docs is now close to capacity in the US, Canada, and Europe which are our largest advertising markets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;improved-targeting-for-ads&quot;&gt;
+&lt;h2&gt;Improved targeting for ads&lt;/h2&gt;
+&lt;p&gt;Advertising on Read the Docs is different from most ad networks out there.
+Our ad targeting is based on the content and the reader’s geography rather than personal data about our users.
+Read the Docs’ authors and readers have told us that privacy is important to them.
+That’s great because it’s important to us too!
+With that said, there are great ways to target specific content niches with ads relevant to those readers without compromising on privacy.&lt;/p&gt;
+&lt;p&gt;To start, we chose a few groups of content advertisers can target where we have enough traffic
+without the ads being focused on a tiny number of projects.
+These niches are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Data science and machine learning&lt;/li&gt;
+&lt;li&gt;Frontend web development&lt;/li&gt;
+&lt;li&gt;Backend web development&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;li&gt;DevOps&lt;/li&gt;
+&lt;li&gt;Technical writing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We tested this improved content targeting with a select group of advertisers and the results were great.
+In some cases we saw click through rates more than double.
+Whether the ad is to hire a developer or to promote a service,
+we always want to deliver ads that are most relevant to the documentation being served.
+This results in better value to our advertisers
+while still respecting the privacy of our readers.&lt;/p&gt;
+&lt;div class=&quot;admonition-would-your-company-like-to-get-in-front-of-more-developers admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Would your company like to get in front of more developers?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Tell your &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=ethical-advertising-2020&quot;&gt;marketing or recruiting team&lt;/a&gt; about Read the Docs
+and show them how they can reach over 7 million developers who Read the Docs each month!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;open-sourcing-our-ad-server&quot;&gt;
+&lt;h2&gt;Open sourcing our ad server&lt;/h2&gt;
+&lt;p&gt;One thing we’ve wanted to do for a long time is open source the code
+we use to run advertising at Read the Docs.
+While there’s always a bit of an incentive to keep advertising code closed so it can’t be abused,
+our hope is that the trust we’re building with the ethical ads model
+can be used by others who want to run their own ethical advertising.
+Read the Docs is an open source company and it’s nice to have all our code out there.
+We call it the ethical ad server.&lt;/p&gt;
+&lt;p&gt;The ethical ad server is built to handle the kind of load Read the Docs itself receives
+– over a million hits per day –
+and it delivers advertising based only on content and geographic targeting
+rather than building up user profiles from personal information.
+It’s built from the ground up with user privacy in mind.
+We’re excited to share it with you so please &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/ethical-ad-server&quot;&gt;check out the code on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Just as we’re constantly delivering improvements to Read the Docs itself for our readers and project maintainers,
+we also strive to give a better experience and better results to the companies who trust Read the Docs as a marketing channel.
+I want to thank all our advertisers who believe in our approach and continue to support us
+and stay tuned to this space for more great features in the future!&lt;/p&gt;
+&lt;p&gt;Our ethical ad network is just about ready for launch
+and we’re actively looking for projects to beta test the network.
+If you run a developer focused website and you’re looking for a way to earn money
+without selling out your visitors’ privacy,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ad%20Network%20beta&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Optimizing Sphinx Documentation for Search Engines</title>
+    <id>https://blog.readthedocs.com/seo-for-technical-docs/</id>
+    <updated>2019-08-29T00:00:00Z</updated>
+    <published>2019-08-29T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/seo-for-technical-docs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;optimizing-sphinx-documentation-for-search-engines&quot;&gt;
+
+&lt;p&gt;Recently, we published a guide on &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/technical-docs-seo-guide.html&quot;&gt;SEO for technical docs&lt;/a&gt;
+with the goal of helping documentation authors and project maintainers create docs
+so that end users can find what they’re looking for easier.&lt;/p&gt;
+&lt;p&gt;One developer asked me point blank after I mentioned our new guide,
+“Hasn’t Google closed most of the loopholes that sites use to rank better?”.
+I’ve heard this opinion from a few technologists before so I wasn’t too surprised.
+Moz.com, an authority on search engine optimization,
+makes a distinction between what they call &lt;a class=&quot;reference external&quot; href=&quot;https://moz.com/blog/black-hat-or-white-hat-seo-ask-better-questions&quot;&gt;black hat SEO and white hat SEO&lt;/a&gt;
+to differentiate between these “loopholes” and more useful site improvements that help SEO.&lt;/p&gt;
+&lt;p&gt;Black hat SEO is basically a set of tactics some sites use to improve rankings
+without actually making their site better to end visitors.
+This includes techniques like displaying different content to search engines (cloaking),
+link farming, or adding semi-relevant keywords into a page (keyword stuffing).
+When Google and Bing discover a site doing this,
+they take action and lower a site’s ranking until the problems are fixed.
+Black hat SEO is inherently risky and we try to stay away from this kind of SEO.&lt;/p&gt;
+&lt;p&gt;Instead our guide focuses on white hat SEO which aims to improve your docs’ search engine rankings
+by helping search engine’s understand and index your docs better and present it better to searchers.
+This kind of SEO isn’t trying to cheat search engine rankings and it’s a win for everyone.
+Searchers find the content they’re looking for more easily
+while search engines understand the content better and can show more relevant results.&lt;/p&gt;
+&lt;p&gt;Specifically, we also tried to focus on SEO for documentation
+and how Sphinx and Read the Docs make it easier including:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Making your docs display better on search engine results&lt;/li&gt;
+&lt;li&gt;Helping search engines understand and index your docs better&lt;/li&gt;
+&lt;li&gt;Improving your ranking based on user and search engine feedback&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;making-your-docs-display-better-in-search-results&quot;&gt;
+&lt;h2&gt;Making your docs display better in search results&lt;/h2&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot; style=&quot;width: 100%&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;_static/google-search-engine-results.png&quot;&gt;&lt;img alt=&quot;_static/google-search-engine-results.png&quot; src=&quot;_static/google-search-engine-results.png&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Google search engine results with the page title, URL, and a description.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Displaying more relevant information in search results will cause more people to click through to your docs.
+Again, your goal is not to use cheap tactics to rank better and trick users into clicking.
+Rather, you are trying to legitimately improve your content such that users
+better understand what to expect on a page before they click.&lt;/p&gt;
+&lt;p&gt;Some of the most important aspects of improved search listings are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Use descriptive and accurate titles in the HTML &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; tag.
+With Sphinx, the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; comes from the top heading on the page.&lt;/li&gt;
+&lt;li&gt;Ensure your URLs are descriptive. They are displayed in search results.
+For Sphinx, the URL uses the source file’s filename.&lt;/li&gt;
+&lt;li&gt;Make sure the words your readers would search for to find your site
+are actually included on your pages.
+Ideally, these key words should be in your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;/code&gt; or description.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These concepts are not only important in helping guide users to click on your documentation,
+most of the same optimizations are useful to the search engine when indexing your site
+and when ranking your site for searchers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;helping-search-engines-understand-your-docs&quot;&gt;
+&lt;h2&gt;Helping search engines understand your docs&lt;/h2&gt;
+&lt;p&gt;Search engines like Google and Bing crawl through the internet
+following links and redirects in an attempt to understand and build an index
+of what various pages and sites are about.&lt;/p&gt;
+&lt;p&gt;These tips and features can help you control how search engines index your docs:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Make sure your entire site can be navigated by following links.
+If you have “orphan” pages, a search engine won’t find them.
+Using Sphinx’s “toctree” directive helps make sure all your pages are indexed and navigable.&lt;/li&gt;
+&lt;li&gt;Redirects and canonical URLs are useful when the same content exists in multiple places
+or moves from one page to another.
+Read the Docs dashboard lets authors setup redirects from one page to another
+or from one version of the documentation to another.&lt;/li&gt;
+&lt;li&gt;Using a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;robots.txt&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;sitemap.xml&lt;/span&gt;&lt;/code&gt; file can help you control how search engines crawl your docs.
+For example, you could tell search engines to ignore unsupported versions of your documentation.
+Read the Docs provides both a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;robots.txt&lt;/span&gt;&lt;/code&gt; and a sitemap and has ways for you to override them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;improving-your-seo-ranking-from-feedback&quot;&gt;
+&lt;h2&gt;Improving your SEO ranking from feedback&lt;/h2&gt;
+&lt;p&gt;Search engines provide tools to help webmasters build their site better
+and to give insights and feedback about the indexing of sites by the search engine spiders.
+&lt;a class=&quot;reference external&quot; href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt; and
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.bing.com/webmaster/help/webmaster-guidelines-30fba23a&quot;&gt;Bing Webmaster Tools&lt;/a&gt;
+are tools for webmasters
+to get feedback about the crawling of their sites (or docs in our case).
+These tools can show technical issues with indexing like pages that are failing for some reason
+and also possible security or spam issues on your site that can lower your ranking.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot; style=&quot;width: 100%&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;_static/google-search-console.png&quot;&gt;&lt;img alt=&quot;_static/google-search-console.png&quot; src=&quot;_static/google-search-console.png&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Google search console showing an issue with user generated spam, a constant battle at Read the Docs.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Feedback on keywords users use to find your docs is also really helpful.
+This is true both for the phrases people searched for on a search engine
+and for the search terms people queried in Sphinx and Read the Docs’ built-in search features.
+Analytics tools like Google Analytics can provide these insights,
+but as part of our &lt;a class=&quot;reference internal&quot; href=&quot;../../../improved-search-and-search-as-you-type/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;search improvements and search analytics&lt;/span&gt;&lt;/a&gt;,
+Read the Docs is going to show project maintainers the most common search queries to help them improve as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;seo-is-no-substitute-for-good-writing&quot;&gt;
+&lt;h2&gt;SEO is no substitute for good writing&lt;/h2&gt;
+&lt;p&gt;One area we didn’t detail in our guide is how more general improvements to technical writing
+can also improve your search engine rankings. This could be a whole post by itself.&lt;/p&gt;
+&lt;p&gt;Using simpler words, for example, has a number of advantages in technical writing.
+The excellent Microsoft Style Guide &lt;a class=&quot;reference external&quot; href=&quot;https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences&quot;&gt;recommends using simple words and concise sentences&lt;/a&gt;
+and Apple’s Style Guide &lt;a class=&quot;reference external&quot; href=&quot;https://help.apple.com/applestyleguide/#/apsg1ff68ab5&quot;&gt;echoes the same sentiment&lt;/a&gt;.
+Simpler sentences are easier to understand for both people
+as well as machines like search engines and automatic translators.&lt;/p&gt;
+&lt;p&gt;While any style guide you read will tell you to avoid using jargon,
+technical writing and software docs have a certain amount of unavoidable technical terminology.
+Defining these terms and phrases when you first use them helps users as well as search engines.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;in-summary&quot;&gt;
+&lt;h2&gt;In summary&lt;/h2&gt;
+&lt;p&gt;Always keep in mind that your ultimate goal is to make your docs more discoverable by people, not machines.
+While the concepts and tactics here will help you rank better with search engines,
+providing high quality documentation and making it easier to find and understand
+is the best way to make sure people actually read the docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Adding Custom CSS or JavaScript to Sphinx Documentation</title>
+    <id>https://blog.readthedocs.com/custom-css-and-js-in-sphinx/</id>
+    <updated>2019-07-10T00:00:00Z</updated>
+    <published>2019-07-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/custom-css-and-js-in-sphinx/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;adding-custom-css-or-javascript-to-sphinx-documentation&quot;&gt;
+
+&lt;p&gt;In the Read the Docs documentation, we have a number of
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/index.html&quot;&gt;how-to guides&lt;/a&gt;
+to help people solve specific problems with Sphinx and Read the Docs.
+By far our most popular guide is on
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/adding-custom-css.html&quot;&gt;adding custom CSS and JavaScript to Sphinx&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In some older versions of Sphinx, this process was a little more challenging
+and it wasn’t as easy to figure out how to do it from the Sphinx docs.
+Sphinx 1.8 really streamlined this process especially for the simple cases.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;adding-additional-stylesheets-or-scripts&quot;&gt;
+&lt;h2&gt;Adding additional stylesheets or scripts&lt;/h2&gt;
+&lt;p&gt;If your custom stylesheet is &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;_static/css/custom.css&lt;/span&gt;&lt;/code&gt;,
+you can add that CSS file to the documentation using the
+Sphinx option &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/page/usage/configuration.html#confval-html_css_files&quot;&gt;html_css_files&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## conf.py&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# These folders are copied to the documentation&amp;#39;s HTML output&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html_static_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_static&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# These paths are either relative to html_static_path&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# or fully qualified paths (eg. https://...)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html_css_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;css/custom.css&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A similar approach can be used to add JavaScript files:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_js_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;js/custom.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;That’s it!
+You don’t need to create a Sphinx extension anymore to add a bit of custom CSS or JavaScript.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;customizations-supported-by-your-theme&quot;&gt;
+&lt;h2&gt;Customizations supported by your theme&lt;/h2&gt;
+&lt;p&gt;I should also note that depending on the theme you’re using and what you’re hoping to accomplish,
+you may not even need to add custom CSS or JavaScript.
+Many themes support a number of “theme options”
+for customizing their look and feel without having to write custom code.
+For example, here are all the options for the &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/page/configuring.html&quot;&gt;Read the Docs theme&lt;/a&gt; and the &lt;a class=&quot;reference external&quot; href=&quot;https://alabaster.readthedocs.io/page/customization.html&quot;&gt;Alabaster theme&lt;/a&gt;
+which are the two most popular themes on Read the Docs itself.&lt;/p&gt;
+&lt;p&gt;Both themes, for example, support the addition of Google Analytics to documentation by setting the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;analytics_id&lt;/span&gt;&lt;/code&gt; option:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## conf.py&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;html_theme_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;analytics_id&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;UA-XXXXXXX-1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#  Provided in your GA dashboard&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;in-summary&quot;&gt;
+&lt;h2&gt;In summary&lt;/h2&gt;
+&lt;p&gt;To recap, it only takes a few additions to your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt; to add custom CSS or JavaScript.
+However, it’s also worth taking a look at your theme’s docs or &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/page/usage/configuration.html#options-for-html-output&quot;&gt;Sphinx’s built-in HTML options&lt;/a&gt;
+to see if what you’re trying to do is already supported.&lt;/p&gt;
+&lt;p&gt;Happy documenting!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">New Ad Format Coming to Read the Docs Community Sites</title>
+    <id>https://blog.readthedocs.com/fixed-footer-ad-all-themes/</id>
+    <updated>2019-06-18T00:00:00Z</updated>
+    <published>2019-06-18T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/fixed-footer-ad-all-themes/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-ad-format-coming-to-read-the-docs-community-sites&quot;&gt;
+
+&lt;p&gt;We view our ad program as a way to keep Read the Docs itself sustainable,
+and to use it to better support the community.
+Advertising has allowed us to have full-time employees adding new features
+and responding to issues in our issue tracker.
+We have also been able to share thousands of dollars with the open source community
+via our revenue share program and grants.&lt;/p&gt;
+&lt;p&gt;Currently, about 30% of our site traffic does not have any advertising.
+When we first launched ethical advertising in 2016,
+we launched only on &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-other-themes/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;specific documentation themes&lt;/span&gt;&lt;/a&gt;.
+We purposely did this slowly to make sure our ads look integrated
+with Read the Docs and less obtrusive to users.&lt;/p&gt;
+&lt;p&gt;For a while, this wasn’t a problem because we had not reached capacity with advertising.
+We did not have enough paid advertisers to support the amount of pageviews Read the Docs served.
+Fast forward a couple years,
+and our advertising model has &lt;a class=&quot;reference internal&quot; href=&quot;../../../ad-funding-read-the-docs-whats-next/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;proven to be successful&lt;/span&gt;&lt;/a&gt;.
+In North America and Western Europe,
+&lt;strong&gt;100% of pages that are eligible for paid advertising have a paid ad&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now that we’ve hit that limit, it makes sense to expand to more themes.
+Rather than going theme by theme as we did in the past,
+especially considering the huge number of Sphinx themes,
+we designed an ad that would work across all Sphinx themes.
+This became much easier with a more simple text-only ad as you will see.&lt;/p&gt;
+&lt;p&gt;To be very explicit,
+&lt;strong&gt;this new ad format will show advertising on all documentation themes&lt;/strong&gt;.
+We plan to roll this new ad format out more widely in stages:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;To start with, we are going to enable this ad format for community and house advertising
+on pages that already have ads on them.
+As always, we never display two ads on the same page so this ad will be instead of any other ad.&lt;/li&gt;
+&lt;li&gt;After that, we will allow paid advertisers to use this new format.
+Again, we will start only on pages that already have ads.&lt;/li&gt;
+&lt;li&gt;We will email users of custom documentation themes to let them know this change is coming.&lt;/li&gt;
+&lt;li&gt;At first, we will show only community and house ads on these custom themes.&lt;/li&gt;
+&lt;li&gt;Finally, we’ll turn on our normal ad rotation to all themes.
+We expect to complete this by the end of July.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will closely monitor feedback from document authors, readers, and advertisers during this process.
+If you have questions or comments on this, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=New%20Ad%20Format%20Feedback&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;text-only-ads&quot;&gt;
+&lt;h2&gt;Text-only ads&lt;/h2&gt;
+&lt;p&gt;We’ve wanted to try text-only ads for a while but it took time to get it right.
+From the start, we were very keen on text-only advertisements
+because they aren’t as obtrusive as image-based ads
+and they are easier for advertisers to create and experiment with multiple variations.
+What we didn’t know was whether users would engage with them at similar rates to our other ads.&lt;/p&gt;
+&lt;p&gt;We ran a small experiment with a text-only house ad
+on the Read the Docs documentation itself and the results were very promising.
+Engagement rates were over double our site average
+and even compared favorably with the same ad in the sidebar including an image.
+Those figures may not hold up as the format is rolled out more widely but it is certainly a good sign.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A text-only ad on the Read the Docs documentation. Yes, this new format will be blocked by most ad blockers.&quot; src=&quot;img/2019-text-only-ad.png&quot; style=&quot;width: 80%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;A text-only footer advertisement on the Read the Docs documentation&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I’d like to thank Eric Berry over at &lt;a class=&quot;reference external&quot; href=&quot;https://codefund.io/&quot;&gt;CodeFund&lt;/a&gt; for some great ideas
+and insights around this kind of ad format.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;opting-out&quot;&gt;
+&lt;h2&gt;Opting Out&lt;/h2&gt;
+&lt;p&gt;We understand that advertising doesn’t work for everyone – even advertising without any user tracking.&lt;/p&gt;
+&lt;p&gt;Users can opt-out of paid advertising themselves and for any projects they maintain
+although they will still see community ads for open source projects and conferences.
+Gold members of Read the Docs get an ad-free experience
+and for companies we have our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com/&quot;&gt;commercial offering at readthedocs.com&lt;/a&gt;
+which is always ad-free.&lt;/p&gt;
+&lt;p&gt;If you would like to completely remove advertising from your open source project,
+but our commercial plans don’t seem like the right fit,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Alternatives%20to%20advertising&quot;&gt;get in touch&lt;/a&gt; to discuss alternatives to advertising.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Ad Funding at Read the Docs and What’s Next for Ethical Advertising</title>
+    <id>https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/</id>
+    <updated>2019-06-11T00:00:00Z</updated>
+    <published>2019-06-11T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ad-funding-read-the-docs-whats-next/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ad-funding-at-read-the-docs-and-what-s-next-for-ethical-advertising&quot;&gt;
+
+&lt;p&gt;It has been three years since we first launched &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-read-the-docs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ads on Read the Docs&lt;/span&gt;&lt;/a&gt;
+and while we gave a limited update in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../read-the-docs-2018-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;2018 stats&lt;/span&gt;&lt;/a&gt;,
+we figured it was time to give an update on ethical advertising and how it is working.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;advertising-without-tracking&quot;&gt;
+&lt;h2&gt;Advertising without tracking&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Our ethical advertising model is still going strong.&lt;/strong&gt;
+We proved that it is possible to build a business model on top of advertising
+without resorting to user tracking.
+Unlike most other ad-supported sites, we show advertising based on the context of the page,
+not by creating behavoral profiles of large numbers of individual users.
+If you are browsing documentation for a Python project, you might see a relevant ad about Python.
+It’s that simple and it works.&lt;/p&gt;
+&lt;p&gt;Despite a slow start to the year, we expect to earn about $75,000 from advertising in Q2.
+This brings our advertising revenue back to the level
+before our ads were &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;added to major ad blocking lists&lt;/span&gt;&lt;/a&gt; last year.&lt;/p&gt;
+&lt;p&gt;While we do earn money from other sources such as our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;commercial offering&lt;/a&gt;,
+advertising continues to be our largest source of revenue and has allowed us
+to expand our team to five full-time people.
+Compared with three years ago when we were scraping along with very little money,
+our community issue tracker and support requests receive prompt responses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;progress&quot;&gt;
+&lt;h2&gt;Progress&lt;/h2&gt;
+&lt;p&gt;We’ve made great progress on advertising over the past year.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We survived a major hit to revenue from ad blocking
+without resorting to cat and mouse games of changing ad layouts and APIs to avoid ad blockers.&lt;/li&gt;
+&lt;li&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/advertising/ethical-advertising.html#community-ads&quot;&gt;community ads program&lt;/a&gt; has been significantly expanded.
+We are actively running free community advertising promoting over ten open source projects and conferences.&lt;/li&gt;
+&lt;li&gt;While we never tracked users with advertising,
+we put in place stricter &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;Do Not Track&lt;/span&gt;&lt;/a&gt; privacy protections.
+We continue to believe that advertising can be well targeted without tracking users.&lt;/li&gt;
+&lt;li&gt;We launched an advertising vertical to let companies
+&lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;promote their open jobs&lt;/span&gt;&lt;/a&gt; to developers.&lt;/li&gt;
+&lt;li&gt;Our advertising revenue share program tripled in size.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our ethical advertising approach, with no user tracking, has been key to our sustainability
+and has allowed Read the Docs to continue to build new features and give back to our community.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-s-next&quot;&gt;
+&lt;h2&gt;What’s next&lt;/h2&gt;
+&lt;p&gt;We have some really interesting developments coming regarding ethical advertising.&lt;/p&gt;
+&lt;p&gt;We are looking to add a few more projects to our ad &lt;strong&gt;revenue share program&lt;/strong&gt;
+and help more projects reach sustainability with an ethical advertising approach.
+If your project on Read the Docs does 100k+ pageviews per month
+and you are interested in exploring a new revenue stream, please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ads%20revenue%20share&quot;&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are testing a &lt;strong&gt;new text-only ad format&lt;/strong&gt; which we will detail in a future post.
+Text-only ads are something we’ve wanted for a while because we believe they are less intrusive to readers
+but easy for advertisers to experiment with multiple variations.
+So far the results have been very promising and we are planning to roll this out more widely.&lt;/p&gt;
+&lt;p&gt;Our &lt;strong&gt;ethical ad network&lt;/strong&gt; is getting closer to launch.
+It’s a shame, but there’s a critical lack of funding for open source projects
+that form the building blocks of some extremely valuable software.
+We believe that advertising can fill some of that gap
+and Read the Docs can help by sharing some of the lessons we’ve learned building our own advertising.
+If you know a site that might be interested in being a beta tester
+of a pro-privacy ad network built specifically to help fund open source,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ad%20Network%20beta&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Advertisers always have a choice where to direct their marketing spend
+and for many of them it would have been simpler to just go with the usual behemoth advertising platforms
+rather than advertising with a niche site like Read the Docs.
+I want to thank all our advertisers who believe in our approach and continue to support us.&lt;/p&gt;
+&lt;div class=&quot;admonition-would-your-company-like-to-reach-a-100-developer-audience admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Would your company like to reach a 100% developer audience?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Over 7 million developers Read the Docs each month. &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=ethical-advertising-2019&quot;&gt;Get in front of them today&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Tips for Getting a Developer Interview</title>
+    <id>https://blog.readthedocs.com/tips-for-getting-a-developer-interview/</id>
+    <updated>2019-02-13T00:00:00Z</updated>
+    <published>2019-02-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/tips-for-getting-a-developer-interview/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-for-getting-a-developer-interview&quot;&gt;
+
+&lt;p&gt;Over the last month, the Read the Docs team conducted 30-40 customer development interviews
+with hiring managers and recruiters
+at companies ranging from 5-person companies to the biggest names in tech.
+We wanted to learn more about hiring processes at various companies
+with the ultimate goal of building &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=next-developer-job&quot;&gt;a product to help companies find developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Last time, we covered some &lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;tips for hiring managers&lt;/span&gt;&lt;/a&gt;
+based on what companies told us they were doing.
+This time, we put together &lt;strong&gt;tips for candidates looking for their next job&lt;/strong&gt;
+based on insights we heard from hiring managers.&lt;/p&gt;
+&lt;p&gt;Rather than covering how to crack developer interviews
+or how to gain the necessary technical skills,
+these tips will focus on getting your foot in the door. Specifically:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Making your application stand out&lt;/li&gt;
+&lt;li&gt;Improving your application response rate&lt;/li&gt;
+&lt;li&gt;Getting to the interview process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;when-applying-go-deep-not-wide&quot;&gt;
+&lt;h2&gt;When applying, go deep not wide&lt;/h2&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“I don’t want candidates who drive by job sites and pepper every job they find”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;As a candidate, there is a temptation to play the numbers game and apply to as many jobs as possible.
+Many jobs sites make it easy to apply to many jobs quickly and this gives you that feeling that your job search is progressing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Based on what hiring managers told us, playing the numbers game isn’t the best approach.&lt;/strong&gt;
+While it is a bit of a job-seekers market, especially for more senior talent,
+companies are looking people who want to work for their company and who believe in their mission.
+Hiring managers told us they want applicants who
+“think about the company, then check for opportunities”.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;A Facebook job post on LinkedIn with almost 300 applications in 2 weeks&quot; src=&quot;img/2019-facebook-job-opening.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;That’s almost 300 applications in 2 weeks on just one of the job sites where this is posted.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;spend-a-little-more-time-on-your-application&quot;&gt;
+&lt;h2&gt;Spend a little more time on your application&lt;/h2&gt;
+&lt;p&gt;While it takes longer to apply to a job post
+that requires a cover letter or requires answers to a few questions,
+those are great ways to have your application stand out relative to other applicants.
+You don’t want your resume to get lost in a stack of hundreds.&lt;/p&gt;
+&lt;p&gt;As we mentioned &lt;a class=&quot;reference internal&quot; href=&quot;../../../lessons-from-hiring-manager-interviews/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;last time&lt;/span&gt;&lt;/a&gt;,
+quite a few hiring managers we talked to started requiring a cover letter
+or even just a couple questions that are unique to the company
+in order to make their job filtering candidates easier
+and get candidates who want to work there not those who just want a job.&lt;/p&gt;
+&lt;p&gt;All the companies we talked to said when they post a job they got tons of applicants,
+but that high quality, qualified applicants were still in short supply.
+When 200 people apply to a job but only 20 are willing to do a cover letter,
+a hiring manager can spend a lot more time per candidate with the smaller pool.
+One hiring manager told us explicitly “fewer resumes is better because there’s less noise”.&lt;/p&gt;
+&lt;p&gt;While I know I said getting a developer job isn’t a numbers game,
+this doesn’t strictly mean you can use these techniques
+to apply to 2-3 jobs and you’ll get hired.
+Sometimes by the time you apply, somebody is already in the final stages of getting hired.
+The position may not &lt;em&gt;really&lt;/em&gt; be open anymore.
+Don’t get discouraged in your job search.
+&lt;strong&gt;Finding the right match can take time.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id2&quot;&gt;
+&lt;img alt=&quot;Questions from the DuckDuckGo application process&quot; src=&quot;img/2019-duckduckgo-application-questions.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the questions from the DuckDuckGo application process.
+This is your place to stand out!
+DuckDuckGo was &lt;strong&gt;not&lt;/strong&gt; one of the companies we interviewed.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;make-yourself-a-referral-use-your-network&quot;&gt;
+&lt;h2&gt;Make yourself a referral: use your network&lt;/h2&gt;
+&lt;p&gt;Hiring managers universally told us their top recruiting channel
+is referrals from existing employees.
+As a candidate, use this knowledge to your advantage and
+&lt;strong&gt;make yourself into a referral hire&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Did you see an acquaintance on social media post about job openings at their company?&lt;/li&gt;
+&lt;li&gt;Does a friend or a friend of friend work at the company?&lt;/li&gt;
+&lt;li&gt;Do you have a first connection (or a very good 2nd connection) on LinkedIn who works there?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In all of these cases, you should contact that person before applying.
+Even if the person you know isn’t on the hiring team,
+your contact might be able to put you in touch with the right person.&lt;/p&gt;
+&lt;blockquote class=&quot;pull-quote&quot;&gt;
+&lt;div&gt;“Most [senior] people go through their network”&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For a mid-level to senior candidate with 7+ years of experience,
+this is even more important based on our interviews. At that stage of your career,
+&lt;strong&gt;hiring managers we talked to expect a high quality candidate to do due diligence&lt;/strong&gt;
+on the company and team to make sure it’s a mutual fit.&lt;/p&gt;
+&lt;p&gt;Regardless of the exact route you take here,
+getting in touch with the right people to learn more about the team,
+the tech stack, and the company makes it clear that you’re very interested.
+You’re far more likely to get a response, move on to the interview process,
+and ultimately get hired.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;establishing-contact-with-companies&quot;&gt;
+&lt;h2&gt;Establishing contact with companies&lt;/h2&gt;
+&lt;p&gt;Turning yourself into a referral is easier for a senior candidate.
+But what if this is your first or second job or don’t know anybody at the company?&lt;/p&gt;
+&lt;p&gt;After referral candidates, &lt;strong&gt;the next best hiring channel in our interviews
+was local meetups and engaging the local community&lt;/strong&gt;.
+Both startups and established companies – especially when they are actively hiring –
+use meetups to find talent.
+If you’re able to meet the hiring manager in person or establish some sort of connection,
+in my experience, this raises your chances significantly.&lt;/p&gt;
+&lt;p&gt;In our interviews, another channel that mid-size and larger companies
+we talked to used to recruit was to rely on their presense at conferences.
+For many companies,
+recruiting was the primary motivator to sponsor a conference and have a booth.
+As a candidate, talking to the engineers at the booth and showing interest
+can ensure that your application doesn’t get lost among all the applicants they get.&lt;/p&gt;
+&lt;p&gt;At a smaller company, it’s frequently possible to figure out exactly
+who the hiring manager is from some combination of the website,
+hiring posts, and LinkedIn. This is a great way to make a valuable connection
+and make sure the role is a good fit.
+Contacting the hiring manager cold requires a bit of finesse so make sure to be respectful.&lt;/p&gt;
+&lt;p&gt;Places like the monthly HackerNews Who’s Hiring thread are fantastic
+because they allow direct interaction with the hiring manager
+and many companies list a person’s direct email to inquire about a position,
+learn more directly from the source, and show you’re interested.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id3&quot;&gt;
+&lt;img alt=&quot;Some of the phrases heard from hiring managers in our interviews&quot; src=&quot;img/2019-hiring-manager-phrases.png&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Here’s some of the phrases we heard from hiring managers in interviews.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;By spending a bit more time on your application,
+establishing contact with the company, and asking good questions about the work and team,
+you are showing your intent and interest in the company.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You want to make sure the hiring manager or recruiter understands
+that you’re a serious candidate and you want to work there on their team.
+Using these methods will improve your response rate and &lt;strong&gt;help you get the interview&lt;/strong&gt;.
+By doing a one-click apply on a job site, this is completely lost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Again, I’d like to thank all the hiring managers who took the time to talk to us.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Lessons From and For Hiring Managers</title>
+    <id>https://blog.readthedocs.com/lessons-from-hiring-manager-interviews/</id>
+    <updated>2019-01-30T00:00:00Z</updated>
+    <published>2019-01-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/lessons-from-hiring-manager-interviews/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;lessons-from-and-for-hiring-managers&quot;&gt;
+
+&lt;p&gt;Over the last four weeks, the Read the Docs team did dozens of customer development interviews with engineering hiring managers.
+We wanted to learn more about hiring processes at various companies
+with the ultimate goal of building a product to help companies find developers.
+We talked to people looking for talent at five person companies all the way up to the biggest names in tech.
+In this post, I am going to cover some of the common things we heard from hiring managers
+and &lt;strong&gt;share some ways for hiring managers to improve their company’s process&lt;/strong&gt;.
+In our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;next post in this series&lt;/span&gt;&lt;/a&gt;, I will have some actionable tips
+for job seekers based on the same interviews.&lt;/p&gt;
+&lt;p&gt;Since this is a long post, I figured I’d share some of the key takeaways:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Have a strategy for getting more referrals&lt;/strong&gt; whether that is actively asking employees or having an overly generous referral bonus.
+Referrals are probably your top source of candidates so figuring out how to get more will save you time and money in the end.
+Then do the same for your other best recruiting channels.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reach passive candidates&lt;/strong&gt;. There are a lot more passive candidates than active ones so have a plan to reach them.
+Great developers (especially senior ones) probably aren’t actively looking for a new job and it’s a job-seekers market.
+Even if somebody isn’t considering a new job at all, the next time they do, you want them to think of your company.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recruiting for diversity is a focus&lt;/strong&gt; for hiring managers.
+Put together a concrete plan for getting more diverse candidates and meeting your diversity goals.
+Engaging with local developer communities and nonprofits and encouraging referrals worked well for companies we talked to.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get more signal in your application process&lt;/strong&gt; by adding a step such as a cover letter, quiz,
+or simply add a couple questions folks have to answer.
+Making candidates spend even one extra minute on their application can save you hours filtering resumes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-is-read-the-docs-tackling-hiring-hasn-t-that-been-done&quot;&gt;
+&lt;h2&gt;Why is Read the Docs tackling hiring? Hasn’t that been done?&lt;/h2&gt;
+&lt;p&gt;While we didn’t initially think about Read the Docs ads for recruiting,
+based on some &lt;a class=&quot;reference internal&quot; href=&quot;../../../hiring-developers-with-readthedocs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;unexpected past successes&lt;/span&gt;&lt;/a&gt;,
+we decided to position promoted jobs as one of our main verticals within our advertising.
+Rather than dash forward and create a product, however, we started by just talking to hiring managers
+to understand the hiring process better so we can best meet their needs with something we create.&lt;/p&gt;
+&lt;p&gt;One of the questions we asked in our interviews was how long it took to hire their most recent developer?
+Specifically, we asked hiring managers to consider how much time they and their team spent sourcing candidates,
+filtering resumes, preparing for and doing phone and onsite interviews, and anything else.
+Internal recruiters’ time is valuable too, but we figured the hiring manager
+would probably underestimate how much time the recruiter spent since they didn’t directly observe it.
+While answers were all over the place, the range with the most overlap was &lt;strong&gt;50-100 hours of engineering time to make a hire&lt;/strong&gt;.
+No huge revelation here, but companies make a massive investment in hiring.&lt;/p&gt;
+&lt;p&gt;From my days being an interviewer at Qualcomm and Amazon as well as a smaller startup,
+I’d say fifty hours is on the low side for big company but about right for a smaller company.
+When something costs 50+ engineering hours to do,
+any improvement is worth a lot of time and money
+and at Read the Docs we believe we can help significantly here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;top-hiring-channels&quot;&gt;
+&lt;h2&gt;Top hiring channels&lt;/h2&gt;
+&lt;p&gt;It was no big surprise to hear that &lt;strong&gt;referrals were the top hiring channel&lt;/strong&gt;.
+The second best channel was a bit of a surprise with local meetups and local communities being very high in a majority of interviews
+although this was less true among the largest companies we talked to.
+Companies also had some success with recruiting at conferences, using various job sites, and proactive outreach.&lt;/p&gt;
+&lt;p&gt;Hiring managers shared strategies with us that they used to increase the number of referral and community candidates they got.
+Two different companies we talked to hosted multiple local meetups at their offices and one of those hiring managers said
+“being plugged into the community” was their main channel for hiring.&lt;/p&gt;
+&lt;p&gt;Another hiring manager who focused a lot on developers with security experience talked about having “LinkedIn parties”
+where either a hiring manager or internal recruiter sat with engineers on their team one-on-one to go through their LinkedIn network.
+Even when he heard a person “is great, but they’ll never change jobs”, that was a good candidate to target.
+Security is such a high demand field, he said, that very few great people are actively looking for a job.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Job seeker timeline&quot; src=&quot;img/2019-job-seeker-timeline.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;reaching-people-who-aren-t-looking-is-critical&quot;&gt;
+&lt;h2&gt;Reaching people who aren’t looking is critical&lt;/h2&gt;
+&lt;p&gt;One of our biggest takeaways from the interviews was that companies wanted to reach candidates before they started actively looking.
+Most of the hiring managers we talked to stressed the importance of getting in front of passive candidates.
+Certainly fewer people are actively looking for developer jobs than those who are just open to a change.
+A few different reasons were given but I actually think &lt;a class=&quot;reference external&quot; href=&quot;https://www.inc.com/magazine/20070501/column-guest.html&quot;&gt;Joel Spolsky had it right&lt;/a&gt; when he said
+top developers “barely ever apply for jobs at all. That’s because they already have jobs.”&lt;/p&gt;
+&lt;p&gt;This quote isn’t necessarily a slight against people who apply actively to jobs.
+Virtually everyone I know in tech started their career applying to a job.
+Rather, the message here is that as a developer becomes a mid-level developer
+and then becomes a senior developer, they are more likely to rely on their network
+to somewhat passively job seek rather than going through the front door
+and simply applying on a company website.&lt;/p&gt;
+&lt;p&gt;Reaching people who aren’t actively looking is one area where Read the Docs can really help.
+Companies want to reach them when they are just thinking about a new job or perhaps passively seeking.
+Developers who come to our site are actively building software, not job-seeking.
+Many of them are content at their current position.
+For those that aren’t, this is a perfect place to showcase great companies
+and help Read the Docs’ visitors to find their next job.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;recruiters-can-be-worth-it&quot;&gt;
+&lt;h2&gt;Recruiters can be worth it&lt;/h2&gt;
+&lt;p&gt;In each interview, we asked whether the company used recruiters or recruiting related services (eg. Hired, Triplebyte).
+Universally, hiring managers brought up how expensive recruiters are,
+but most of the people we talked to who had actually used recruiters in the past had a positive impression overall.
+Hiring takes a ton of time, typically from senior folks at the company.
+At smaller startups, that’s frequently the CEO or CTO.
+Even though the price is high, recruiters who help speed that process along are worth it.&lt;/p&gt;
+&lt;p&gt;I think the quote that really summed it up was from a VP of engineering at a startup that just raised a Series B.
+He’s trying to grow his team by 10 developers this year (about a 50% increase).
+His experience hiring his first couple developers through a 2-person boutique recruiting firm was great and
+he would use them for hiring everyone “if hiring 10 people didn’t mean $100k+” in fees alone.&lt;/p&gt;
+&lt;p&gt;Full disclosure: &lt;a class=&quot;reference external&quot; href=&quot;https://triplebyte.com&quot;&gt;Triplebyte&lt;/a&gt; is an advertiser on Read the Docs. We’re fans.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;diversity-and-inclusivity-in-hiring&quot;&gt;
+&lt;h2&gt;Diversity and inclusivity in hiring&lt;/h2&gt;
+&lt;p&gt;We didn’t ask any questions around hiring for diversity
+but fully six hiring managers volunteered information on their companies’ strategies
+for getting more diverse candidates.
+This is why I love this kind of interview where the goal is just to listen to what hiring managers say
+and dig deeper when you hear something interesting.
+Some of the larger companies we talked to had explicit diversity goals set at the company level.
+Even among the hiring managers at smaller companies,
+they shared some tactics they used to get more diverse candidates to apply.&lt;/p&gt;
+&lt;p&gt;Of the companies with hard diversity goals, most of them told us that their strategy
+entailed syndicating their job openings to diversity focused jobs sites
+or in some cases engaging directly with relevant interest groups.
+In terms of efficacy, reviews of these various jobs boards was mixed.&lt;/p&gt;
+&lt;p&gt;On the more positive side, hiring managers cited
+Girl Develop It, Black Girls Code, and PyLadies as fantastic channels
+for &lt;strong&gt;both increasing candidate diversity and for high quality applicants&lt;/strong&gt;.
+Two companies also talked about trying to decrease bias
+in their job postings using &lt;a class=&quot;reference external&quot; href=&quot;https://textio.com/&quot;&gt;Textio&lt;/a&gt; and similar services.&lt;/p&gt;
+&lt;p&gt;Having multiple people mention diversity completely unprompted really shows that this topic
+is becoming higher priority for companies and hiring managers.
+It also shows that it if hiring for diversity is important to your company,
+you need to have a plan for actually making those goals a reality.
+It’s worth checking whether the strategy actually works too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;remember-sourcing-is-the-bigger-problem&quot;&gt;
+&lt;h2&gt;Remember, sourcing is the bigger problem&lt;/h2&gt;
+&lt;p&gt;Every single hiring manager we talked to complained about the time they spent filtering resumes from applicants.
+Some choice quotes I heard included “95% of applicants weren’t a fit” even after only reviewing the resume
+and a hiring manager who posted to a very popular remote-only job board told me he got “literally one thousand applications”.
+While I believe this is a legitimate complaint,
+I think &lt;a class=&quot;reference external&quot; href=&quot;http://blog.alinelerner.com/building-a-product-in-the-technical-recruiting-space-read-this-first/&quot;&gt;Aline Lerner, founder of interviewing.io said it best&lt;/a&gt;
+when she said “Engineering hiring isn’t a filtering problem. It’s a sourcing problem.”
+The reason we heard it a lot is that filtering is a very time-consuming task that hiring managers directly deal with.&lt;/p&gt;
+&lt;p&gt;The real problem here is that &lt;strong&gt;the number of applicants to a job post is a vanity metric&lt;/strong&gt;.
+What hiring managers are looking for is qualified applicants, which is harder to gauge without some additional work.
+One of the problems here is that a lot of jobs sites make it really easy for candidates to apply to lots of jobs.
+This is understandable from their perspective as more applicants makes their platform seem more valuable.
+There’s no reason for a job board to put artificial barriers into the application funnel,
+but hiring managers told us they want candidates who want to work for their company
+not somebody who is applying to every job out there.&lt;/p&gt;
+&lt;p&gt;Instead of building product here, I think hiring managers just need a few tweaks
+to get more of a signal of candidate quality and intent in their applications.
+A few of the hiring managers we talked to described how they did this.
+Multiple hiring managers mentioned how they required a cover letter that answered specific questions (“why us” was the most popular).
+Another hiring manager described how his hiring system just asked a few short questions of candidates
+– for example, “what is the software project you’re most proud of” – when they applied.
+When a candidate didn’t do a cover letter or didn’t answer the questions, they weren’t considered.
+The latter solution seemed like the best of both worlds as it solves the one-click apply problem without being too much of a barrier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;I’d like to thank all the hiring managers who took time out of their days (or in some cases evenings) to talk to us.
+If you’re a hiring manager or an internal company recruiter and you’d like to share your experiences and help Read the Docs,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Lessons+From+Hiring+Managers+Post&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check back soon for our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;next post in this series&lt;/span&gt;&lt;/a&gt;
+which covers tips for candidates based on the same interviews!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; This blog was updated to mention our &lt;a class=&quot;reference internal&quot; href=&quot;../../../tips-for-getting-a-developer-interview/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;new post&lt;/span&gt;&lt;/a&gt; in the series&lt;/p&gt;
+&lt;div class=&quot;admonition-ready-to-hire-your-next-developer-fast admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Ready to hire your next developer, fast!&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=hiring-manager-interviews-i&quot;&gt;Get in front of passive candidates already using your tech&lt;/a&gt; by promoting your job openings with Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Tips to Hire Developers with Read the Docs</title>
+    <id>https://blog.readthedocs.com/hiring-developers-with-readthedocs/</id>
+    <updated>2018-10-30T00:00:00Z</updated>
+    <published>2018-10-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/hiring-developers-with-readthedocs/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;tips-to-hire-developers-with-read-the-docs&quot;&gt;
+
+&lt;p&gt;Read the Docs is probably not the first place you think of if you are recruiting.
+However, over &lt;strong&gt;7 million unique developers use Read the Docs each month&lt;/strong&gt; from all over the world.
+We didn’t set out to build a better job board,
+but after a number of advertisers used our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html&quot;&gt;ethical ads&lt;/a&gt; for recruiting,
+we discovered that Read the Docs was a great place to find developer talent.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;hiring-with-read-the-docs-works&quot;&gt;
+&lt;h2&gt;Hiring with Read the Docs works&lt;/h2&gt;
+&lt;p&gt;Developers are not always actively job seeking
+by browsing job boards or company careers pages.
+However, they are on Read the Docs reading about the libraries and frameworks they use.
+Even when people aren’t actively looking for a new job,
+many are open to exploring new opportunities.&lt;/p&gt;
+&lt;p&gt;On Read the Docs, we found that developers engage with hiring ads
+at a higher rate than any other kind of advertising.
+With hiring ads, developers get ads that are relevant and interesting
+and companies reach the folks actively using the tech they are recruiting for.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot;&gt;
+&lt;img alt=&quot;Click-through rate by ad type Q3 2018&quot; src=&quot;img/2018-ctr-adtype.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;be-specific-and-find-the-right-developers&quot;&gt;
+&lt;h2&gt;Be specific and find the right developers&lt;/h2&gt;
+&lt;p&gt;If you are looking for Python developers,
+you can configure your hiring ad to only show on Python related documentation.
+You can further refine your audience to Read the Docs visitors in specific regions.
+Whether you are looking for a remote Python data scientist or a blockchain developer in Switzerland,
+be as specific as possible.
+This ensures you don’t get unqualified candidates
+as well as making sure you catch the eyes of the people you are interested in.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;set-the-right-expectations&quot;&gt;
+&lt;h2&gt;Set the right expectations&lt;/h2&gt;
+&lt;p&gt;In any type of advertising, setting appropriate expectations can make the difference
+between a lackluster and successful campaign. In hiring, it is even more critical.
+This means making sure that your hiring ad for a front-end JavaScript developer
+links directly to your JavaScript developer job listing page where people can click “apply”.
+Don’t link to a listing of all of your open positions unless your hiring ad sets that expectation.
+Nothing is worse for the developer than clicking on a hiring ad
+and not knowing what to do next.&lt;/p&gt;
+&lt;p&gt;Likewise, some things can set the wrong kind of expectation.
+Most developers have seen enough hiring posts for “rockstars” and “ninjas” to know what to expect.
+Be honest and upfront and you will attract the right folks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;stand-out&quot;&gt;
+&lt;h2&gt;Stand out&lt;/h2&gt;
+&lt;p&gt;Developers get contacted all the time by recruiters
+and it can be difficult to show prospective employees why they should check out your company.
+People look for all sorts of different things when seeking a new job
+from working with a high-caliber team to working for a company whose goals they agree with.
+You should highlight your best selling points right on your hiring ad as early as possible.
+If your company affords a fantastic work/life balance, mention that.
+A company in a great location, with a beautiful office, and top of the line hardware
+should definitely feature that.
+Focusing on your best attributes shows you care about your developers
+and helps you appeal to people who care about your products and mission.&lt;/p&gt;
+&lt;div class=&quot;admonition-are-you-hiring admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Are you hiring?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/recruiting/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=hire-developers&quot;&gt;Find qualified candidates&lt;/a&gt; already using your tech by promoting your job openings with Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">Community Advertising</title>
+    <id>https://blog.readthedocs.com/community-ads-2018/</id>
+    <updated>2018-09-06T00:00:00Z</updated>
+    <published>2018-09-06T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/community-ads-2018/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;community-advertising&quot;&gt;
+
+&lt;p&gt;As part of our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html&quot;&gt;ethical advertising&lt;/a&gt; model,
+Read the Docs &lt;strong&gt;gives away&lt;/strong&gt; 10% of our ad inventory
+to projects, conferences, and other initiatives in the open source community.
+Many of these projects operate as Read the Docs did in the past with little to no income.
+These are not groups that traditionally have the resources to use paid advertising.&lt;/p&gt;
+&lt;p&gt;We have run ads for:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Various Python conferences from &lt;a class=&quot;reference external&quot; href=&quot;https://us.pycon.org/&quot;&gt;PyCon&lt;/a&gt; to smaller regional conferences&lt;/li&gt;
+&lt;li&gt;Many topic or framework specific conferences such as &lt;a class=&quot;reference external&quot; href=&quot;https://djangocon.us/&quot;&gt;Djangocon US&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://sustainoss.org/&quot;&gt;Sustain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.mozilla.org/&quot;&gt;Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pybee.org/&quot;&gt;Beeware&lt;/a&gt; - tools and libraries for building native apps in Python&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.patreon.com/godotengine&quot;&gt;Godot&lt;/a&gt; - an open source game engine&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://kiwitcms.org/&quot;&gt;Kiwi TCMS&lt;/a&gt; - an open source test case management system&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://worldpossible.org/&quot;&gt;World Possible&lt;/a&gt; - an education non-profit&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/&quot;&gt;Write the Docs&lt;/a&gt; - a series of events for documentatarians&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-in-touch-we-can-help&quot;&gt;
+&lt;h2&gt;Get in touch. We can help!&lt;/h2&gt;
+&lt;p&gt;If you run a conference, non-profit, or a funding strapped open source project,
+we would love to help you get the word out.
+Make sure you qualify for our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html#community-ads&quot;&gt;community ads&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;send us an email&lt;/a&gt;
+to be considered for the program.&lt;/p&gt;
+&lt;p&gt;If you have any feedback about our community advertising program,
+we’d love to hear from you too.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/san-diego-ca/atom.xml">
+    <title type="text">HTTPS for Custom Domains</title>
+    <id>https://blog.readthedocs.com/https-for-custom-domains/</id>
+    <updated>2018-08-13T00:00:00Z</updated>
+    <published>2018-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/https-for-custom-domains/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;https-for-custom-domains&quot;&gt;
+
+&lt;p&gt;Read the Docs hosts documentation for over 80,000 open source projects
+and over 2,500 of those projects are hosted on their own individual domains.
+Documentation hosted on &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;*.readthedocs.io&lt;/span&gt;&lt;/code&gt; has supported HTTPS for a number of years,
+but one of our most requested features was to make HTTPS on other domains easy.
+Today we are happy to announce that &lt;strong&gt;Read the Docs supports HTTPS on custom domains&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Earlier this year, Cloudflare contacted us to support HTTPS
+for the thousands of open source documentation projects on their own domains.
+They generously provided us with their &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/ssl-for-saas-providers/&quot;&gt;SSL for SaaS&lt;/a&gt; package
+to ease the integration on our side.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-https-is-important&quot;&gt;
+&lt;h2&gt;Why HTTPS is important&lt;/h2&gt;
+&lt;p&gt;HTTPS encrypts traffic between your computer and Read the Docs’ servers
+and allows your browser to verify that the website you are talking to
+is the one that you requested.
+HTTPS ensures there is no man-in-the-middle snooping on your connection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;configuring-your-domain&quot;&gt;
+&lt;h2&gt;Configuring your domain&lt;/h2&gt;
+&lt;p&gt;If you followed our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/alternate_domains.html&quot;&gt;documentation for custom domains&lt;/a&gt;
+and you are using a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to Read the Docs,
+no action is required on your part.&lt;/p&gt;
+&lt;p&gt;If you have had your Read the Docs setup for many years you may have followed some old directions
+that suggested creating a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.org&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;&amp;lt;slug&amp;gt;.readthedocs.org&lt;/span&gt;&lt;/code&gt;.
+Depending on your setup, we may not have been able to issue a certificate for your domain.
+In that case, update your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;CNAME&lt;/span&gt;&lt;/code&gt; to point to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;why-did-it-take-so-long&quot;&gt;
+&lt;h2&gt;Why did it take so long?&lt;/h2&gt;
+&lt;p&gt;It’s 2018! HTTPS is supposed to be easy, right?
+For a few domains, getting a certificate isn’t too hard.
+For 2,500+ domains, things get a bit more complicated.&lt;/p&gt;
+&lt;p&gt;We identified a number of challenges including:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Retrying failed requests to issue certificates&lt;/li&gt;
+&lt;li&gt;Handling when users remove DNS records that would allow us to issue certificates&lt;/li&gt;
+&lt;li&gt;Getting our web servers and load balancers to handle dynamically adding and updating certificates on the fly&lt;/li&gt;
+&lt;li&gt;Handling recurring tasks to re-issue updated certificates before they expire&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cloudflare reduced most of this complexity to a few API calls made when a new domain is configured or removed.
+Without their support, we would still be working on this feature.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;next-steps&quot;&gt;
+&lt;h2&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;There are a few more things left on our road map for this feature.
+In the next few weeks we will begin to generate HTTPS links for custom domains where we have a certificate.
+After that change has been deployed for a few weeks, we will begin to redirect custom domain traffic to HTTPS.&lt;/p&gt;
+&lt;p&gt;As always, if you’re having any trouble with a particular domain,
+don’t hesitate to let us know in our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

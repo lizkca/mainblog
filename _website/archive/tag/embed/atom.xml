@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged embed</title>
+  <id>https://blog.readthedocs.com/archive/tag/embed/atom.xml</id>
+  <updated>2021-06-10T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/embed/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/embed/atom.xml">
+    <title type="text">New release of sphinx-hoverxref with support for intersphinx</title>
+    <id>https://blog.readthedocs.com/hoverxref-intersphinx/</id>
+    <updated>2021-06-10T00:00:00Z</updated>
+    <published>2021-06-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/hoverxref-intersphinx/" />
+    <author>
+      <name>Juan Luis Cano Rodríguez</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-release-of-sphinx-hoverxref-with-support-for-intersphinx&quot;&gt;
+
+&lt;p&gt;We have released version 0.6b1 of &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;,
+a Sphinx extension that shows a &lt;em&gt;content preview&lt;/em&gt;
+of a cross-reference.&lt;/p&gt;
+&lt;p&gt;This extension is an essential part
+of the work we are doing to improve interoperability of documentation in general,
+and scientific documentation in particular,
+thanks to the &lt;a class=&quot;reference external&quot; href=&quot;/czi-grant-announcement&quot;&gt;CZI grant&lt;/a&gt; we received last year.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_images/sphinx-hoverxref-showcase.gif&quot;&gt;&lt;img alt=&quot;sphinx-hoverxref displaying tooltips for cross references&quot; src=&quot;img/sphinx-hoverxref-showcase.gif&quot; style=&quot;width: 60%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;sphinx-hoverxref displaying a tooltip including an equation&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;embedding-content-previews&quot;&gt;
+&lt;h2&gt;Embedding content previews&lt;/h2&gt;
+&lt;p&gt;Technical documentation is full of cross-references (or &lt;em&gt;xrefs&lt;/em&gt;):
+hyperlinks to related parts of the documentation (or even to an external project)
+that help contextualize the information.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html&quot;&gt;Sphinx provides powerful tools for creating
+xrefs&lt;/a&gt;,
+which can be used to link other parts of the documentation,
+and in the case of software projects, also to specific objects of the API.&lt;/p&gt;
+&lt;p&gt;However, jumping through several links while reading some documentation
+can be distracting, since opening them might need either a context switch
+or keeping a new browser tab for a later moment.&lt;/p&gt;
+&lt;p&gt;Here is where &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt; comes to the rescue:
+it scans the cross-references and attaches content previews to them
+(either &lt;em&gt;tooltips&lt;/em&gt; or &lt;em&gt;modal&lt;/em&gt; dialogues)
+that embed the contents of the page the xrefs point to.
+This way, when the user is interested in a particular topic,
+they can hover the mouse over the link
+and display the content preview
+instead of opening the link.&lt;/p&gt;
+&lt;p&gt;Moreover, the content previews created by &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;
+also work if the embedded content requires a particular extension to be rendered.
+This makes it possible to embed content that includes mathematical equations, for example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;support-for-intersphinx&quot;&gt;
+&lt;h2&gt;Support for &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;intersphinx&lt;/span&gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Version 0.6b1 of &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt; introduces opt-in support for Intersphinx linking.
+&lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html&quot;&gt;sphinx.ext.intersphinx&lt;/a&gt;
+is a Sphinx extension
+that generates automatic links to the documentation of objects in other projects,
+and now it’s possible to show floating windows on them too.&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_images/sphinx-hoverxref-intersphinx.png&quot;&gt;&lt;img alt=&quot;A project (left) embedding content from another project linked through intersphinx (right) using sphinx-hoverxref&quot; src=&quot;img/sphinx-hoverxref-intersphinx.png&quot; style=&quot;width: 80%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;A project (left) embedding content from another project linked through intersphinx (right)
+using sphinx-hoverxref&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;To enable it, the user needs to specify
+which projects from the &lt;a class=&quot;reference external&quot; href=&quot;https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping&quot;&gt;intersphinx_mapping&lt;/a&gt;
+will be scanned by &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;sphinx-hoverxref&lt;/span&gt;&lt;/code&gt;, using a new configuration value:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Values of the intersphinx_mapping keys that you want to enable hoverxref on&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hoverxref_intersphinx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;astropy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;numpy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;scipy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;s2&quot;&gt;&amp;quot;matplotlib&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Moreover, the look &amp;amp; feel of the current project is preserved
+even if the target documentation has a different theme or colors,
+which makes the result more visually consistent.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;At the moment, the target project needs to be hosted on Read the Docs,
+which is a limitation that we hope to remove in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can draw inspiration from some community projects that are using this feature already:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://grill.readthedocs.io/&quot;&gt;The Grill&lt;/a&gt;, an extension for digital content creation with Maya, Houdini, and other 3D modeling applications,
+and references another project called &lt;a class=&quot;reference external&quot; href=&quot;https://naming.readthedocs.io/&quot;&gt;naming&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.poliastro.space/&quot;&gt;poliastro&lt;/a&gt;, a Python library for interactive Astrodynamics
+that makes cross-references to &lt;a class=&quot;reference external&quot; href=&quot;https://docs.astropy.org/&quot;&gt;Astropy&lt;/a&gt; and other projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are excited to see what our users can do with &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-hoverxref.readthedocs.io/&quot;&gt;sphinx-hoverxref&lt;/a&gt;,
+and will continue working on it in the future.&lt;/p&gt;
+&lt;p&gt;Considering using Read the Docs for your next Sphinx or MkDocs project?
+Check out &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;our documentation&lt;/a&gt; to get started!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

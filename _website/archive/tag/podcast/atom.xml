@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged podcast</title>
+  <id>https://blog.readthedocs.com/archive/tag/podcast/atom.xml</id>
+  <updated>2021-07-06T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/podcast/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/podcast/atom.xml">
+    <title type="text">Early 2021 talks and podcasts from Read the Docs</title>
+    <id>https://blog.readthedocs.com/behind-the-scenes-2021-1/</id>
+    <updated>2021-07-06T00:00:00Z</updated>
+    <published>2021-07-06T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/behind-the-scenes-2021-1/" />
+    <author>
+      <name>Juan Luis Cano Rodríguez</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;early-2021-talks-and-podcasts-from-read-the-docs&quot;&gt;
+
+&lt;p&gt;During the first half of 2021 several team members of Read the Docs
+have talked about the company in podcasts and online events.
+If you want to learn more about our company
+directly from the people that are a core part of it,
+and hear our thoughts on other topics
+like open source sustainability and developer advocacy,
+this blog post is for you.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;eric-sustain-podcast&quot;&gt;
+&lt;h2&gt;Eric &amp;#64; Sustain podcast&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/ericholscher&quot;&gt;Eric&lt;/a&gt; was the special guest of &lt;a class=&quot;reference external&quot; href=&quot;https://podcast.sustainoss.org/&quot;&gt;Sustain&lt;/a&gt; back in February,
+“a podcast about sustaining open source in the long haul”.
+Eric started by telling the story of how he and &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/agjohnson&quot;&gt;Anthony&lt;/a&gt; co-founded Read the Docs,
+talked about the &lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/&quot;&gt;Write the Docs&lt;/a&gt; community,
+described the challenges of launching &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;EthicalAds&lt;/a&gt; in 2020,
+and discussed the opportunities of using ethical advertising to fund open source projects.&lt;/p&gt;
+&lt;p&gt;Listen to Eric online:&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;https://podcast.sustainoss.org/66&quot;&gt;&lt;img alt=&quot;img/eric-sustain.png&quot; class=&quot;align-center&quot; src=&quot;img/eric-sustain.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;juan-luis-data-for-future-podcast&quot;&gt;
+&lt;h2&gt;Juan Luis &amp;#64; Data for Future podcast&lt;/h2&gt;
+&lt;p&gt;Also in June, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/astrojuanlu&quot;&gt;Juan Luis&lt;/a&gt; was invited for the second time
+to &lt;a class=&quot;reference external&quot; href=&quot;https://dataforfuture.org/&quot;&gt;Data for Future&lt;/a&gt;,
+a podcast that seeks to “inspire positive actions
+towards an environmentally sustainable and socially just future through technology”.
+In an informal conversation,
+Juan Luis shared some numbers about the state of software documentation according to several surveys,
+promoted the &lt;a class=&quot;reference external&quot; href=&quot;https://diataxis.fr/&quot;&gt;Diátaxis&lt;/a&gt; documentation framework created by Daniele Procida,
+discussed his role as Developer Advocate at Read the Docs,
+and shared some possible opportunities for collaboration
+between Data Science practitioners and technical writers.&lt;/p&gt;
+&lt;p&gt;Listen to Juan Luis online:&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;https://dataforfuture.org/episodes/39-making-documentation-sexy-juan-luis-cano-read-the-docs/&quot;&gt;&lt;img alt=&quot;img/juan-luis-data-for-future.png&quot; class=&quot;align-center&quot; src=&quot;img/juan-luis-data-for-future.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;eric-upstream-2021-online-conference&quot;&gt;
+&lt;h2&gt;Eric &amp;#64; Upstream 2021 online conference&lt;/h2&gt;
+&lt;p&gt;Read the Docs and EthicalAds supported &lt;a class=&quot;reference external&quot; href=&quot;https://upstream.live/&quot;&gt;Upstream 2021&lt;/a&gt; in June,
+a one-day online event about “open source, the developers who use it, and the maintainers who make it”.
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/ericholscher&quot;&gt;Eric&lt;/a&gt; delivered a talk titled &lt;a class=&quot;reference external&quot; href=&quot;https://explore.tidelift.com/upstream/main/session-eric-holscher&quot;&gt;“Bootstrapping a sustainable open source project: The Read the Docs story”&lt;/a&gt;,
+in which he dived into some of the less known details of how Read the Docs was created,
+shared the different funding strategies the company attempted over the years,
+opened up about the dangers of burnout,
+and detailed the different commercial plans of Read the Docs
+as well as some thoughts about pricing schemes.&lt;/p&gt;
+&lt;p&gt;Watch Eric online:&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;https://explore.tidelift.com/upstream/main/session-eric-holscher&quot;&gt;&lt;img alt=&quot;img/eric-upstream.png&quot; class=&quot;align-center&quot; src=&quot;img/eric-upstream.png&quot; /&gt;&lt;/a&gt;
+&lt;hr class=&quot;docutils&quot; /&gt;
+&lt;p&gt;Considering using Read the Docs for your next Sphinx or MkDocs project?
+Check out &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;our documentation&lt;/a&gt; to get started!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

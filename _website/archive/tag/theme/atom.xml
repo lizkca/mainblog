@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged theme</title>
+  <id>https://blog.readthedocs.com/archive/tag/theme/atom.xml</id>
+  <updated>2021-08-23T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/theme/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/theme/atom.xml">
+    <title type="text">Theme release 1.0.0rc1</title>
+    <id>https://blog.readthedocs.com/theme-release-100rc1/</id>
+    <updated>2021-08-23T00:00:00Z</updated>
+    <published>2021-08-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/theme-release-100rc1/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;theme-release-1-0-0rc1&quot;&gt;
+
+&lt;div class=&quot;admonition-update-version-1-0-0-has-been-released admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update: Version 1.0.0 has been released!&lt;/p&gt;
+&lt;p&gt;The 1.0.0 version of sphinx_rtd_theme was released Sept 13, 2021. You can
+install the latest version with:&lt;/p&gt;
+&lt;div class=&quot;highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install &lt;span class=&quot;s2&quot;&gt;&amp;quot;sphinx-rtd-theme~=1.0.0&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Alternatively, you can upgrade the version installed using:&lt;/p&gt;
+&lt;div class=&quot;last highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install --upgrade sphinx-rtd-theme
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We are closing in on the next official release of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme&quot;&gt;sphinx_rtd_theme&lt;/a&gt;, and
+we’re happy to announce that release candidate version 1.0.0rc1 was
+&lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/sphinx-rtd-theme/1.0.0rc1/&quot;&gt;released to PyPI&lt;/a&gt; last week! Project maintainers can contribute to the final
+release by &lt;a class=&quot;reference internal&quot; href=&quot;#testing&quot;&gt;testing the release candidate&lt;/a&gt; and raising any potential
+bugs on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Version 1.0.0 adds support for &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/Sphinx/&quot;&gt;Sphinx&lt;/a&gt; 4, fixes several issues stemming
+from &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/docutils/&quot;&gt;docutils&lt;/a&gt; 0.17, and contains several backwards-incompatible changes.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;backwards-incompatible-changes&quot;&gt;
+&lt;h2&gt;Backwards incompatible changes&lt;/h2&gt;
+&lt;p&gt;Users need to be aware of several backwards incompatible changes before
+upgrading:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support dropped for old dependencies&lt;/dt&gt;&lt;dd&gt;Support is removed for Sphinx versions 1.6 or older, and for Python versions
+3.0 to 3.3. Theme developers no longer test using these versions and
+compatibility is not guaranteed for these versions.&lt;/dd&gt;
+&lt;dt&gt;HTML4 support will be removed&lt;/dt&gt;&lt;dd&gt;Support for the Sphinx HTML4 writer will be deprecated in release 2.0. A
+deprecation warning was added to alert users still using the HTML4 writer.&lt;/dd&gt;
+&lt;dt&gt;Installation from source will be deprecated soon&lt;/dt&gt;&lt;dd&gt;Tentatively scheduled for release 3.0, installation from source will no
+longer be a supported installation method. Currently, users are installing
+directly from our GitHub repository, which complicates development of static
+assets. A deprecation warning was added to alert users of the upcoming
+change.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;highlights&quot;&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Here are some of the most significant additions included in release 1.0.0:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support for new dependencies&lt;/dt&gt;&lt;dd&gt;The theme now supports Sphinx 4 and docutils 0.17, both the latest in each
+respective release series.&lt;/dd&gt;
+&lt;dt&gt;New accessibility features&lt;/dt&gt;&lt;dd&gt;Also added were a number of accessibility updates, including better keyboard
+navigation support and more descriptive navigation for screen readers.&lt;/dd&gt;
+&lt;dt&gt;Added 4 new translations&lt;/dt&gt;&lt;dd&gt;The theme is close to being almost fully translated in 14 different
+languages. This will provide project maintainers with localized navigation
+elements and accessibility content.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;The theme roadmap&lt;/a&gt; has more information on upcoming releases, and
+backwards incompatible changes for each. A full list of changes included in this
+release is available in &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/changelog.html&quot;&gt;the theme changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;testing&quot;&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The 1.0.0rc1 release is a pre-release package, meaning it will not install by
+default as the most recent release. Project maintainers will need to specify the
+release version explicitly to install the release candidate.&lt;/p&gt;
+&lt;p&gt;In your package’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;extra_requirements&lt;/span&gt;&lt;/code&gt;, or a separate &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;requirements.txt&lt;/span&gt;&lt;/code&gt;
+file, you can pin this dependency with:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphinx_rtd_theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you notice any new, unwanted behavior, feel free to open an issue
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;on our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;upcoming-changes&quot;&gt;
+&lt;h2&gt;Upcoming changes&lt;/h2&gt;
+&lt;p&gt;We have several upcoming releases planned, covered in more depth in
+&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;the theme roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our next official release, currently targeted for October or November, will be
+version 1.1. This release will contain additional bug fixes and will be the last
+release supporting Sphinx versions less than 3.0. The next planed release will
+be version 2.0, in early 2022.&lt;/p&gt;
+&lt;p&gt;The 2.0 release will be dropping support for a number of old dependencies,
+including Sphinx versions &amp;lt; 3.0, Sphinx HTML4 writer support, and Internet
+Explorer 11.&lt;/p&gt;
+&lt;p&gt;As the theme moves away from supporting direct installation through our GitHub
+repository, we want to preserve development previews of theme releases. In
+addition to several more focused releases on the theme roadmap, we will also be
+periodically publishing development releases to PyPI. This will be the
+prescribed method to use unreleased theme changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Special thanks to contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/Blendify&quot;&gt;Blendify&lt;/a&gt; for keeping up with support for fresh
+dependencies, and new contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/nienn&quot;&gt;nienn&lt;/a&gt; for helping with bug fixes and the
+heavy amount of testing required for this release!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/theme/atom.xml">
+    <title type="text">A New Theme for Read the Docs</title>
+    <id>https://blog.readthedocs.com/new-theme-read-the-docs/</id>
+    <updated>2013-11-04T00:00:00Z</updated>
+    <published>2013-11-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/new-theme-read-the-docs/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;a-new-theme-for-read-the-docs&quot;&gt;
+
+&lt;p&gt;We have been &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/pulse/monthly&quot;&gt;hard at work&lt;/a&gt; improving &lt;a class=&quot;reference external&quot; href=&quot;http://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt; over the past month.
+A large amount of back end work has been going on,
+and now we have a brand new documentation theme to showcase it.&lt;/p&gt;
+&lt;p&gt;We have looked at how people use documentation,
+and built a beautiful and highly functional &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/&quot;&gt;new interface&lt;/a&gt; for browsing documentation.
+We created a solution that looks great and works well.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;creation&quot;&gt;
+&lt;h2&gt;Creation&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://twitter.com/enemykite&quot;&gt;Dave Snider&lt;/a&gt; approached me about a month ago,
+interested in helping improve the documentation ecosystem.
+We talked about what could improve the Read the Docs experience for the greatest number of our users,
+and a new theme seemed like a great place to start.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-new-theme&quot;&gt;
+&lt;h2&gt;The New Theme&lt;/h2&gt;
+&lt;div class=&quot;section&quot; id=&quot;full-site&quot;&gt;
+&lt;h3&gt;Full site&lt;/h3&gt;
+&lt;p&gt;The full documentation page is now beautiful and streamlined.
+We got rid of the visual clutter and integrated a full-project Table of Contents in the sidebar.
+When you go into a specific page,
+a page-level contents get embedded in the sidebar as well.
+This allows you to keep context inside the documentation when you land on a page from a search.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;old&quot;&gt;
+&lt;h4&gt;Old&lt;/h4&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/hWOnmKy.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/hWOnmKy.png&quot; src=&quot;http://i.imgur.com/hWOnmKy.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new&quot;&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/7oLntvR.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/7oLntvR.png&quot; src=&quot;http://i.imgur.com/7oLntvR.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;flyout&quot;&gt;
+&lt;h3&gt;Flyout&lt;/h3&gt;
+&lt;p&gt;Read the Docs provides a lot of functionality for documentation projects.
+The flyout is the avenue to accessing that functionality.
+We need to pack all our functionality into this space.&lt;/p&gt;
+&lt;p&gt;In the new theme,
+the flyout is integrated into the bottom left of the theme.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;id1&quot;&gt;
+&lt;h4&gt;Old&lt;/h4&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/new-theme-read-the-docs.rst&lt;/tt&gt;, line 61); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate implicit target name: “old”.&lt;/div&gt;
+&lt;p&gt;The old flyout let you:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Change versions&lt;/li&gt;
+&lt;li&gt;Go back to Read the Docs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/CBDPzbD.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/CBDPzbD.png&quot; src=&quot;http://i.imgur.com/CBDPzbD.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/new-theme-read-the-docs.rst&lt;/tt&gt;, line 73); &lt;em&gt;&lt;a href=&quot;#id2&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Duplicate implicit target name: “new”.&lt;/div&gt;
+&lt;p&gt;The new flyout lets you:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Change versions&lt;/li&gt;
+&lt;li&gt;Go back to Read the Docs&lt;/li&gt;
+&lt;li&gt;See the current version&lt;/li&gt;
+&lt;li&gt;Show if the current version is out of date&lt;/li&gt;
+&lt;li&gt;Download docs for offline viewing&lt;/li&gt;
+&lt;li&gt;Contribute edits on GitHub or Bitbucket&lt;/li&gt;
+&lt;li&gt;Do a full-text search (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/9DRP8fj.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/9DRP8fj.png&quot; src=&quot;http://i.imgur.com/9DRP8fj.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;mobile&quot;&gt;
+&lt;h3&gt;Mobile&lt;/h3&gt;
+&lt;p&gt;The new theme really shines on mobile.
+We provide a beautiful interface for phones and tablets,
+while staying completely functional.&lt;/p&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;http://i.imgur.com/29uEpVs.png&quot;&gt;&lt;img alt=&quot;http://i.imgur.com/29uEpVs.png&quot; src=&quot;http://i.imgur.com/29uEpVs.png&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;using-it&quot;&gt;
+&lt;h2&gt;Using it&lt;/h2&gt;
+&lt;p&gt;There are two ways that you can use this theme on Read the Docs.
+The first is to simply leave your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;html_theme&lt;/span&gt;&lt;/code&gt; variable set to &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;default&lt;/span&gt;&lt;/code&gt;.
+This is now the default Read the Docs theme.
+You can also set &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;RTD_NEW_THEME&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;True&lt;/span&gt;&lt;/code&gt; in your project’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt;,
+and we will use our theme when building on Read the Docs no matter what &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;html_theme&lt;/span&gt;&lt;/code&gt; is set to.&lt;/p&gt;
+&lt;p&gt;After you change these settings,
+simply rebuild your docs and the theme should update.
+More information about the theme can be found on the &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/stable/&quot;&gt;theme documentation page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to continue using the old theme,
+simply set &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;RTD_OLD_THEME&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;True&lt;/span&gt;&lt;/code&gt; in your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This theme is a great addition to the documentation ecosystem.
+It is highly functional and beautiful,
+allowing users to easily navigate and find what they need.&lt;/p&gt;
+&lt;p&gt;We have a few more tricks up our sleeves,
+but theme is ready to launch today.
+Over the next few weeks we’ll be adding a bit more functionality to it,
+which should be even more delightful.&lt;/p&gt;
+&lt;p&gt;I hope that you enjoy using it.
+If you have any feedback,
+please &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/snide/sphinx_rtd_theme/issues&quot;&gt;open an issue&lt;/a&gt; on GitHub.
+To follow announcements for Read the Docs,
+follow &lt;a class=&quot;reference external&quot; href=&quot;http://twitter.com/readthedocs&quot;&gt;us on Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to support work like this,
+help &lt;a class=&quot;reference external&quot; href=&quot;https://www.gittip.com/readthedocs/&quot;&gt;fund development on Read the Docs&lt;/a&gt; on Gittip.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

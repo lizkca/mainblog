@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from Barcelona, Spain</title>
+  <id>https://blog.readthedocs.com/archive/location/barcelona-spain/atom.xml</id>
+  <updated>2021-02-16T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/barcelona-spain/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/barcelona-spain/atom.xml">
+    <title type="text">API v3 is now stable</title>
+    <id>https://blog.readthedocs.com/api-v3-stable/</id>
+    <updated>2021-02-16T00:00:00Z</updated>
+    <published>2021-02-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-stable/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;api-v3-is-now-stable&quot;&gt;
+
+&lt;p&gt;We are excited to announce that our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;API v3&lt;/a&gt; has reached a stable release,
+and is now available for all Read the Docs users.
+Since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../api-v3-beta/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;announced the API v3 beta&lt;/span&gt;&lt;/a&gt;,
+we have been adding extra functionality and bug-fixing minor issues based on user feedback.&lt;/p&gt;
+&lt;p&gt;The new API v3 &lt;em&gt;is not&lt;/em&gt; a fully replacement (yet!) of API v2,
+but &lt;strong&gt;we highly recommend using API v3 for all the new integrations&lt;/strong&gt;.
+API v2 will be deprecated soon,
+though we don’t have a firm timeline for deprecation.
+We will alert users with our plans when we do.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New features&lt;/h2&gt;
+&lt;p&gt;We’re excited about the following actions that API v3 makes possible:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Import new projects&lt;/li&gt;
+&lt;li&gt;Activate a version&lt;/li&gt;
+&lt;li&gt;Trigger builds&lt;/li&gt;
+&lt;li&gt;Check build status&lt;/li&gt;
+&lt;li&gt;Manage redirects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;API v3 allows you to easily manage common tasks on your Read the Docs project and organization.
+These include:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Setting up documentation for a new project&lt;/li&gt;
+&lt;li&gt;Automating the release of a new version&lt;/li&gt;
+&lt;li&gt;Pausing a release if you detect a failed build&lt;/li&gt;
+&lt;li&gt;Automatically create redirects for changes files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;help-us-make-it-better&quot;&gt;
+&lt;h2&gt;Help us make it better&lt;/h2&gt;
+&lt;p&gt;We always love to hear from users about how they are using the API.
+We want to help you manage your documentation in the easiest and most efficient way possible.
+Please, feel free to &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;open an issue in our issue tracker&lt;/a&gt;
+if there is a use case we are not covering.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/barcelona-spain/atom.xml">
+    <title type="text">Better support for scientific project documentation</title>
+    <id>https://blog.readthedocs.com/better-conda-support/</id>
+    <updated>2020-04-28T00:00:00Z</updated>
+    <published>2020-04-28T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/better-conda-support/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;better-support-for-scientific-project-documentation&quot;&gt;
+
+&lt;p&gt;In the past year, we’ve been having issues when building projects’ documentation using &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt;.
+Our build servers were running out of memory and failing projects’ builds.
+Read the Docs has this memory constraint to avoid misuse of the platform,
+causing a poor experience for other users.&lt;/p&gt;
+&lt;p&gt;Our first solution was a dedicated server for these kind of projects.
+We would manually assign them to this server on user requests.
+This workaround worked okay, but it involves a bad experience for the user and also us doing a manual step each time.
+Over time, we hit again the same issue of OOM, even giving all the memory available to one project to build its documentation.
+After some research, we found that &lt;a class=&quot;reference external&quot; href=&quot;https://www.anaconda.com/understanding-and-improving-condas-performance/&quot;&gt;this is a known issue in the conda community&lt;/a&gt; and there are some different attempts to fix it (like &lt;a class=&quot;reference external&quot; href=&quot;https://quantstack.net/mamba.html&quot;&gt;mamba&lt;/a&gt;).
+Unfortunately, none of them became the standard yet and the problem is still there.&lt;/p&gt;
+&lt;p&gt;Meanwhile, in another completely different set of work,
+we were migrating all of our infrastructure to a different architecture:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Azure &lt;em&gt;Virtual machine scale sets&lt;/em&gt; for autoscaling our servers,&lt;/li&gt;
+&lt;li&gt;Azure &lt;em&gt;storage accounts&lt;/em&gt; to store all the user’s documentation&lt;/li&gt;
+&lt;li&gt;Proxito, an internal service to remove a lot of the state from our servers (more about this migration coming in a future post)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This helped us to &lt;em&gt;reduce costs&lt;/em&gt; and allowed us to spin up &lt;em&gt;bigger instances&lt;/em&gt; for the builders.
+We have also made some other important operational changes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our builders are now single-process, giving all the memory available to only one project without worrying about affecting others.&lt;/li&gt;
+&lt;li&gt;We added &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/8e78d680d02aeba12644796b979ef62459f64932/readthedocs/builds/tasks.py#L11&quot;&gt;custom task router&lt;/a&gt; that routes small builds to small servers (3GB RAM), and big builds to larger servers (7GB RAM). This removes the need for users to ask us to upgrade their isntances.&lt;/li&gt;
+&lt;li&gt;Assigned all &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt; projects to be built by big servers by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ever had a memory issue on Read the Docs,
+we’d appreciate if you give it a try again.
+Please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;let us know&lt;/a&gt; about your experience when building scientific documentation.
+If you know that any of your friends were hitting this issue in the past,
+we encourage you to talk to them and tell them to give it a try.&lt;/p&gt;
+&lt;p&gt;We are excited to have more scientific documentation on our platform and we are doing our small part to make this happen and have better science in the world.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/barcelona-spain/atom.xml">
+    <title type="text">Announcing API v3 Beta</title>
+    <id>https://blog.readthedocs.com/api-v3-beta/</id>
+    <updated>2019-08-27T00:00:00Z</updated>
+    <published>2019-08-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/api-v3-beta/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-api-v3-beta&quot;&gt;
+
+&lt;p&gt;In the last months, we have been working on making our API better.
+Considering the limitations of our current REST API v2,
+we decided to make a bigger step forward and create a new API v3,
+putting the focus on the use cases we heard about from existing users.&lt;/p&gt;
+&lt;p&gt;Compared to API v2, our new API v3 has some big differences that make it more user-friendly and useful.&lt;/p&gt;
+&lt;p&gt;These differences includes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;API access requires authentication&lt;/li&gt;
+&lt;li&gt;Token based API authentication&lt;/li&gt;
+&lt;li&gt;Read and write&lt;/li&gt;
+&lt;li&gt;Resource lookup can use project’s slug&lt;/li&gt;
+&lt;li&gt;Wider resource coverage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some examples of new queries and actions that will be possible with the API are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#project-create&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Import a new project&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#projects-list&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;List all my projects&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#version-update&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Activate a version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-triggering&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Trigger a build for a specific version&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#build-details&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Check build status&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#redirects&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;Manage redirects&lt;/span&gt;&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/api/v3.html#environment-variables&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;environment variables programmatically&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know more about it,
+please check out the full &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/api/v3.html&quot;&gt;APIv3 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;invite-only-beta-feature&quot;&gt;
+&lt;h2&gt;Invite-only beta feature&lt;/h2&gt;
+&lt;p&gt;APIv3 is currently in an invite-only beta state on our community site, &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org&quot;&gt;https://readthedocs.org&lt;/a&gt;.
+In case you want to test it and give us feedback on it,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;email us&lt;/a&gt; to get early access.&lt;/p&gt;
+&lt;p&gt;Based on the feedback we receive from you, we plan to add more features to cover most of the common use cases.
+Please, help us with your feedback to make the new APIv3 &lt;em&gt;even&lt;/em&gt; better!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

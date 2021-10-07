@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2020</title>
+  <id>https://blog.readthedocs.com/archive/2020/atom.xml</id>
+  <updated>2020-11-19T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2020/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Announcing Chan Zuckerberg Initiative Grant to Expand the Interoperability of Scientific Documentation</title>
+    <id>https://blog.readthedocs.com/czi-grant-announcement/</id>
+    <updated>2020-11-19T00:00:00Z</updated>
+    <published>2020-11-19T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/czi-grant-announcement/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-chan-zuckerberg-initiative-grant-to-expand-the-interoperability-of-scientific-documentation&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt; has received a $200,000 grant from the Chan Zuckerberg Initiative’s &lt;a class=&quot;reference external&quot; href=&quot;https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/&quot;&gt;Essential Open Source for Science&lt;/a&gt; (EOSS) program.
+Read the Docs is the largest open source documentation hosting platform in the world.
+We provide hosting for many scientific software packages,
+including some that have received EOSS funding in the past.
+You can read more about this round of grants in the &lt;a class=&quot;reference external&quot; href=&quot;https://cziscience.medium.com/scaling-open-infrastructure-and-reproducibility-in-biomedicine-69546a399747&quot;&gt;official announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our grant has two parts:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Part 1 allows us to develop new software to improve the interoperability of scientific documentation.&lt;/li&gt;
+&lt;li&gt;Part 2 allows us do advocacy work around the importance and value of documentation in the scientific community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re excited about the chance to work with the scientific community to improve the overall experience of writing and reading documentation.
+We plan to do a lot of outreach to various community members,
+so that we can ensure we’re building tools that provide the most value.
+We also plan to write content that will hopefully make the process of documenting scientific code easier.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-1-improve-the-interoperability-of-scientific-documentation&quot;&gt;
+&lt;h2&gt;Part 1: improve the interoperability of scientific documentation&lt;/h2&gt;
+&lt;p&gt;This work is something that we’ve been doing as a side project for some time now.
+We have an extension to Sphinx that we call &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx-hoverxref&quot;&gt;sphinx-hoverxref&lt;/a&gt;.
+It provides hovering tooltips for Sphinx projects when hover over a link.
+You might be familiar with this functionality on GitHub or Wikipedia – this project adds that functionality to any project hosted on Read the Docs.
+You can see a &lt;a class=&quot;reference external&quot; href=&quot;https://cpython-ericholscher.readthedocs.io/en/sphinx-hoverxref/whatsnew/3.9.html&quot;&gt;live demo&lt;/a&gt; on a fork of the Python documentation.&lt;/p&gt;
+&lt;p&gt;The goal of the grant will be to expand this functionality by doing a few things:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improving and documenting the backend Embed API on Read the Docs, allowing documentation content to be embedded anywhere on the web.&lt;/li&gt;
+&lt;li&gt;Building a JavaScript client for the Embed API, which includes tooltips showing the content on any website.&lt;/li&gt;
+&lt;li&gt;Integrating this JS client and backend API together in a new version of sphinx-hoverxref.&lt;/li&gt;
+&lt;li&gt;Extending sphinx-hoverxref to work across multiple Read the Docs sites, allowing content hovers across the entire scientific documentation ecosystem.&lt;/li&gt;
+&lt;li&gt;If time allows, also extending the backend Embed API to support Sphinx documentation hosted outside of Read the Docs, allowing even more interoperability between documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are planning to contract a frontend developer to help with this work.
+The Python work will likely be carried out by our existing team,
+funded via the grant.
+This is because of the complexities involved with the Read the Docs and Sphinx integration,
+it will be more cost effective to have people already familiar with the codebases on these tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-2-advocacy-work-around-documentation-in-the-scientific-community&quot;&gt;
+&lt;h2&gt;Part 2: Advocacy work around documentation in the scientific community&lt;/h2&gt;
+&lt;p&gt;We know that documentation is a pain point for scientific projects. There is a lack of resources in the community, and we feel that we can be a central clearing house for better documentation tutorials and best practices. This part of the funding will be about growing appreciation and knowledge of documentation in the scientific community in general, and advocating for time to be spent on crafting good documentation with the best tooling.&lt;/p&gt;
+&lt;p&gt;Part of this work would be letting people know about the work in Part 1, promoting the tooling to make better documentation in the Scientific Python ecosystem. Beyond that, we will also promote tutorials and best practices around documentation for Scientific users, leading to more resources being available and better documentation in the community.&lt;/p&gt;
+&lt;p&gt;The high-level roadmap for this part of the grant is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improve documentation and promote the work in Part 1.&lt;/li&gt;
+&lt;li&gt;Adapt the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/&quot;&gt;Guides&lt;/a&gt; section of the Read the Docs documentation into a more full-featured Education section, along with standardizing and editing all existing guides.&lt;/li&gt;
+&lt;li&gt;Expand our existing &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-tutorial.readthedocs.io/&quot;&gt;Sphinx Tutorial&lt;/a&gt;, hopefully adding it upstream to Sphinx as the official tutorial&lt;/li&gt;
+&lt;li&gt;Write additional documentation guides focused on the scientific community, based on feedback from people in the community. This will likely include tutorials on integrating Jupyter with Sphinx, &lt;a class=&quot;reference external&quot; href=&quot;https://jupyterbook.org/intro.html&quot;&gt;Jupyterbook&lt;/a&gt;, and other pain points that users have.&lt;/li&gt;
+&lt;li&gt;If time allows, we would also love to work on curating some of the documentation resources at &lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/topics/&quot;&gt;Write the Docs&lt;/a&gt;, specifically topics that are relevant to scientific projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As part of this work, we plan to contract someone in a technical writer/developer evangelist role.
+Someone with knowledge of the scientific community would be a great benefit,
+given that we plan to seek feedback from many scientific projects on the priority of tasks we work on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;looking-forward&quot;&gt;
+&lt;h2&gt;Looking forward&lt;/h2&gt;
+&lt;p&gt;We are starting to look for contractors who would be a good fit for the work.
+People who care about documentation and are already connected with the scientific community are a big plus.
+We hope to post proper job descriptions for these roles in the near future,
+but wanted to note that we’re looking in our initial announcement.&lt;/p&gt;
+&lt;p&gt;This is the largest grant that we’ve ever received,
+and we are working hard to make sure it’s successful.
+We appreciate the trust that the Chan Zuckerberg Initiative has placed in us,
+and we will work hard to make sure the results of this grant will be adopted across the scientific ecosystem.&lt;/p&gt;
+&lt;p&gt;If you want to keep up to date with this work,
+you can follow along on &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/readthedocs/&quot;&gt;GitHub&lt;/a&gt; or &lt;a class=&quot;reference external&quot; href=&quot;#mc_embed_signup_scroll&quot;&gt;subscribe&lt;/a&gt; to our blog for updates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Advertising update and open sourcing our ad server</title>
+    <id>https://blog.readthedocs.com/advertising-improvements-2020/</id>
+    <updated>2020-07-01T00:00:00Z</updated>
+    <published>2020-07-01T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/advertising-improvements-2020/" />
+    <author>
+      <name>David Fischer</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;advertising-update-and-open-sourcing-our-ad-server&quot;&gt;
+
+&lt;p&gt;It’s been a while since our &lt;a class=&quot;reference internal&quot; href=&quot;../../ad-funding-read-the-docs-whats-next/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;last advertising update&lt;/span&gt;&lt;/a&gt;
+and it felt like a good time to talk about what’s working with our advertising model
+and how things are getting better.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-advertising-is-working-for-read-the-docs&quot;&gt;
+&lt;h2&gt;How advertising is working for Read the Docs&lt;/h2&gt;
+&lt;p&gt;In our &lt;a class=&quot;reference internal&quot; href=&quot;../../read-the-docs-2019-stats/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;2019 stats post&lt;/span&gt;&lt;/a&gt;,
+we broke out our advertising revenue which was fairly flat year over year.
+The way our ad business is structured, our revenue mostly grows with increases in traffic
+and Read the Docs is mature enough that it isn’t doubling in size every year.&lt;/p&gt;
+&lt;p&gt;With that said, we’re pleased with our steady and sustainable growth.
+Read the Docs doesn’t have any investors putting pressure on us for short term growth
+and that has allowed us to invest in our ad business, commercial hosting,
+and in our community version for the long term.
+We’ve rolled out a huge number of improvements to all the sides of our business
+in the last year and we’re happy with the results.
+Advertising remains the single largest source of funding for Read the Docs
+and one that scales as our costs scale.&lt;/p&gt;
+&lt;p&gt;On a real world note, Covid-19 had a short term impact on our advertising revenue
+with a number of advertisers understandably pulling back due to uncertainty in funding and the economy in general.
+While the world isn’t completely back to normal, we have returned some degree of normalcy
+and most of these advertisers returned once there was a bit more clarity in the broader economy
+and the virus’ effect on the tech industry specifically.
+Advertising on Read the Docs is now close to capacity in the US, Canada, and Europe which are our largest advertising markets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;improved-targeting-for-ads&quot;&gt;
+&lt;h2&gt;Improved targeting for ads&lt;/h2&gt;
+&lt;p&gt;Advertising on Read the Docs is different from most ad networks out there.
+Our ad targeting is based on the content and the reader’s geography rather than personal data about our users.
+Read the Docs’ authors and readers have told us that privacy is important to them.
+That’s great because it’s important to us too!
+With that said, there are great ways to target specific content niches with ads relevant to those readers without compromising on privacy.&lt;/p&gt;
+&lt;p&gt;To start, we chose a few groups of content advertisers can target where we have enough traffic
+without the ads being focused on a tiny number of projects.
+These niches are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Data science and machine learning&lt;/li&gt;
+&lt;li&gt;Frontend web development&lt;/li&gt;
+&lt;li&gt;Backend web development&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;li&gt;DevOps&lt;/li&gt;
+&lt;li&gt;Technical writing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We tested this improved content targeting with a select group of advertisers and the results were great.
+In some cases we saw click through rates more than double.
+Whether the ad is to hire a developer or to promote a service,
+we always want to deliver ads that are most relevant to the documentation being served.
+This results in better value to our advertisers
+while still respecting the privacy of our readers.&lt;/p&gt;
+&lt;div class=&quot;admonition-would-your-company-like-to-get-in-front-of-more-developers admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Would your company like to get in front of more developers?&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Tell your &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/?utm_medium=referral&amp;amp;utm_source=readthedocs-blog&amp;amp;utm_campaign=ethical-advertising-2020&quot;&gt;marketing or recruiting team&lt;/a&gt; about Read the Docs
+and show them how they can reach over 7 million developers who Read the Docs each month!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;open-sourcing-our-ad-server&quot;&gt;
+&lt;h2&gt;Open sourcing our ad server&lt;/h2&gt;
+&lt;p&gt;One thing we’ve wanted to do for a long time is open source the code
+we use to run advertising at Read the Docs.
+While there’s always a bit of an incentive to keep advertising code closed so it can’t be abused,
+our hope is that the trust we’re building with the ethical ads model
+can be used by others who want to run their own ethical advertising.
+Read the Docs is an open source company and it’s nice to have all our code out there.
+We call it the ethical ad server.&lt;/p&gt;
+&lt;p&gt;The ethical ad server is built to handle the kind of load Read the Docs itself receives
+– over a million hits per day –
+and it delivers advertising based only on content and geographic targeting
+rather than building up user profiles from personal information.
+It’s built from the ground up with user privacy in mind.
+We’re excited to share it with you so please &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/ethical-ad-server&quot;&gt;check out the code on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Just as we’re constantly delivering improvements to Read the Docs itself for our readers and project maintainers,
+we also strive to give a better experience and better results to the companies who trust Read the Docs as a marketing channel.
+I want to thank all our advertisers who believe in our approach and continue to support us
+and stay tuned to this space for more great features in the future!&lt;/p&gt;
+&lt;p&gt;Our ethical ad network is just about ready for launch
+and we’re actively looking for projects to beta test the network.
+If you run a developer focused website and you’re looking for a way to earn money
+without selling out your visitors’ privacy,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org?subject=Ethical%20Ad%20Network%20beta&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Shipping a CDN on Read the Docs Community</title>
+    <id>https://blog.readthedocs.com/announcing-community-cdn/</id>
+    <updated>2020-05-18T00:00:00Z</updated>
+    <published>2020-05-18T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/announcing-community-cdn/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;shipping-a-cdn-on-read-the-docs-community&quot;&gt;
+
+&lt;p&gt;You might have noticed that our Read the Docs Community site has gotten faster in the past few weeks.
+How much faster likely depends on how far away you live from Virginia,
+which is where our servers have traditionally lived.&lt;/p&gt;
+&lt;p&gt;We have recently enabled a CDN on &lt;strong&gt;all Read the Docs Community sites&lt;/strong&gt;,
+generously sponsored by &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/&quot;&gt;CloudFlare&lt;/a&gt;.
+This post will talk a bit more about how we implemented this,
+and why we’re excited about it.&lt;/p&gt;
+&lt;p&gt;We are also offering the CDN option to our Read the Docs for Business users on the Enterprise plan,
+you can &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;reach out&lt;/a&gt; to us if you’re interested.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;hosting-thousands-of-domains-is-hard&quot;&gt;
+&lt;h2&gt;Hosting thousands of domains is hard&lt;/h2&gt;
+&lt;p&gt;Traditionally the largest problem that we’ve had with rolling out features to all of our documentation sites is scale.
+We host thousands of custom domains for our users,
+and any solution needs to work across all of them.
+This has presented a number of issues in the past,
+but CDN is one of the most complicated.&lt;/p&gt;
+&lt;p&gt;To make a CDN function across all our sites,
+every data center that the CDN has needs to work with all our custom domains.
+Imagine we have 5,000 domains and there are 100 data centers across the world,
+this means that &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;5,000&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;500,000&lt;/span&gt;&lt;/code&gt; different endpoints need to be configured for this to work at scale.&lt;/p&gt;
+&lt;p&gt;We are lucky that CloudFlare has the global scale to be able to donate us this service.
+Specifically,
+their &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/ssl-for-saas-providers/&quot;&gt;SSL for SAAS&lt;/a&gt; service is what we’re using for both SSL and CDN across all our custom domains.
+This allows us to offload the complexity to CloudFlare,
+and only focus on our integration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;implementation&quot;&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;One of the coolest things that CloudFlare’s CDN offers is something called &lt;a class=&quot;reference external&quot; href=&quot;https://support.cloudflare.com/hc/en-us/articles/200169246-Purging-cached-resources-from-Cloudflare#h_6d756ac9-c476-45e8-a5d4-e2a6e45d9dc7&quot;&gt;Cache Tags&lt;/a&gt;.
+This lets us add a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Cache-Tag&lt;/span&gt;&lt;/code&gt; header to all the documentation that we serve,
+and invalidate the cache using just that tag.&lt;/p&gt;
+&lt;p&gt;An example,
+when you load our docs,
+we will return a header:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readthedocs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We return a tag that matches both the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;$project&lt;/span&gt;&lt;/code&gt;, and the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;$project-$version&lt;/span&gt;&lt;/code&gt;.
+This allows us to invalidate the cache for a specific version,
+or across the entire project.&lt;/p&gt;
+&lt;p&gt;As you know,
+cache invalidation is one of the harder problems,
+so we take a pretty conservative approach.
+We invalidate the cache in the following scenarios:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Project cache on Project or Domain save&lt;/li&gt;
+&lt;li&gt;Version cache on documentation builds for specific versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The client code is quite simple,
+a single HTTP request to Cloudflare’s API with a list of &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;tags&lt;/span&gt;&lt;/code&gt; to clear.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;There are two important outcomes from this work:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Page loads are much faster for users around the world&lt;/li&gt;
+&lt;li&gt;Our server load has gone down quite a lot because we handle fewer requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest winner here is our users.
+Docs are faster for everyone,
+and we are looking at implementing additional features into our documentation hosting code now that we have reduced load.&lt;/p&gt;
+&lt;p&gt;We hope that Read the Docs Community has gotten noticeably faster,
+and that in the near future it will continue to get better with the new features that this enables.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Read the Docs 2019 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2019-stats/</id>
+    <updated>2020-05-14T00:00:00Z</updated>
+    <published>2020-05-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2019-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2019-stats&quot;&gt;
+
+&lt;p&gt;2019 was another good year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+We continue to have a team of 5 folks working on the project,
+and we’ve rolled out a number of new features for the year.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published since 2013.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2018-stats/&quot;&gt;2018&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;465 Million Page Views (from 400M)&lt;/li&gt;
+&lt;li&gt;120 Million Unique Visitors (from 77M)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; last year, our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;200,000 projects (from 100k)&lt;/li&gt;
+&lt;li&gt;400,000 users (from 150k)&lt;/li&gt;
+&lt;li&gt;10,188,182 builds (new this year)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.
+We do notice a uptick in usage across the site,
+both in terms of support and traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;21 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2019-01-01&amp;amp;to=2019-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (from 28)&lt;/li&gt;
+&lt;li&gt;4793 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (from 3774)&lt;/li&gt;
+&lt;li&gt;609 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues?q=is%3Aissue+created%3A2019-01-01..2019-12-31+&quot;&gt;issues&lt;/a&gt; - 80 open, 529 closed (from 797)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have continued to have a similar team working on the project this year,
+but have actually made more commits.
+We moved our support queue from issues to email,
+which likely accounts for the lower issue count.
+We’re quite happy with our closed issue stats this year,
+which are much better than previous years.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$275,000 in revenue from readthedocs.org (from 294,000)&lt;/li&gt;
+&lt;li&gt;$249,000 from advertising (from $278,000)&lt;/li&gt;
+&lt;li&gt;$26,600 from Gold users (from $16,000)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our advertising has been pretty steady for 2019.
+The small drop in the year-over-year comparison we account to the fact that ad blockers happened halfway through 2018,
+meaning that the comparison is 15% lower in terms of our total traffic.&lt;/p&gt;
+&lt;p&gt;We continue to be hosted by &lt;a class=&quot;reference external&quot; href=&quot;https://azure.microsoft.com/en-us/&quot;&gt;Azure&lt;/a&gt;,
+and we’re using a lot of their nicer feature to keep our costs down.
+You can find some posts on our blog about this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We continue to keep working to improve the documentation ecosystem in the software industry.
+We’re excited about a number of new features that we’re working on this year,
+and expect to continue to be a resource you can depend on for a long time to come :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Automation Rules</title>
+    <id>https://blog.readthedocs.com/automation-rules/</id>
+    <updated>2020-05-04T00:00:00Z</updated>
+    <published>2020-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/automation-rules/" />
+    <author>
+      <name>Santos Gallegos</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;automation-rules&quot;&gt;
+
+&lt;p&gt;A time ago we introduced a new feature to help users to automate some tasks on Read the Docs.
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;Automation rules&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you manage a project with several versions,
+you may have noticed that Read the Docs doesn’t always activate your new versions &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;.
+If you require to do any action over a new version,
+you’ll need to log in your Read the Docs account and manually do so.&lt;/p&gt;
+&lt;p&gt;With automation rules,
+you can choose what do to after a new version is created.
+To add a rule, you only need to choose a pattern and an action.
+After that, every new tag or branch that matches the pattern will trigger the action.&lt;/p&gt;
+&lt;img alt=&quot;_static/automation-rule.png&quot; src=&quot;_static/automation-rule.png&quot; style=&quot;width: 100%;&quot; /&gt;
+&lt;p&gt;Currently, we only have two actions available:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate version&lt;/li&gt;
+&lt;li&gt;Set version as default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the pattern, you can select:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;All versions&lt;/li&gt;
+&lt;li&gt;The ones that match SemVer&lt;/li&gt;
+&lt;li&gt;Or you can write your own using a regular expression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With automation rules you can do things like:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Activate new tags only&lt;/li&gt;
+&lt;li&gt;Activate only branches that start with &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;v&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Activate tags and branches that belong to the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;1.x&lt;/span&gt;&lt;/code&gt; release&lt;/li&gt;
+&lt;li&gt;Set as default tags that have the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-stable&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;-release&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;li&gt;Activate all tags except those containing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;--nightly&lt;/span&gt;&lt;/code&gt; suffix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find more information and examples in &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/automation-rules.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;our documentation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What other tasks you would like to automate?
+Let us know on a &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/&quot;&gt;GitHub issue&lt;/a&gt;!&lt;/p&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We activate and build new versions automatically only if you follow &lt;span class=&quot;target&quot; id=&quot;index-0&quot;&gt;&lt;/span&gt;&lt;a class=&quot;pep reference external&quot; href=&quot;https://www.python.org/dev/peps/pep-0440&quot;&gt;&lt;strong&gt;PEP 440&lt;/strong&gt;&lt;/a&gt;,
+and the new version is greater than the current stable version.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2020/atom.xml">
+    <title type="text">Better support for scientific project documentation</title>
+    <id>https://blog.readthedocs.com/better-conda-support/</id>
+    <updated>2020-04-28T00:00:00Z</updated>
+    <published>2020-04-28T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/better-conda-support/" />
+    <author>
+      <name>Manuel Kaufmann</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;better-support-for-scientific-project-documentation&quot;&gt;
+
+&lt;p&gt;In the past year, we’ve been having issues when building projects’ documentation using &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt;.
+Our build servers were running out of memory and failing projects’ builds.
+Read the Docs has this memory constraint to avoid misuse of the platform,
+causing a poor experience for other users.&lt;/p&gt;
+&lt;p&gt;Our first solution was a dedicated server for these kind of projects.
+We would manually assign them to this server on user requests.
+This workaround worked okay, but it involves a bad experience for the user and also us doing a manual step each time.
+Over time, we hit again the same issue of OOM, even giving all the memory available to one project to build its documentation.
+After some research, we found that &lt;a class=&quot;reference external&quot; href=&quot;https://www.anaconda.com/understanding-and-improving-condas-performance/&quot;&gt;this is a known issue in the conda community&lt;/a&gt; and there are some different attempts to fix it (like &lt;a class=&quot;reference external&quot; href=&quot;https://quantstack.net/mamba.html&quot;&gt;mamba&lt;/a&gt;).
+Unfortunately, none of them became the standard yet and the problem is still there.&lt;/p&gt;
+&lt;p&gt;Meanwhile, in another completely different set of work,
+we were migrating all of our infrastructure to a different architecture:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Azure &lt;em&gt;Virtual machine scale sets&lt;/em&gt; for autoscaling our servers,&lt;/li&gt;
+&lt;li&gt;Azure &lt;em&gt;storage accounts&lt;/em&gt; to store all the user’s documentation&lt;/li&gt;
+&lt;li&gt;Proxito, an internal service to remove a lot of the state from our servers (more about this migration coming in a future post)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This helped us to &lt;em&gt;reduce costs&lt;/em&gt; and allowed us to spin up &lt;em&gt;bigger instances&lt;/em&gt; for the builders.
+We have also made some other important operational changes:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Our builders are now single-process, giving all the memory available to only one project without worrying about affecting others.&lt;/li&gt;
+&lt;li&gt;We added &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/blob/8e78d680d02aeba12644796b979ef62459f64932/readthedocs/builds/tasks.py#L11&quot;&gt;custom task router&lt;/a&gt; that routes small builds to small servers (3GB RAM), and big builds to larger servers (7GB RAM). This removes the need for users to ask us to upgrade their isntances.&lt;/li&gt;
+&lt;li&gt;Assigned all &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conda&lt;/span&gt;&lt;/code&gt; projects to be built by big servers by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ever had a memory issue on Read the Docs,
+we’d appreciate if you give it a try again.
+Please &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;let us know&lt;/a&gt; about your experience when building scientific documentation.
+If you know that any of your friends were hitting this issue in the past,
+we encourage you to talk to them and tell them to give it a try.&lt;/p&gt;
+&lt;p&gt;We are excited to have more scientific documentation on our platform and we are doing our small part to make this happen and have better science in the world.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

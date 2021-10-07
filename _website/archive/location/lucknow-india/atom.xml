@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from Lucknow, India</title>
+  <id>https://blog.readthedocs.com/archive/location/lucknow-india/atom.xml</id>
+  <updated>2019-08-13T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/lucknow-india/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/lucknow-india/atom.xml">
+    <title type="text">GSOC 2019: Improved Search Results and Search As You Type</title>
+    <id>https://blog.readthedocs.com/improved-search-and-search-as-you-type/</id>
+    <updated>2019-08-13T00:00:00Z</updated>
+    <published>2019-08-13T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/improved-search-and-search-as-you-type/" />
+    <author>
+      <name>Vaibhav Gupta</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;gsoc-2019-improved-search-results-and-search-as-you-type&quot;&gt;
+
+&lt;p&gt;Giving users the ability to easily find the information that they
+are looking for has always been important for Read the Docs.
+This year, I, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/dojutsu-user&quot;&gt;Vaibhav Gupta&lt;/a&gt;, took the opportunity provided
+by Google Summer of Code to improve the search.
+The main goals of my &lt;a class=&quot;reference external&quot; href=&quot;https://summerofcode.withgoogle.com/projects/#5465587940065280&quot;&gt;GSoC project&lt;/a&gt; were:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;to make a &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;Sphinx extension&lt;/a&gt; to provide “search you type” experience to the users.&lt;/li&gt;
+&lt;li&gt;to add support for multiple hits per search result.&lt;/li&gt;
+&lt;li&gt;to improve the UI/UX around code search.&lt;/li&gt;
+&lt;li&gt;to add support for search analytics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Search as you type feature is live on our docs.
+You can go through these links to experience it:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=contributing&quot;&gt;https://docs.readthedocs.io/?rtd_search=contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&quot;&gt;https://docs.readthedocs.io/?rtd_search=api/v3/projects/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code&quot;&gt;
+&lt;h2&gt;Google Summer of Code&lt;/h2&gt;
+&lt;p&gt;Google Summer of Code is a global program where students work with
+an open source organization on a 3-month programming project.
+I got accepted in the program and was excited to spend my summer with Read the Docs.&lt;/p&gt;
+&lt;p&gt;I have worked full time during the GSoC coding period and implemented various features.
+All of my search related work can be seen in the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/orgs/readthedocs/projects/7&quot;&gt;In-Doc Search UI Project Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;background&quot;&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;The search code was originally contributed by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/robhudson&quot;&gt;Rob Hudson&lt;/a&gt;,
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/pull/493&quot;&gt;back in 2013&lt;/a&gt; and then improved upon by other contributors.
+It was greatly improved and upgraded by &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/safwanrahman&quot;&gt;Safwan Rahman&lt;/a&gt; during &lt;a class=&quot;reference internal&quot; href=&quot;../../../search-improvements/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;GSoC’18&lt;/span&gt;&lt;/a&gt;.
+Continuing on the same path,
+I have implemented some new features on top of the existing search backend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;new-features&quot;&gt;
+&lt;h2&gt;New Features&lt;/h2&gt;
+&lt;p&gt;During the GSoC period, I have worked on the following features:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;In-Doc Search UI&lt;/strong&gt;: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search&quot;&gt;readthedocs-sphinx-search&lt;/a&gt; is a sphinx extension that adds a clean and minimal
+search UI to your docs. It supports “search as you type” feature.
+So, it is now possible to get instant results without being redirected to any other page.
+Read the docs &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs-sphinx-search.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/in-doc-search-demo.gif&quot;&gt;&lt;img alt=&quot;In-doc search ui demo&quot; src=&quot;_static/in-doc-search-demo.gif&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;In-Doc Search UI Demo&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Hits Per Search Result&lt;/strong&gt;: This is one of the highly requested features.
+We now support search results from the sections of the docs, clicking on which will take you
+to that particular section and not just to the top of the result page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code Search&lt;/strong&gt;: We now support code search. If you want to search a particular function
+or an API endpoint – you can just type your query and you will find it in the results.
+Eg: &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;api/v3/&lt;/span&gt;&lt;/code&gt; or &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;module.function&lt;/span&gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Analytics&lt;/strong&gt;: We now have support for search analytics.
+These analytics makes it easy to know what the users are looking for in your documentation.
+You can see these analytics in your project admin dashboard.
+Currently, this feature is in beta state and is available under a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/page/guides/feature-flags.html&quot;&gt;feature flag&lt;/a&gt;.
+We plan to make this available for everyone soon.
+If you want to test this feature out and help giving us feedback,
+please contact us via &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/new&quot;&gt;GitHub issues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id2&quot;&gt;
+&lt;a class=&quot;reference external image-reference&quot; href=&quot;/_static/search-analytics-demo.png&quot;&gt;&lt;img alt=&quot;Search analytics in project admin dashboard&quot; src=&quot;_static/search-analytics-demo.png&quot; style=&quot;width: 60%;&quot; /&gt;&lt;/a&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;Search analytics demo dashboard&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-next&quot;&gt;
+&lt;h2&gt;What Next?&lt;/h2&gt;
+&lt;p&gt;We don’t intend to stop just yet.
+We are planning to work on some more cool features in the near future,
+some of which are:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Search Facets&lt;/strong&gt;:
+Facets can be used to make search more accurate.
+For example: In &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/en/latest/&quot;&gt;Celery docs&lt;/a&gt;, facets can be used to search inside &lt;a class=&quot;reference external&quot; href=&quot;http://docs.celeryproject.org/projects/kombu/en/latest/&quot;&gt;Kombu docs&lt;/a&gt; for “serializers”,
+like &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;subproject:&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;kombu&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;serializers&lt;/span&gt;&lt;/code&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5966&quot;&gt;readthedocs/readthedocs.org#5966&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Results Ordered By Most Viewed Pages&lt;/strong&gt;:
+It would be much more useful if the most viewed pages are shown first in the search results.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues/5968&quot;&gt;readthedocs/readthedocs.org#5968&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search Inside Sections&lt;/strong&gt;:
+It would be good if users have the option to get the
+search results from a particular section of the documentation.
+For example: Getting results from only &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/&quot;&gt;Guides&lt;/a&gt; of our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/&quot;&gt;documentation&lt;/a&gt;.
+(&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs-sphinx-search/issues/23&quot;&gt;readthedocs/readthedocs-sphinx-search#23&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;contributors-wanted&quot;&gt;
+&lt;h2&gt;Contributors Wanted&lt;/h2&gt;
+&lt;p&gt;As Read the Docs is an open source project backed by a small team of developers,
+most of them are busy just keeping the site up and running.
+Therefore, it’s quite hard for them to take time to implement new features.
+If you know some bit of Django or Python and Elasticsearch,
+you can contribute to the search functionality of Read the Docs.
+If you need any support to start contributing,
+you can get in touch with me or any member of Read the Docs team.
+You can find all of us at &lt;em&gt;#readthedocs&lt;/em&gt; freenode IRC channel or &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/rtfd/readthedocs.org&quot;&gt;readthedocs gitter&lt;/a&gt; channel.
+I am &lt;em&gt;dojutsu-user&lt;/em&gt; at IRC and &lt;em&gt;&amp;#64;dojutsu-user&lt;/em&gt; at gitter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These new features will make it much easier to find the relevant information in the docs.
+There are an infinite number of ways it can be improved and I believe we can compete
+with major search engines in terms of documentation searching.
+We don’t need superhero or coding guru, just need people who understand Python,
+Django and Elasticsearch and have some time to write some code for us.
+You are a &lt;strong&gt;Superhero&lt;/strong&gt; to us if you can lend your time and effort to improve Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

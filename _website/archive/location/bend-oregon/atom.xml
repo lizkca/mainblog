@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from Bend, Oregon</title>
+  <id>https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml</id>
+  <updated>2021-02-05T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml">
+    <title type="text">Read the Docs Community downtime due to migrations to AWS</title>
+    <id>https://blog.readthedocs.com/aws-migration/</id>
+    <updated>2021-02-05T00:00:00Z</updated>
+    <published>2021-02-05T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/aws-migration/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-community-downtime-due-to-migrations-to-aws&quot;&gt;
+
+&lt;p&gt;&lt;strong&gt;Update: The migration was successful and the site has been fully restored as of 4PM PST.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We wanted to make you aware that on Friday, February 12th at 1pm PST (4pm EST, 21:00 UTC),
+Read the Docs Community (readthedocs.org) will be having a &lt;strong&gt;scheduled dashboard downtime of approximately 4 hours&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To ensure minimal impact for our users,
+we are performing this upgrade during a Friday afternoon
+which is one of our lowest usage periods.&lt;/p&gt;
+&lt;p&gt;During this maintenance window, &lt;strong&gt;documentation will continue to be online&lt;/strong&gt;
+but new documentation builds will not trigger and the Read the Docs dashboard will be unavailable.
+New builds and webhooks will begin processing once the maintenance is over.&lt;/p&gt;
+&lt;p&gt;We are moving our service to our new home on Amazon Web Services
+who have generously provided us with credits to support open source software.
+This is the same platform which Read the Docs for Business is hosted,
+which will allow us to reuse a lot of the same code between the sites.
+This should simplify our operations considerably.&lt;/p&gt;
+&lt;p&gt;We’d like to thank Microsoft Azure for sponsoring our hosting for the past 2.5 years.&lt;/p&gt;
+&lt;p&gt;Thanks for your understanding of this maintenance downtime.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml">
+    <title type="text">Pull Request Builders available for all users</title>
+    <id>https://blog.readthedocs.com/pull-request-builder-general-availability/</id>
+    <updated>2021-01-27T00:00:00Z</updated>
+    <published>2021-01-27T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/pull-request-builder-general-availability/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pull-request-builders-available-for-all-users&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/autobuild-docs-for-pull-requests.html&quot;&gt;Pull Request building&lt;/a&gt; is now available for all Read the Docs users.
+We have been working on this feature for over a year,
+and having it available for all our users is a major milestone.&lt;/p&gt;
+&lt;p&gt;This feature allows users to confirm documentation builds correctly for all of their commits,
+not just ones merged into branches that are activated on Read the Docs.
+This moves documentation into your continuous integration pipeline,
+and improves the workflow for everyone working on documentation.&lt;/p&gt;
+&lt;div class=&quot;figure align-default&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;GitHub Build Status Reporting for Pull Requests.&quot; src=&quot;img/github-build-status-reporting.gif&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;GitHub Build Status Reporting for Pull Requests&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can read more about this new feature in our &lt;a class=&quot;reference internal&quot; href=&quot;../../../building-docs-for-pull-requests/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;previous blog post announcing it&lt;/span&gt;&lt;/a&gt; and in our &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/page/guides/autobuild-docs-for-pull-requests.html&quot;&gt;documentation for the feature&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;serving-docs-for-every-branch&quot;&gt;
+&lt;h2&gt;Serving docs for every branch&lt;/h2&gt;
+&lt;p&gt;Along with building and validating each branch on your repository,
+&lt;strong&gt;we also host a rendered version of the documentation.&lt;/strong&gt;
+This allows you to see exactly how the docs will look when they are deployed.&lt;/p&gt;
+&lt;p&gt;Building the documentation on Read the Docs during the development process also helps test integration with Read the Docs.
+The entire build process is run for each commit,
+so this will ensure that builds work as expected when you’re ready to merge into production.&lt;/p&gt;
+&lt;p&gt;These previews will stay live for 90 days from the time you merge or close the Pull Request,
+allowing you to finish any outstanding work on the task.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;limitations&quot;&gt;
+&lt;h2&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;Due to the increased demand for build resources,
+the Pull Request builders have the following limitations:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs search is not enabled on these versions&lt;/li&gt;
+&lt;li&gt;Only HTML versions of the documentation are built (not PDF, ePub, etc.)&lt;/li&gt;
+&lt;li&gt;Documentation builds are concurrency limited. Read the Docs for Business concurrency varies based on your plan, and Read the Docs Community are limited to 2 concurrent builds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are working to address these limitations over time,
+but given the increase in scale with these builds it will take some time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;give-us-feedback&quot;&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;We always love to hear from our users about the product.
+If you have feedback on this feature of any others,
+you can always reach us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:hello&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;hello&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml">
+    <title type="text">Read the Docs for Business Maintenance Window - February 5</title>
+    <id>https://blog.readthedocs.com/rtd-business-downtime-feb-5/</id>
+    <updated>2021-01-25T00:00:00Z</updated>
+    <published>2021-01-25T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/rtd-business-downtime-feb-5/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-for-business-maintenance-window-february-5&quot;&gt;
+
+&lt;p&gt;&lt;strong&gt;Update: This maintenance window has concluded at 5:40 PM PST.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We wanted to make you aware that on Friday, February 5 at 5:00pm PST (8:00pm EST, Saturday 01:00 UTC),
+Read the Docs for Business (readthedocs.com) will be having a &lt;strong&gt;scheduled downtime of approximately 2 hours&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;During this maintenance window, &lt;strong&gt;documentation will continue to be online&lt;/strong&gt; but new documentation builds will not trigger and the Read the Docs dashboard will be unavailable. New builds and webhooks will begin processing once the maintenance is over.&lt;/p&gt;
+&lt;p&gt;To ensure minimal impact for our users, we are performing this upgrade during a Friday afternoon which is one of our lowest usage periods. This maintenance window is for a required database version upgrade which we couldn’t perform in place. While these kinds of things do happen from time to time, we haven’t had a scheduled downtime on Read the Docs for Business in a few years. Doing this helps us ensure that our services perform well and have up-to-date security.&lt;/p&gt;
+&lt;p&gt;Thanks for your understanding of this maintenance downtime.&lt;/p&gt;
+&lt;p&gt;Read the Docs team&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/bend-oregon/atom.xml">
+    <title type="text">Read the Docs is hiring for multiple positions</title>
+    <id>https://blog.readthedocs.com/read-the-docs-is-hiring-q1-2021/</id>
+    <updated>2021-01-06T00:00:00Z</updated>
+    <published>2021-01-06T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-is-hiring-q1-2021/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-is-hiring-for-multiple-positions&quot;&gt;
+
+&lt;p&gt;Read the Docs received a &lt;a class=&quot;reference internal&quot; href=&quot;../../../czi-grant-announcement/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;grant to support scientific software&lt;/span&gt;&lt;/a&gt; at the beginning of this year.
+As part of this,
+we are hiring for two new positions related to the grant work:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;A &lt;a class=&quot;reference internal&quot; href=&quot;../../../job-frontend/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;frontend developer with design skills&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;a class=&quot;reference internal&quot; href=&quot;../../../job-devrel/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;developer advocate with documentation skills&lt;/span&gt;&lt;/a&gt; (&lt;strong&gt;This position has been filled, and is no longer active&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please look at each of the job postings for much more detail on what to expect with the job.&lt;/p&gt;
+&lt;p&gt;We are excited to be able to expand our small team and increase the support we’re giving to the scientific open source community.
+Throughout 2021 we are going to be vastly improving our documentation and building major new features around embedding documentation content,
+based on the work from this grant.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-hiring-will-be-structured&quot;&gt;
+&lt;h2&gt;How hiring will be structured&lt;/h2&gt;
+&lt;p&gt;The way we are currently planning to structure this work is to have 50% of the time spent working on grant work,
+and the other 50% working on Read the Docs itself.
+The codebase and community we’re building require a good amount of onboarding time,
+so we are excited to be able to use the grant funds to also improve the overall experience of Read the Docs users.&lt;/p&gt;
+&lt;p&gt;You can apply to the jobs with the links above to the full job descriptions,
+where you will be asked to fill out a form with a few questions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;about-read-the-docs&quot;&gt;
+&lt;h2&gt;About Read the Docs&lt;/h2&gt;
+&lt;p&gt;Read the Docs is a large open source project providing documentation building and hosting.
+You can think of it a continuous integration for docs.
+We do around 500 million pageviews each year.
+We are a small team,
+but &lt;strong&gt;this role will have a large impact of millions of users.&lt;/strong&gt;
+Almost all of our codebase is open source
+and we feel strongly about supporting the community while sustaining the project in an ethical manner.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

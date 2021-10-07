@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posted in 2015</title>
+  <id>https://blog.readthedocs.com/archive/2015/atom.xml</id>
+  <updated>2015-12-10T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/2015/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Read the Docs Awarded Mozilla Open Source Support Grant</title>
+    <id>https://blog.readthedocs.com/rtd-awarded-mozilla-open-source-support-grant/</id>
+    <updated>2015-12-10T00:00:00Z</updated>
+    <published>2015-12-10T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/rtd-awarded-mozilla-open-source-support-grant/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-awarded-mozilla-open-source-support-grant&quot;&gt;
+
+&lt;p&gt;Several months back, Mozilla launched a new initiative – the &lt;a class=&quot;reference external&quot; href=&quot;https://wiki.mozilla.org/MOSS&quot;&gt;MOSS&lt;/a&gt; program –
+to provide financial support to the open source software projects it relies on.
+Mozilla allocated $1 million to the MOSS fund to provide grants for up to 10
+projects matching the program’s criteria.&lt;/p&gt;
+&lt;p&gt;Read the Docs is among the &lt;a class=&quot;reference external&quot; href=&quot;https://blog.mozilla.org/blog/2015/12/10/mozilla-open-source-support-first-awards-made/&quot;&gt;first round of awards&lt;/a&gt; made for the MOSS program.
+Our proposed grant, for $48,000, is to build a separate instance that integrates
+with the Python Package Index’s upcoming website, &lt;a class=&quot;reference external&quot; href=&quot;https://warehouse.python.org/&quot;&gt;Warehouse&lt;/a&gt;. This integration
+will provide automatic API reference documentation upon package release, with
+authentication tied to PyPI and simple configuration inside the distribution.
+API reference documentation on every release will be the starting point of this
+work, prose documentation generation will be more difficult here, as not all
+packages use Sphinx or rST for documentation.&lt;/p&gt;
+&lt;p&gt;Having consistent API reference documentation across all released distributions
+will be an enormous benefit to the Python ecosystem. API reference documentation
+will be found in a single space, with version specificity, and will be able to
+be tightly inter-linked across projects. This is hopefully the start of work
+that could benefit other communities as well, by putting more emphasis on usable
+documentation and best documentation practices.&lt;/p&gt;
+&lt;p&gt;We are currently just into the planning stage for this work. We hope to have an
+official roadmap planned out, and a detailed breakdown of the work involved, in
+the coming weeks. This post will be followed up with a more detailed look at our
+plan and the work required. Work on this grant will hopefully begin early in the
+new year and will be spaced out throughout the year.&lt;/p&gt;
+&lt;p&gt;Funding open source software communities is still a difficult proposition for
+most companies. We appreciate Mozilla’s stance and commitment to open source and
+can only hope more companies take note and learn how to put value on the health
+of the communities they rely on.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Read the Docs &amp; Sphinx now support Commonmark</title>
+    <id>https://blog.readthedocs.com/adding-markdown-support/</id>
+    <updated>2015-10-16T00:00:00Z</updated>
+    <published>2015-10-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/adding-markdown-support/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-sphinx-now-support-commonmark&quot;&gt;
+
+&lt;p&gt;Read the Docs is built on top of Sphinx,
+which has always relied on reStructuredText as an input mechanism.
+We have long heard from folks that they want to write documentation in Markdown,
+as well as RST.&lt;/p&gt;
+&lt;p&gt;Today we are announcing that this is now possible!
+With the standardization of Markdown into &lt;a class=&quot;reference external&quot; href=&quot;https://commonmark.org/&quot;&gt;Commonmark&lt;/a&gt;,
+we have the ability to support a markup language with a proper spec.
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/recommonmark&quot;&gt;recommonmark&lt;/a&gt; is the bridge that allows Commonmark to be used inside Sphinx.
+&lt;strong&gt;This allows you to use both RST and Commonmark inside of your Sphinx project.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;get-started&quot;&gt;
+&lt;h2&gt;Get started&lt;/h2&gt;
+&lt;p&gt;We have documented how to &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html#using-markdown-with-sphinx&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-ref&quot;&gt;get started&lt;/span&gt;&lt;/a&gt; with Commonmark inside of Sphinx.
+You simply:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;recommonmark&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Then in your &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight-python notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;recommonmark.parser&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommonMarkParser&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;source_parsers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.md&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommonMarkParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;source_suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.rst&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;.md&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This allows you to write both &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;.md&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;.rst&lt;/span&gt;&lt;/code&gt; files inside of the same project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;example-project&quot;&gt;
+&lt;h2&gt;Example Project&lt;/h2&gt;
+&lt;p&gt;You can see this in action in my &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/ericholscher/sphinx-markdown-test&quot;&gt;sphinx-markdown-test repo&lt;/a&gt; on GitHub.
+You can also see a &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-markdown-test.readthedocs.org/en/latest/&quot;&gt;rendered version&lt;/a&gt; hosted on Read the Docs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-it-works&quot;&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;p&gt;The way this project works is that it allows Commonmark files to be parsed into &lt;a class=&quot;reference external&quot; href=&quot;http://docutils.sourceforge.net/docs/ref/doctree.html&quot;&gt;docutils nodes&lt;/a&gt;.
+That means that everything downstream of the parser works the same as if the content came from RST.
+This allows the content to slot into Sphinx and other RST based tools without much effort.&lt;/p&gt;
+&lt;p&gt;There are some caveats where certain Sphinx &amp;amp; docutils directives depend on the internal structure of RST.
+We would like to eventually build a bridge from Commonmark to the Sphinx directives,
+which would give a lot of the power of Sphinx to the Commonmark content.&lt;/p&gt;
+&lt;p&gt;We are looking at ways to handle this in the future,
+and hope to eventually bring the full power of RST and Sphinx into the Commonmark ecosystem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;limitations&quot;&gt;
+&lt;h2&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;It should be noted that Commonmark doesn’t support a lot of the concepts that RST lets you represent.
+In particular,
+there is no standardized way in Commonmark to represent inline or block levels constructs.
+So things like the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;toctree&lt;/span&gt;&lt;/code&gt; directive and &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;:ref:&lt;/span&gt;&lt;/code&gt; markup don’t have an analog.&lt;/p&gt;
+&lt;p&gt;There is a &lt;a class=&quot;reference external&quot; href=&quot;http://talk.commonmark.org/t/generic-directives-plugins-syntax/444&quot;&gt;proposed draft&lt;/a&gt; to the Commonmark spec to allow a similar syntax.
+We are investigating adding support to this in recommonmark,
+but we don’t want to implement a standard prematurely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;intended-usage&quot;&gt;
+&lt;h2&gt;Intended Usage&lt;/h2&gt;
+&lt;p&gt;We think that Sphinx’s power to reference code and other programming concepts is quite powerful.
+However,
+all content doesn’t need this ability.
+When you’re writing content that just needs to have basic text formatting and links,
+Commonmark is a great option for this.&lt;/p&gt;
+&lt;p&gt;We imagine that API reference documentation will continue to be authored in RST for quite some time.
+Also index pages and other reference heavy content will continue to be RST.
+FAQ’s, blog posts, and other less reference heavy content is a great candidate for writing in Commonmark.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;feedback&quot;&gt;
+&lt;h2&gt;Feedback&lt;/h2&gt;
+&lt;p&gt;This is a new release,
+so there are likely some missing pieces to our integration.
+Go ahead and try it out.
+Please file features ideas and bug reports on the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/recommonmark/issues&quot;&gt;recommonmark bug tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Securing Build Processes</title>
+    <id>https://blog.readthedocs.com/securing-build-processes/</id>
+    <updated>2015-09-30T00:00:00Z</updated>
+    <published>2015-09-30T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/securing-build-processes/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;securing-build-processes&quot;&gt;
+
+&lt;p&gt;We’ve recently introduced a new build container subsystem based on Docker to readthedocs.org,
+which should go mostly unnoticed for users.
+We’re still ironing out some bugs with the system,
+so raise an issue on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;our issue tracker&lt;/a&gt; if you are noticing any new issues
+with your project builds.&lt;/p&gt;
+&lt;p&gt;This new system is part of an over-due security update to help isolate arbitrary
+code execution.  As Read the Docs has grown, protecting against arbitrary
+execution was a rapidly growing concern.  This build isolation layer was
+developed as part of readthedocs.com, where security concerns are paramount due
+to private repository access. We’ve been testing it for roll out on the
+community site since then, but hadn’t committed to switching production build
+servers over due to the number of possible side effects.&lt;/p&gt;
+&lt;p&gt;This immediate change was in response to a &lt;a class=&quot;reference external&quot; href=&quot;http://alex.hyperiongray.com/posts/302352-pwn-the-docs&quot;&gt;release&lt;/a&gt; yesterday outlining some
+possible attack vectors when dealing with arbitrary code execution and Python.
+We didn’t want to delay the fix for any longer following this release, and
+decided to deal with any lingering issues as soon as they came up.&lt;/p&gt;
+&lt;p&gt;We have no reason to believe that any users have been effected by the reported issue.
+As a part of rolling out this new system,
+we have provisioned new build servers.
+We are also actively monitoring for any other possible issues.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-it-works&quot;&gt;
+&lt;h2&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;Under the new system,
+we provision a unique container for each build.
+All build steps that depend on executing code (setup.py, pip, Sphinx),
+run inside that container as individual commands,
+triggered from the host build server.
+The container has 10 minutes to complete these build commands before we time out the
+build and kill the container system.
+A filesystem is shared from the host build server,
+which only contains the project checkout and artifact directories.
+The container has no other access to the build server filesystem.&lt;/p&gt;
+&lt;p&gt;Our host build servers are firewalled from our application and database servers,
+so they have no ability to connect to them.
+Communication is done over a task queue on a dedicated server.
+To start a build,
+the web servers put a build task in a queue which is read by the build servers.
+The host build servers manage the container creation,
+command execution inside the container,
+and the reporting of command and command return via our API.
+When a build is finished,
+a task is inserted into the queue,
+and web servers pull documentation from the build server to be served.
+All communication with the task queue and API happens outside of the container,
+with the container strictly acting as a mechanism for command execution.&lt;/p&gt;
+&lt;p&gt;Breaking out of this system requires a privilege escalation attack,
+and the ability to break out of the container in order to access the outer build system.
+All of these measures are required because our system runs user code.
+To properly fix this situation,
+we are working to remove arbitrary execution form our stack entirely.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;fixing-arbitrary-execution&quot;&gt;
+&lt;h2&gt;Fixing Arbitrary Execution&lt;/h2&gt;
+&lt;p&gt;Arbitrary execution is something that is difficult, if not impossible, for us to
+avoid currently. It’s built into Sphinx’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; system, which gives Sphinx such
+a useful reference documentation implementation.&lt;/p&gt;
+&lt;p&gt;However, executing Python in order to evaluate docstrings is a broken pattern.
+For our purposes, it requires installing project dependencies and executing the
+code of each Python project on Read the Docs.  These are two steps that introduce a
+substantial number of issues with usability and number of security concerns.&lt;/p&gt;
+&lt;p&gt;Ideally, using a project like &lt;a class=&quot;reference external&quot; href=&quot;http://epydoc.sourceforge.net/&quot;&gt;Epydoc&lt;/a&gt; to help take place of &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;autodoc&lt;/span&gt;&lt;/code&gt; would
+be the best path forward. This takes the approach of parsing the code, instead
+of executing the code. This avoids executing the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;setup.py&lt;/span&gt;&lt;/code&gt; on the project,
+and installing any dependencies, which is where code execution currently happens.
+We’ve been working for some time now on supporting this with &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;,
+but don’t think it’s an adequate solution for every Python project just yet.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Epydoc is not a strong project for us to rely on currently, as
+activity has winded down in the past years and it lacks Python 3 support.
+Another project with the same focus is &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/twisted/pydoctor/&quot;&gt;pydoctor&lt;/a&gt;,
+though work to implement Python 3 support is required there too.&lt;/p&gt;
+&lt;p&gt;The other source of code execution is the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;conf.py&lt;/span&gt;&lt;/code&gt; file inside Sphinx.
+We have also been working on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+which implements a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;readthedocs.yml&lt;/span&gt;&lt;/code&gt; file that will move Sphinx configuration
+into a non-executable format.
+This will remove the last step to remove arbitrary execution in our environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;for-more&quot;&gt;
+&lt;h2&gt;For more&lt;/h2&gt;
+&lt;p&gt;Read the Docs is an open source project.
+If you are interested in helping us with the above tasks,
+we are always happy to have help.
+Specifically if you are able to help with development of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinx-autoapi&quot;&gt;sphinx-autoapi&lt;/a&gt;
+or &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs-build/pull/6&quot;&gt;readthedocs-build&lt;/a&gt;,
+that would greatly increase the speed that we can migrate to those solutions.
+Also,
+if you are knowledgeable in ways of locking Docker down even more,
+we would love to talk.&lt;/p&gt;
+&lt;p&gt;As always,
+you can email us at &lt;a class=&quot;reference external&quot; href=&quot;mailto:security&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;security&lt;span&gt;&amp;#64;&lt;/span&gt;readthedocs&lt;span&gt;&amp;#46;&lt;/span&gt;org&lt;/a&gt; for any issues that might be security related.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">State of the Docs</title>
+    <id>https://blog.readthedocs.com/state-of-the-docs-2015/</id>
+    <updated>2015-09-09T00:00:00Z</updated>
+    <published>2015-09-09T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/state-of-the-docs-2015/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;state-of-the-docs&quot;&gt;
+
+&lt;p&gt;August has historical significance for Read the Docs, so it seemed fitting to
+wrap up August by taking a moment to step back and reflect on what we’ve done in
+the last year.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What makes August so significant for us?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For starters, this August saw the &lt;a class=&quot;reference external&quot; href=&quot;http://ericholscher.com/blog/2010/aug/16/announcing-read-docs/&quot;&gt;5th birthday of Read the Docs&lt;/a&gt;!
+We’re still humbled by the project’s success, and the important role it
+continues to play for old and new users alike.&lt;/p&gt;
+&lt;p&gt;This growth was becoming difficult to manage without focused support given back
+to the community. Though the project has always had core maintainers, for Read
+the Docs to continue growing as a community resource, we knew it required
+dedicated attention.&lt;/p&gt;
+&lt;p&gt;This is the reason why, in August of last year, Eric and I set out to create a
+company around Read the Docs – another significant bookmark in Read the Docs’
+history. We planned to build the company to fund the ongoing support efforts of
+the community site and to help accelerate its growth. At this time last year, we
+had just formed Read the Docs, Inc, we were fresh into the &lt;a class=&quot;reference external&quot; href=&quot;http://piepdx.com&quot;&gt;PIE accelerator
+program&lt;/a&gt;, and we were planning how to bring our documentation values to
+companies that weren’t open source.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-last-year&quot;&gt;
+&lt;h2&gt;The last year&lt;/h2&gt;
+&lt;p&gt;Our primary goal has always been to drive the development of our community site,
+with hopes that it would one day be self-sustaining. We made a number of
+decisions and changes to work towards this goal in the last year:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Treat the community site as a separate entity&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;In order to be independently sustainable, the community site needs income of
+its own. The service is large enough now that dedicated staff is a
+necessity. There needs to be someone to drive development, handle support
+requests, and be accountable for keeping everything running.&lt;/p&gt;
+&lt;p&gt;Currently, all money coming into Read the Docs is treated as income into the
+business. We do track income to the community site separately, so we can
+budget for the community site separately from running the rest of the
+business.&lt;/p&gt;
+&lt;p&gt;We aren’t yet to the point where this split is critical. There are no
+employees of the business yet, and we are only able to pay ourselves for a
+small portion of the work we perform for the community site.&lt;/p&gt;
+&lt;p&gt;We will need to track this explicitly as we grow however, as the community
+site will need to rely on donations for the foreseeable future. Those
+donations should not go towards developing the for-profit side directly.
+Development of the community site will still be a primary function of income
+into the for-profit side.&lt;/p&gt;
+&lt;p&gt;Eventually, the community site could be structured completely separate, to
+provide a more explicit split.  It could probably be structured as a 501c,
+This doesn’t make financial sense yet.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Our support fundraiser&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;In an effort to fund development and maintenance on the community site, we
+decided to call on our community for financial support back in June.  This
+was the first time we have asked the community for contributions.  Our goal
+was to fund at least a portion of the time spent developing and supporting
+the community site.&lt;/p&gt;
+&lt;p&gt;Thanks to all the contributors from our community, we raised our goal of
+$24,000, and were able to fund the time of multiple engineers working
+steadily on Read the Docs for the last few months.&lt;/p&gt;
+&lt;p&gt;We already outlined our costs and our plans behind our June fundraiser in a
+previous post. We will be following up the last few months of work with an
+overall review of the fundraiser and the work we performed in the coming
+weeks.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Triaging&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;Hopefully, our support responsiveness has been more apparent.  One hurdle in
+bringing on more engineers, and engaging the community more, was the lack of
+formal ticketing and open decision making.  Gregor, among many other
+changes, laid out a formal triage process that has been a major influence in
+keeping an organized and healthy support queue.&lt;/p&gt;
+&lt;p&gt;We’ve definitely found that the more support engagement we provide the
+community, the more support comes out of the woodwork.  This is all part of
+supporting a healthy community however, as we have learned.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Stability&lt;/dt&gt;&lt;dd&gt;Read the Docs has “grown organically”, which is to say it has grown fast,
+unwieldy, and in many directions.  With more proper focus on code quality,
+including clean up efforts, refactoring, and long due upgrades, Read the
+Docs has shed considerable technical debt in the last couple months.  This
+work has already paid off in improving stability and predictability of the
+project.&lt;/dd&gt;
+&lt;dt&gt;Ads&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We ran a few tests with advertising on built documentation in the last few
+months.  We discussed at length how we felt about ads and determined our own
+problems with the standard implementation of ads is not the ads themselves,
+but the breach of privacy they signify.&lt;/p&gt;
+&lt;p&gt;Because of that, we established that a requirement of us ever showing ads is
+to not use third party tracking.  In fact, we look to remove all third party
+tracking from built documentation as soon as we can.&lt;/p&gt;
+&lt;p&gt;To put ads into a clearer context, revenue from in-house ads fully cover our
+costs each month, without asking the community for any further support. It
+probably shouldn’t be surprising that advertising revenue is an easier
+income source than seeking donations. We certainly feel Read the Docs
+provides more value than the ads it would serve though. Our last fundraiser
+reflected the value the community puts on the site, and we hope the next
+fundraiser can be as successful.&lt;/p&gt;
+&lt;p&gt;Should we ever use ads as a primary revenue source for the community site,
+we have established some rules:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We will provide our ads in-house, not through any service that establishes
+third party tracking&lt;/li&gt;
+&lt;li&gt;We will not sell any data about our users&lt;/li&gt;
+&lt;li&gt;We will always prefer ad sponsorship from community members&lt;/li&gt;
+&lt;li&gt;Users that support us through donations or sponsorship are opt out of ads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feedback regarding ads has been positive, hopefully our intentions with ads
+has been mostly apparent. We’ll be discussing our thoughts on advertising in
+more depth soon, if you have any feedback.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Gold&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We’ve begun working on a “gold” status feature for users that want to
+support us each month. This will be an optional, recurring subscription to
+Read the Docs. The subscription will provide some additional features for
+users or projects, and some advanced project features might suggest a gold
+subscription for projects that make use of them.&lt;/p&gt;
+&lt;p&gt;This idea is still evolving, we’ll be asking for more feedback as this
+feature matures.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-next-year&quot;&gt;
+&lt;h2&gt;The next year&lt;/h2&gt;
+&lt;p&gt;So, let us now set some expectations for the next year forward:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Transparency and feedback&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;Operating in the open has been an important tenant to our company since
+formation.  We believe whole-heartedly in the trust and candid feedback it
+provides, and &lt;a class=&quot;reference external&quot; href=&quot;http://www.opencompany.org/about/&quot;&gt;we have pledged&lt;/a&gt; to keep openness and transparency
+at the core of the company.&lt;/p&gt;
+&lt;p&gt;Part of the structure that has guided us as a company has been providing
+updates to those that we are accountable to. During our time at PIE, this
+was to our mentors and our peers. Now, we want to be accountable to you, our
+community.&lt;/p&gt;
+&lt;p&gt;We would like to continue the periodic updates that started with the
+fundraiser, and we plan on releasing updates, on a quarterly basis, that
+share more insights into the company.  We will continue to expose our goals,
+problems, and decisions to you as we grow and we hope you can provide us
+with your feedback.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Continued work towards stability&lt;/dt&gt;&lt;dd&gt;We still have some technical debt that will take a while to pay off,
+but ensuring stability is paramount to having a service we can all rely on.&lt;/dd&gt;
+&lt;dt&gt;Support responsiveness&lt;/dt&gt;&lt;dd&gt;We will adhere as much as we can to the processes that we established around
+our support channels. We hope that these processes will also allow others in
+the community to easily fill these roles should we need the help.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;As for our technical goals, outside our roadmap and continued cleanup and
+maintenance, here is what we have on our roadmap:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;User experience&lt;/dt&gt;&lt;dd&gt;With components becoming more stable, and a generally more stable code base,
+we are shifting focus towards user experience – the pieces most obvious to
+users. We’ve made some gains here in the past few months, but have a ways to
+go still.&lt;/dd&gt;
+&lt;dt&gt;Easier documentation build tools&lt;/dt&gt;&lt;dd&gt;Sphinx is an incredibly powerful tool, but for new users this can be
+overwhelming. We are developing tooling to ease this process for new users
+and provide a solid footing for the majority of use cases. This will also
+help to make the build process more predictable, as this would mimic our
+build backend processes closely.&lt;/dd&gt;
+&lt;dt&gt;More reference doc language support&lt;/dt&gt;&lt;dd&gt;We have been working towards wider language support for generating API
+reference documentation. Most recently, we worked with Microsoft to develop
+support for &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/sphinxcontrib-dotnetdomain&quot;&gt;.NET language support in Sphinx&lt;/a&gt;. This allows
+authors to use existing .NET tooling to generate reStructuredText API
+reference documentation.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;let-us-know&quot;&gt;
+&lt;h2&gt;Let us know&lt;/h2&gt;
+&lt;p&gt;If you have any feedback or opinions on any of this, continue to let us know.
+We’re happy to have the feedback.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Report - July 2015</title>
+    <id>https://blog.readthedocs.com/report-july-2015/</id>
+    <updated>2015-09-09T00:00:00Z</updated>
+    <published>2015-09-09T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/report-july-2015/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;report-july-2015&quot;&gt;
+
+&lt;p&gt;August was a hectic month for us. So busy, in fact, we never wrote this update.
+We dropped the ball on getting this report out on time, but hope to keep on top
+of future updates.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;July was a month of stability fixes, with some substantial changes to our
+infrastructure. First, here’s an update on some of the goals we had set with
+our last monthly update:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Improve Github/Bitbucket integration&lt;/dt&gt;&lt;dd&gt;This got pushed to next month, we didn’t focus on this as much as we had
+hoped.&lt;/dd&gt;
+&lt;dt&gt;Test internal analytics&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We have a basic testbed for internal analytics set up, but haven’t gone as
+far as pushing this integration into production. We still need to test
+production load and what the dataset would look like over the course of a
+month.&lt;/p&gt;
+&lt;p&gt;This is on hold for the moment.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;We also set some additional goals near the beginning of the month:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Finish rolling out a new stack&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;Our servers were all reasonably aged and have not been re-provisioned in a
+long while. We set the goal to move all configuration to configuration
+management and be able to reproduce servers in a predictable manner.&lt;/p&gt;
+&lt;p&gt;We were able to finish moving all provisioning to configuration management
+and rolled out all new servers, including some new servers.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Improve monitoring&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We have hit a lot of common cases that we should be tracking as part of our
+standard operations notifications. We set the goal to improve our
+notification and debugging capabilities.&lt;/p&gt;
+&lt;p&gt;With fresh provisioning, we now also have a programmatic approach towards
+setting up system checks and notifications, and have expanded our reporting
+a great deal.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;update-details&quot;&gt;
+&lt;h2&gt;Update Details&lt;/h2&gt;
+&lt;div class=&quot;section&quot; id=&quot;ops&quot;&gt;
+&lt;h3&gt;Ops&lt;/h3&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Fresh web servers&lt;/dt&gt;&lt;dd&gt;Last month, we rolled out fresh build servers, strictly using configuration
+management to provision servers. This month, we continued by moving web
+server provision to our configuration management and re-rolling all of our
+web servers.&lt;/dd&gt;
+&lt;dt&gt;Fresh database servers and migration&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;We also rolled new database servers, and took the opportunity to upgrade our
+database’s PostgreSQL instance and perform some needed schema changes.&lt;/p&gt;
+&lt;p&gt;We decided to perform the migration late one evening, when our then primary
+database server was included in an outage of some Rackspace infrastructure.
+The outage resulted in some extended downtime, and we were not immediately
+able to migrate data from the database server to the fresh instance. The
+outage resolved early in the morning and migration wrapped shortly after.&lt;/p&gt;
+&lt;p&gt;The new instance performed better than expected, once we made it live.  The
+fresh instance had more memory and increased bandwidth for disk operations.
+Along with a reindex of a table with slow queries, we noticed significant
+reduction in query times and a great improvement of stability.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Improved monitoring&lt;/dt&gt;&lt;dd&gt;We started to catch some edge cases that were not previously monitored and
+improved greatly on our monitoring and graphing.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;dev&quot;&gt;
+&lt;h3&gt;Dev&lt;/h3&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Django 1.8 upgrade&lt;/dt&gt;&lt;dd&gt;Our previous version of Django was on the now unsupported 1.6 branch. With
+1.8 released, we felt it was a great chance to finally upgrade our
+dependencies.&lt;/dd&gt;
+&lt;dt&gt;Triage process&lt;/dt&gt;&lt;dd&gt;We have formalized our &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.org/en/latest/contribute.html#triaging-tickets&quot;&gt;triage process&lt;/a&gt; for development. This will guide
+how we make decisions on our issue tracker.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Linting&lt;/dt&gt;&lt;dd&gt;Linting has not been performed on the codebase for a long while. We felt
+this was important to get back to in order to ensure code quality.&lt;/dd&gt;
+&lt;dt&gt;Stable version improvements&lt;/dt&gt;&lt;dd&gt;There has been some buggy behavior behind the stable version detection. We
+worked here to clean up some of the broken behavior.&lt;/dd&gt;
+&lt;dt&gt;Fix slugging on versions&lt;/dt&gt;&lt;dd&gt;There have been a number of error cases that have surfaced around version
+slugging recently. This works to fix some logic errors on edge cases.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;For more information on our development orchestration, visit or subscribe to our
+&lt;a class=&quot;reference external&quot; href=&quot;https://trello.com/b/tF04aNrT/read-the-docs-public&quot;&gt;public Trello board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;issues&quot;&gt;
+&lt;h2&gt;Issues&lt;/h2&gt;
+&lt;p&gt;In the month of July:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs saw &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-07-01..2015-07-31+type%3Aissue&quot;&gt;80 new issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;50 of those issues &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-07-01..2015-07-31+type%3Aissue+state%3Aclosed&quot;&gt;have been closed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Additionally, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A%3C2015-07-01+type%3Aissue+state%3Aclosed+closed%3A2015-07-01..2015-07-31&quot;&gt;35 outstanding issues&lt;/a&gt; were closed out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;Feel free to raise any questions you have about any of these changes on our
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;, or on our Freenode IRC channel, #readthedocs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals-for-next-month&quot;&gt;
+&lt;h2&gt;Goals for Next Month&lt;/h2&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Improve Github/Bitbucket integration&lt;/dt&gt;&lt;dd&gt;We have pushed this up to next month, we still need to address some failures
+as part of Github/Bitbucket integration.&lt;/dd&gt;
+&lt;dt&gt;Better Sphinx experience for authoring&lt;/dt&gt;&lt;dd&gt;We can streamline a lot of the experience around using Sphinx, and at the
+same time, make more reproduceable builds, locally, for authors. This would
+involve mimicking more of what we preform in our build backend for local
+authoring.&lt;/dd&gt;
+&lt;dt&gt;More code cleanup&lt;/dt&gt;&lt;dd&gt;We started some linting efforts to bring code quality up, we will continue
+deeper and more thorough linting efforts.&lt;/dd&gt;
+&lt;dt&gt;More features to user gold subscription&lt;/dt&gt;&lt;dd&gt;We would like to have more users on a recurring subscription, which is a
+great step towards sustainability. We should be surfacing features and
+reminding users to donate if they are using some of those features.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Report - August 2015</title>
+    <id>https://blog.readthedocs.com/report-august-2015/</id>
+    <updated>2015-09-09T00:00:00Z</updated>
+    <published>2015-09-09T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/report-august-2015/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;report-august-2015&quot;&gt;
+
+&lt;p&gt;August was a busy month for us. &lt;a class=&quot;reference external&quot; href=&quot;http://www.writethedocs.org/conf/eu/2015/&quot;&gt;Write the Docs Europe&lt;/a&gt; was at the end of the
+month, and our focus has been on getting &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;readthedocs.com&lt;/a&gt; into a
+public beta state. We’re nearing the end of the 3 month period that we budgeted
+for as part of our fundraiser and have a few more tasks to push out.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;First, an update of the goals we set for this month:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Improve Github/Bitbucket integration&lt;/dt&gt;&lt;dd&gt;We fixed a very common bug caused by the way implemented syncing to the
+Github API. There are still some user experience issues we would like to
+address.&lt;/dd&gt;
+&lt;dt&gt;Better Sphinx experience for authoring&lt;/dt&gt;&lt;dd&gt;We started to refactor parts of our build backend and discussed what the
+optimal tool for authors would be. We don’t have a clear sense of where to
+split up our build backend code and what is extraneous to authors yet,
+however.&lt;/dd&gt;
+&lt;dt&gt;More code cleanup&lt;/dt&gt;&lt;dd&gt;Linting cleanup progressed, and we are on to discussing stricter linting
+efforts.&lt;/dd&gt;
+&lt;dt&gt;More features to user gold subscription&lt;/dt&gt;&lt;dd&gt;We have added the ability to “bless” projects with a gold subscription, but
+are still working on the user experience behind reminding users to donate
+via gold subscriptions, nor are we explaining gold to users yet.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;update-details&quot;&gt;
+&lt;h2&gt;Update Details&lt;/h2&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Build backend refactor&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;The builder backend code was refactored and now all build commands executed
+are tracked and associated with builds. This surfaced a number of hidden
+commands and a few failure conditions that were being disregarded.&lt;/p&gt;
+&lt;p&gt;This also removes the confusing magic PDF build that gets triggered from a
+normal build object.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Build output page&lt;/dt&gt;&lt;dd&gt;With the build refactor tracking all commands separately, we can now show
+output of all the commands executed. Before this output was split into
+output and error output streams, and it wasn’t always easy to distinguish
+failures. The build output page will now also live update through the API as
+changes become available.&lt;/dd&gt;
+&lt;dt&gt;Improved Github Syncing&lt;/dt&gt;&lt;dd&gt;Our initial attempt at Github integration updated from the Github API
+in-process, which could result in a timeout when the API didn’t return quick
+enough. Syncing against the API was moved to our task queue, with an API to
+monitor changes to the task.&lt;/dd&gt;
+&lt;dt&gt;Started work on more automated build toolchain&lt;/dt&gt;&lt;dd&gt;We have plans to make the process for building Sphinx documentation more
+automated for authors. We started laying out plans for what that tool would
+look like and how it would function.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;For more information on our development orchestration, visit or subscribe to our
+&lt;a class=&quot;reference external&quot; href=&quot;https://trello.com/b/tF04aNrT/read-the-docs-public&quot;&gt;public Trello board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;issues&quot;&gt;
+&lt;h2&gt;Issues&lt;/h2&gt;
+&lt;p&gt;In the month of August:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs saw &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-08-01..2015-08-31+type%3Aissue&quot;&gt;55 new issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;36 of those issues &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-08-01..2015-08-31+type%3Aissue+state%3Aclosed&quot;&gt;have been closed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Additionally, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A%3C2015-08-01+type%3Aissue+state%3Aclosed+closed%3A2015-08-01..2015-08-31&quot;&gt;59 outstanding issues&lt;/a&gt; were closed out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;Feel free to raise any questions you have about any of these changes on our
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;, or on our Freenode IRC channel, #readthedocs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals-for-next-month&quot;&gt;
+&lt;h2&gt;Goals for Next Month&lt;/h2&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Improve gold subscriptions more&lt;/dt&gt;&lt;dd&gt;With the fundraiser funds nearly allocated, we need to begin budgeting for
+the next few months, and will need to start bringing in income. We want to
+improve the user experience around donating, as well as present more
+reminders to donate to active users.&lt;/dd&gt;
+&lt;dt&gt;Increase income for the community site&lt;/dt&gt;&lt;dd&gt;With better user experience around donating, we hope to launch another
+effort to get more users and companies to donate.&lt;/dd&gt;
+&lt;dt&gt;Improve import user experience&lt;/dt&gt;&lt;dd&gt;There are still some gritty parts to the import process that should be
+streamlined. Some of the major Github bugs have been squashed, but a larger
+UX improvement is still required.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Report - June 2015</title>
+    <id>https://blog.readthedocs.com/report-june-2015/</id>
+    <updated>2015-07-01T00:00:00Z</updated>
+    <published>2015-07-01T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/report-june-2015/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;report-june-2015&quot;&gt;
+
+&lt;p&gt;With the &lt;a class=&quot;reference external&quot; href=&quot;http://writethedocs.org&quot;&gt;Write the Docs&lt;/a&gt; conference wrapped up in May, we shifted our focus
+back to Read the Docs for the remainder of May and June. Following our post
+&lt;a class=&quot;reference internal&quot; href=&quot;../../read-the-docs-is-hiring/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;on contract positions available&lt;/span&gt;&lt;/a&gt; with Read the
+Docs, we hired two contractors to work with us and focus on support and
+stability for readthedocs.org. &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/gregmuellegger&quot;&gt;Gregor Müllegger&lt;/a&gt; will be working on support
+and development, and &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/onewheelskyward&quot;&gt;Andrew Kreps&lt;/a&gt; has helped us on building and improving our
+operations infrastructure.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;updates&quot;&gt;
+&lt;h2&gt;Updates&lt;/h2&gt;
+&lt;p&gt;Read the Docs had the following major updates in June:&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;ops&quot;&gt;
+&lt;h3&gt;Ops&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Elastic Search support was upgraded and our search cluster is now hosted on
+&lt;a class=&quot;reference external&quot; href=&quot;http://found.no&quot;&gt;Found&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;We greatly improved the Read the Docs infrastructure, including monitoring and alerting, as well as server
+environment consistency. Using Nagios and Graphite, as well as Salt, for this task.&lt;/li&gt;
+&lt;li&gt;Static assets were migrated to use a CDN, provided by &lt;a class=&quot;reference external&quot; href=&quot;http://maxcdn.com&quot;&gt;MaxCDN&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;We did a fresh provision of our build cluster using Salt. Previously, there were slight
+disparities between the servers, which surfaced some issues during builds.&lt;/li&gt;
+&lt;li&gt;Fixed Python 3 build environments with new virtualenv and pip.&lt;/li&gt;
+&lt;li&gt;Changed our queueing strategy to not be tied to a single specific build machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;dev&quot;&gt;
+&lt;h3&gt;Dev&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Output formats such as PDF and ePub are now configurable, but continue to default
+to on.&lt;/li&gt;
+&lt;li&gt;Added the ability to wipe the Build environment to the Versions page.&lt;/li&gt;
+&lt;li&gt;We started to address issues with stable version detection&lt;/li&gt;
+&lt;li&gt;Fixed issues related to version name slugging.&lt;/li&gt;
+&lt;li&gt;In order to move away from third party analytics, we have spun up an instance
+of Piwik. We plan on testing this with our production traffic in the coming months.&lt;/li&gt;
+&lt;li&gt;Fixed “Edit on GitHub” links for stable versions&lt;/li&gt;
+&lt;li&gt;General refactoring and cleanup of the codebase, and added test coverage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For more information on our development orchestration, visit or subscribe to our
+&lt;a class=&quot;reference external&quot; href=&quot;https://trello.com/b/tF04aNrT/read-the-docs-public&quot;&gt;public Trello board&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;issues&quot;&gt;
+&lt;h2&gt;Issues&lt;/h2&gt;
+&lt;p&gt;We have started to formalize on a ticket triage process and have more focus on
+performing project management in the open. This is a very welcome change to our
+existing workflow and hope to continue improving on it.&lt;/p&gt;
+&lt;p&gt;In the month of June:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs saw &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue&quot;&gt;50 new issues&lt;/a&gt; in the month of June&lt;/li&gt;
+&lt;li&gt;26 of those issues &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue+state%3Aclosed&quot;&gt;have been closed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A2015-06-01..2015-06-30+type%3Aissue+state%3Aopen&quot;&gt;The remaining 24&lt;/a&gt; have been triaged but remain unresolved&lt;/li&gt;
+&lt;li&gt;Additionally, &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=created%3A%3C2015-06-01+type%3Aissue+state%3Aclosed+closed%3A2015-06-01..2015-06-30&quot;&gt;19 outstanding issues&lt;/a&gt; were closed out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;next-month&quot;&gt;
+&lt;h2&gt;Next Month&lt;/h2&gt;
+&lt;p&gt;Once work is wrapped up on version detection cleanup, we hope to start
+improving our Github/Bitbucket integration and user experience
+issues around deleting old projects and versions from Read the Docs.&lt;/p&gt;
+&lt;p&gt;We will also be testing internal analytics in the coming months. Our stance is
+that user data, for both our users and for readers of hosted documentation,
+should not be handed over to third party services like Google Analytics. We hope
+to replace external analytics with an internally hosted service, so that your
+data remains with us.&lt;/p&gt;
+&lt;p&gt;Feel free to raise any questions you have about any of these changes on our
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues&quot;&gt;issue tracker&lt;/a&gt;, or on our Freenode IRC channel, #readthedocs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Read the Docs is hiring!</title>
+    <id>https://blog.readthedocs.com/read-the-docs-is-hiring/</id>
+    <updated>2015-05-04T00:00:00Z</updated>
+    <published>2015-05-04T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-is-hiring/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-is-hiring&quot;&gt;
+
+&lt;p&gt;Thanks to our successful &lt;a class=&quot;reference external&quot; href=&quot;http://blog.readthedocs.com/fundraising-wrapup/&quot;&gt;fundraiser&lt;/a&gt;,
+we have the ability to pay people to work on Read the Docs.&lt;/p&gt;
+&lt;p&gt;We have two positions that we are looking for:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Community Developer&lt;/li&gt;
+&lt;li&gt;Operations Developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These will be part-time remote contract positions.&lt;/p&gt;
+&lt;p&gt;Our budget is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;40 total hours each week&lt;/li&gt;
+&lt;li&gt;Paid at $50/hr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These hours will be split between the two roles,
+and our time managing and doing administrative tasks.
+We expect each person to work around 15-20 hours each week.
+It will initially be for a 3-month period,
+after which we will evaluate the program,
+and continue it with renewed funding if it is successful.&lt;/p&gt;
+&lt;p&gt;We understand that money and time can be an obstacle to working on OSS,
+so let this be your opportunity to join us!
+We are hoping to build a team that is diverse in view points and location,
+and that definitely includes folks like you.
+Historically under-represented folks in the open source world will be given preference.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;community-developer&quot;&gt;
+&lt;h2&gt;Community Developer&lt;/h2&gt;
+&lt;p&gt;You will help us build community and give our users a better experience.
+Help us make the code base better,
+and build a thriving open source project along the way.&lt;/p&gt;
+&lt;p&gt;Your jobs will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Triage and fix bugs as they come in via GitHub, IRC, and the Mailing List&lt;/li&gt;
+&lt;li&gt;Work through the back log of GitHub Issues, fixing and closing them&lt;/li&gt;
+&lt;li&gt;Doing ongoing maintenance of the code base, including upgrading Django versions, refactoring, and other technical debt clean up&lt;/li&gt;
+&lt;li&gt;Work onboarding developers into the code base&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Linux (Ubuntu)&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;li&gt;Sphinx &amp;amp; Docutils&lt;/li&gt;
+&lt;li&gt;GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;operations-developer&quot;&gt;
+&lt;h2&gt;Operations Developer&lt;/h2&gt;
+&lt;p&gt;You will help us operate the largest open source documentation website in the world.
+We currently get over 15,000,000 pageviews a month,
+and we hope to maintain a reliable and stable hosting platform for years to come.&lt;/p&gt;
+&lt;p&gt;Your responsibilities will be:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Manage backups of our databases&lt;/li&gt;
+&lt;li&gt;Manage usage of our web and build machines, keeping them up to date and within capacity&lt;/li&gt;
+&lt;li&gt;Build new infrastructure and help us scale the existing machines&lt;/li&gt;
+&lt;li&gt;Write code to make Read the Docs easier to scale and sustain&lt;/li&gt;
+&lt;li&gt;Be included in an On Call rotation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tech Used:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Salt&lt;/li&gt;
+&lt;li&gt;Postgres&lt;/li&gt;
+&lt;li&gt;Munin&lt;/li&gt;
+&lt;li&gt;Nagios&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Elastic Search&lt;/li&gt;
+&lt;li&gt;Django&lt;/li&gt;
+&lt;li&gt;Celery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s fine if you aren’t familiar with all of these things, but are willing to learn!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We will prefer candidates in non-US based time zones to simplify our on call rotation.&lt;/strong&gt;
+Nobody should have to wake up at night to fix issues!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;how-to-apply&quot;&gt;
+&lt;h2&gt;How to Apply&lt;/h2&gt;
+&lt;p&gt;Thanks for everyone who has applied. We are in the process of choosing a candidate, and applications are now closed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/2015/atom.xml">
+    <title type="text">Fundraising Wrapup</title>
+    <id>https://blog.readthedocs.com/fundraising-wrapup/</id>
+    <updated>2015-05-01T00:00:00Z</updated>
+    <published>2015-05-01T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/fundraising-wrapup/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;fundraising-wrapup&quot;&gt;
+
+&lt;p&gt;First off, a big ol’ thank you is in order for everyone that helped support us.
+You all helped us hit our funding goal, and with time to spare.  We’re humbled
+to have such an abundance of support, and to know so many people share our
+vision for great documentation.&lt;/p&gt;
+&lt;p&gt;Really, thank you all. ❤&lt;/p&gt;
+&lt;p&gt;We started the fund raise drive at the beginning of PyCon, and in a little under
+3 weeks you were able to bring us up to our funding goal of $24,000. With the
+end of April, we’ve wrapped up fundraising for now. You can &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/&quot;&gt;still contribute&lt;/a&gt;
+however, and give us a head start on our next fund raising goal.&lt;/p&gt;
+&lt;p&gt;We set our goal to cover support costs for the next 3 months, and to set Read
+the Docs on a path to becoming self-sustaining. It will allow us to dedicate
+time to supporting and maintaining the service as it continues to grow.&lt;/p&gt;
+&lt;p&gt;So far, we’ve had &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/#supporters&quot;&gt;157 contributions&lt;/a&gt;, and we couldn’t have hit our goal
+without the help of everyone. The Python Software Foundation graciously provided
+us with a grant for $8,000 to go towards the continued support efforts.  Our
+largest corporate sponsors include &lt;a class=&quot;reference external&quot; href=&quot;http://twilio.com&quot;&gt;Twilio&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://getsentry.com&quot;&gt;Sentry&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://dreamhost.com&quot;&gt;DreamHost&lt;/a&gt;, and
+&lt;a class=&quot;reference external&quot; href=&quot;http://lincolnloop.com&quot;&gt;Lincoln Loop&lt;/a&gt;. Additionally, we have received generous service sponsorships
+from &lt;a class=&quot;reference external&quot; href=&quot;http://elastic.co&quot;&gt;Elastic Search&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;http://maxcdn.com&quot;&gt;MaxCDN&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;http://gandi.net&quot;&gt;Gandi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Again, a huge thank you to everyone that made this happen!&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;what-to-expect&quot;&gt;
+&lt;h2&gt;What to Expect&lt;/h2&gt;
+&lt;p&gt;We are building a company around an open source service, and we strive to remain
+open about what we’re doing. As a first step, we will be documenting how our
+time is used up and how we are allocating funds for the costs. We will be
+providing updates on our &lt;a class=&quot;reference external&quot; href=&quot;https://trello.com/b/tF04aNrT/read-the-docs-public&quot;&gt;public Trello board&lt;/a&gt;, we welcome you to
+subscribe for updates and to provide us with feedback.&lt;/p&gt;
+&lt;p&gt;The funds will go towards covering the support and maintenance costs of Read the
+Docs each week. We want to increase our capacity to handle support requests by
+working with someone on a part-time contract basis, working solely on managing
+this support burden.&lt;/p&gt;
+&lt;p&gt;Each week, the funds will pay for up to 40 hours of time spent supporting the
+service.  We look to cover triaging support requests and operations maintenance
+and emergency support with this time. Time will be split up between several
+engineers, we hope to cover part of the week with our time and the majority of
+the time each week with a third set of hands. Development will continue as a
+community supported mechanism, with the time of the core team donated to the
+project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged welcome</title>
+  <id>https://blog.readthedocs.com/archive/tag/welcome/atom.xml</id>
+  <updated>2014-08-07T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/welcome/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/welcome/atom.xml">
+    <title type="text">Welcome</title>
+    <id>https://blog.readthedocs.com/welcome/</id>
+    <updated>2014-08-07T00:00:00Z</updated>
+    <published>2014-08-07T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/welcome/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;welcome&quot;&gt;
+
+&lt;p&gt;Welcome to the Read the Docs blog.form me.&lt;/p&gt;
+&lt;p&gt;We will be doing regular feature announcements on the blog as we build them.
+There are also a number of recently released features that we’ll highlight there as well.&lt;/p&gt;
+&lt;p&gt;We have back ported some old blog posts from Eric Holscher’s blog that were about Read the Docs,
+so that you can find them a bit easier in the future.&lt;/p&gt;
+&lt;p&gt;Thanks for stopping by.
+We’ll have some awesome new features for you next week.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

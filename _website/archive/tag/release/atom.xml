@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts tagged release</title>
+  <id>https://blog.readthedocs.com/archive/tag/release/atom.xml</id>
+  <updated>2021-08-23T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/release/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/release/atom.xml">
+    <title type="text">Theme release 1.0.0rc1</title>
+    <id>https://blog.readthedocs.com/theme-release-100rc1/</id>
+    <updated>2021-08-23T00:00:00Z</updated>
+    <published>2021-08-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/theme-release-100rc1/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;theme-release-1-0-0rc1&quot;&gt;
+
+&lt;div class=&quot;admonition-update-version-1-0-0-has-been-released admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update: Version 1.0.0 has been released!&lt;/p&gt;
+&lt;p&gt;The 1.0.0 version of sphinx_rtd_theme was released Sept 13, 2021. You can
+install the latest version with:&lt;/p&gt;
+&lt;div class=&quot;highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install &lt;span class=&quot;s2&quot;&gt;&amp;quot;sphinx-rtd-theme~=1.0.0&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Alternatively, you can upgrade the version installed using:&lt;/p&gt;
+&lt;div class=&quot;last highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install --upgrade sphinx-rtd-theme
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We are closing in on the next official release of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme&quot;&gt;sphinx_rtd_theme&lt;/a&gt;, and
+we’re happy to announce that release candidate version 1.0.0rc1 was
+&lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/sphinx-rtd-theme/1.0.0rc1/&quot;&gt;released to PyPI&lt;/a&gt; last week! Project maintainers can contribute to the final
+release by &lt;a class=&quot;reference internal&quot; href=&quot;#testing&quot;&gt;testing the release candidate&lt;/a&gt; and raising any potential
+bugs on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Version 1.0.0 adds support for &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/Sphinx/&quot;&gt;Sphinx&lt;/a&gt; 4, fixes several issues stemming
+from &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/docutils/&quot;&gt;docutils&lt;/a&gt; 0.17, and contains several backwards-incompatible changes.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;backwards-incompatible-changes&quot;&gt;
+&lt;h2&gt;Backwards incompatible changes&lt;/h2&gt;
+&lt;p&gt;Users need to be aware of several backwards incompatible changes before
+upgrading:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support dropped for old dependencies&lt;/dt&gt;&lt;dd&gt;Support is removed for Sphinx versions 1.6 or older, and for Python versions
+3.0 to 3.3. Theme developers no longer test using these versions and
+compatibility is not guaranteed for these versions.&lt;/dd&gt;
+&lt;dt&gt;HTML4 support will be removed&lt;/dt&gt;&lt;dd&gt;Support for the Sphinx HTML4 writer will be deprecated in release 2.0. A
+deprecation warning was added to alert users still using the HTML4 writer.&lt;/dd&gt;
+&lt;dt&gt;Installation from source will be deprecated soon&lt;/dt&gt;&lt;dd&gt;Tentatively scheduled for release 3.0, installation from source will no
+longer be a supported installation method. Currently, users are installing
+directly from our GitHub repository, which complicates development of static
+assets. A deprecation warning was added to alert users of the upcoming
+change.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;highlights&quot;&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Here are some of the most significant additions included in release 1.0.0:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support for new dependencies&lt;/dt&gt;&lt;dd&gt;The theme now supports Sphinx 4 and docutils 0.17, both the latest in each
+respective release series.&lt;/dd&gt;
+&lt;dt&gt;New accessibility features&lt;/dt&gt;&lt;dd&gt;Also added were a number of accessibility updates, including better keyboard
+navigation support and more descriptive navigation for screen readers.&lt;/dd&gt;
+&lt;dt&gt;Added 4 new translations&lt;/dt&gt;&lt;dd&gt;The theme is close to being almost fully translated in 14 different
+languages. This will provide project maintainers with localized navigation
+elements and accessibility content.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;The theme roadmap&lt;/a&gt; has more information on upcoming releases, and
+backwards incompatible changes for each. A full list of changes included in this
+release is available in &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/changelog.html&quot;&gt;the theme changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;testing&quot;&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The 1.0.0rc1 release is a pre-release package, meaning it will not install by
+default as the most recent release. Project maintainers will need to specify the
+release version explicitly to install the release candidate.&lt;/p&gt;
+&lt;p&gt;In your package’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;extra_requirements&lt;/span&gt;&lt;/code&gt;, or a separate &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;requirements.txt&lt;/span&gt;&lt;/code&gt;
+file, you can pin this dependency with:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphinx_rtd_theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you notice any new, unwanted behavior, feel free to open an issue
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;on our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;upcoming-changes&quot;&gt;
+&lt;h2&gt;Upcoming changes&lt;/h2&gt;
+&lt;p&gt;We have several upcoming releases planned, covered in more depth in
+&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;the theme roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our next official release, currently targeted for October or November, will be
+version 1.1. This release will contain additional bug fixes and will be the last
+release supporting Sphinx versions less than 3.0. The next planed release will
+be version 2.0, in early 2022.&lt;/p&gt;
+&lt;p&gt;The 2.0 release will be dropping support for a number of old dependencies,
+including Sphinx versions &amp;lt; 3.0, Sphinx HTML4 writer support, and Internet
+Explorer 11.&lt;/p&gt;
+&lt;p&gt;As the theme moves away from supporting direct installation through our GitHub
+repository, we want to preserve development previews of theme releases. In
+addition to several more focused releases on the theme roadmap, we will also be
+periodically publishing development releases to PyPI. This will be the
+prescribed method to use unreleased theme changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Special thanks to contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/Blendify&quot;&gt;Blendify&lt;/a&gt; for keeping up with support for fresh
+dependencies, and new contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/nienn&quot;&gt;nienn&lt;/a&gt; for helping with bug fixes and the
+heavy amount of testing required for this release!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/release/atom.xml">
+    <title type="text">Release for May 12, 2017</title>
+    <id>https://blog.readthedocs.com/release-2017-05-12/</id>
+    <updated>2017-05-12T00:00:00Z</updated>
+    <published>2017-05-12T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/release-2017-05-12/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;release-for-may-12-2017&quot;&gt;
+
+&lt;p&gt;Yesterday, we rolled out improved webhook management for projects, and several
+bug fixes around our upgrade to Sphinx 1.5.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;webhook-management&quot;&gt;
+&lt;h2&gt;Webhook management&lt;/h2&gt;
+&lt;p&gt;We’ve been slowly making upgrades to our webhook management page. Projects that
+set up new webhooks will see a list of webhooks that we have configured,
+including HTTP exchanges that we encounter from each remote webhook.&lt;/p&gt;
+&lt;p&gt;Some of the other improvements to our webhook management include a &lt;a class=&quot;reference external&quot; href=&quot;http://docs.readthedocs.io/en/latest/webhooks.html#using-the-generic-api-integration&quot;&gt;new generic
+webhook endpoint&lt;/a&gt;, the ability to create arbitrary webhooks,
+and the ability to now re-establish webhooks on a per-provider basis.&lt;/p&gt;
+&lt;p&gt;You can play with the new features by selecting a project, opening the project
+admin dashboard, and selecting &lt;strong&gt;Integrations&lt;/strong&gt;. If your project is relatively
+new, webhook integrations will be created for existing remote webhooks. If your
+project has been configured for a long time, or you are using our old webhook
+endpoints, such as &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;http://readthedocs.org/github&lt;/span&gt;&lt;/code&gt;, you won’t notice anything
+new on the integrations dashboard page. You can still manually create a webhook
+and configure your repository to point to the new Read the Docs webhook
+endpoint however.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;bug-fixes&quot;&gt;
+&lt;h2&gt;Bug fixes&lt;/h2&gt;
+&lt;p&gt;Following the release of Sphinx 1.5, we set this version as the default version
+for Sphinx projects on Read the Docs. This in turn caused an issue with our
+override of the Sphinx search mechanism. We currently override this to provide
+our own search indexes, however the patch to this file was incompatible with
+Sphinx 1.5.&lt;/p&gt;
+&lt;p&gt;Due to this incompatibility, if a search query did not return anything from our
+indexes, but did match the Sphinx internal index, the links would have been
+incorrect.&lt;/p&gt;
+&lt;p&gt;We are now patching this search mechanism regardless of which version of Sphinx
+is used, and the broken links are no longer returned in the search results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;problems&quot;&gt;
+&lt;h2&gt;Problems?&lt;/h2&gt;
+&lt;p&gt;If you encounter any problems with any of the recent changes, feel free to open
+up a bug report on our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues/&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

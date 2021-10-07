@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Read the Docs Blog - Posts from Portland, Oregon</title>
+  <id>https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml</id>
+  <updated>2021-08-23T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Theme release 1.0.0rc1</title>
+    <id>https://blog.readthedocs.com/theme-release-100rc1/</id>
+    <updated>2021-08-23T00:00:00Z</updated>
+    <published>2021-08-23T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/theme-release-100rc1/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;theme-release-1-0-0rc1&quot;&gt;
+
+&lt;div class=&quot;admonition-update-version-1-0-0-has-been-released admonition&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Update: Version 1.0.0 has been released!&lt;/p&gt;
+&lt;p&gt;The 1.0.0 version of sphinx_rtd_theme was released Sept 13, 2021. You can
+install the latest version with:&lt;/p&gt;
+&lt;div class=&quot;highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install &lt;span class=&quot;s2&quot;&gt;&amp;quot;sphinx-rtd-theme~=1.0.0&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Alternatively, you can upgrade the version installed using:&lt;/p&gt;
+&lt;div class=&quot;last highlight-console notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pip install --upgrade sphinx-rtd-theme
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We are closing in on the next official release of &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme&quot;&gt;sphinx_rtd_theme&lt;/a&gt;, and
+we’re happy to announce that release candidate version 1.0.0rc1 was
+&lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/sphinx-rtd-theme/1.0.0rc1/&quot;&gt;released to PyPI&lt;/a&gt; last week! Project maintainers can contribute to the final
+release by &lt;a class=&quot;reference internal&quot; href=&quot;#testing&quot;&gt;testing the release candidate&lt;/a&gt; and raising any potential
+bugs on &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Version 1.0.0 adds support for &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/Sphinx/&quot;&gt;Sphinx&lt;/a&gt; 4, fixes several issues stemming
+from &lt;a class=&quot;reference external&quot; href=&quot;https://pypi.org/project/docutils/&quot;&gt;docutils&lt;/a&gt; 0.17, and contains several backwards-incompatible changes.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;backwards-incompatible-changes&quot;&gt;
+&lt;h2&gt;Backwards incompatible changes&lt;/h2&gt;
+&lt;p&gt;Users need to be aware of several backwards incompatible changes before
+upgrading:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support dropped for old dependencies&lt;/dt&gt;&lt;dd&gt;Support is removed for Sphinx versions 1.6 or older, and for Python versions
+3.0 to 3.3. Theme developers no longer test using these versions and
+compatibility is not guaranteed for these versions.&lt;/dd&gt;
+&lt;dt&gt;HTML4 support will be removed&lt;/dt&gt;&lt;dd&gt;Support for the Sphinx HTML4 writer will be deprecated in release 2.0. A
+deprecation warning was added to alert users still using the HTML4 writer.&lt;/dd&gt;
+&lt;dt&gt;Installation from source will be deprecated soon&lt;/dt&gt;&lt;dd&gt;Tentatively scheduled for release 3.0, installation from source will no
+longer be a supported installation method. Currently, users are installing
+directly from our GitHub repository, which complicates development of static
+assets. A deprecation warning was added to alert users of the upcoming
+change.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;highlights&quot;&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Here are some of the most significant additions included in release 1.0.0:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;Support for new dependencies&lt;/dt&gt;&lt;dd&gt;The theme now supports Sphinx 4 and docutils 0.17, both the latest in each
+respective release series.&lt;/dd&gt;
+&lt;dt&gt;New accessibility features&lt;/dt&gt;&lt;dd&gt;Also added were a number of accessibility updates, including better keyboard
+navigation support and more descriptive navigation for screen readers.&lt;/dd&gt;
+&lt;dt&gt;Added 4 new translations&lt;/dt&gt;&lt;dd&gt;The theme is close to being almost fully translated in 14 different
+languages. This will provide project maintainers with localized navigation
+elements and accessibility content.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;The theme roadmap&lt;/a&gt; has more information on upcoming releases, and
+backwards incompatible changes for each. A full list of changes included in this
+release is available in &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/changelog.html&quot;&gt;the theme changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;testing&quot;&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;The 1.0.0rc1 release is a pre-release package, meaning it will not install by
+default as the most recent release. Project maintainers will need to specify the
+release version explicitly to install the release candidate.&lt;/p&gt;
+&lt;p&gt;In your package’s &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;extra_requirements&lt;/span&gt;&lt;/code&gt;, or a separate &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;requirements.txt&lt;/span&gt;&lt;/code&gt;
+file, you can pin this dependency with:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphinx_rtd_theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you notice any new, unwanted behavior, feel free to open an issue
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx_rtd_theme/issues&quot;&gt;on our issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;upcoming-changes&quot;&gt;
+&lt;h2&gt;Upcoming changes&lt;/h2&gt;
+&lt;p&gt;We have several upcoming releases planned, covered in more depth in
+&lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-rtd-theme.readthedocs.io/en/latest/development.html#roadmap&quot;&gt;the theme roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our next official release, currently targeted for October or November, will be
+version 1.1. This release will contain additional bug fixes and will be the last
+release supporting Sphinx versions less than 3.0. The next planed release will
+be version 2.0, in early 2022.&lt;/p&gt;
+&lt;p&gt;The 2.0 release will be dropping support for a number of old dependencies,
+including Sphinx versions &amp;lt; 3.0, Sphinx HTML4 writer support, and Internet
+Explorer 11.&lt;/p&gt;
+&lt;p&gt;As the theme moves away from supporting direct installation through our GitHub
+repository, we want to preserve development previews of theme releases. In
+addition to several more focused releases on the theme roadmap, we will also be
+periodically publishing development releases to PyPI. This will be the
+prescribed method to use unreleased theme changes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Special thanks to contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/Blendify&quot;&gt;Blendify&lt;/a&gt; for keeping up with support for fresh
+dependencies, and new contributor &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/nienn&quot;&gt;nienn&lt;/a&gt; for helping with bug fixes and the
+heavy amount of testing required for this release!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Read the Docs 2020 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2020-stats/</id>
+    <updated>2021-03-17T00:00:00Z</updated>
+    <published>2021-03-17T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2020-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2020-stats&quot;&gt;
+
+&lt;p&gt;2020 was a rough year for everyone,
+including our team.
+We managed to make it through,
+and continue to have 5 folks working full-time to make Read the Docs better for you.&lt;/p&gt;
+&lt;p&gt;We are going into 2021 with a &lt;a class=&quot;reference internal&quot; href=&quot;../../../czi-grant-announcement/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;new grant&lt;/span&gt;&lt;/a&gt;,
+which will require us to do some &lt;a class=&quot;reference internal&quot; href=&quot;../../../jobs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;hiring&lt;/span&gt;&lt;/a&gt;.
+We also launched our &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;EthicalAds network&lt;/a&gt;,
+which is bringing our approach to sustainability to the tech community as a whole.&lt;/p&gt;
+&lt;p&gt;As we have for the past 7 years,
+we are proud to share our 2020 stats post.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2018-stats/&quot;&gt;2018&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2019-stats/&quot;&gt;2019&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;580 Million Page Views (from 465 million)&lt;/li&gt;
+&lt;li&gt;156 Million Unique Visitors (from 120 million)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;240,000 projects (from 200,000)&lt;/li&gt;
+&lt;li&gt;430,000 users (from 400,000)&lt;/li&gt;
+&lt;li&gt;2,480,063 builds (from 10 million total last year)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.
+We do notice a uptick in usage across the site,
+both in terms of support and traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;14 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2020-01-01&amp;amp;to=2020-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (from 21)&lt;/li&gt;
+&lt;li&gt;3636 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (from 4793)&lt;/li&gt;
+&lt;li&gt;532 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues?q=is%3Aissue+created%3A2020-01-01..2020-12-31+&quot;&gt;issues&lt;/a&gt; - 104 open, 428 closed (from 609)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been working to move user support issues to email from GitHub,
+which likely addresses the reduction in ticket numbers.
+We are also working to expand our ecosystem of projects,
+so the commits to the main repository are down.
+We expect across our theme, extensions, and other projects commits are up this year,
+and we’re appreciative of all the work people contribute.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$234,000 advertising (from $249,000)&lt;/li&gt;
+&lt;li&gt;$30,000 Gold users and donations (from $26,600)&lt;/li&gt;
+&lt;li&gt;5 paid staff (same as last year)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the launch of &lt;a class=&quot;reference external&quot; href=&quot;https://www.ethicalads.io/&quot;&gt;EthicalAds&lt;/a&gt;, we are excited to continue to grow our advertising business,
+and expand it to the larger community.
+We are also seeing continued growth of our paid product at &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.com&quot;&gt;https://readthedocs.com&lt;/a&gt;,
+which is allowing us to fund further growth of the Read the Docs codebase for all our users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We continue to work to improve Read the Docs for our users.
+We’re excited for the growth we expect in 2021,
+and hope that you’ll join us for the next chapter of our story.&lt;/p&gt;
+&lt;p&gt;The Read the Docs Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Announcing Chan Zuckerberg Initiative Grant to Expand the Interoperability of Scientific Documentation</title>
+    <id>https://blog.readthedocs.com/czi-grant-announcement/</id>
+    <updated>2020-11-19T00:00:00Z</updated>
+    <published>2020-11-19T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/czi-grant-announcement/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;announcing-chan-zuckerberg-initiative-grant-to-expand-the-interoperability-of-scientific-documentation&quot;&gt;
+
+&lt;p&gt;We’re excited to announce that &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt; has received a $200,000 grant from the Chan Zuckerberg Initiative’s &lt;a class=&quot;reference external&quot; href=&quot;https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/&quot;&gt;Essential Open Source for Science&lt;/a&gt; (EOSS) program.
+Read the Docs is the largest open source documentation hosting platform in the world.
+We provide hosting for many scientific software packages,
+including some that have received EOSS funding in the past.
+You can read more about this round of grants in the &lt;a class=&quot;reference external&quot; href=&quot;https://cziscience.medium.com/scaling-open-infrastructure-and-reproducibility-in-biomedicine-69546a399747&quot;&gt;official announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our grant has two parts:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Part 1 allows us to develop new software to improve the interoperability of scientific documentation.&lt;/li&gt;
+&lt;li&gt;Part 2 allows us do advocacy work around the importance and value of documentation in the scientific community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re excited about the chance to work with the scientific community to improve the overall experience of writing and reading documentation.
+We plan to do a lot of outreach to various community members,
+so that we can ensure we’re building tools that provide the most value.
+We also plan to write content that will hopefully make the process of documenting scientific code easier.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-1-improve-the-interoperability-of-scientific-documentation&quot;&gt;
+&lt;h2&gt;Part 1: improve the interoperability of scientific documentation&lt;/h2&gt;
+&lt;p&gt;This work is something that we’ve been doing as a side project for some time now.
+We have an extension to Sphinx that we call &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/sphinx-hoverxref&quot;&gt;sphinx-hoverxref&lt;/a&gt;.
+It provides hovering tooltips for Sphinx projects when hover over a link.
+You might be familiar with this functionality on GitHub or Wikipedia – this project adds that functionality to any project hosted on Read the Docs.
+You can see a &lt;a class=&quot;reference external&quot; href=&quot;https://cpython-ericholscher.readthedocs.io/en/sphinx-hoverxref/whatsnew/3.9.html&quot;&gt;live demo&lt;/a&gt; on a fork of the Python documentation.&lt;/p&gt;
+&lt;p&gt;The goal of the grant will be to expand this functionality by doing a few things:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improving and documenting the backend Embed API on Read the Docs, allowing documentation content to be embedded anywhere on the web.&lt;/li&gt;
+&lt;li&gt;Building a JavaScript client for the Embed API, which includes tooltips showing the content on any website.&lt;/li&gt;
+&lt;li&gt;Integrating this JS client and backend API together in a new version of sphinx-hoverxref.&lt;/li&gt;
+&lt;li&gt;Extending sphinx-hoverxref to work across multiple Read the Docs sites, allowing content hovers across the entire scientific documentation ecosystem.&lt;/li&gt;
+&lt;li&gt;If time allows, also extending the backend Embed API to support Sphinx documentation hosted outside of Read the Docs, allowing even more interoperability between documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are planning to contract a frontend developer to help with this work.
+The Python work will likely be carried out by our existing team,
+funded via the grant.
+This is because of the complexities involved with the Read the Docs and Sphinx integration,
+it will be more cost effective to have people already familiar with the codebases on these tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;part-2-advocacy-work-around-documentation-in-the-scientific-community&quot;&gt;
+&lt;h2&gt;Part 2: Advocacy work around documentation in the scientific community&lt;/h2&gt;
+&lt;p&gt;We know that documentation is a pain point for scientific projects. There is a lack of resources in the community, and we feel that we can be a central clearing house for better documentation tutorials and best practices. This part of the funding will be about growing appreciation and knowledge of documentation in the scientific community in general, and advocating for time to be spent on crafting good documentation with the best tooling.&lt;/p&gt;
+&lt;p&gt;Part of this work would be letting people know about the work in Part 1, promoting the tooling to make better documentation in the Scientific Python ecosystem. Beyond that, we will also promote tutorials and best practices around documentation for Scientific users, leading to more resources being available and better documentation in the community.&lt;/p&gt;
+&lt;p&gt;The high-level roadmap for this part of the grant is:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Improve documentation and promote the work in Part 1.&lt;/li&gt;
+&lt;li&gt;Adapt the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/latest/guides/&quot;&gt;Guides&lt;/a&gt; section of the Read the Docs documentation into a more full-featured Education section, along with standardizing and editing all existing guides.&lt;/li&gt;
+&lt;li&gt;Expand our existing &lt;a class=&quot;reference external&quot; href=&quot;https://sphinx-tutorial.readthedocs.io/&quot;&gt;Sphinx Tutorial&lt;/a&gt;, hopefully adding it upstream to Sphinx as the official tutorial&lt;/li&gt;
+&lt;li&gt;Write additional documentation guides focused on the scientific community, based on feedback from people in the community. This will likely include tutorials on integrating Jupyter with Sphinx, &lt;a class=&quot;reference external&quot; href=&quot;https://jupyterbook.org/intro.html&quot;&gt;Jupyterbook&lt;/a&gt;, and other pain points that users have.&lt;/li&gt;
+&lt;li&gt;If time allows, we would also love to work on curating some of the documentation resources at &lt;a class=&quot;reference external&quot; href=&quot;https://www.writethedocs.org/topics/&quot;&gt;Write the Docs&lt;/a&gt;, specifically topics that are relevant to scientific projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As part of this work, we plan to contract someone in a technical writer/developer evangelist role.
+Someone with knowledge of the scientific community would be a great benefit,
+given that we plan to seek feedback from many scientific projects on the priority of tasks we work on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;looking-forward&quot;&gt;
+&lt;h2&gt;Looking forward&lt;/h2&gt;
+&lt;p&gt;We are starting to look for contractors who would be a good fit for the work.
+People who care about documentation and are already connected with the scientific community are a big plus.
+We hope to post proper job descriptions for these roles in the near future,
+but wanted to note that we’re looking in our initial announcement.&lt;/p&gt;
+&lt;p&gt;This is the largest grant that we’ve ever received,
+and we are working hard to make sure it’s successful.
+We appreciate the trust that the Chan Zuckerberg Initiative has placed in us,
+and we will work hard to make sure the results of this grant will be adopted across the scientific ecosystem.&lt;/p&gt;
+&lt;p&gt;If you want to keep up to date with this work,
+you can follow along on &lt;a class=&quot;reference external&quot; href=&quot;http://github.com/readthedocs/&quot;&gt;GitHub&lt;/a&gt; or &lt;a class=&quot;reference external&quot; href=&quot;#mc_embed_signup_scroll&quot;&gt;subscribe&lt;/a&gt; to our blog for updates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Shipping a CDN on Read the Docs Community</title>
+    <id>https://blog.readthedocs.com/announcing-community-cdn/</id>
+    <updated>2020-05-18T00:00:00Z</updated>
+    <published>2020-05-18T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/announcing-community-cdn/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;shipping-a-cdn-on-read-the-docs-community&quot;&gt;
+
+&lt;p&gt;You might have noticed that our Read the Docs Community site has gotten faster in the past few weeks.
+How much faster likely depends on how far away you live from Virginia,
+which is where our servers have traditionally lived.&lt;/p&gt;
+&lt;p&gt;We have recently enabled a CDN on &lt;strong&gt;all Read the Docs Community sites&lt;/strong&gt;,
+generously sponsored by &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/&quot;&gt;CloudFlare&lt;/a&gt;.
+This post will talk a bit more about how we implemented this,
+and why we’re excited about it.&lt;/p&gt;
+&lt;p&gt;We are also offering the CDN option to our Read the Docs for Business users on the Enterprise plan,
+you can &lt;a class=&quot;reference external&quot; href=&quot;mailto:support&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;reach out&lt;/a&gt; to us if you’re interested.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;hosting-thousands-of-domains-is-hard&quot;&gt;
+&lt;h2&gt;Hosting thousands of domains is hard&lt;/h2&gt;
+&lt;p&gt;Traditionally the largest problem that we’ve had with rolling out features to all of our documentation sites is scale.
+We host thousands of custom domains for our users,
+and any solution needs to work across all of them.
+This has presented a number of issues in the past,
+but CDN is one of the most complicated.&lt;/p&gt;
+&lt;p&gt;To make a CDN function across all our sites,
+every data center that the CDN has needs to work with all our custom domains.
+Imagine we have 5,000 domains and there are 100 data centers across the world,
+this means that &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;5,000&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;500,000&lt;/span&gt;&lt;/code&gt; different endpoints need to be configured for this to work at scale.&lt;/p&gt;
+&lt;p&gt;We are lucky that CloudFlare has the global scale to be able to donate us this service.
+Specifically,
+their &lt;a class=&quot;reference external&quot; href=&quot;https://www.cloudflare.com/ssl-for-saas-providers/&quot;&gt;SSL for SAAS&lt;/a&gt; service is what we’re using for both SSL and CDN across all our custom domains.
+This allows us to offload the complexity to CloudFlare,
+and only focus on our integration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;implementation&quot;&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;One of the coolest things that CloudFlare’s CDN offers is something called &lt;a class=&quot;reference external&quot; href=&quot;https://support.cloudflare.com/hc/en-us/articles/200169246-Purging-cached-resources-from-Cloudflare#h_6d756ac9-c476-45e8-a5d4-e2a6e45d9dc7&quot;&gt;Cache Tags&lt;/a&gt;.
+This lets us add a &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;Cache-Tag&lt;/span&gt;&lt;/code&gt; header to all the documentation that we serve,
+and invalidate the cache using just that tag.&lt;/p&gt;
+&lt;p&gt;An example,
+when you load our docs,
+we will return a header:&lt;/p&gt;
+&lt;div class=&quot;highlight-default notranslate&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readthedocs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We return a tag that matches both the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;$project&lt;/span&gt;&lt;/code&gt;, and the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;$project-$version&lt;/span&gt;&lt;/code&gt;.
+This allows us to invalidate the cache for a specific version,
+or across the entire project.&lt;/p&gt;
+&lt;p&gt;As you know,
+cache invalidation is one of the harder problems,
+so we take a pretty conservative approach.
+We invalidate the cache in the following scenarios:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Project cache on Project or Domain save&lt;/li&gt;
+&lt;li&gt;Version cache on documentation builds for specific versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The client code is quite simple,
+a single HTTP request to Cloudflare’s API with a list of &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;tags&lt;/span&gt;&lt;/code&gt; to clear.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;There are two important outcomes from this work:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Page loads are much faster for users around the world&lt;/li&gt;
+&lt;li&gt;Our server load has gone down quite a lot because we handle fewer requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest winner here is our users.
+Docs are faster for everyone,
+and we are looking at implementing additional features into our documentation hosting code now that we have reduced load.&lt;/p&gt;
+&lt;p&gt;We hope that Read the Docs Community has gotten noticeably faster,
+and that in the near future it will continue to get better with the new features that this enables.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Read the Docs 2019 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2019-stats/</id>
+    <updated>2020-05-14T00:00:00Z</updated>
+    <published>2020-05-14T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2019-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2019-stats&quot;&gt;
+
+&lt;p&gt;2019 was another good year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+We continue to have a team of 5 folks working on the project,
+and we’ve rolled out a number of new features for the year.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published since 2013.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2018-stats/&quot;&gt;2018&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;465 Million Page Views (from 400M)&lt;/li&gt;
+&lt;li&gt;120 Million Unique Visitors (from 77M)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; last year, our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;200,000 projects (from 100k)&lt;/li&gt;
+&lt;li&gt;400,000 users (from 150k)&lt;/li&gt;
+&lt;li&gt;10,188,182 builds (new this year)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.
+We do notice a uptick in usage across the site,
+both in terms of support and traffic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;21 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2019-01-01&amp;amp;to=2019-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (from 28)&lt;/li&gt;
+&lt;li&gt;4793 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (from 3774)&lt;/li&gt;
+&lt;li&gt;609 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/readthedocs/readthedocs.org/issues?q=is%3Aissue+created%3A2019-01-01..2019-12-31+&quot;&gt;issues&lt;/a&gt; - 80 open, 529 closed (from 797)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have continued to have a similar team working on the project this year,
+but have actually made more commits.
+We moved our support queue from issues to email,
+which likely accounts for the lower issue count.
+We’re quite happy with our closed issue stats this year,
+which are much better than previous years.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$275,000 in revenue from readthedocs.org (from 294,000)&lt;/li&gt;
+&lt;li&gt;$249,000 from advertising (from $278,000)&lt;/li&gt;
+&lt;li&gt;$26,600 from Gold users (from $16,000)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our advertising has been pretty steady for 2019.
+The small drop in the year-over-year comparison we account to the fact that ad blockers happened halfway through 2018,
+meaning that the comparison is 15% lower in terms of our total traffic.&lt;/p&gt;
+&lt;p&gt;We continue to be hosted by &lt;a class=&quot;reference external&quot; href=&quot;https://azure.microsoft.com/en-us/&quot;&gt;Azure&lt;/a&gt;,
+and we’re using a lot of their nicer feature to keep our costs down.
+You can find some posts on our blog about this.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;We continue to keep working to improve the documentation ecosystem in the software industry.
+We’re excited about a number of new features that we’re working on this year,
+and expect to continue to be a resource you can depend on for a long time to come :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Read the Docs Offsite 2019</title>
+    <id>https://blog.readthedocs.com/offsite-2019/</id>
+    <updated>2019-06-20T00:00:00Z</updated>
+    <published>2019-06-20T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/offsite-2019/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-offsite-2019&quot;&gt;
+
+&lt;p&gt;The Read the Docs team just finished our first offsite ever in April of 2019.
+We all gathered together in person for the first time,
+and talked about the future of the project.&lt;/p&gt;
+&lt;p&gt;A picture will show this better than I can:&lt;/p&gt;
+&lt;div class=&quot;figure align-center&quot; id=&quot;id1&quot;&gt;
+&lt;img alt=&quot;img/offsite-2019.png&quot; src=&quot;img/offsite-2019.png&quot; style=&quot;width: 90%;&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;&lt;span class=&quot;caption-text&quot;&gt;The team at the house we rented in Aruba&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The full list of attendees, which is the full-time staff, from left to right:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;David Fischer&lt;/li&gt;
+&lt;li&gt;Manuel Kaufmann&lt;/li&gt;
+&lt;li&gt;Eric Holscher&lt;/li&gt;
+&lt;li&gt;Anthony Johnson&lt;/li&gt;
+&lt;li&gt;Santos Gallegos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;goals&quot;&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Our biggest goal was building a shared understanding of the vision for the project.
+Being fully remote,
+it’s often hard to communicate at a deep level about mission and vision.
+Being together in person for a week gave us the space to understand each other and our views better.&lt;/p&gt;
+&lt;p&gt;The other large goal was to build a roadmap for the next 3-6 months for the project.
+We have often had smaller roadmaps,
+but never had the chance to discuss all the problems that we encounter with the project,
+and then prioritize them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;format&quot;&gt;
+&lt;h2&gt;Format&lt;/h2&gt;
+&lt;p&gt;We used the following format:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Before the offsite, we created a Trello board with a list of topics to discuss. This was all the major feature ideas, issues, and concerns that came up over the previous couple months.&lt;/li&gt;
+&lt;li&gt;For the first 3 days, we went through the list and discussed each topic. We took notes (almost 20 pages) of these discussions, and mostly tried to build a shared understanding on a path forward.&lt;/li&gt;
+&lt;li&gt;The 4th day we broke each section down into action items, and chunked them into 1-3 smaller sections of work. We called these “v1”, “v2”, and “v3” to break out the stages where each project could be shipped and have impact on our users.&lt;/li&gt;
+&lt;li&gt;The 5th day we took all the tasks, then sized and prioritized them. We broke things out into 4 piles representing months going forward, and tried to balance the tasks so each month had a similar amount of work in it. We then turned this into a Trello roadmap board.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This worked quite well for us.
+It gave us space to talk through all the various topics we had,
+but also gave concrete next steps to move forward on our tasks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;outcomes&quot;&gt;
+&lt;h2&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;The most valuable outcome is something I said at the offsite:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;Before, it felt like we were 5 contributors working on an open source project. Now, it feels like we’re members of a team.&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;For each member of the team,
+there was someone else they had never met in person before this.
+Having all met in person will make it much easier to collaborate online going foward,
+and to feel like we are working towards a goal that we all share.&lt;/p&gt;
+&lt;p&gt;In terms of technical output,
+the roadmap we have established will make us much more productive in our work going foward.
+The entire team now has vision around the roadmap items,
+and understands the tasks other people are working on much better.
+This has already lead to a much better ability to collaborate together.&lt;/p&gt;
+&lt;p&gt;We are hoping to do another offsite in 2020,
+and if we do our jobs right, hopefully we’ll have another teammate or two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Defaulting New Projects to Python 3</title>
+    <id>https://blog.readthedocs.com/default-python-3/</id>
+    <updated>2019-02-12T00:00:00Z</updated>
+    <published>2019-02-12T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/default-python-3/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;defaulting-new-projects-to-python-3&quot;&gt;
+
+&lt;p&gt;New projects that are just getting started with Read the Docs will now use
+Python 3 by default. While it is still possible to configure your project to use
+Python 2.7 with &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span class=&quot;xref std std-doc&quot;&gt;our configuration file&lt;/span&gt;&lt;/a&gt;, we
+think it’s important to help push the Python ecosystem towards adopting Python 3.&lt;/p&gt;
+&lt;p&gt;Our default Python version is currently Python 3.7. Projects can also select
+Python versions 3.6 and 3.5 using our default build image. We will eventually
+remove support for building projects with Python versions 3.3 and 3.4, however
+it is still possible to select a build image with support for either version.&lt;/p&gt;
+&lt;p&gt;To select a specific version of Python, other than our default, you can use our
+configuration file to specify a Python version, using the
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#python-version&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;python.version&lt;/span&gt;&lt;/a&gt; configuration option.&lt;/p&gt;
+&lt;p&gt;If your project does require Python version 3.3 or 3.4, you can only select
+these versions if you also specify &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;stable&lt;/span&gt;&lt;/code&gt; build image for your project’s
+&lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/config-file/v2.html#build-image-legacy&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;build.image (legacy)&lt;/span&gt;&lt;/a&gt; configuration option. As we
+release new versions of our build image, this &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;stable&lt;/span&gt;&lt;/code&gt; image will eventually
+lose support for Python 3.3 and 3.4, so it’s suggested that your project upgrade
+to a supported version of Python.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Incoming Webhook Deprecations</title>
+    <id>https://blog.readthedocs.com/webhook-deprecations/</id>
+    <updated>2019-01-21T00:00:00Z</updated>
+    <published>2019-01-21T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/webhook-deprecations/" />
+    <author>
+      <name>Anthony Johnson</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;incoming-webhook-deprecations&quot;&gt;
+
+&lt;p&gt;In the coming weeks and months, Read the Docs will be moving some projects away
+from our legacy incoming webhooks, towards our per-project webhook integrations.&lt;/p&gt;
+&lt;p&gt;Our legacy incoming webhooks were our first attempt at allowing providers like
+GitHub to automatically trigger builds on for projects on Read the Docs. These
+webhooks lacked a number of security features, and so, about two years ago, we
+replaced these with per-project webhook integrations instead. We added a number
+of features to per-project webhook integrations at the time, and we stopped new
+projects from using the old incoming webhooks.&lt;/p&gt;
+&lt;p&gt;It’s possible that your project is still using these deprecated incoming
+webhooks if your project was configured on Read the Docs more than two years
+ago. If your project does not have an webhook integrations under the
+&lt;strong&gt;Integrations&lt;/strong&gt; section of your project’s admin dashboard, you might be using
+these legacy incoming webhooks.&lt;/p&gt;
+&lt;p&gt;In order to continue building automatically, projects should reconfigure their
+repository to use a new project webhook integration instead. For more
+information, see our docs on &lt;a class=&quot;reference external&quot; href=&quot;https://docs.readthedocs.io/en/stable/webhooks.html#webhook-creation&quot; title=&quot;(in Read the Docs v5.25.0)&quot;&gt;&lt;span&gt;Webhook Creation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are two important dates to note here:&lt;/p&gt;
+&lt;dl class=&quot;docutils&quot;&gt;
+&lt;dt&gt;January 31st, 2019&lt;/dt&gt;&lt;dd&gt;This is the date that GitHub will stop sending notifications through their
+GitHub Services. Your project might be relying on GitHub Services if your
+GitHub repository is using the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;ReadTheDocs&lt;/span&gt;&lt;/code&gt; GitHub Service and does not
+have another webhook to Read the Docs configured.&lt;/dd&gt;
+&lt;dt&gt;April 1st, 2019&lt;/dt&gt;&lt;dd&gt;&lt;p&gt;After this date, Read the Docs will stop accepting incoming webhook
+notifications for the remaining legacy incoming webhooks. You might be using
+one of these incoming webhooks if your repository has a webhook pointing to
+any of the following URLs:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/build&quot;&gt;https://readthedocs.org/build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/bitbucket&quot;&gt;https://readthedocs.org/bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/github&quot;&gt;https://readthedocs.org/github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/gitlab&quot;&gt;https://readthedocs.org/gitlab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;We will be sending periodic notifications over the next few weeks to the owners
+of any projects that are still configured to use these deprecated incoming
+webhooks.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Read the Docs 2018 Stats</title>
+    <id>https://blog.readthedocs.com/read-the-docs-2018-stats/</id>
+    <updated>2019-01-08T00:00:00Z</updated>
+    <published>2019-01-08T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/read-the-docs-2018-stats/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;read-the-docs-2018-stats&quot;&gt;
+
+&lt;p&gt;2018 was another good year for &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/&quot;&gt;Read the Docs&lt;/a&gt;.
+We’ve settled into a sustainability model that is working for us,
+and have a team of 5 folks working full-time on the project.&lt;/p&gt;
+&lt;p&gt;Here are our stats for the past year,
+which we’ve published for the past 6 years.
+This is part of our effort to be transparent in our organization,
+as well as our source code.&lt;/p&gt;
+&lt;div class=&quot;admonition note&quot;&gt;
+&lt;p class=&quot;first admonition-title&quot;&gt;Note&lt;/p&gt;
+&lt;p&gt;You can always see our stats for the last &lt;a class=&quot;reference external&quot; href=&quot;http://www.seethestats.com/site/readthedocs.org&quot;&gt;30 days&lt;/a&gt;.&lt;/p&gt;
+&lt;p class=&quot;last&quot;&gt;Our posts from &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2013-stats/&quot;&gt;2013&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2014-stats/&quot;&gt;2014&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2015-stats/&quot;&gt;2015&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2016-stats/&quot;&gt;2016&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://blog.readthedocs.com/read-the-docs-2017-stats/&quot;&gt;2017&lt;/a&gt; are also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;page-views&quot;&gt;
+&lt;h2&gt;Page Views&lt;/h2&gt;
+&lt;p&gt;Our stats:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;400 Million Page Views (up from 338M, 18%)&lt;/li&gt;
+&lt;li&gt;77 Million Unique Visitors (up from 75M, 3%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These numbers are not completely accurate, since we &lt;a class=&quot;reference internal&quot; href=&quot;../../../do-not-track/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;implemented Do Not Track support&lt;/span&gt;&lt;/a&gt; in May, our analytics pageview figures understate our actual traffic.
+We estimate that around 6% of users are not counted here.
+We also don’t count all the users who block Google Analytics with a browser extension.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;site-stats&quot;&gt;
+&lt;h2&gt;Site Stats&lt;/h2&gt;
+&lt;p&gt;The stats, in total numbers:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;100,000 projects (up from 77k, 30%)&lt;/li&gt;
+&lt;li&gt;155,000 users (up from 103k, 50%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have been battling spam quite heavily again this year,
+so these numbers are a bit skewed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;community&quot;&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;This year, we had:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;28 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/graphs/contributors?from=2018-01-01&amp;amp;to=2018-12-31&amp;amp;type=c&quot;&gt;people&lt;/a&gt; who committed code to the main repository (up from 23, 22%)&lt;/li&gt;
+&lt;li&gt;3774 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/commits/master&quot;&gt;commits&lt;/a&gt; (up from 1058, 257%)&lt;/li&gt;
+&lt;li&gt;797 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/rtfd/readthedocs.org/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue++created%3A2018-01-01..2019-01-01+&quot;&gt;issues&lt;/a&gt; - 189 open, 608 closed (up from 513, 55%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see the number of commits and issues has gone up quite a bit.
+This is largely because of the additional staffing we have had on the project,
+allowing us to be more active to both our users and to release more features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;funding&quot;&gt;
+&lt;h2&gt;Funding&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;$294,000 in revenue from readthedocs.org (up from $218,000, 35%)&lt;/li&gt;
+&lt;li&gt;$278,000 from advertising (up 59%)&lt;/li&gt;
+&lt;li&gt;$16,000 from Gold users (up 16%)&lt;/li&gt;
+&lt;li&gt;We have additional revenue from our commercial offering at readthedocs.com, but aren’t including that in our community funding overview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest impact to our revenue this year was &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-and-adblocking/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;our ads being blocked&lt;/span&gt;&lt;/a&gt;.
+This happened in May,
+and caused an initial 32% reduction in our ad revenue.
+We were &lt;a class=&quot;reference internal&quot; href=&quot;../../../ad-blocker-update/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;added to the Acceptable Ads&lt;/span&gt;&lt;/a&gt; list later in the month,
+which regained around half of our revenue.
+So for the second half of the year,
+our ad revenue was down about 15%.&lt;/p&gt;
+&lt;p&gt;We are also exploring sharing revenue with our documentation authors.
+There are currently 3 projects enrolled in a revenue share,
+and we’re hoping to expand that in 2019 to better support open source projects.&lt;/p&gt;
+&lt;p&gt;The project is now on firm financial footing.
+We have a cash reserve that will allow us to pay all of our staff for more than 3 months in the event of a loss of revenue,
+which allows us to be more flexible with our revenue going forward.
+This funding allowed us to expand from 4 to 5 full-time folks working on the project.&lt;/p&gt;
+&lt;p&gt;We also moved hosting to &lt;a class=&quot;reference external&quot; href=&quot;https://azure.microsoft.com/en-us/&quot;&gt;Azure&lt;/a&gt; this year in August from &lt;a class=&quot;reference external&quot; href=&quot;http://rackspace.com/&quot;&gt;Rackspace&lt;/a&gt;,
+who both have sponsored our hosting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This year we’ve continued to invest in our ethical advertising approach,
+growing our team by one member and building lots of new features.
+It feels like the project is progressing quite well,
+and we’re committing way more code and dealing with a much larger number of user issues.&lt;/p&gt;
+&lt;p&gt;It feels like success to be able to properly support our community by improving the product,
+while creating a business model that we can be proud of.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/location/portland-oregon/atom.xml">
+    <title type="text">Ethical Advertising Works</title>
+    <id>https://blog.readthedocs.com/ethical-advertising-works/</id>
+    <updated>2018-04-16T00:00:00Z</updated>
+    <published>2018-04-16T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/ethical-advertising-works/" />
+    <author>
+      <name>Eric Holscher</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;ethical-advertising-works&quot;&gt;
+
+&lt;p&gt;It has been two years since we first launched &lt;a class=&quot;reference internal&quot; href=&quot;../../../ads-on-read-the-docs/&quot;&gt;&lt;span class=&quot;doc&quot;&gt;ads on Read the Docs&lt;/span&gt;&lt;/a&gt;.
+We figured it was time to report on the results that we’ve seen,
+and say thanks to those who have helped us along the way.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-results&quot;&gt;
+&lt;h2&gt;The Results&lt;/h2&gt;
+&lt;p&gt;To put it simply:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ethical Advertising works&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In Q1 2018,
+our estimated revenue from advertising is $75,000.
+This is enough to fund our small team of 4 people to work on Read the Docs full-time.&lt;/p&gt;
+&lt;p&gt;When we started building our ethical advertising model,
+we didn’t know how it would work out.
+We didn’t know much about the ad industry,
+and we were doing things different than everyone else.&lt;/p&gt;
+&lt;p&gt;We are happy to report that you can build advertising that is a win/win/win for all parties:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Read the Docs wins because we generate revenue, allowing us to sustain our operations&lt;/li&gt;
+&lt;li&gt;Advertisers win because they are able to reach our audience of developers, helping to grow their business.&lt;/li&gt;
+&lt;li&gt;Users win because their privacy is maintained, and they continue to have access to our service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ethical advertising on Read the Docs has not been without its challenges,
+which we will cover in future posts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;tracking-users-isn-t-required&quot;&gt;
+&lt;h2&gt;Tracking users isn’t required&lt;/h2&gt;
+&lt;p&gt;Along the way we’ve been trying to prove a simple thesis:&lt;/p&gt;
+&lt;p&gt;We can have successful advertising without tracking our users.
+So much of the trouble facing the ad industry these days is because of this massive databases of user data.&lt;/p&gt;
+&lt;p&gt;We have been able to show that we can show ads without knowing exactly who our users are.
+The content they are reading is enough to show them targeted ads,
+without knowing anything about them.
+Specifically:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;We do not let advertisers run 3rd party code on Read the Docs. Ad images and javascript is all hosted by us.&lt;/li&gt;
+&lt;li&gt;We do not provide advertisers with data dumps, except aggregated reports on the clicks and views their ads got.&lt;/li&gt;
+&lt;li&gt;We target our ads based only on geography and the details of the page being visited, not on a profile of the user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re now taking a look at what we’ve learned,
+and how we might help more infrastructure projects reach sustainability with an ethical advertising approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;towards-an-ethical-ad-network&quot;&gt;
+&lt;h2&gt;Towards an Ethical Ad Network&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;We have shown that an advertising business model that respects users can also sustain critical open source infrastructure.&lt;/strong&gt;
+We hope that we can act as an example for other projects that depend on ads.
+You can make money without giving away your users data.&lt;/p&gt;
+&lt;p&gt;Developers have the power to shift the ad industry to respect user privacy.
+We must start with our own projects,
+leading by example.
+We need to have all the ads in the open source ecosystem respect user privacy,
+and then we can start to apply pressure to other parts of the tech industry.&lt;/p&gt;
+&lt;p&gt;We realize that not every open source project can do all the work that we’ve done.
+We want to explore how we can build an &lt;strong&gt;Ethical Ad Network&lt;/strong&gt;,
+where user data isn’t sent to us,
+but each project doesn’t need to do ad sales.&lt;/p&gt;
+&lt;p&gt;Our ethical ad network is still in the planning phases,
+but if you know a project that might be interested in being a beta tester,
+please &lt;a class=&quot;reference external&quot; href=&quot;mailto:ads&amp;#37;&amp;#52;&amp;#48;readthedocs&amp;#46;org&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thanks&quot;&gt;
+&lt;h2&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;I’d like to thank all of companies who have believed in our ethical ads initiative.
+You can only sell something if people buy it,
+and I’d like to give credit to the folks who have believed in our concept:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Twilio&lt;/li&gt;
+&lt;li&gt;Sentry&lt;/li&gt;
+&lt;li&gt;Rollbar&lt;/li&gt;
+&lt;li&gt;Stream&lt;/li&gt;
+&lt;li&gt;Intel&lt;/li&gt;
+&lt;li&gt;Data Dog&lt;/li&gt;
+&lt;li&gt;Mongo&lt;/li&gt;
+&lt;li&gt;Hosted Graphite&lt;/li&gt;
+&lt;li&gt;Level 12&lt;/li&gt;
+&lt;li&gt;Pyup&lt;/li&gt;
+&lt;li&gt;Triplebyte&lt;/li&gt;
+&lt;li&gt;Linode&lt;/li&gt;
+&lt;li&gt;Digital Impact Alliance&lt;/li&gt;
+&lt;li&gt;Digital Ocean&lt;/li&gt;
+&lt;li&gt;Exoscale&lt;/li&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;Odoo&lt;/li&gt;
+&lt;li&gt;CircleCI&lt;/li&gt;
+&lt;li&gt;Cherry Servers&lt;/li&gt;
+&lt;li&gt;Uniregistry&lt;/li&gt;
+&lt;li&gt;OSCON&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Want your company to be on the list?
+You can get more information on our &lt;a class=&quot;reference external&quot; href=&quot;https://readthedocs.org/sustainability/advertising/&quot;&gt;advertising page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
