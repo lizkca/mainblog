@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">lizkca Blog(fork from Read the Docs Blog) - Posts tagged todo</title>
+  <id>https://blog.readthedocs.com/archive/tag/todo/atom.xml</id>
+  <updated>2021-10-07T00:00:00Z</updated>
+  <link href="https://blog.readthedocs.com" />
+  <link href="https://blog.readthedocs.com/archive/tag/todo/atom.xml" rel="self" />
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="https://blog.readthedocs.com/archive/tag/todo/atom.xml">
+    <title type="text">todo</title>
+    <id>https://blog.readthedocs.com/1/</id>
+    <updated>2021-10-07T00:00:00Z</updated>
+    <published>2021-10-07T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/1/" />
+    <author>
+      <name>lizkca</name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;todo&quot;&gt;
+
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;在可用的blog上持续写博客。&lt;/li&gt;
+&lt;li&gt;研究一下部署不成功的blog，解决问题，让它可用。&lt;/li&gt;
+&lt;li&gt;learnning click》，把你学习click的一些东西提炼出来，形成一本书。&lt;/li&gt;
+&lt;li&gt;bookexample-pdftll，写一些例子，尤其是一些有实用意义的例子，作为书的一个章节。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;system-message&quot;&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: WARNING/2 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/1.rst&lt;/tt&gt;, line 13)&lt;/p&gt;
+Enumerated list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;5. justkeyboard》，另一本书。只用keyboard。
+6.看click，ablog，sphinx的源代码。
+7.看一些用click的例子的源代码。
+8.ruby-hammerhead。（学用pipenv,asdf）
+# 学用Git。
+# 学用Github action。
+# 学习Makefile，pylint,pytest, black。
+# 学用pycharm。
+# 看mit的missing系列视频。&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
