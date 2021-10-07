@@ -35,7 +35,7 @@ extensions = [
     'sphinxext.opengraph',
 ]
 
-blog_title = 'Read the Docs Blog'
+blog_title = 'lizkca Blog(fork from Read the Docs Blog)'
 blog_baseurl = 'https://blog.readthedocs.com'
 blog_path = 'archive'
 fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
@@ -53,8 +53,9 @@ blog_authors = {
     'Vaibhav': ('Vaibhav Gupta', 'https://github.com/dojutsu-user'),
     'Manuel': ('Manuel Kaufmann', 'https://elblogdehumitos.com/'),
     'Juan Luis': ('Juan Luis Cano Rodríguez', 'https://github.com/astrojuanlu/'),
+    'Lizkca': ('lizkca','http://lizkca.github.io'),
 }
-blog_default_author = 'Eric'
+blog_default_author = 'Lizkca'
 
 blog_locations = {
     'PDX': ('Portland, Oregon', 'http://www.portlandhikersfieldguide.org/'),
@@ -202,8 +203,8 @@ html_static_path = ['_static']
 html_sidebars = {
    '**': [
           'postcard.html',
-          'social.html',
-          'recentposts.html',
+#         'social.html',
+#         'recentposts.html',
           'categories.html',
           'archives.html'
          ]
@@ -276,10 +277,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-  ('index', 'ReadtheDocsBlog.tex', u'Read the Docs Blog',
-   u'Eric Holscher', 'manual'),
-]
+# latex_documents = [
+#   ('index', 'ReadtheDocsBlog.tex', u'Read the Docs Blog',
+#    u'Eric Holscher', 'manual'),
+# ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -342,10 +343,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Read the Docs Blog'
-epub_author = u'Eric Holscher'
-epub_publisher = u'Eric Holscher'
-epub_copyright = u'2014, Eric Holscher'
+# epub_title = u'Read the Docs Blog'
+# epub_author = u'Eric Holscher'
+# epub_publisher = u'Eric Holscher'
+# epub_copyright = u'2014, Eric Holscher'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'Read the Docs Blog'
