@@ -4,18 +4,18 @@
    :location: CN
 
 todo 
-=======
+=====
 
 1. 在可用的blog上持续写博客。
 2. 研究一下部署不成功的blog，解决问题，让它可用。
 3. learnning click》，把你学习click的一些东西提炼出来，形成一本书。
 4. bookexample-pdftll，写一些例子，尤其是一些有实用意义的例子，作为书的一个章节。
 5. justkeyboard》，另一本书。只用keyboard。
-6.看click，ablog，sphinx的源代码。
-7.看一些用click的例子的源代码。
-8.ruby-hammerhead。（学用pipenv,asdf）
-# 学用Git。
-# 学用Github action。
-# 学习Makefile，pylint,pytest, black。
-# 学用pycharm。
-# 看mit的missing系列视频。 
+6. 看click，ablog，sphinx的源代码。
+7. 看一些用click的例子的源代码。
+8. ruby-hammerhead。（学用pipenv,asdf）
+9. 学用Git。
+10. 学用Github action。
+11. 学习Makefile，pylint,pytest, black。
+12. 学用pycharm。
+13. 看mit的missing系列视频。 

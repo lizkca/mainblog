@@ -22,19 +22,16 @@
 &lt;li&gt;研究一下部署不成功的blog，解决问题，让它可用。&lt;/li&gt;
 &lt;li&gt;learnning click》，把你学习click的一些东西提炼出来，形成一本书。&lt;/li&gt;
 &lt;li&gt;bookexample-pdftll，写一些例子，尤其是一些有实用意义的例子，作为书的一个章节。&lt;/li&gt;
+&lt;li&gt;justkeyboard》，另一本书。只用keyboard。&lt;/li&gt;
+&lt;li&gt;看click，ablog，sphinx的源代码。&lt;/li&gt;
+&lt;li&gt;看一些用click的例子的源代码。&lt;/li&gt;
+&lt;li&gt;ruby-hammerhead。（学用pipenv,asdf）&lt;/li&gt;
+&lt;li&gt;学用Git。&lt;/li&gt;
+&lt;li&gt;学用Github action。&lt;/li&gt;
+&lt;li&gt;学习Makefile，pylint,pytest, black。&lt;/li&gt;
+&lt;li&gt;学用pycharm。&lt;/li&gt;
+&lt;li&gt;看mit的missing系列视频。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;system-message&quot;&gt;
-&lt;p class=&quot;system-message-title&quot;&gt;System Message: WARNING/2 (&lt;tt class=&quot;docutils&quot;&gt;/Users/lienxiong/workspace/blog/1.rst&lt;/tt&gt;, line 13)&lt;/p&gt;
-Enumerated list ends without a blank line; unexpected unindent.&lt;/div&gt;
-&lt;p&gt;5. justkeyboard》，另一本书。只用keyboard。
-6.看click，ablog，sphinx的源代码。
-7.看一些用click的例子的源代码。
-8.ruby-hammerhead。（学用pipenv,asdf）
-# 学用Git。
-# 学用Github action。
-# 学习Makefile，pylint,pytest, black。
-# 学用pycharm。
-# 看mit的missing系列视频。&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>

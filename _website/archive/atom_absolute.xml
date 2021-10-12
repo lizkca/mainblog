@@ -22,4 +22,33 @@
 &lt;/div&gt;
 </content>
   </entry>
+  <entry xml:base="https://blog.readthedocs.com/archive/atom.xml">
+    <title type="text">todo</title>
+    <id>https://blog.readthedocs.com/1/</id>
+    <updated>2021-10-07T00:00:00Z</updated>
+    <published>2021-10-07T00:00:00Z</published>
+    <link href="https://blog.readthedocs.com/1/"/>
+    <author>
+      <name>lizkca</name>
+    </author>
+    <content type="html">&lt;div class="section" id="todo"&gt;
+
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&amp;#22312;&amp;#21487;&amp;#29992;&amp;#30340;blog&amp;#19978;&amp;#25345;&amp;#32493;&amp;#20889;&amp;#21338;&amp;#23458;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#30740;&amp;#31350;&amp;#19968;&amp;#19979;&amp;#37096;&amp;#32626;&amp;#19981;&amp;#25104;&amp;#21151;&amp;#30340;blog&amp;#65292;&amp;#35299;&amp;#20915;&amp;#38382;&amp;#39064;&amp;#65292;&amp;#35753;&amp;#23427;&amp;#21487;&amp;#29992;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;learnning click&amp;#12299;&amp;#65292;&amp;#25226;&amp;#20320;&amp;#23398;&amp;#20064;click&amp;#30340;&amp;#19968;&amp;#20123;&amp;#19996;&amp;#35199;&amp;#25552;&amp;#28860;&amp;#20986;&amp;#26469;&amp;#65292;&amp;#24418;&amp;#25104;&amp;#19968;&amp;#26412;&amp;#20070;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;bookexample-pdftll&amp;#65292;&amp;#20889;&amp;#19968;&amp;#20123;&amp;#20363;&amp;#23376;&amp;#65292;&amp;#23588;&amp;#20854;&amp;#26159;&amp;#19968;&amp;#20123;&amp;#26377;&amp;#23454;&amp;#29992;&amp;#24847;&amp;#20041;&amp;#30340;&amp;#20363;&amp;#23376;&amp;#65292;&amp;#20316;&amp;#20026;&amp;#20070;&amp;#30340;&amp;#19968;&amp;#20010;&amp;#31456;&amp;#33410;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;justkeyboard&amp;#12299;&amp;#65292;&amp;#21478;&amp;#19968;&amp;#26412;&amp;#20070;&amp;#12290;&amp;#21482;&amp;#29992;keyboard&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#30475;click&amp;#65292;ablog&amp;#65292;sphinx&amp;#30340;&amp;#28304;&amp;#20195;&amp;#30721;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#30475;&amp;#19968;&amp;#20123;&amp;#29992;click&amp;#30340;&amp;#20363;&amp;#23376;&amp;#30340;&amp;#28304;&amp;#20195;&amp;#30721;&amp;#12290;&lt;/li&gt;
+&lt;li&gt;ruby-hammerhead&amp;#12290;&amp;#65288;&amp;#23398;&amp;#29992;pipenv,asdf&amp;#65289;&lt;/li&gt;
+&lt;li&gt;&amp;#23398;&amp;#29992;Git&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#23398;&amp;#29992;Github action&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#23398;&amp;#20064;Makefile&amp;#65292;pylint,pytest, black&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#23398;&amp;#29992;pycharm&amp;#12290;&lt;/li&gt;
+&lt;li&gt;&amp;#30475;mit&amp;#30340;missing&amp;#31995;&amp;#21015;&amp;#35270;&amp;#39057;&amp;#12290;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
 </feed>
