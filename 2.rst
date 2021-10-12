@@ -7,5 +7,6 @@ thinking
 ========
 
 1. how to show it , i am not alone .that's import.
-2. it work.:wq
+一个顶的cli应用。把你想说的说出来，看看有多少人顶你。
+2. 必须持续不停地想。直到你有一个很清晰的画面。要真的把它做成。 
 
